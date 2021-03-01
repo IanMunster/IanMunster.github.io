@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 	<head>
-		<title>Conan Exiles Server Guide</title>
+		<title>Conan Exiles - Server Admin Guide</title>
 		<link rel="icon" type="image/png" href="src/Conan.png">
-		<link rel="stylesheet" href="src/ConanStyle.css">
+		<link rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" href="ConanServer.css">
+		<link rel="script" href="script.js">
+		<link rel="script" href="ConanServer.js">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.25, user-scalable=yes">
-		<meta name="description" content="Conan Exiles Dedicated Server Guide">
+		<meta name="description" content="Conan Exiles Guide: Dedicated Server Settings, Admin Commands">
 		<meta name="author" content="Ian">
 	</head>
 	<body id="Top">
 		<header>
 			<h1>Conan Exiles Server Guide</h1>
-			<p>Settings and Mods</p>
+			<p>WORK IN PROGRESS</p>
+			<p>Settings and Admin Commands etc..</p>
 		</header>
 <!-- CONTENT -->
 		<div class="content">
@@ -466,7 +470,6 @@
 					<tr><td>1</td><td>2</td></tr>
 				</table>	
 			</section>
-		</div>
 
 	<!-- SPLITTER -->
 			<div class="split"><hr></div>
@@ -498,46 +501,6 @@
 <!-- FOOTER -->
 		<footer>
 			<p>Footer Text</p>
-	<!-- JAVASCRIPT -->
-			<script>
-			/*Show and Hide Element by ID on Click*/
-				function showHide(id, show) {
-					var elem = document.getElementById(id);
-					if ( elem.style.display == "flex" && show === 0) { elem.style.display = "none"; return; } 
-					else { elem.style.display = "flex"; return; }
-				}
-			
-			/*Show and Hide Element(s) by Class on Click*/
-				function showHideMult (name, show) {
-					var elems = document.getElementsByClassName(name);
-					for ( var i = 0; i < elems.length; i++ ) {
-						if (show === 0) { elems[i].style.display = "none"; }
-						else { elems[i].style.display = "block"; }
-					}
-				}
-			/*Sticky Navigation on Scroll*/
-				/*window.onscroll = function (){ stickyMenu () };
-				var navBar = document.getElementById("NavBar"), sticky = navBar.offsetTop;
-				function stickyMenu () {
-					if ( window.pageYOffset >= sticky ) { navBar.classList.add ("sticky"); navBar.style.height = "60px"; showHideMult ("titleCard", 0); }
-					else { navBar.classList.remove ("sticky"); navBar.style.height = "80px"; showHideMult ("titleCard", 1); }
-				}*/
-			
-			/*Highlight Table Row on Click*/
-				function highlightRow(e) {
-					var table = document.getElementById(e), cells = table.getElementsByTagName('td');
-					for (var c = 0; c < cells.length; c++) {
-						var cell = cells[c];
-						cell.onclick = function () {
-							var rowId = this.parentNode.rowIndex, rowsNotSelected = table.getElementsByTagName('tr'), rowSelected = table.getElementsByTagName('tr')[rowId];
-							for (var r = 0; r < rowsNotSelected.length; r++) {
-								rowsNotSelected[r].classList.remove('selected');
-							}
-							rowSelected.className += " selected";
-						}
-					}
-				}
-			</script>
 		</footer>
 	</body>
 </html>
