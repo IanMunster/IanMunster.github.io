@@ -1,11 +1,15 @@
 # IanMunster.github.io
- Public Github Pages of IanMunster
+Public Github Pages of IanMunster
 
-## Menu
-[Main Page](https://ianmunster.github.io/index.md)
+Doing:
+	- Creating Main Page
+		- Clear Navigation to Subpages and Projects
+		
+	- Adding Guides for Conan Exiles
+		- Main page loads in Subpages as iFrame?
+		- Adding working Navigation
 
-[Conan Exiles Server](https://ianmunster.github.io/ConanExiles/index.html)
-
-[Conan Exiles Server Settings](https://ianmunster.github.io/ConanExiles/ConanGuide.html)
-
-[Conan Exiles Steam Workshop]()
+To Do:
+	- Add Pages for older projects?
+	- Add Page for Mods?
+	
