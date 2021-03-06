@@ -3,10 +3,10 @@
 	<head>
 		<title>Conan Exiles - Server Admin Guide</title>
 		<link rel="icon" type="image/png" href="src/img/Conan.png">
-		<link rel="stylesheet" href="stylesheet.css">
-		<link rel="stylesheet" href="ConanServer.css">
-		<script src="script.js"></script>
-		<script src="ConanServer.js"></script>
+		<link rel="stylesheet" href="src/stylesheet.css">
+		<link rel="stylesheet" href="src/ConanServer.css">
+		<script src="src/script.js"></script>
+		<script src="src/ConanServer.js"></script>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.25, user-scalable=yes">
 		<meta name="description" content="Conan Exiles Guide: Server Admin; Settings, Commands">
@@ -28,16 +28,37 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Augue interdum velit euismod in pellentesque massa placerat. Risus viverra adipiscing at in tellus integer. Accumsan sit amet nulla facilisi morbi tempus. Magna fringilla urna porttitor rhoncus dolor. Ullamcorper morbi tincidunt ornare massa. In hendrerit gravida rutrum quisque non. Ut ornare lectus sit amet est placerat in egestas. Est velit egestas dui id. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit.
 				Vitae tempus quam pellentesque nec nam aliquam. Augue neque gravida in fermentum. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Aliquam sem et tortor consequat. Ac turpis egestas integer eget aliquet nibh. Euismod lacinia at quis risus sed vulputate odio ut. A pellentesque sit amet porttitor. Aliquet risus feugiat in ante. Euismod elementum nisi quis eleifend quam. Quis auctor elit sed vulputate mi sit amet mauris commodo. Lectus urna duis convallis convallis tellus id interdum velit laoreet.
 				</p>
+			</section>
+
+	<!-- SPLITTER -->
+			<div class="split"><hr></div>
+	<!-- ADVANCED -->
+			<h2 id="COMMANDS" title="Click to Show/Hide" onclick="showHide('COMM',0)">Admin Commands</h2>
+			<section id="COMM">
+	<!-- TABLE -->
+				<table>
+					<tr class="Thead"><th>Command</th><th>Description</th></tr>
+					<tr><td>1</td><td>2</td></tr>
+					<tr><td>1</td><td>2</td></tr>
+					<tr><td>1</td><td>2</td></tr>
+				</table>	
+			</section>
+	
+	<!-- SPLITTER -->
+			<div class="split"><hr></div>
+	<!-- LEGEND -->
+			<h2 id="LEGEND" title="Click to Show/Hide" onclick="showHide('LEGE',0)">INI Settings Legend</h2>
+			<section id="LEGE">
 				<h3>How To Read</h3>
 				<p>
-					Headers:
+					<h4>Headers:</h4>
 					<list>
 						<li>* = Recommended Settings</li>
 						<li>1 = Civilized Preset Setting</li>
 						<li>2 = Decadent Preset Setting</li>
 						<li>3 = Barbaric Preset Settings</li>
 					</list>
-					Colors:
+					<h4>Colors:</h4>
 					<list>
 						<li>White = INI Changeable Only</li>
 						<li>Gray = In-Game Changeable</li>
@@ -46,7 +67,7 @@
 					</list>
 				</p>
 			</section>
-	
+			
 	<!-- SPLITTER -->
 			<div class="split"><hr></div>
 	<!-- DEDICATED SERVER LAUNCHER -->
@@ -158,128 +179,114 @@
 				</table>
 	<!-- TABLE -->
 				<table id="ServerTable" onClick="highlightRow(this.id)">
+		<!-- GENERAL -->
 					<tr class="subHead"><td colspan="6">"General"</td></tr>
 					<tr class="tHead"><th>Setting</th><th>*</th><th>1</th><th>2</th><th>3</th><th>Description</th></tr>
-					<tr><td class="inGame">Admin Password=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td class="inGame">ServerMessageOfTheDay=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Set message of the day here</td></tr>
+					<tr><td class="inGame">ServerPassword=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>The server password can be changed here</td></tr>
+					<tr><td class="inGame">Admin Password=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>This password gives administration rights</td></tr>
+			<!-- PVP -->		
+					<tr><td>PVPEnabled=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>When this is flagged, Player vs Player is enabled on the server</td></tr>
+					<tr><td class="inGame">RestrictPVPTime=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>When this is flagged, Player vs Player is only possible within the set time periods</td></tr>
+						<tr><td class="inGame">PVPEnabledMonday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPTimeMondayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPTimeMondayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPEnabledTuesday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPTimeTuesdayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPTimeTuesdayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPEnabledWednesday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPTimeWednesdayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPTimeWednesdayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPEnabledThursday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPTimeThursdayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPTimeThursdayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPEnabledFriday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPTimeFridayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPTimeFridayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPEnabledSaturday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPTimeSaturdayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPTimeSaturdayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPEnabledSunday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPTimeSundayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPTimeSundayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td class="inGame">CanDamagePlayerOwnedStructures=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>When this is flagged, players can attack and destroy other player’s structures</td></tr>
+					<tr><td class="inGame">RestrictPVPBuildingDamageTime=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>When this is flagged, players can only attack and destroy other player’s structures within the set time periods</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageEnabledMonday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageTimeMondayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageTimeMondayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageEnabledTuesday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageTimeTuesdayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageTimeTuesdayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageEnabledWednesday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageTimeWednesdayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageTimeWednesdayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageEnabledThursday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageTimeThursdayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageTimeThursdayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageEnabledFriday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageTimeFridayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageTimeFridayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageEnabledSaturday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageTimeSaturdayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageTimeSaturdayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageEnabledSunday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageTimeSundayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+						<tr><td class="inGame">PVPBuildingDamageTimeSundayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+			<!-- PVP END -->	
+					<tr><td class="inGame">DynamicBuildingDamage=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td class="inGame">DynamicBuildingDamagePeriod=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td class="inGame">ServerCommunity=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Selecting a community from the drop down list will affect how your server is filtered in the server list. Please set up your community responsibly, in order to help players find a server that matches their playstyle</td></tr>
+					<tr><td>serverRegion=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Selecting a server region will affect how your server is filtered in the list. Please select your region to help players find a server that is close to them</td></tr>
+					<tr><td>NoOwnership=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Flagging this means that the ownership rules on the server do not exist. This means that all players can loot all chests, use all machines, dismantle all buildings etc</td></tr>
+					<tr><td class="inGame">ContainersIgnoreOwnership=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Flagging this means that all containers are open to other players, but enables optional locking of some chests</td></tr>
+					<tr><td class="inGame">EnableSandStorm=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Flagging this allows sandstorms to periodically sweep across the Exiled Lands</td></tr>
+					<tr><td class="inGame">EnableClanMarkers=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td class="inGame">clanMaxSize=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>This sets the maximum allowable size of clans on the server. Once a clan reaches the limit, no new members can join</td></tr>
+					<tr><td class="inGame">CoopTetheringLimit=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>In CO-OP game on a non-dedicated server, clients are tethered to the host player and the maximum distance can be set here</td></tr>
+					<tr><td class="inGame">MaxNudity=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>This setting determines the maximum amount of nudity on the server. This overrides the client preference, so if a server is set to no nudity, even if a player sets their client to full nudity, they will not be able to see nudity on this server. <br>However, if a server allows full nudity, and a player sets their client to partial nudity, the client will correctly show only partial nudity</td></tr>
+					<tr><td class="inGame">serverVoiceChat=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Select if the server should have an in-game voice chat or not</td></tr>
+					<tr><td class="inGame">EnableWhitelist=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Flagging this will only allow whitelisted players to join the server</td></tr>
+					<tr><td class="inGame">DisableLandclaimNotifications=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td class="inGame">EventLogCauserPrivacy=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td class="inGame">VocalVisibilityDurationInMinutes=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>AllowFamilySharedAccount=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>BlueprintConfigVersion=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">clanMaxSize=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>ConfigVersion=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">ContainersIgnoreOwnership=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">CoopTetheringLimit=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">EnableClanMarkers=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">EnableWhitelist=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">EventLogCauserPrivacy=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>IsBattlEyeEnabled=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td>IsBattlEyeEnabled=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>This enables Battleyecheat protection on the server. Funcom highly recommends this to avoid cheaters from affecting your gameplay</td></tr>
 					<tr><td>IsVACEnabled=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>KickAFKPercentage=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>KickAFKTime=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>MaxAllowedPing=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">MaxNudity=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">ServerCommunity=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">ServerPassword=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">ServerMessageOfTheDay=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>ServerModList=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>ValidatePlayerStats=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					
-					<tr class="subHead"><td colspan="6">"Regional Access"</td></tr>
-					<tr class="tHead"><th>Setting</th><th>*</th><th>1</th><th>2</th><th>3</th><th>Description</th></tr>
-					<tr><td>RegionAllowAfrica=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>RegionAllowAsia=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>RegionAllowCentralEurope=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>RegionAllowEasternEurope=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>RegionAllowWesternEurope=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>RegionAllowNorthAmerica=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>RegionAllowSouthAmerica=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>RegionAllowOceania=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>RegionBlockList=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>serverRegion=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					
-					<tr class="subHead"><td colspan="6">"PVP"</td></tr>
-					<tr class="tHead"><th>Setting</th><th>*</th><th>1</th><th>2</th><th>3</th><th>Description</th></tr>
-					<tr><td>PVPEnabled=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">RestrictPVPTime=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">RestrictPVPBuildingDamageTime=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPEnabledMonday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPEnabledTuesday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPEnabledWednesday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPEnabledThursday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPEnabledFriday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPEnabledSaturday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPEnabledSunday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPTimeMondayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPTimeMondayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPTimeTuesdayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPTimeTuesdayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPTimeWednesdayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPTimeWednesdayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPTimeThursdayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPTimeThursdayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPTimeFridayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPTimeFridayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPTimeSaturdayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPTimeSaturdayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPTimeSundayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPTimeSundayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageEnabledMonday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageEnabledTuesday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageEnabledWednesday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageEnabledThursday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageEnabledFriday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageEnabledSaturday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageEnabledSunday=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageTimeMondayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageTimeMondayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageTimeTuesdayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageTimeTuesdayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageTimeWednesdayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageTimeWednesdayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageTimeThursdayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageTimeThursdayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageTimeFridayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageTimeFridayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageTimeSaturdayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageTimeSaturdayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageTimeSundayStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PVPBuildingDamageTimeSundayEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					
+					<tr><td>ServerModList=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+
+		<!-- PROGRESSION -->
 					<tr class="subHead"><td colspan="6">"Progression"</td></tr>
 					<tr class="tHead"><th>Setting</th><th>*</th><th>1</th><th>2</th><th>3</th><th>Description</th></tr>
-					<tr><td class="inGame">PlayerXPCraftMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PlayerXPHarvestMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PlayerXPKillMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PlayerXPTimeMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PlayerXPRateMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td class="inGame">PlayerXPRateMultiplier=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Raising this multiplies all types of XP that players receive. Speeding up player progression in all activities</td></tr>
+					<tr><td class="inGame">PlayerXPTimeMultiplier=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Raising this multiplies the rate players receive XP passively over time for surviving</td></tr>
+					<tr><td class="inGame">PlayerXPKillMultiplier=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Raising this multiplies the amount of XP that players receive from killing monsters and players</td></tr>
+					<tr><td class="inGame">PlayerXPHarvestMultiplier=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Raising this multiplies the amount of XP that players receive from harvesting</td></tr>
+					<tr><td class="inGame">PlayerXPCraftMultiplier=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Raising this multiplies the amount of XP that players receive for crafting</td></tr>
 					
+		<!-- DAY/NIGHT -->
 					<tr class="subHead"><td colspan="6">"Day and Night Cycle"</td></tr>
 					<tr class="tHead"><th>Setting</th><th>*</th><th>1</th><th>2</th><th>3</th><th>Description</th></tr>
-					<tr><td class="inGame">DayCycleSpeedScale=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">DayTimeSpeedScale=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">NightTimeSpeedScale=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">DawnDuskSpeedScale=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">ClientCatchUpTime=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">UseClientCatchUpTime=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td class="inGame">DayCycleSpeedScale=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Raising this lengthens the entire 24hr day cycle. Individual parts of the day can be tweaked in the settings below. <br>Note, this multiplier is applied in addition to any settings changes below</td></tr>
+					<tr><td class="inGame">DayTimeSpeedScale=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Raising this lengthens the daytime period. Daytime hours in Conan Exiles are between 7:00 and 16:59 in-game time</td></tr>
+					<tr><td class="inGame">NightTimeSpeedScale=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Raising this lengthens the nighttime period. Nighttime hours in Conan Exiles are between 19:00 and 4:59 in-game time</td></tr>
+					<tr><td class="inGame">DawnDuskSpeedScale=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Raising this lengthens both dawn and dusk periods. Dawn in Conan Exiles is between 5:00 and 6:59. Dusk is between 17:00 and 18:59</td></tr>
+					<tr><td class="inGame">UseClientCatchUpTime=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Enables or disables the use of Catch up time mechanics on the server</td></tr>
+					<tr><td class="inGame">ClientCatchUpTime=</td><td>2</td><td>3</td><td>4</td><td>5</td><td>In order to create a smooth starting experience for new players, Conan Exiles has the ability to force a client PC to start at a certain time of day, regardless of the server time. If this setting is applied, new characters will start at the specified time, and then play at that time of day until the server “catches up” to them. <br>We recommend not setting this to the darkest hours of the night, unless you are a sadistic person</td></tr>
 					
+		<!-- SURVIVAL -->
 					<tr class="subHead"><td colspan="6">"Survival"</td></tr>
 					<tr class="tHead"><th>Setting</th><th>*</th><th>1</th><th>2</th><th>3</th><th>Description</th></tr>
-					<tr><td class="inGame">DropEquipmentOnDeath=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">EverybodyCanLootCorpse=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">LogoutCharactersRemainInTheWorld=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>OfflinePlayersUnconsciousBodiesHours=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PlayerCorruptionGainMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">ThrallCorruptionRemovalMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PlayerActiveThirstMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PlayerIdleThirstMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PlayerActiveHungerMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td class="inGame">PlayerIdleHungerMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>PlayerEncumbranceMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>PlayerEncumbrancePenaltyMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>PlayerHealthRegenSpeedScale=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>PlayerMovementSpeedScale=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>PlayerSprintSpeedScale=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td class="inGame">PlayerStaminaCostMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>PlayerStaminaCostSprintMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>PlayerStaminaRegenSpeedScale=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td>PlayerMovementSpeedScale=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td>PlayerSprintSpeedScale=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>StaminaCostMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>StaminaExhaustionTime=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>StaminaRegenerationTime=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
@@ -287,7 +294,21 @@
 					<tr><td>StaminaMovingRegenRateMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>StaminaOnConsumeRegenPause=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>StaminaOnExhaustionRegenPause=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					
+					<tr><td class="inGame">PlayerActiveThirstMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td class="inGame">PlayerIdleThirstMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td class="inGame">PlayerActiveHungerMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td class="inGame">PlayerIdleHungerMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td>PlayerEncumbranceMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td>PlayerEncumbrancePenaltyMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td>PlayerHealthRegenSpeedScale=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td class="inGame">LogoutCharactersRemainInTheWorld=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td>OfflinePlayersUnconsciousBodiesHours=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td class="inGame">DropEquipmentOnDeath=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td class="inGame">EverybodyCanLootCorpse=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td class="inGame">ThrallCorruptionRemovalMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td class="inGame">PlayerCorruptionGainMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+
+		<!-- COMBAT -->
 					<tr class="subHead"><td colspan="6">"Combat"</td></tr>
 					<tr class="tHead"><th>Setting</th><th>*</th><th>1</th><th>2</th><th>3</th><th>Description</th></tr>
 					<tr><td>CombatModeModifier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
@@ -326,30 +347,31 @@
 					<tr><td class="inGame">AvatarSummoningTimeWeekendStart=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td class="inGame">AvatarSummoningTimeWeekendEnd=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					
+		<!-- HARVEST -->
 					<tr class="subHead"><td colspan="6">"Harvesting"</td></tr>
 					<tr class="tHead"><th>Setting</th><th>*</th><th>1</th><th>2</th><th>3</th><th>Description</th></tr>
 					<tr><td>ItemSpoilRateScale=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>HarvestAmountMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>ResourceRespawnSpeedMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>CampsIgnoreLandclaim=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>DisableLandclaimNotifications=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+
 					<tr><td>LandClaimRadiusMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					
+		<!-- CRAFTING -->
 					<tr class="subHead"><td colspan="6">"Crafting"</td></tr>
 					<tr class="tHead"><th>Setting</th><th>*</th><th>1</th><th>2</th><th>3</th><th>Description</th></tr>
 					<tr><td>CraftingCostMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>FuelBurnTimeMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>ItemConvertionMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>ThrallConversionMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>CanDamagePlayerOwnedStructures=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>DynamicBuildingDamage=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>DynamicBuildingDamagePeriod=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					
 					<tr><td>StructureDamageMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>StructureHealthMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>AllowedTimeUndermesh=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>AllowedDistanceUndermeshSquared=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>BuildingPreloadRadius=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					
+		<!-- ABANDONMENT -->
 					<tr class="subHead"><td colspan="6">"Abandonment"</td></tr>
 					<tr class="tHead"><th>Setting</th><th>*</th><th>1</th><th>2</th><th>3</th><th>Description</th></tr>
 					<tr><td>DisableBuildingAbandonment=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
@@ -363,14 +385,27 @@
 					<tr><td>DecayCleanupTimeMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>DecayShowBuildingScore=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					
+		<!-- CHAT -->
 					<tr class="subHead"><td colspan="6">"Chat"</td></tr>
 					<tr class="tHead"><th>Setting</th><th>*</th><th>1</th><th>2</th><th>3</th><th>Description</th></tr>
 					<tr><td>ChatHasGlobal=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>ChatLocalRadius=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>ChatMaxMessageLength=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>serverVoiceChat=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					<tr><td>VocalVisibilityDurationInMinutes=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+
+		<!-- REGIONAL -->
+					<tr class="subHead"><td colspan="6">"Regional Access"</td></tr>
+					<tr class="tHead"><th>Setting</th><th>*</th><th>1</th><th>2</th><th>3</th><th>Description</th></tr>
+					<tr><td>RegionAllowAfrica=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td>RegionAllowAsia=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td>RegionAllowCentralEurope=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td>RegionAllowEasternEurope=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td>RegionAllowWesternEurope=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td>RegionAllowNorthAmerica=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td>RegionAllowSouthAmerica=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td>RegionAllowOceania=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
+					<tr><td>RegionBlockList=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					
+		<!-- PURGE -->
 					<tr class="subHead"><td colspan="6">"Purge"</td></tr>
 					<tr class="tHead"><th>Setting</th><th>*</th><th>1</th><th>2</th><th>3</th><th>Description</th></tr>
 					<tr><td>PurgeDelay=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
@@ -381,7 +416,8 @@
 					<tr><td>ClanScoreUpateFrequency=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>PurgeNPCBuildingDamageMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>AllowBuilding=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					
+
+		<!-- PETS -->
 					<tr class="subHead"><td colspan="6">"Pet and Thralls"</td></tr>
 					<tr class="tHead"><th>Setting</th><th>*</th><th>1</th><th>2</th><th>3</th><th>Description</th></tr>
 					<tr><td>ThrallExclusionRadius=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
@@ -400,6 +436,7 @@
 					<tr><td>AnimalPenCraftingTimeMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>FeedBoxRangeMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					
+		<!-- SIPTAH -->
 					<tr class="subHead"><td colspan="6">"DLC Siptah"</td></tr>
 					<tr class="tHead"><th>Setting</th><th>*</th><th>1</th><th>2</th><th>3</th><th>Description</th></tr>
 					<tr><td>ElderThingsEnabled=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
@@ -435,7 +472,8 @@
 					<tr><td>RandomSurgesCountMin=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>RandomSurgesCountMax=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>AltarModuleActiveTimeMultiplier=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-					
+
+		<!-- UNKNOWN -->
 					<tr class="subHead"><td colspan="6">"Unknown"</td></tr>
 					<tr class="tHead"><th>Setting</th><th>*</th><th>1</th><th>2</th><th>3</th><th>Description</th></tr>
 					<tr><td>bCanBeDamaged=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
@@ -454,20 +492,6 @@
 					<tr><td>LQAVPMethod=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>NetworkSimulatedSmoothRotationTimeWithLQAVP=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
 					<tr><td>CapCharacterLayoutScalarParams=</td>	<td>2</td>	<td>3</td>	<td>4</td>	<td>5</td>	<td>6</td></tr>
-				</table>	
-			</section>
-
-	<!-- SPLITTER -->
-			<div class="split"><hr></div>
-	<!-- ADVANCED -->
-			<h2 id="COMMANDS" title="Click to Show/Hide" onclick="showHide('COMM',0)">Admin Commands</h2>
-			<section id="COMM">
-	<!-- TABLE -->
-				<table>
-					<tr class="Thead"><th>Command</th><th>Description</th></tr>
-					<tr><td>1</td><td>2</td></tr>
-					<tr><td>1</td><td>2</td></tr>
-					<tr><td>1</td><td>2</td></tr>
 				</table>	
 			</section>
 
