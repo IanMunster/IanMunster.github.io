@@ -9,19 +9,19 @@
 		<script src="src/ConanServer.js"></script>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.25, user-scalable=yes">
-		<meta name="description" content="Conan Exiles Guide: Server Admin; Settings, Commands">
+		<meta name="description" content="Conan Exiles Guide: Server Admin; Commands, Settings and More">
 		<meta name="author" content="Ian">
 	</head>
 	<body id="Top">
 		<header>
 			<h1>Conan Exiles Server Guide</h1>
 			<p>WORK IN PROGRESS</p>
-			<p>Settings and Mods</p>
+			<p>Commands, Settings and More</p>
 		</header>
 <!-- CONTENT -->
 		<div class="content">
 	<!-- INTRO -->
-			<h2 id="INTR" title="Click to Show/Hide" onclick="showHide('INT',0)">Introductie</h2>
+			<h2 id="INTR" title="Click to Show/Hide" onclick="showHide('INT',0)">Introduction</h2>
 			<section id="INT" style="display:flex">
 				<h3>Title</h3>
 				<p>
@@ -45,11 +45,11 @@
 				</p>
 				<br>
 				<p>
-					... Many other sources out there, but none are complete, even the official manual is missing a lot of settings...
-					... Tried to make list as complete as possible by doing some research ...
-					... Some settings are guess-work, others are confirmed, so use this as a reference, not an official rulebook ...
-					... Conan Wiki was very usefull, but can't easily search the settings with CTRL+F command, because of the structure of the website ...
-					... Reason why I made multiple extremely long tables, so you can always search on the page and get a result ...
+					<br>... Many other sources out there, but none are complete, even the official manual is missing a lot of settings...
+					<br>... Tried to make list as complete as possible by doing some research ...
+					<br>... Some settings are guess-work, others are confirmed, so use this as a reference, not an official rulebook ...
+					<br>... Conan Wiki was very usefull, but can't easily search the settings with CTRL+F command, because of the structure of the website ...
+					<br>... Reason why I made multiple extremely long tables, so you can always search on the page and get a result ...
 				</p>
 			</section>
 
@@ -66,35 +66,47 @@
 					</tr>
 					<tr><td>Open Admin Panel</td>
 						<td>[CTRL]+[SHIFT]+[C] <br><b>-or-</b><br> [SHIFT]+[INSERT]</td>
-						<td>3</td>
+						<td>Opens the Admin Panel GUI</td>
 					</tr>
 					<tr><td>Open Console Commands Interface</td>
 						<td>[INSERT] <br><b>-or-</b><br> [~]</td>
-						<td>3</td>
+						<td>Opens the Console Commands Interface, where you can type Console Commands</td>
 					</tr>
 					<tr><td>Open Full Console Commands Interface</td>
 						<td>Double press [INSERT] <br><b>-or-</b><br> Double press [~]</td>
-						<td>3</td>
+						<td>Open the Full Console Commands Interface, show history of parsed commands</td>
 					</tr>
 					<tr><td>Get Precise Coördinates</td>
 						<td>[R-CTRL]+[R-SHIFT]+[R-ALT]+[L]</td>
-						<td>3</td>
+						<td>Opens GUI that readout your Coördinates in the Gameworld</td>
 					</tr>
 					<tr><td>Kill / Destroy Target</td>
 						<td>[SHIFT]+[DELETE]</td>
-						<td>3</td>
+						<td>Kills or Destroys a target under your Cursor:
+							<ul>
+								<li>Removes a single Building Part</li>
+								<li>Kills a single NPC</li>
+								<li>Does NOT delete World-Chunks, nor Campfires, Forges etc.</li>
+							</ul>
+						</td>
 					</tr>
 					<tr><td>Kill / Destroy Multiple Targets</td>
 						<td>[CTRL]+[SHIFT]+[DELETE]</td>
-						<td>3</td>
+						<td>Kills or Destrots Multiple targets under your Cursor, with a larger radius:
+							<ul>
+								<li>Removes multiple Building Part</li>
+								<li>Kills multiple NPC, also Pets</li>
+								<li>Does delete World-Chunks</li>
+							</ul>
+						</td>
 					</tr>
 					<tr><td>Infinite Building Item Stacks</td>
 						<td>[CTRL]+[ALT]+[SHIFT]+[F10]</td>
-						<td>3</td>
+						<td>Infinite Building Item Stacks in your Inventory, you must have at least one quantity per related item in your inventory</td>
 					</tr>
 					<tr><td>Start Sandstorm</td>
 						<td>[CTRL]+[ALT]+[SHIFT]+[X]</td>
-						<td>3</td>
+						<td>Starts a Sandstorm, it will take a few minutes to reach your position</td>
 					</tr>
 				</table>
 		<!-- TABLE CONSOLE COMMANDS -->
@@ -102,136 +114,171 @@
 					<tr class="Thead"><th>Command</th>
 						<th>Description</th>
 					</tr>
+					<tr class="subHead"><td colspan="2">"Admin Manipulation"</td>
+					</tr>
 					<tr><td>MakeMeAdmin</td>
-						<td>2</td>
+						<td>Enters Admin mode. Triggers Admin Rights Granted</td>
 					</tr>
 					<tr><td>MakeMeNormal</td>
-						<td>2</td>
+						<td>Exits Admin mode</td>
 					</tr>
 					<tr><td>God</td>
+						<td>Toggle God mode. Invulnerable to all damage, knockbacks, status effects etc. Only exception is the Cursewall</td>
+					</tr>
+					<tr><td>Cloak</td>
+						<td>Toggle Cloak Mode. Invisible to NPCs, even when attacking them</td>
+					</tr>
+					<tr><td>Invisibility</td>
+						<td>Toggle Invisibility Mode. Makes your character invisible</td>
+					</tr>
+					<tr><td>NoSprintCost</td>
+						<td>Toggle No Sprinting Stamina Cost. No stamina drain while sprinting. Not unlimited stamina</td>
+					</tr>
+					<tr><td>Fly</td>
+						<td>Grants Fly mode. Fly mode has two different poses, "Fly" and "FlyB", which are occasionally switched</td>
+					</tr>
+					<tr><td>Ghost</td>
+						<td>Grants Ghost mode.   
+							<ul>
+								<li>Grants Fly mode (See Fly)</li>
+								<li>Grants Noclip, you can pass through objects</li>
+								<li>Building is possible, but building pieces will not snap to other building pieces</li>
+							</ul>
+						</td>
+					</tr>
+					<tr><td>Walk</td>
+						<td>Exits the Fly or Ghost mode</td>
+					</tr>
+					<tr class="subHead"><td colspan="2">"Server Manipulation"</td>
+					</tr>
+					<tr><td>ToggleDebugHUD</td>
+						<td>Open Player Data GUI. Admin mode not required.
+							<ul>
+								<li>Displays current location, in the lower left of the screen</li>
+								<li>Displays other data, including ping, in the upper right of the screen</li>
+							</ul>
+						</td>
+					</tr>
+					<tr><td>GetServerHealth</td>
+						<td>Lists server statistics in the console. Toggle the Full Console Commands Interface to see the Output:
+							<ul>
+								<li>FPS; Frames Per Second of the Server</li>
+								<li>Number of Players Connected to the Server</li>
+								<li>Number of Spawned Actors in the Server</li>
+								<li>Number of Player Bases, including detached foundations</li>
+								<li>Number of Building-Parts in the Server. Parts include: Foundations, Walls, Roofs. Possibly also includes: Chests, CraftingStations etc.</li>
+								<li>LOD Count; Level of Detail</li>
+							</ul>
+						</td>
+					</tr>
+					<tr><td>GetAllServerSettings</td>
+						<td>Displays a list, of all available server settings you can modify, in the console. Toggle the Full Console Commands Interface to see the Output</td>
+					</tr>
+					<tr><td>SetServerSetting "[ServerSettingName]" [Value]</td>
+						<td>Quotations are required.
+						<br>Allows you to modify the Server Settings inside ServerSettings.ini while in-game.	
+						Includes server settings not changeable in Server Settings tab
+						<br>(Optional) For admins using Rcon, Server Settings can be set remotely via this command as well
+						</td>
+					</tr>
+					<tr><td>FlushLog</td>
+						<td>2</td>
+					</tr>
+					<tr class="subHead"><td colspan="2">"Player Manipulation"</td>
+					</tr>
+					<tr><td>ShowPlayers</td>
+						<td>2</td>
+					</tr>
+					<tr><td>ViewPlayer [PlayerName]</td>
+						<td>2</td>
+					</tr>
+					<tr><td>ViewSelf</td>
 						<td>2</td>
 					</tr>
 					<tr><td>Teleport</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>TeleportPlayer [X] [Y] [Z]</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>TeleportToPlayer [PlayerName]</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>SummonPlayer [PlayerName]</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>BroadcastMessage [Message]</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>SpawnItem [ItemID] [Value]</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>LearnEmote [Emote]</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr class="subHead"><td colspan="2">"World Manipulation"</td>
+					</tr>
+					<tr><td>PlayerCanBuildEverywhere [PlayerName]</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>BuildingIndentify</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>BuildingDestroy [BuildingID]</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>DamageTarget [Value]</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>DestroyTarget</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr class="subHead"><td colspan="2">"Follower Manipulation"</td>
+					</tr>
+					<tr><td>LevelFollowerUpTo [Value]</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>GetFollowerStat [Value]</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr class="subHead"><td colspan="2">"Purge Manipulation"</td>
+					</tr>
+					<tr><td>StartPlayerPurge</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>StartNextWave</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>StartNextPurgePhase</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>EndPurge</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>FillPlayerPurgeMeter</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>FillPlayerClanPurgeMeter</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>FillClanPergeMeter</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>FillAllClanPurgeMeter</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>EmptyPlayerClanPurgeMeter</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr><td>EmptyAllClanPurgeMeters</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
+					<tr class="subHead"><td colspan="2">"Game Quality Manipulation"</td>
+					</tr>
+					<tr><td>r.ShadowQuality [Value]</td>
 						<td>2</td>
 					</tr>
-					<tr><td>1</td>
-						<td>2</td>
-					</tr>
-					<tr><td>1</td>
-						<td>2</td>
-					</tr>
-					<tr><td>1</td>
-						<td>2</td>
-					</tr>
-					<tr><td>1</td>
-						<td>2</td>
-					</tr>
-					<tr><td>1</td>
-						<td>2</td>
-					</tr>
-					<tr><td>1</td>
-						<td>2</td>
-					</tr>
-					<tr><td>1</td>
-						<td>2</td>
-					</tr>
-					<tr><td>1</td>
-						<td>2</td>
-					</tr>
-					<tr><td>1</td>
-						<td>2</td>
-					</tr>
-					<tr><td>1</td>
-						<td>2</td>
-					</tr>
-					<tr><td>1</td>
-						<td>2</td>
-					</tr>
-					<tr><td>1</td>
-						<td>2</td>
-					</tr>
-					<tr><td>1</td>
-						<td>2</td>
-					</tr>
-					<tr><td>1</td>
-						<td>2</td>
-					</tr>
-					<tr><td>1</td>
-						<td>2</td>
-					</tr>
-					<tr><td>1</td>
+					<tr><td>p.clothphysics [Value] </td>
 						<td>2</td>
 					</tr>
 				</table>	
@@ -2364,7 +2411,7 @@
 						<th>Description</th>
 					</tr>
 					<tr class="notice">
-						<td colspan="4">All settings below are of the DLC Siptah, which is currently in Early-Acces. 
+						<td colspan="6">All settings below are of the DLC Siptah, which is currently in Early-Acces. 
 						Not a lot of information is known about these settings and many are subject to change.</td>
 					</tr>
 					<tr><td class="unknown">(?)StormEnabled=(?)</td>
