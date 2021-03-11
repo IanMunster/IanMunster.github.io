@@ -52,7 +52,37 @@
 					<br>... Reason why I made multiple extremely long tables, so you can always search on the page and get a result ...
 				</p>
 			</section>
-
+	
+	<!-- SPLITTER -->
+			<div class="split"><hr></div>
+	<!-- LEGEND -->
+			<h2 id="LEGEND" title="Click to Show/Hide" onclick="showHide('LEGE',0)">Legend</h2>
+			<section id="LEGE">
+				<h3>How To Read</h3>
+				<p>
+					<h4>Headers:</h4>
+					<list>
+						<li>* = Recommended Settings</li>
+						<li>1 = Civilized Preset Setting</li>
+						<li>2 = Decadent Preset Setting</li>
+						<li>3 = Barbaric Preset Settings</li>
+					</list>
+					<h4>Colors:</h4>
+					<list>
+						<li>White = INI Changeable Only</li>
+						<li>Gray = In-Game Changeable</li>
+						<li>Purple = Unknown Settings</li>
+						<li>Red = Broken Settings</li>
+					</list>
+					<h4>Characters:</h4>
+					<list>
+						<li>(?) = Unknown / Uncertain</li>
+						<li>(!) = Warning / Important</li>
+						<li>(*) = Optional </li>
+					</list>
+				</p>
+			</section>
+			
 	<!-- SPLITTER -->
 			<div class="split"><hr></div>
 	<!-- CONSOLE COMMANDS -->
@@ -152,7 +182,7 @@
 					<tr class="subHead"><td colspan="2">"Server Manipulation"</td>
 					</tr>
 					<tr><td>ToggleDebugHUD</td>
-						<td>Open Player Data GUI. Admin mode not required.
+						<td>Admin mode not required. Open Player Data GUI.
 							<ul>
 								<li>Displays current location, in the lower left of the screen</li>
 								<li>Displays other data, including ping, in the upper right of the screen</li>
@@ -160,152 +190,178 @@
 						</td>
 					</tr>
 					<tr><td>GetServerHealth</td>
-						<td>Lists server statistics in the console. Toggle the Full Console Commands Interface to see the Output:
+						<td>Toggle the Full Console Commands Interface to see the Output:<br>
+						Lists server statistics in the console
 							<ul>
 								<li>FPS; Frames Per Second of the Server</li>
 								<li>Number of Players Connected to the Server</li>
 								<li>Number of Spawned Actors in the Server</li>
 								<li>Number of Player Bases, including detached foundations</li>
-								<li>Number of Building-Parts in the Server. Parts include: Foundations, Walls, Roofs. Possibly also includes: Chests, CraftingStations etc.</li>
+								<li>Number of Building-Parts in the Server. Parts include: Foundations, Walls, Roofs. 
+								Possibly also includes: Chests, CraftingStations etc.</li>
 								<li>LOD Count; Level of Detail</li>
 							</ul>
 						</td>
 					</tr>
 					<tr><td>GetAllServerSettings</td>
-						<td>Displays a list, of all available server settings you can modify, in the console. Toggle the Full Console Commands Interface to see the Output</td>
+						<td>Toggle the Full Console Commands Interface to see the Output: <br>
+						Displays a list, of all available server settings you can modify, in the console.</td>
 					</tr>
 					<tr><td>SetServerSetting "[ServerSettingName]" [Value]</td>
-						<td>Quotations are required.
+						<td>Quotations are required.<br>
 						<br>Allows you to modify the Server Settings inside ServerSettings.ini while in-game.	
 						Includes server settings not changeable in Server Settings tab
-						<br>(Optional) For admins using Rcon, Server Settings can be set remotely via this command as well
+						<br>(*) For admins using Rcon, Server Settings can be set remotely via this command as well
 						</td>
 					</tr>
 					<tr><td>FlushLog</td>
-						<td>2</td>
+						<td>(!) As of May, 2020, this command does not work) Clears the Server Event log.
+						The log can be viewed by pressing ESC then selecting Event Log</td>
 					</tr>
 					<tr class="subHead"><td colspan="2">"Player Manipulation"</td>
 					</tr>
 					<tr><td>ShowPlayers</td>
-						<td>2</td>
+						<td>Lists connected players, Steam names and IDs</td>
+					</tr>
+					<tr><td>PrintPlayerInfo [(*)PlayerName/SteamID]</td>
+						<td>Toggle the Full Console Commands Interface to see the Output:<br>
+						Gives you the specific players Steam name and in-game character name<br>
+						(*): You can enter a players character name to get their Steam name 
+						-or- you can enter the Steam name to get their character)	
+						</td>
 					</tr>
 					<tr><td>ViewPlayer [PlayerName]</td>
-						<td>2</td>
+						<td>Moves the camera to the Player character</td>
 					</tr>
 					<tr><td>ViewSelf</td>
-						<td>2</td>
+						<td>Moves the camera back to your own character</td>
 					</tr>
 					<tr><td>Teleport</td>
-						<td>2</td>
+						<td>Teleports yourself 
+							<ul>
+								<li>to a surface under the cursor</li>
+								<li>when targeting the air;</li>
+								<ul>
+									<li>Vertically: Higher up in the sky 
+									(Currently, targeting the sky teleports you to 0,0,0.)</li>
+									<li>Horizontally: within ~1 Map chunk from the Cursewall.</li>
+								</ul>
+								<li>to a targeted player: ViewPlayer + Teleport + ViewSelf</li>
+							</ul>
+						</td>
 					</tr>
-					<tr><td>TeleportPlayer [X] [Y] [Z]</td>
-						<td>2</td>
+					<tr><td>TeleportPlayer [(*)PlayerName] [X] [Y] [Z]</td>
+						<td>Teleports yourself to the specified coordinates
+						X[float], Y[float] and Z[float] are the X, Y and Z coordinates on the map<br>
+						(*): Teleport another player)
+						</td>
 					</tr>
 					<tr><td>TeleportToPlayer [PlayerName]</td>
-						<td>2</td>
+						<td>Teleports yourself to the specified player</td>
 					</tr>
 					<tr><td>SummonPlayer [PlayerName]</td>
-						<td>2</td>
+						<td>Teleports a player to your current position. May be used to fix stuck/glitched players</td>
 					</tr>
 					<tr><td>BroadcastMessage [Message]</td>
-						<td>2</td>
+						<td>Sends a message to all online players via a pop-up box which needs to be clicked on to close 
+						(can annoy players as it interrupts gameplay, especially when in combat)</td>
 					</tr>
 					<tr><td>SpawnItem [ItemID] [Value]</td>
-						<td>2</td>
+						<td>Spawns the specified item in the specified quantity</td>
 					</tr>
 					<tr><td>LearnEmote [Emote]</td>
-						<td>2</td>
+						<td>Learn an Emote. Type /emote [emote] in chat or hold R to bring up the Emote menu</td>
 					</tr>
 					<tr class="subHead"><td colspan="2">"World Manipulation"</td>
 					</tr>
 					<tr><td>PlayerCanBuildEverywhere [PlayerName]</td>
-						<td>2</td>
+						<td>Allows building where building is disabled for the specified player</td>
 					</tr>
 					<tr><td>BuildingIndentify</td>
-						<td>2</td>
+						<td>Toggle the Full Console Commands Interface to see the Output:<br>
+						Shows a building information under the cursor:
+							<ul>
+								<li>Displays Buildable ID</li>
+								<li>Displays Owner ID</li>
+								<li>Displays Owner Name</li>
+								<li>Displays Position X, Y, Z</li>
+								<li>Displays Actor (Developemnt-Kit path to Buidable)</li>
+							</ul>
+						Buildable ID: Can be used to determine if structures are connected for decay purposes
+						If the player is disconnected, the Buildable ID will change.</td>
 					</tr>
 					<tr><td>BuildingDestroy [BuildingID]</td>
-						<td>2</td>
+						<td>Destroys entire building with the BuildingID as determined above</td>
 					</tr>
 					<tr><td>DamageTarget [Value]</td>
-						<td>2</td>
+						<td>Deals damage to the object or NPC in under your cursor. <br>
+						Will not hurt creatures. They are pulled towards you instead. 
+						If the [Value] is eg. 9999 it will instantly destroy a single targeted building piece. 
+						It is recommended to use Destroy/Kill (Controls section) instead</td>
 					</tr>
 					<tr><td>DestroyTarget</td>
-						<td>2</td>
+						<td>(!) Use with caution 
+						Removes (almost) entire player built structures. 
+						Temporarily destroys all objects of the same kind, eg. trees. 
+						Includes targeted parts of the map. Players will fall into and die in the void here. 
+						Singleplayer requires a relog and servers require a restart to undo this. 
+						It is recommended to use Destroy/Kill (Controls section) instead</td>
 					</tr>
 					<tr class="subHead"><td colspan="2">"Follower Manipulation"</td>
 					</tr>
 					<tr><td>LevelFollowerUpTo [Value]</td>
-						<td>2</td>
+						<td>Levels follower to level [Value] (20 max)</td>
 					</tr>
 					<tr><td>GetFollowerStat [Value]</td>
-						<td>2</td>
+						<td>Get the Current starts of the follower.
+						Requires a parameter at [Value], such as "DamageModifierMelee" or "DamageModifierRanged"</td>
 					</tr>
 					<tr class="subHead"><td colspan="2">"Purge Manipulation"</td>
 					</tr>
 					<tr><td>StartPlayerPurge</td>
-						<td>2</td>
+						<td>Forces the Start of a Purge, when the Purge meter is Full</td>
 					</tr>
 					<tr><td>StartNextWave</td>
-						<td>2</td>
+						<td>Starts the next wave of the currently active Purge</td>
 					</tr>
 					<tr><td>StartNextPurgePhase</td>
-						<td>2</td>
+						<td>Forces a new Purge to start</td>
 					</tr>
 					<tr><td>EndPurge</td>
-						<td>2</td>
+						<td>Ends the currently active Purge</td>
 					</tr>
 					<tr><td>FillPlayerPurgeMeter</td>
-						<td>2</td>
+						<td>(?)Fills the Purge Meter of a Player(?)</td>
 					</tr>
 					<tr><td>FillPlayerClanPurgeMeter</td>
-						<td>2</td>
+						<td>(?)Fills the Purge Meter of a Clan(?)</td>
 					</tr>
 					<tr><td>FillClanPergeMeter</td>
-						<td>2</td>
+						<td>(!)The command is currently mispelled. 
+						Fills the Purge Meter of a Clan in Singleplayer only</td>
 					</tr>
 					<tr><td>FillAllClanPurgeMeter</td>
-						<td>2</td>
+						<td>(?)Fills the Purge Meter of all Connected Clans(?)</td>
 					</tr>
 					<tr><td>EmptyPlayerClanPurgeMeter</td>
-						<td>2</td>
+						<td>(?)Sets the Players Purge-Meter to 0(?)</td>
 					</tr>
 					<tr><td>EmptyAllClanPurgeMeters</td>
-						<td>2</td>
+						<td>(?)Sets all of the Connected Clans Purge-Meter to 0(?)</td>
 					</tr>
 					<tr class="subHead"><td colspan="2">"Game Quality Manipulation"</td>
 					</tr>
 					<tr><td>r.ShadowQuality [Value]</td>
-						<td>2</td>
+						<td>Toggles shadow transparency: 
+						0 = Disables shadows 
+						1 = Default</td>
 					</tr>
-					<tr><td>p.clothphysics [Value] </td>
-						<td>2</td>
+					<tr><td>p.clothphysics [Value]</td>
+						<td>Toggles dynamic cloth movement speed.:
+						0 = Disables dynamic cloth movement 
+						1 = Default</td>
 					</tr>
 				</table>	
-			</section>
-	
-	<!-- SPLITTER -->
-			<div class="split"><hr></div>
-	<!-- LEGEND -->
-			<h2 id="LEGEND" title="Click to Show/Hide" onclick="showHide('LEGE',0)">INI Settings Legend</h2>
-			<section id="LEGE">
-				<h3>How To Read</h3>
-				<p>
-					<h4>Headers:</h4>
-					<list>
-						<li>* = Recommended Settings</li>
-						<li>1 = Civilized Preset Setting</li>
-						<li>2 = Decadent Preset Setting</li>
-						<li>3 = Barbaric Preset Settings</li>
-					</list>
-					<h4>Colors:</h4>
-					<list>
-						<li>White = INI Changeable Only</li>
-						<li>Gray = In-Game Changeable</li>
-						<li>Purple = Unknown Settings</li>
-						<li>Red = Broken Settings</li>
-					</list>
-				</p>
 			</section>
 			
 	<!-- SPLITTER -->
