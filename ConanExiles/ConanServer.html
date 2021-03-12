@@ -58,8 +58,15 @@
 	<!-- LEGEND -->
 			<h2 id="LEGEND" title="Click to Show/Hide" onclick="showHide('LEGE',0)">Legend</h2>
 			<section id="LEGE">
+				<h3>How To Use</h3>
+				<div>
+					<h4>Collapse/Expand Section</h4>
+					<p>Click on the Section Header to Collapse or Expand that section.</p>
+					<h4>Highlight Tablerow</h4>
+					<p>Double click on a Table Row to highlight that row.</p>
+				</div>
 				<h3>How To Read</h3>
-				<p>
+				<div>
 					<h4>Headers:</h4>
 					<list>
 						<li>* = Recommended Settings</li>
@@ -80,7 +87,7 @@
 						<li>(!) = Warning / Important</li>
 						<li>(*) = Optional </li>
 					</list>
-				</p>
+				</div>
 			</section>
 			
 	<!-- SPLITTER -->
@@ -89,7 +96,7 @@
 			<h2 id="COMMANDS" title="Click to Show/Hide" onclick="showHide('COMM',0)">Admin Commands</h2>
 			<section id="COMM">
 		<!-- TABLE ADMIN CONTROLS-->
-				<table>
+				<table id="Controls">
 					<tr class="Thead"><th>Action</th>
 						<th>Controls</th>
 						<th>Description</th>
@@ -140,12 +147,11 @@
 					</tr>
 				</table>
 		<!-- TABLE CONSOLE COMMANDS -->
-				<table>
+				<table id="Console">
 					<tr class="Thead"><th>Command</th>
 						<th>Description</th>
 					</tr>
-					<tr class="subHead"><td colspan="2">"Admin Manipulation"</td>
-					</tr>
+					<tr class="subHead"><td colspan="2">"Admin Manipulation"</td></tr>
 					<tr><td>MakeMeAdmin</td>
 						<td>Enters Admin mode. Triggers Admin Rights Granted</td>
 					</tr>
@@ -179,8 +185,7 @@
 					<tr><td>Walk</td>
 						<td>Exits the Fly or Ghost mode</td>
 					</tr>
-					<tr class="subHead"><td colspan="2">"Server Manipulation"</td>
-					</tr>
+					<tr class="subHead"><td colspan="2">"Server Manipulation"</td></tr>
 					<tr><td>ToggleDebugHUD</td>
 						<td>Admin mode not required. Open Player Data GUI.
 							<ul>
@@ -218,8 +223,7 @@
 						<td>(!) As of May, 2020, this command does not work) Clears the Server Event log.
 						The log can be viewed by pressing ESC then selecting Event Log</td>
 					</tr>
-					<tr class="subHead"><td colspan="2">"Player Manipulation"</td>
-					</tr>
+					<tr class="subHead"><td colspan="2">"Player Manipulation"</td></tr>
 					<tr><td>ShowPlayers</td>
 						<td>Lists connected players, Steam names and IDs</td>
 					</tr>
@@ -272,8 +276,7 @@
 					<tr><td>LearnEmote [Emote]</td>
 						<td>Learn an Emote. Type /emote [emote] in chat or hold R to bring up the Emote menu</td>
 					</tr>
-					<tr class="subHead"><td colspan="2">"World Manipulation"</td>
-					</tr>
+					<tr class="subHead"><td colspan="2">"World Manipulation"</td></tr>
 					<tr><td>PlayerCanBuildEverywhere [PlayerName]</td>
 						<td>Allows building where building is disabled for the specified player</td>
 					</tr>
@@ -316,8 +319,7 @@
 						<td>Get the Current starts of the follower.
 						Requires a parameter at [Value], such as "DamageModifierMelee" or "DamageModifierRanged"</td>
 					</tr>
-					<tr class="subHead"><td colspan="2">"Purge Manipulation"</td>
-					</tr>
+					<tr class="subHead"><td colspan="2">"Purge Manipulation"</td></tr>
 					<tr><td>StartPlayerPurge</td>
 						<td>Forces the Start of a Purge, when the Purge meter is Full</td>
 					</tr>
@@ -349,8 +351,7 @@
 					<tr><td class="unknown">EmptyAllClanPurgeMeters</td>
 						<td>(?)Sets all of the Connected Clans Purge-Meter to 0(?)</td>
 					</tr>
-					<tr class="subHead"><td colspan="2">"Game Quality Manipulation"</td>
-					</tr>
+					<tr class="subHead"><td colspan="2">"Game Quality Manipulation"</td></tr>
 					<tr><td>r.ShadowQuality [Value]</td>
 						<td>Toggles shadow transparency: 
 						0 = Disables shadows 
@@ -367,7 +368,7 @@
 	<!-- SPLITTER -->
 			<div class="split"><hr></div>
 	<!-- DEDICATED SERVER LAUNCHER -->
-			<h2 id="Launcher" title="Click to Show/Hide" onclick="showHide('Laun',0)">Dedicated Server Launcher .ini</h2>
+			<h2 id="Launcher" title="Click to Show/Hide" onclick="showHide('Laun',0)">DedicatedServerLauncher.ini</h2>
 			<section id="Laun">
 		<!-- TABLE SERVER LAUNCHER -->
 				<table id="LauncherTable" onClick="highlightRow(this.id)">
@@ -377,9 +378,7 @@
 						<th>Option 1</th>
 						<th>Description</th>
 					</tr>
-					<tr class="head">
-						<td colspan="5">[SteamSettings]</td>
-					</tr>
+					<tr class="head"><td colspan="5">[SteamSettings]</td></tr>
 					<tr><td>SteamBranch=</td>
 						<td>-</td>
 						<td>Live</td>
@@ -392,9 +391,7 @@
 						<td>-</td>
 						<td>Steam User that hosts the Server</td>
 					</tr>
-					<tr class="head">
-						<td colspan="5">[GameSettings]</td>
-					</tr>
+					<tr class="head"><td colspan="5">[GameSettings]</td></tr>
 					<tr><td>StartupMap=</td>
 						<td>-</td>
 						<td>Exiled Lands|/Game/Maps/ConanSandbox/ConanSandbox</td>
@@ -407,7 +404,7 @@
 	<!-- SPLITTER -->
 			<div class="split"><hr></div>
 	<!-- ENGINE -->
-			<h2 id="Engine" title="Click to Show/Hide" onclick="showHide('Engi',0)">Engine .ini</h2>
+			<h2 id="Engine" title="Click to Show/Hide" onclick="showHide('Engi',0)">Engine.ini</h2>
 			<section id="Engi">
 		<!-- TABLE ENGINE -->
 				<table id="EngineTable" onClick="highlightRow(this.id)">
@@ -416,9 +413,7 @@
 						<th>Default</th>
 						<th>Description</th>
 					</tr>
-					<tr class="head">
-						<td colspan="4">[OnlineSubsystem]</td>
-					</tr>
+					<tr class="head"><td colspan="4">[OnlineSubsystem]</td></tr>
 					<tr><td>ServerName=</td>
 						<td>-</td>
 						<td>-</td>
@@ -449,33 +444,25 @@
 						<td>85372076</td>
 						<td>Conan Exiles Build ID (as of 20-02-2021)</td>
 					</tr>
-					<tr class="head">
-						<td colspan="4">[Core.System]</td>
-					</tr>
+					<tr class="head"><td colspan="4">[Core.System]</td></tr>
 					<tr><td>Paths=</td>
 						<td>-</td>
 						<td>-</td>
 						<td>Loading the Resources needed for the Game and Server</td>
 					</tr>
-					<tr class="head">
-						<td colspan="4">[OnlineSubsystemSteam]</td>
-					</tr>
+					<tr class="head"><td colspan="4">[OnlineSubsystemSteam]</td></tr>
 					<tr><td>GameServerQueryPort=</td>
 						<td>27016</td>
 						<td>27015</td>
 						<td>Query UDP Port that Steam uses to connect with Conan Exiles</td>
 					</tr>
-					<tr class="head">
-						<td colspan="4">[URL]</td>
-					</tr>
+					<tr class="head"><td colspan="4">[URL]</td></tr>
 					<tr><td>Port=</td>
 						<td>7779</td>
 						<td>7777</td>
 						<td>UDP Ports that Conan Exiles uses. Along with the next port. So for Port 7777 it also uses 7778</td>
 					</tr>
-					<tr class="head">
-						<td colspan="4">[/Script/OnlineSubsystemUtils.IpNetDriver]</td>
-					</tr>
+					<tr class="head"><td colspan="4">[/Script/OnlineSubsystemUtils.IpNetDriver]</td></tr>
 					<tr><td>NetServerMaxTickRate=</td>
 						<td>-</td>
 						<td>30</td>
@@ -487,7 +474,7 @@
 	<!-- SPLITTER -->
 			<div class="split"><hr></div>
 	<!-- GAME -->
-			<h2 id="Game" title="Click to Show/Hide" onclick="showHide('Gam',0)">Game .ini</h2>
+			<h2 id="Game" title="Click to Show/Hide" onclick="showHide('Gam',0)">Game.ini</h2>
 			<section id="Gam">
 		<!-- TABLE GAME -->
 				<table id="GameTable" onClick="highlightRow(this.id)">
@@ -496,25 +483,19 @@
 						<th>Default</th>
 						<th>Description</th>
 					</tr>
-					<tr class="head">
-						<td colspan="4">[/Script/Engine.GameSession]</td>
-					</tr>
+					<tr class="head"><td colspan="4">[/Script/Engine.GameSession]</td></tr>
 					<tr><td>MaxPlayers=</td>
 						<td>10</td>
 						<td>30</td>
 						<td>Maximum amount of Players that can join your Server</td>
 					</tr>
-					<tr class="head">
-						<td colspan="4">[Miscellaneous]</td>
-					</tr>
+					<tr class="head"><td colspan="4">[Miscellaneous]</td></tr>
 					<tr><td>inThirdPerson=</td>
 						<td>-</td>
 						<td>False</td>
 						<td>(?)Force everyone in third person(?)</td>
 					</tr>
-					<tr class="head">
-						<td colspan="4">[RconPlugin]</td>
-					</tr>
+					<tr class="head"><td colspan="4">[RconPlugin]</td></tr>
 					<tr><td>RconEnabled=</td>
 						<td>-</td>
 						<td>False</td>
@@ -546,7 +527,7 @@
 	<!-- SPLITTER -->
 			<div class="split"><hr></div>
 	<!-- SERVER SETTINGS -->
-			<h2 id="Server" title="Click to Show/Hide" onclick="showHide('Serv',0)">Server Setting .ini</h2>
+			<h2 id="Server" title="Click to Show/Hide" onclick="showHide('Serv',0)">ServerSetting.ini</h2>
 			<section id="Serv">
 		<!-- TABLE DEDICATED SERVER SETTINGS -->
 				<table id="DedicatedTable" onClick="highlightRow(this.id)">
@@ -555,15 +536,9 @@
 						<th>Default</th>
 						<th>Description</th>
 					</tr>
-					<tr class="head">
-						<td colspan="4">[ServerSettings]</td>
-					</tr>
-					<tr class="subHead">
-						<td colspan="4">"Dedicated Server Launcher"</td>
-					</tr>
-					<tr class="notice">
-						<td colspan="4">All settings need prefix: "DedicatedServerLauncher" in place of "..."</td>
-					</tr>
+					<tr class="head"><td colspan="4">[ServerSettings]</td></tr>
+					<tr class="subHead"><td colspan="4">"Dedicated Server Launcher"</td></tr>
+					<tr class="notice"><td colspan="4">All settings need prefix: "DedicatedServerLauncher" in place of "..."</td></tr>
 					<tr><td>...AutoRestartEnabled=</td>
 						<td>-</td>
 						<td>False</td>
@@ -730,16 +705,12 @@
 						<td>""</td>
 						<td>Discord Message to send, when the Server is Shutting Down</td>
 					</tr>
-					<tr class="notice">
-						<td colspan="4">More Info about Message Functionality see <a href="#Message">"Messages"</a></td>
-					</tr>
+					<tr class="notice"><td colspan="4">More Info about Message Functionality see <a href="#Message">"Messages"</a></td></tr>
 				</table>
 		<!-- TABLE GENERAL SETTINGS -->
 				<table id="GeneralTable" onClick="highlightRow(this.id)">
 		<!-- GENERAL -->
-					<tr class="subHead">
-						<td colspan="6">"General"</td>
-					</tr>
+					<tr class="subHead"><td colspan="6">"General"</td></tr>
 					<tr class="tHead"><th>Setting</th>
 						<th>*</th>
 						<th>1</th>
@@ -776,6 +747,13 @@
 						<td>5</td>
 						<td>When this is flagged, Player vs Player is enabled on the server</td>
 					</tr>
+					<tr><td class="unknown">PVPBlitzServer=</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>When this is flagged, progression is faster in order to get players into higher-tier PvP quicker</td>
+					</tr>
 					<tr><td class="inGame">RestrictPVPTime=</td>
 						<td>2</td>
 						<td>3</td>
@@ -788,147 +766,147 @@
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, Player vs Player is enabled on Mondays, between a set time period</td>
 					</tr>
 					<tr><td class="inGame">PVPTimeMondayStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The start time of PVP on Mondays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPTimeMondayEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The end time of PVP on Mondays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPEnabledTuesday=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, Player vs Player is enabled on Tuesdays, between a set time period</td>
 					</tr>
 					<tr><td class="inGame">PVPTimeTuesdayStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The start time of PVP on Tuesdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPTimeTuesdayEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The end time of PVP on Tuesdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPEnabledWednesday=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, Player vs Player is enabled on Wednesdays, between a set time period</td>
 					</tr>
 					<tr><td class="inGame">PVPTimeWednesdayStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The start time of PVP on Wednesdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPTimeWednesdayEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The end time of PVP on Wednesdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPEnabledThursday=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, Player vs Player is enabled on Thursdays, between a set time period</td>
 					</tr>
 					<tr><td class="inGame">PVPTimeThursdayStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The start time of PVP on Thursdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPTimeThursdayEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The end time of PVP on Thursdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPEnabledFriday=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, Player vs Player is enabled on Fridays, between a set time period</td>
 					</tr>
 					<tr><td class="inGame">PVPTimeFridayStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The start time of PVP on Fridays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPTimeFridayEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The end time of PVP on Fridays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPEnabledSaturday=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, Player vs Player is enabled on Saturdays, between a set time period</td>
 					</tr>
 					<tr><td class="inGame">PVPTimeSaturdayStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The start time of PVP on Saturdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPTimeSaturdayEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The end time of PVP on Saturdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPEnabledSunday=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, Player vs Player is enabled on Sundays, between a set time period</td>
 					</tr>
 					<tr><td class="inGame">PVPTimeSundayStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The start time of PVP on Sundays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPTimeSundayEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The end time of PVP on Sundays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">CanDamagePlayerOwnedStructures=</td>
 						<td>2</td>
@@ -949,147 +927,147 @@
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, players can attack and destroy other player’s structures, on Mondays within a set time period</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageTimeMondayStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The start time of PVP Building Damage on Mondays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageTimeMondayEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The end time of PVP Building Damage on Mondays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageEnabledTuesday=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, players can attack and destroy other player’s structures, on Tuesdays within a set time period</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageTimeTuesdayStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The start time of PVP Building Damage on Tuesdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageTimeTuesdayEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The end time of PVP Building Damage on Tuesdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageEnabledWednesday=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, players can attack and destroy other player’s structures, on Wednesdays within a set time period</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageTimeWednesdayStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The start time of PVP Building Damage on Wednesdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageTimeWednesdayEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The end time of PVP Building Damage on Wednesdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageEnabledThursday=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, players can attack and destroy other player’s structures, on Thursdays within a set time period</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageTimeThursdayStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The start time of PVP Building Damage on Thursdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageTimeThursdayEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The end time of PVP Building Damage on Thursdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageEnabledFriday=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, players can attack and destroy other player’s structures, on Fridays within a set time period</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageTimeFridayStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The start time of PVP Building Damage on Fridays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageTimeFridayEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The end time of PVP Building Damage on Fridays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageEnabledSaturday=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, players can attack and destroy other player’s structures, on Saturdays within a set time period</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageTimeSaturdayStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The start time of PVP Building Damage on Saturdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageTimeSaturdayEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The end time of PVP Building Damage on Saturdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageEnabledSunday=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, players can attack and destroy other player’s structures, on Sundays within a set time period</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageTimeSundayStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The start time of PVP Building Damage on Sundays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">PVPBuildingDamageTimeSundayEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The end time of PVP Building Damage on Sundays. 24H format</td>
 					</tr>
 			<!-- PVP END -->	
 					<tr><td class="inGame">DynamicBuildingDamage=</td>
@@ -1097,14 +1075,15 @@
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, players can attack an destroy other player's structures, while any building-owner (clan or individual) is online.
+						Or for the time specified by Dynamic Building Damage Period after the last owner disconnected</td>
 					</tr>
 					<tr><td class="inGame">DynamicBuildingDamagePeriod=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Time in seconds in which players can attack and destroy other player’s structures, after last building owner (clan or individual) disconnected from the server</td>
 					</tr>
 					<tr><td class="inGame">ServerCommunity=</td>
 						<td>2</td>
@@ -1127,7 +1106,7 @@
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>Flagging this means that the ownership rules on the server do not exist. 
+						<td>When this is flagged, the ownership rules on the server do not exist. 
 						This means that all players can loot all chests, use all machines, dismantle all buildings etc</td>
 					</tr>
 					<tr><td class="inGame">ContainersIgnoreOwnership=</td>
@@ -1135,21 +1114,21 @@
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>Flagging this means that all containers are open to other players, but enables optional locking of some chests</td>
+						<td>When this is flagged, all containers are open to other players, but enables optional locking of some chests</td>
 					</tr>
 					<tr><td class="inGame">EnableSandStorm=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>Flagging this allows sandstorms to periodically sweep across the Exiled Lands</td>
+						<td>When this is flagged, allows sandstorms to periodically sweep across the Exiled Lands</td>
 					</tr>
 					<tr><td class="inGame">EnableClanMarkers=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, Clan members can see other Clan members on the map</td>
 					</tr>
 					<tr><td class="inGame">clanMaxSize=</td>
 						<td>2</td>
@@ -1187,21 +1166,21 @@
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>Flagging this will only allow whitelisted players to join the server</td>
+						<td>When this is flagged, will only allow whitelisted players to join the server</td>
 					</tr>
 					<tr><td class="inGame">DisableLandclaimNotifications=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this if flagged, players will not be notified when they enter a claimed land area</td>
 					</tr>
 					<tr><td>LandClaimRadiusMultiplier=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>Raising this increases theradius at which land claim is applied. 
+						<td>Raising this increases the radius at which land claim is applied. 
 						This also affects the respawn of resources and NPCs as well as the ability for other players to claim nearby land</td>
 					</tr>
 					<tr><td>CampsIgnoreLandclaim=</td>
@@ -1216,7 +1195,7 @@
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Select who can see whom is the causer in the Event-Log. 0 = Everybody, 1 = Admins, 2 = Nobody</td>
 					</tr>
 					<tr><td class="inGame">VocalVisibilityDurationInMinutes=</td>
 						<td>2</td>
@@ -1299,10 +1278,8 @@
 		<!-- TABLE PROGRESSION SETTINGS -->
 				<table id="ProgressionTable" onClick="highlightRow(this.id)">
 		<!-- PROGRESSION -->
-					<tr class="subHead">
-						<td colspan="6">"Progression"</td>
-					</tr><tr class="tHead">
-						<th>Setting</th>
+					<tr class="subHead"><td colspan="6">"Progression"</td></tr>
+					<tr class="tHead"><th>Setting</th>
 						<th>*</th>
 						<th>1</th>
 						<th>2</th>
@@ -1348,9 +1325,7 @@
 		<!-- TABLE DAY/NIGHT SETTINGS -->
 				<table id="DayNightTable" onClick="highlightRow(this.id)">	
 		<!-- DAY/NIGHT -->
-					<tr class="subHead">
-						<td colspan="6">"Day and Night Cycle"</td>
-					</tr>
+					<tr class="subHead"><td colspan="6">"Day and Night Cycle"</td></tr>
 					<tr class="tHead"><th>Setting</th>
 						<th>*</th>
 						<th>1</th>
@@ -1409,9 +1384,7 @@
 		<!-- TABLE SURVIVAL SETTINGS -->
 				<table id="SurvivalTable" onClick="highlightRow(this.id)">
 		<!-- SURVIVAL -->
-					<tr class="subHead">
-						<td colspan="6">"Survival"</td>
-					</tr>
+					<tr class="subHead"><td colspan="6">"Survival"</td></tr>
 					<tr class="tHead"><th>Setting</th>
 						<th>*</th>
 						<th>1</th>
@@ -1598,9 +1571,7 @@
 		<!-- TABLE COMBAT SETTINGS -->
 				<table id="CombatTable" onClick="highlightRow(this.id)">
 		<!-- COMBAT -->
-					<tr class="subHead">
-						<td colspan="6">"Combat"</td>
-					</tr>
+					<tr class="subHead"><td colspan="6">"Combat"</td></tr>
 					<tr class="tHead"><th>Setting</th>
 						<th>*</th>
 						<th>1</th>
@@ -1832,28 +1803,28 @@
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The start time that players can summon Avatars on Weekdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">AvatarSummoningTimeWeekdayEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The end time that players can summon Avatars on Weekdays. 24H format</td>
 					</tr>
 					<tr><td class="inGame">AvatarSummoningTimeWeekendStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The start time that players can summon Avatars on Weekends. 24H format</td>
 					</tr>
 					<tr><td class="inGame">AvatarSummoningTimeWeekendEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The end time that players can summon Avatars on Weekends. 24H format</td>
 					</tr>
 					<tr><td class="inGame">EnableAutoFacingOnAttack=</td>
 						<td>2</td>
@@ -2184,7 +2155,7 @@
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>If unflagged, will completely disable Purge events</td>
+						<td>When this is flagged, will enable Purge events</td>
 					</tr>
 					<tr><td class="inGame">PurgeLevel=</td>
 						<td>2</td>
@@ -2213,30 +2184,30 @@
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>If flagged, the Purge will only take place during the times specified below</td>
+						<td>When this is flagged, the Purge will only take place during the times specified below</td>
 					</tr>
-					<tr><td class="inGame">PurgeTimeWeekdayStart= <b>-or-</b> PurgeRestrictionWeekdayStart=</td>
+					<tr><td class="inGame">PurgeRestrictionWeekdayStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>The Purge will only start, on weekdays, on the time specified</td>
 					</tr>
-					<tr><td class="inGame">PurgeTimeWeekdayEnd= <b>-or-</b> PurgeRestrictionWeekdayEnd=</td>
+					<tr><td class="inGame">PurgeRestrictionWeekdayEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>The Purge will only end, on weekdays, on the time specified</td>
 					</tr>
-					<tr><td class="inGame">PurgeTimeWeekendStart= <b>-or-</b> PurgeRestrictionWeekendStart=</td>
+					<tr><td class="inGame">PurgeRestrictionWeekendStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>The Purge will only start, on weekends, on the time specified</td>
 					</tr>
-					<tr><td class="inGame">PurgeTimeWeekendEnd= <b>-or-</b> PurgeRestrictionWeekendEnd=</td>
+					<tr><td class="inGame">PurgeRestrictionWeekendEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
@@ -2270,7 +2241,7 @@
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>If flagged, building is allowed during Purges</td>
+						<td>When this is flagged, building is allowed during Purges</td>
 					</tr>
 					<tr><td class="inGame">ClanPurgeTrigger=</td>
 						<td>2</td>
@@ -2310,7 +2281,7 @@
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>Raising this increases the speed of crafting in animal pens</td>
+						<td>Raising this decreases the speed of crafting in animal pens, crafting animals takes longer</td>
 					</tr>
 					<tr><td class="inGame">FeedBoxRangeMultiplier=</td>
 						<td>2</td>
@@ -2380,7 +2351,7 @@
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>Rasing this increases the period, measured in minutes, that the server cleans up thralls and pets that go above the population limit</td>
+						<td>Raising this increases the period, measured in minutes, that the server cleans up thralls and pets that go above the population limit</td>
 					</tr>
 					<tr><td>EnableFollowerRescueOnLandClaimOnly=</td>
 						<td>2</td>
@@ -2415,21 +2386,21 @@
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>If flagged, enables the hunger system for thralls</td>
+						<td>When this is flagged, enables the hunger system for thralls</td>
 					</tr>
 					<tr><td class="broken">ToggleHungerSystemPets=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>If flagged, enables the hunger system for pets</td>
+						<td>When this is flagged, enables the hunger system for pets</td>
 					</tr>
 					<tr><td class="broken">ExclusiveDiet=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>If flagged, determines whether pets and thralls exclusively eat items listed on their diet. 
+						<td>When this is flagged, determines whether pets and thralls exclusively eat items listed on their diet. 
 						Disabled means they will eat any food item, in addition to their diet.</td>
 					</tr>
 					<tr><td class="broken">FoodNutritionValue=</td>
@@ -2470,42 +2441,42 @@
 						<td colspan="6">All settings below are of the DLC Siptah, which is currently in Early-Acces. 
 						Not a lot of information is known about these settings and many are subject to change.</td>
 					</tr>
-					<tr><td class="unknown">(?)StormEnabled=(?)</td>
+					<tr><td class="unknown">StormEnabled=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, enabled the Maelstrom Events on the Server</td>
 					</tr>
 					<tr><td class="unknown">RestrictStormTime=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>If flagged, the MaelStrom will only take place during the times specified below</td>
+						<td>If flagged, the Maelstrom will only take place during the times specified below</td>
 					</tr>
-					<tr><td class="unknown">StormTimeWeekdayStart= <b>-or-</b> StormRestrictionWeekdayStart=</td>
+					<tr><td class="unknown">StormTimeWeekdayStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>The MaelStrom will only start, on weekdays, on the time specified</td>
+						<td>The Maelstrom will only start, on weekdays, on the time specified</td>
 					</tr>
-					<tr><td class="unknown">StormTimeWeekdayEnd= <b>-or-</b> StormRestrictionWeekdayEnd=</td>
+					<tr><td class="unknown">StormTimeWeekdayEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>The MaelStrom will only end, on weekdays, on the time specified</td>
+						<td>The Maelstrom will only end, on weekdays, on the time specified</td>
 					</tr>
-					<tr><td class="unknown">StormTimeWeekendStart= <b>-or-</b> StormRestrictionWeekendStart=</td>
+					<tr><td class="unknown">StormTimeWeekendStart=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>The MaelStrom will only start, on weekends, on the time specified</td>
+						<td>The Maelstrom will only start, on weekends, on the time specified</td>
 					</tr>
-					<tr><td class="unknown">StormTimeWeekendEnd= <b>-or-</b> StormRestrictionWeekendEnd=</td>
+					<tr><td class="unknown">StormTimeWeekendEnd=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
@@ -2517,175 +2488,175 @@
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>The minimum amount of players required online for a Maelstrom event to start</td>
 					</tr>
 					<tr><td class="inGame">StormEnduranceDrainMultiplier=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this value will increase the amount of Endurance drained while mounted in a Maelstrom</td>
 					</tr>
 					<tr><td class="inGame">StormBuildingAllowed=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, allows building within the Maelstrom</td>
 					</tr>
-					<tr><td class="unknow">StormMapBlocker=</td>
+					<tr><td class="unknown">StormMapBlocker=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>(?)Is this "Show Maelstrom on Map"(?)</td>
+						<td>(?)Is this "Show Maelstrom on Map"(?) When this is flagged, the Maelstrom will be shown on the Map UI when active</td>
 					</tr>
 					<tr><td class="inGame">ElderThingsEnabled=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, Elder Things will spawn and attack players in the Maelstrom</td>
 					</tr>
 					<tr><td class="inGame">ElderThingsIdleLifespan=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases the amount of time Elder Things will persist outside of combat, before vanishing</td>
 					</tr>
 					<tr><td class="inGame">ElderThingSpawnRate=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases the rate at which Elder Things spawn during the Maelstrom</td>
 					</tr>
 					<tr><td class="inGame">AmbientElderThingRespawnRate=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases the amount of time between Ambient Elder Things spawns</td>
 					</tr>
 					<tr><td class="inGame">MaxAmbientElderThings=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases the maximum amount of Ambient Elder Things that can spawn during the Maelstrom</td>
 					</tr>
 					<tr><td class="inGame">MaxAmbushElderThings=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases the maximum amount of Elder Things, that can spawn on players, during the Maelstrom</td>
 					</tr>
 					<tr><td class="inGame">SiegeElderThingsEnabled=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, Siege Elder Things may spawn and attack buildings, during the Maelstrom</td>
 					</tr>
 					<tr><td class="inGame">SiegeElderThingMapMarkers=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, Siege Elder Things will have a Map Marker on the Map, during the Maelstrom</td>
 					</tr>
 					<tr><td class="inGame">ElderThingSiegeDamageMultiplier=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases the amount of damage that Elder Things do to buildings</td>
 					</tr>
 					<tr><td class="inGame">MinimumBuildingSizeToBeSieged=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases, the minimum required number of block in a building, before it will be targeted by Siege Elder Things</td>
 					</tr>
 					<tr><td class="inGame">SiegeElderThingRespawnRate=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases the rate at which Siege Elder Things spawn during the Maelstrom</td>
 					</tr>
 					<tr><td class="inGame">MaxSiegeElderThings=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases the number of Sieger Elder Things that will spawn on buildings during the Maelstrom</td>
 					</tr>
 					<tr><td class="inGame">ElderThingSiegeBuildingSizeMultiplier=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this decreases the minimum size that buildings must be, to attract Larger Elder Things, during the Maelstrom</td>
 					</tr>
 					<tr><td class="inGame">StormCooldown=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases the time between each Maelstrom</td>
 					</tr>
 					<tr><td class="inGame">StormAccumulationTime=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases the amount of time between, when a Maelstrom starts building-up, and when it is at its full strength</td>
 					</tr>
 					<tr><td class="inGame">StormDuration=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases the duration of the Maelstrom</td>
 					</tr>
 					<tr><td class="inGame">StormDissipationTime=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases the amount of time between, when a Maelstrom start losing its strength, and when the Maelstrom completely fades away</td>
 					</tr>
 					<tr><td class="inGame">StormBuildingDamageEnabled=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>When this is flagged, the Maelstrom will damage buildings within its radius, during the Maelstrom</td>
 					</tr>
 					<tr><td class="inGame">MinimumStormDamageBuildingPieces=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases the number of building-pieces required, before a building takes damage from the Maelstrom</td>
 					</tr>
 					<tr><td class="inGame">StormBuildingDamageRateMultiplier=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases the rate at which the Maelstrom will case damage to buildings, the Maelstrom damages buildings more often</td>
 					</tr>
 					<tr><td class="inGame">StormBuildingDamageMultiplier=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases the amount of damage the Maelstrom does to buildings</td>
 					</tr>
 					
 					<tr><td class="inGame">VaultRefreshTime=</td>
@@ -2693,14 +2664,14 @@
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases the number of minutes before a Vault is refreshed, the Vault is in Cooldown</td>
 					</tr>
 					<tr><td class="inGame">VaultRefreshDeviation=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>Raising this increases the number of minutes, to add or remove from the Vault Refresh Time, when the Vault is in Cooldown</td>
 					</tr>
 					
 					<tr><td class="unknown">SurgeDeviationMin=</td>
@@ -2708,49 +2679,55 @@
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>(?)Is this "Wild Surge Spawn Time Minimun" -or- "Minimum Wild Surges"(?)</td>
+						<td>(?)Is this "Wild Surge Spawn Time Minimun"(?) 
+						Raising this increases the minimum amount of time between Surges</td>
 					</tr>
 					<tr><td class="unknown">SurgeDeviationMax=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>(?)Is this "Wild Surge Spawn Time Maximum" -or- "Maximum Wild Surges"(?)</td>
+						<td>(?)Is this "Wild Surge Spawn Time Maximum"(?)
+						Raising this increases the maximum amount of time between Surges</td>
 					</tr>
 					<tr><td class="unknown">SurgeSacrificeRequirementMultiplier=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>(?)Is this "Leyshrine Defence Active Time Multipier"(?)</td>
+						<td>(?)Is this "Surge Cost Multipier"(?)
+						Raising this increases the amount of resources needed to reach a different Surge Power-Level</td>
 					</tr>
 					<tr><td class="inGame">SurgeDespawnTimer=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
-					</tr>
-					<tr><td class="unknown">RandomSurgesCountMin=</td>
-						<td>2</td>
-						<td>3</td>
-						<td>4</td>
-						<td>5</td>
-						<td>(?)Is this "Wild Surge Spawn Time Minimun" -or- "Minimum Wild Surges"(?)</td>
-					</tr>
-					<tr><td class="unknown">RandomSurgesCountMax=</td>
-						<td>2</td>
-						<td>3</td>
-						<td>4</td>
-						<td>5</td>
-						<td>(?)Is this "Wild Surge Spawn Time Maximum" -or- "Maximum Wild Surges"(?)</td>
+						<td>Raising this increases the time in minutes, after which the Surge will despawn, if the current Surge is not destroyed</td>
 					</tr>
 					<tr><td class="inGame">AltarModuleActiveTimeMultiplier=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
-						<td>6</td>
+						<td>(?)Is this "Leyshrine Defence Active Time Multipier"(?)
+						Raising this increases the amount of time Palisades and Shutters are active</td>
+					</tr>
+					<tr><td class="unknown">RandomSurgesCountMin=</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>(?)Is this "Minimum Wild Surges"(?)
+						Raising this increases the minimum amount of Wild-Surges that can appear simultaneously</td>
+					</tr>
+					<tr><td class="unknown">RandomSurgesCountMax=</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>(?)Is this "Maximum Wild Surges"(?)
+						Raising this increases the maximum amount of Wild-Surges that can appear simultaneously</td>
 					</tr>
 				</table>
 		<!-- TABLE UNKNOWN SETTINGS -->
@@ -2758,112 +2735,112 @@
 		<!-- UNKNOWN -->
 					<tr class="subHead"><td colspan="6">"Unknown"</td></tr>
 					<tr class="tHead"><th>Setting</th><th>*</th><th>1</th><th>2</th><th>3</th><th>Description</th></tr>
-					<tr><td>bCanBeDamaged=</td>
+					<tr><td class="unknown">bCanBeDamaged=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>6</td>
 					</tr>
-					<tr><td>LocalLandClaimVisualizationFrequency=</td>
+					<tr><td class="unknown">LocalLandClaimVisualizationFrequency=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>6</td>
 					</tr>
-					<tr><td>LocalLandClaimVisualizationRadius=</td>
+					<tr><td class="unknown">LocalLandClaimVisualizationRadius=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>6</td>
 					</tr>
-					<tr><td>LocalLandClaimVisualizationChannel=</td>
+					<tr><td class="unknown">LocalLandClaimVisualizationChannel=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>6</td>
 					</tr>
-					<tr><td>DogsOfTheDesertSpawnWithDogs=</td>
+					<tr><td class="unknown">DogsOfTheDesertSpawnWithDogs=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>6</td>
 					</tr>
-					<tr><td>CrossDesertOnce=</td>
+					<tr><td class="unknown">CrossDesertOnce=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>6</td>
 					</tr>
-					<tr><td>NPCMindReadingMode=</td>
+					<tr><td class="unknown">NPCMindReadingMode=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>6</td>
 					</tr>
-					<tr><td>PathFollowingSendsAngularVelocity=</td>
+					<tr><td class="unknown">PathFollowingSendsAngularVelocity=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>6</td>
 					</tr>
-					<tr><td>ValidatePhysNavWalkWithRaycast=</td>
+					<tr><td class="unknown">ValidatePhysNavWalkWithRaycast=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>6</td>
 					</tr>
-					<tr><td>LocalNavMeshVisualizationFrequency=</td>
+					<tr><td class="unknown">LocalNavMeshVisualizationFrequency=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>6</td>
 					</tr>
-					<tr><td>UseLocalQuadraticAngularVelocityPrediction=</td>
+					<tr><td class="unknown">UseLocalQuadraticAngularVelocityPrediction=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>6</td>
 					</tr>
-					<tr><td>LQAVPUseTime=</td>
+					<tr><td class="unknown">LQAVPUseTime=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>6</td>
 					</tr>
-					<tr><td>LQAVPFadeTime=</td>
+					<tr><td class="unknown">LQAVPFadeTime=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>6</td>
 					</tr>
-					<tr><td>LQAVPMethod=</td>
+					<tr><td class="unknown">LQAVPMethod=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>6</td>
 					</tr>
-					<tr><td>NetworkSimulatedSmoothRotationTimeWithLQAVP=</td>
+					<tr><td class="unknown">NetworkSimulatedSmoothRotationTimeWithLQAVP=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
 						<td>5</td>
 						<td>6</td>
 					</tr>
-					<tr><td>CapCharacterLayoutScalarParams=</td>
+					<tr><td class="unknown">CapCharacterLayoutScalarParams=</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
@@ -2936,6 +2913,11 @@
 <!-- FOOTER -->
 		<footer>
 			<p>Footer Text</p>
+			<p>Most information is directly from Funcom,
+			The Conan Exiles Wiki was an extremely usefull resource, much of the information found here is from the Wiki.
+			Other information was found by searching on the Funcom Forum or other Fora on the internet, or my own research.
+			I do not own any of the Licensed names and resources. Only my own transformative work is my own.
+			Everyone can freely use or copy this information for their own purposes, within the licenses that Funcom provided.</p>
 		</footer>
 	</body>
 </html>
