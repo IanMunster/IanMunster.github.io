@@ -1,4 +1,8 @@
-/* Conan Exiles Server Guide Stylesheet*/
+/* Conan Exiles Server Guide Stylesheet
+*
+*
+*/
+
 html, body, .content { 
 	padding: 0; 
 	margin: 0; 
@@ -22,73 +26,6 @@ footer {
 	bottom: 0; 
 	left: 0; 
 }
-/* Navigation */
-#NavBar { 
-	/* height: 80px; 
-	padding: 2px 5px; */
-	display: flex; 
-	/*background: gray; */
-	overflow: hidden;
-	
-	border: 1px red solid;
-}
-.sticky { 
-	position: fixed; 
-	top: 0; 
-	width: 100%; 
-}
-.sticky + .content { 
-	padding-top: 60px; 
-}
-#OPT {
-	width: 100%;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-}
-.btn, .dropDown { 
-	color: black; 
-	text-decoration: none; 
-	cursor: pointer; 
-	padding: 5px; 
-}
-.titleCard { 
-	padding: 0px; 
-	margin: 0; 
-	text-align: center; 
-}
-.btn:hover, .dropDown:hover { 
-	color: white; 
-	/*background: black; */
-}
-#TOPbtn { 
-	justify-content: flex-end;
-}
-/* Dropdown Menu */
-.dropDown {
-	float: left;
-	overflow: hidden;
-}
-.dropDown .dropBtn {
-	position: relative;
-	display: inline-block;
-}
-.dropDownContent {
-	display: none;
-	position: absolute;
-	z-index: 1;
-}
-.dropDownContent a {
-	display: block;
-	/*background: gray; */
-}
-.dropDownContent a:hover {
-
-}
-.dropDown:hover .dropDownContent {
-	display: block;
-}
-
 
 /* Content */
 .content {
@@ -100,19 +37,6 @@ h2 {
 	border: 1px solid white; 
 	scroll-margin-top: 90px; 
 	cursor: pointer; 
-}
-#INT, #ADV { 
-	flex-direction: column; 
-	padding: 0px 15px; 
-}
-#INT p { 
-	padding: 0px 10px; 
-}
-#ADV div { 
-	padding: 10px; 
-}
-#ADV p { 
-	padding: 0px 50px; 
 }
 /* Tables */
 table {

@@ -1,6 +1,6 @@
 /* Conan Exiles Server Guide JavaScript 
-//
-// Show/Hide Element by ID, Show/Hide Elements by Class, Highlight Table Row
+*
+* Show/Hide Element by ID, Show/Hide Elements by Class, Highlight Table Row
 */
 
 /*Show and Hide Element by ID on Click*/
