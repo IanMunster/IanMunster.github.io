@@ -20,12 +20,14 @@ function responsiveNavClassSwitch () {
 window.onscroll = function (){ 
 	stickyMenu () 
 };
+// Navigation Top Offset
 var sticky = navBar.offsetTop;
 function stickyMenu () {
+	// If scroll is lower than offset (would scroll passed Navbar)
 	if ( window.pageYOffset >= sticky ) { 
+		// Add Sticky Class
 		navBar.classList.add ("sticky"); 
-	}
-	else { 
+	} else { 
 		navBar.classList.remove ("sticky"); 
 	}
 }

@@ -32,8 +32,59 @@
 	background-color: #4caf50;
 	color: white;
 }
-
-/* Dropdown Items */
+/* Sub Navigation */
+	/* Sub Navigation Menu */
+	.subNav {
+		float: left;
+		overflow: hidden;
+	}
+	
+	/* Sub Navigation Button */
+	.subNav .subNav-Btn {
+		border: none;
+		outline: none;
+		padding: 14px 16px;
+		margin: 0;
+		background-color: inherit;
+		color: white;
+		font-family: inherit;
+		font-size: 17px;
+	}
+	
+	/* Sub Navigation Background on Hover */
+	.subNav:hover, .subNav a:hover, .subNav-Btn {
+		background-color: red;
+	}
+	
+	/* Sub Navigation Content */
+	.subNav-Content {
+		display: none;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+		background-color: red;
+	}
+	
+	/* Sub Navigation Items */
+	.subNav-Content a {
+		float: left;
+		color: white;
+		text-decoration: none;
+	}
+	
+	/* Sub Navigation Items on Hover */
+	.subNav-Content a:hover {
+		background-color: #eee;
+		color: black;
+	}
+	
+	/* Sub Navigation Show Content on Hover */
+	.subNav:hover .subNav-Content {
+		display: block;
+	}
+	
+/* Dropdown Navigation */
 	/* Dropdown Container */
 	.dropdown {
 		float: left;
@@ -78,10 +129,15 @@
 		background-color: #ddd;
 		color: black;
 	}
-	/* Show Dropdown Items on Hover */
+	/* Dropdown Items Show on Hover */
 	.dropdown:hover .dropdown-Content {
 		display: block;
 	}
+
+/* Navigation Icons Resize to Allign items */
+.subNav-Icon, .dropdown-Icon {
+	font-size: 12px;
+}
 
 /* Sticky Navbar on Scroll */
 	/* Stickied to top of page */
@@ -107,10 +163,16 @@
 	.topNavBar a:not(:first-child) {
 		display: none;
 	}
+	
+	/* Hide Subnav Buttons */
+	.subNav .subNav-Btn {
+		display: none;
+	}
 	/* Hide Dropdown Buttons */
 	.dropdown .dropdown-Btn {
 		display: none;
 	}
+	
 	/* Display the HamburgerIcon  */
 	.topNavBar a.navIcon {
 		float: right;
@@ -122,7 +184,7 @@
 @media screen and (max-width: 745px) {
 	/* ! Conflicts with Sticky NavBar */
 	.topNavBar.responsive {
-		/* position: relative; */
+		position: relative;
 	}
 	/* Display HamburgerIcon on the Right-Side of NavBar */
 	.topNavBar.responsive a.icon {
@@ -136,15 +198,31 @@
 		display: block;
 		text-align: left;
 	}
-	/* Make Dropdown Links a Seperate Line */
+	
+	/* SubNav Links a Seperate Line */
+	.topNavBar.responsive .subNav {
+		float: none;
+	}
+	/* SubNav Links Fit in NavBar */
+	.topNavBar.responsive .subNav-Content {
+		position: relative;
+	}
+	/* Dropdown Links Vertically */
+	.topNavBar.responsive .subNav .subNav-Btn {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+	
+	/*Dropdown Links a Seperate Line */
 	.topNavBar.responsive .dropdown {
 		float: none;
 	}
-	/* Make Dropdown Links Fit in NavBar */
+	/* Dropdown Links Fit in NavBar */
 	.topNavBar.responsive .dropdown-Content {
 		position: relative;
 	}
-	/* Make Dropdown Links Vertically */
+	/* Dropdown Links Vertically */
 	.topNavBar.responsive .dropdown .dropdown-Btn {
 		display: block;
 		width: 100%;
