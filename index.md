@@ -13,18 +13,26 @@ Don't really have social media, but some accounts on other platforms
 [Nexus Mods](https://www.nexusmods.com/users/1281304)
 
 # Games
+<!-- This whole section SHOULD be variable, based on the readMe's in the projects respective repository.
+     A "Frame" or "Block" on the page with;
+	 The Title of the Project,
+	 The Read Me of the Project
+	 and the Repository of the Project 
+-->
 ## Game Maker 2
 [Game Maker 2 ReadMe](https://github.com/I-Jun/GameMaker2/README.md)
 [Game Maker 2 Repository](https://github.com/I-Jun/GameMaker2/)
 
 ###### Tutorial Projects
-- [x] Project Zero
+[x] Project Zero
 [Project_Zero ReadMe](https://github.com/I-Jun/GameMaker2/Project_Zero/README.md)
 [Project_Zero Repository](https://github.com/I-Jun/GameMaker2/Project_Zero)
 
-- [ ] Space Rocks Game
+[ ] Space Rocks Game
 [Project Space Rocks Repository](https://github.com/I-Jun/GameMaker2/game_SpaceRocks)
 [Project Space Rocks ReadMe](https://github.com/I-Jun/GameMaker2/game_SpaceRocks/README.md)
+<!--  END OF SECTION
+-->
 
 # Other
 ## AutoHotKey (AHK) Scripts
