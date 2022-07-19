@@ -24,36 +24,47 @@ Don't really have social media, but some accounts on other platforms
  - [x] Project Zero
    > First GameMaker v2 project. Mainly used to learn the interface and development enviroment of GM2
    
-    - [Project_Zero ReadMe](https://github.com/I-Jun/GameMaker2/Project_Zero#README.md)
-    - [Project_Zero Repository](https://github.com/I-Jun/GameMaker2/Project_Zero)
+    - **!PRIVATE CODE** ~~[Project_Zero ReadMe](https://github.com/I-Jun/GameMaker2/Project_Zero#README.md)~~
+    - **!PRIVATE CODE** ~~[Project_Zero Repository](https://github.com/I-Jun/GameMaker2/Project_Zero)~~
  - [ ] Space Rocks Game
-   > Description: Lorem ipsum dolor sit amet. Est iste officiis et labore pariatur et voluptatem adipisci! Est dolorem ducimus hic numquam alias et galisum recusandae est illum Quis. Et doloribus internos rem impedit tenetur est odio facilis.
+   > Designed and presented by [Friendly Cosmonaut](https://www.youtube.com/channel/UCKCKHxkH8zqV9ltWZw0JFig), the "Space Rocks" video tutorials start out with an introduction to GMS2 before outlining how to program movement, attacking & collisions, scoring, lives, sound and effects before adding that final polish.
    
-   - [Project Space Rocks ReadMe](https://github.com/I-Jun/GameMaker2/game_SpaceRocks#README.md)
-   - [Project Space Rocks Repository](https://github.com/I-Jun/GameMaker2/game_SpaceRocks)
+   - **!PRIVATE CODE** ~~[Project Space Rocks ReadMe](https://github.com/I-Jun/GameMaker2/game_SpaceRocks#README.md)~~
+   - **!PRIVATE CODE** ~~[Project Space Rocks Repository](https://github.com/I-Jun/GameMaker2/game_SpaceRocks)~~
 <!--  END OF SECTION -->
 
 ## Other
 ### AutoHotKey (AHK) Scripts 
 > Some small scripts made with AutoHotkey. Mainly using during gaming, like multiple button press for Dying Light 2 and Always on Top switch.
 
-
-
-
-# H1
-## GAMES HEADER
-<!--  Project Placeholder -->
-### Project Name
-> Project Desctiption: Lorem ipsum dolor sit amet. Est iste officiis et labore pariatur et voluptatem adipisci! Est dolorem ducimus hic numquam alias et galisum recusandae est illum Quis. Et doloribus internos rem impedit tenetur est odio facilis.
-
- - [x] Project Fase 01
-   > Fase 01 Description: Lorem ipsum dolor sit amet. Est iste officiis et labore pariatur et voluptatem adipisci! Est dolorem ducimus hic numquam alias et galisum recusandae est illum Quis. Et doloribus internos rem impedit tenetur est odio facilis.
+ - [x] Always on Top
+   > Always on Top Switch Script. Makes the Current screen Always On Top.
    
-    - [Project_Fase01_ReadMe](https://github.com/I-Jun/"ProjectName"#README.md)
-    - [Project_Fase01 Repository](https://github.com/I-Jun/"ProjectName")
- - [ ] Project Fase 02
-   > Fase 02 Description: Lorem ipsum dolor sit amet. Est iste officiis et labore pariatur et voluptatem adipisci! Est dolorem ducimus hic numquam alias et galisum recusandae est illum Quis. Et doloribus internos rem impedit tenetur est odio facilis.
+    - **!PRIVATE CODE** ~~[Always on Top ReadMe](https://github.com/I-Jun/AutoHotkey-Scripts#README.md)~~
+    - **!PRIVATE CODE** ~~[Always on Top Repository](https://github.com/I-Jun/AutoHotkey-Scripts)~~
+ - [ ] Hide Window Borders
+   > Hide Windows Border Switch Script. Used to make Bordered-Windowed Mode a Borderless Window
    
-    - [Project_Fase02_ReadMe](https://github.com/I-Jun/"Fase02"/"ProjectName"#README.md)
-    - [Project Fase02 Repository](https://github.com/I-Jun/"Fase02"/"ProjectName")
-<!--  END OF SECTION -->
+    - **!PRIVATE CODE** ~~[Hide Window Border ReadMe](https://github.com/I-Jun/AutoHotkey-Scripts#README.md)~~
+    - **!PRIVATE CODE** ~~[Hide Window Border Repository](https://github.com/I-Jun/AutoHotkey-Scripts)~~
+
+#
+
+
+<!--
+# H1 TITLE
+## H2 SUBTITLE
+### PROJECT_NAME
+> PROJECT_DESCRIPTION: Lorem ipsum dolor sit amet. Est iste officiis et labore pariatur et voluptatem adipisci! Est dolorem ducimus hic numquam alias et galisum recusandae est illum Quis. Et doloribus internos rem impedit tenetur est odio facilis.
+
+ - [x] PROJECT_FASE_01
+   > FASE_01_DESCRIPTION: Lorem ipsum dolor sit amet. Est iste officiis et labore pariatur et voluptatem adipisci! Est dolorem ducimus hic numquam alias et galisum recusandae est illum Quis. Et doloribus internos rem impedit tenetur est odio facilis.
+   
+    - [FASE_01_README](https://github.com/I-Jun/"PROJECT_NAME"#README.md)
+    - [FASE_01_REPOSITORY](https://github.com/I-Jun/"PROJECT_NAME")
+ - [ ] PROJECT_FASE_02
+   > FASE_02_DESCRIPTION: Lorem ipsum dolor sit amet. Est iste officiis et labore pariatur et voluptatem adipisci! Est dolorem ducimus hic numquam alias et galisum recusandae est illum Quis. Et doloribus internos rem impedit tenetur est odio facilis.
+   
+    - [FASE_02_README](https://github.com/I-Jun/"PROJECT_FASE_02/PROJECT_NAME"#README.md)
+    - [FASE_02_REPOSITORY(https://github.com/I-Jun/"PROJECT_FASE_02/PROJECT_NAME")
+ -->
