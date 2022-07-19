@@ -17,20 +17,26 @@ Don't really have social media, but some accounts on other platforms
 - [Nexus Mods](https://www.nexusmods.com/users/1281304)
 
 ## Games
-<!-- This whole section SHOULD be variable, based on the readMe's in the projects respective. "Frame" or "Block" on the page with; The Title of the Project, The Read Me of the Project and the Repository of the Project -->
 ### Space Rocks Tutorial
 > This GameMaker Studio 2 (GMS2) tutorial will guide budding video game creators through the process of creating their very own fully-functional version of the definitive asteroid space blaster. Aspiring game designers can make "Space Rocks" in GMS2 using the free version without coding, by using the drag and drop technology, or by coding with GameMaker Language.
 
- - [x] Project Zero
-   > First GameMaker v2 project. Mainly used to learn the interface and development enviroment of GM2
-   
-    - **!PRIVATE CODE** ~~[Project_Zero ReadMe](https://github.com/I-Jun/GameMaker2/Project_Zero#README.md)~~
-    - **!PRIVATE CODE** ~~[Project_Zero Repository](https://github.com/I-Jun/GameMaker2/Project_Zero)~~
  - [ ] Space Rocks Game
    > Designed and presented by [Friendly Cosmonaut](https://www.youtube.com/channel/UCKCKHxkH8zqV9ltWZw0JFig), the "Space Rocks" video tutorials start out with an introduction to GMS2 before outlining how to program movement, attacking & collisions, scoring, lives, sound and effects before adding that final polish.
    
    - **!PRIVATE CODE** ~~[Project Space Rocks ReadMe](https://github.com/I-Jun/GameMaker2/game_SpaceRocks#README.md)~~
    - **!PRIVATE CODE** ~~[Project Space Rocks Repository](https://github.com/I-Jun/GameMaker2/game_SpaceRocks)~~
+
+<!--  END OF SECTION -->
+
+## Reference Material
+### Game Maker 2 Project Templates
+> Templates and Tutorials to learn Game Maker 2 and to use in future projects as templates.
+ - [x] Project Zero
+   > First GameMaker v2 project. Mainly used to learn the interface and development enviroment of GM2, with a basic Sprite, Object and Room
+   
+    - **!PRIVATE CODE** ~~[Project_Zero ReadMe](https://github.com/I-Jun/GameMaker2/Project_Zero#README.md)~~
+    - **!PRIVATE CODE** ~~[Project_Zero Repository](https://github.com/I-Jun/GameMaker2/Project_Zero)~~
+
 <!--  END OF SECTION -->
 
 ## Other
@@ -48,6 +54,7 @@ Don't really have social media, but some accounts on other platforms
     - **!PRIVATE CODE** ~~[Hide Window Border ReadMe](https://github.com/I-Jun/AutoHotkey-Scripts#README.md)~~
     - **!PRIVATE CODE** ~~[Hide Window Border Repository](https://github.com/I-Jun/AutoHotkey-Scripts)~~
 
+<!--  END OF SECTION -->
 #
 
 
@@ -67,4 +74,4 @@ Don't really have social media, but some accounts on other platforms
    
     - [FASE_02_README](https://github.com/I-Jun/"PROJECT_FASE_02/PROJECT_NAME"#README.md)
     - [FASE_02_REPOSITORY(https://github.com/I-Jun/"PROJECT_FASE_02/PROJECT_NAME")
- -->
+ --><!--  END OF SECTION -->
