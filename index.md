@@ -20,32 +20,33 @@ Don't really have social media, but some accounts on other platforms
 	 and the Repository of the Project 
 -->
 ## Game Maker 2
-[Game Maker 2 ReadMe](https://github.com/I-Jun/GameMaker2/README.md)
+[Game Maker 2 ReadMe](https://github.com/I-Jun/GameMaker2#readme)
 [Game Maker 2 Repository](https://github.com/I-Jun/GameMaker2/)
 
-###### Tutorial Projects
-[x] Project Zero
-[Project_Zero ReadMe](https://github.com/I-Jun/GameMaker2/Project_Zero/README.md)
-[Project_Zero Repository](https://github.com/I-Jun/GameMaker2/Project_Zero)
+	###### Tutorial Projects
+	[x] Project Zero
+	[Project_Zero ReadMe](https://github.com/I-Jun/GameMaker2/Project_Zero#README.md)
+	[Project_Zero Repository](https://github.com/I-Jun/GameMaker2/Project_Zero)
 
-[ ] Space Rocks Game
-[Project Space Rocks Repository](https://github.com/I-Jun/GameMaker2/game_SpaceRocks)
-[Project Space Rocks ReadMe](https://github.com/I-Jun/GameMaker2/game_SpaceRocks/README.md)
+	[ ] Space Rocks Game
+	[Project Space Rocks ReadMe](https://github.com/I-Jun/GameMaker2/game_SpaceRocks#README.md)
+	[Project Space Rocks Repository](https://github.com/I-Jun/GameMaker2/game_SpaceRocks)
+
 <!--  END OF SECTION
 -->
 
 # Other
-## AutoHotKey (AHK) Scripts
+## AutoHotKey (AHK) Scripts 
 Some small scripts made with AutoHotkey.
 
 Mainly using during gaming, like multiple button press for Dying Light 2 and Always on Top switch.
 
 
 
-# PlaceHolderH1
-## PlaceHolderH2
-### PlaceHolderH3
-#### PlaceHolderH4
-##### PlaceHolderH5
-###### PlaceHolderH6
-placeholdertext
+# PlaceHolderH1 
+## PlaceHolderH2 
+### PlaceHolderH3 
+#### PlaceHolderH4 
+##### PlaceHolderH5 
+###### PlaceHolderH6 
+placeholdertext 
