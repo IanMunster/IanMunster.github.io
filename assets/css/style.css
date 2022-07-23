@@ -73,28 +73,34 @@ input:checked + .slider:before {
   border-radius: 50%;
 } 
 
+/* */
 .lightMode {
 	background-color: white;
 	color: black;
 }
 
-.slideShow {
-	width: 350px;
-	height: 350px;
-}
-
+/* */
 .icon {
 	width: 20px;
+}
+
+.filterW {
+	filter: invert(100);
 }
 
 .private {
 	color: red;
 }
 
-#Home {
-	max-width: 1564px;
+
+.fullWidth {
+	 width: 100%;
 }
 
-#TitleImage {
-	 width: 100%;
+.ReadMore {
+	display: none;
+}
+
+#Home {
+	max-width: 1564px;
 }
