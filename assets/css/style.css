@@ -10,6 +10,7 @@
 	--bolder-font: 900;
 	/* Color Variables */
 	--bg-color: #1c1c1c;
+	--bg-color2: rgba(100,100,100,0.5);
 	--primary-color: #49df49;
 	--secondary-color: #4756df;
 	--primary-shadow: #95b08d;
@@ -21,12 +22,15 @@
 	--transition: 0.3s;
 }
 
-
 html {
 	/* Smooth scrolling */
 	scroll-behaviour: smooth;
+	
+	/* Default Darkmode Colors */
 	background-color: #1e2021;
+	color: #dedcd9;
 }
+
 
 /* CSS Reset */
 	/* remove default Margin, Padding, Text-Decor for AnchorTags and List-Style-Type for Lists */
@@ -53,6 +57,33 @@ html {
 	}
 	/* END CSS Reset */
 
+/* UnderConstruction Section */
+	.construction {
+		text-align: center;
+		font-size: 2rem;
+		padding: 5rem;
+	}
+	
+	.construction h1,
+	.construction iconL {
+		color: var(--primary-color);
+	}
+/* END UnderConstruction Section */
+
+/* Icon Sizes */
+	.icon {
+		width: 4rem;
+		height: 4rem;
+	}
+	.iconL {
+		width: 8rem;
+		height: 8rem;
+	}
+	.iconSmall {
+		width: 2rem;
+		height: 2rem;
+	}
+	/* END Icon Sizes */
 /* Navigation Bar - Sticky Ontop*/
 	nav {
 		position: sticky;
@@ -76,20 +107,6 @@ html {
 	nav .menuBtn:hover {
 		color: var(--secondary-color);
 	}
-
-	.navBar a {
-		color: var(--primary-color);
-		transition: var(--transition);
-	}
-	.navBar a:hover {
-		color: var(--secondary-color);
-		border-bottom: 2px solid var(--secondary-color);
-	}
-	
-	nav a img {
-		max-width: 45px;
-		max-height: 45px;
-	}
 	
 	nav ul, 
 	nav div {
@@ -97,7 +114,23 @@ html {
 		gap: 1.9rem;
 	}
 	
-	nav ul li {
+	nav a img {
+		max-width: 3rem;
+		max-height: 3rem;
+	}
+	
+	.navBar a {
+		color: var(--primary-color);
+		transition: var(--transition);
+		font-size: 1.25rem;
+	}
+	
+	.navBar a:hover {
+		color: var(--secondary-color);
+		border-bottom: 2px solid var(--secondary-color);
+	}
+	
+	.navBar ul li {
 		font-weight: var(--bold-font);
 	}
 
@@ -115,7 +148,7 @@ html {
 	/* END Navigation Bar */
 	
 /* About Section */
-	.aboutSection {
+	.aboutMe {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -124,7 +157,7 @@ html {
 		margin: auto;
 	}
 	
-	.aboutSection img {
+	.aboutMe img {
 		height: 37.5rem;
 		width: 37.5rem;
 	}
@@ -145,3 +178,208 @@ html {
 		padding: 0.3rem 0;
 	}
 	/* END About Section */
+
+/* More About Section */
+	
+	.moreAboutMe {
+		background-color: var(--bg-color);
+		padding: 1rem 6rem;
+	}
+	
+	.moreAboutMe h2 {
+		margin-bottom: var(--bottom-margin);
+		text-align: center;
+	}
+	
+	.moreAboutMe p {
+		line-height: var(--line-height);
+		padding: 0.4rem;
+	}
+	/* END More About Section */
+
+/* Skill Section */
+	.skills {
+		max-width: 68.75rem;
+		margin: auto;
+		text-align: center;
+		margin-top: 2.5rem;
+	}
+	
+	.skillHeader {
+		margin-bottom: 1rem;
+	}
+	
+	.skillsWrapper img {
+		padding: 1.25rem;
+	}
+	
+	.tile {
+		width: 11.875rem;
+		height: 11.25rem;
+	}
+	
+	.tileCard {
+		background-color: var(--bg-color2);
+		border-radius: 11px;
+		box-shadow: 0 3px 10px var(--secondary-shadow);
+		padding: 20px;
+		margin: 10px;
+	}
+	
+	/* END Skill Section */
+/* Projects Section */
+	.projects {
+		background-color: var(--bg-color);
+		padding: 32px 0;
+		margin-top: 2rem;
+	}
+	
+	.projectsTitle {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+	
+	.projectsContainer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+	}
+	
+	.projectCard {
+		background-color: var(--bg-color2);
+		border-radius: 11px;
+		box-shadow: 0 3px 10px var(--primary-shadow);
+		padding: 20px;
+		margin: 10px;
+	}
+	
+	.projectContainer{
+		text-align: center;
+		width: 21.875rem;
+		padding: 1rem;
+	}
+	
+	.projectContainer p {
+		padding: 0.4rem;
+	}
+		
+	.projectImg {
+		width: 65%;
+		height: 60%;
+	}
+	
+	.projectTitle,
+	.projectDetail {
+		margin-bottom: var(--bottom-margin);
+	}
+	
+	/* END Projects Section */
+	
+/* Contact Section */
+	.contactMe {
+		margin-top: 2rem;
+	}
+	
+	.contactMe h2 {
+		text-align: center;
+		margin-bottom: var(--bottom-margin-2);
+	}
+	
+	.contactFormContainer {
+		max-width: 40.75rem;
+		margin: 0 auto;
+		padding: 0.938rem;
+		border-radius: 5px;
+		box-shadow: 0 3px 10px var(--secondary-shadow);
+	}
+	
+	.contactFormContainer label {
+		line-height: 2.7em;
+		font-weight: var(--bold-font);
+		color: var(--primary-color);
+	}
+	
+	.contactFormContainer textarea {
+		min-height: 6.25rem;
+		font-size: 14px;
+	}
+	
+	.contactFormContainer .inputField {
+		width: 100%;
+		padding: 10px 0;
+		border-radius: 5px;
+		border: 2px outset var(--primary-color);
+		font-size: 0.875rem;
+		outline: none;
+	}
+	
+	.contactFormContainer .inputField::placeholder {
+		padding: 1rem;
+		color: var(--primary-color);
+	}
+	
+	.contactFormContainer .submitBtn {
+		width: 100%;
+		padding: 10px;
+		margin: 10px 0;
+		background-color: var(--bg-color2);
+		border: 2px solid var(--primary-color);
+		border-radius: 5px;
+		font-size: 1rem;
+		font-weight: var(--bold-font);
+		transition: var(--transition);
+	}
+	
+	.contactFormContainer .submitBtn:hover {
+		background-color: var(--primary-color);
+		border: 2px solid var(--primary-color);
+		cursor: pointer;
+	}
+	
+	/* END Contact Section */
+	
+/* Social Bar */
+	.socials {
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		right: 1%;
+		bottom: 50%;
+	}
+	
+	.socialIcon {
+		width: 3rem;
+		height: 3rem;
+	}
+	/* END Social Bar */
+
+/* Footer */
+	footer {
+		background-color: var(--bg-color);
+		padding: 1.25rem;
+		text-align: center;
+		margin: 2rem 0 0;
+	}
+	
+	/* END Footer */
+	
+/* Scroll Up Button */
+	.scroll {
+		position: fixed;
+		right: 0.5%;
+		bottom: 3%;
+		cursor: pointer;
+	}
+	
+	.upArrow {
+		width: 3rem;
+		height: 3rem;
+		color: var(--primary-color);
+	}
+	
+	.upArrow:hover {
+		color: var(--secondary-color);
+	}
+	
+	/* END Scroll Up Button */

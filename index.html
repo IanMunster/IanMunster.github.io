@@ -12,98 +12,226 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
 	<!--CSS Styles -->
 	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/style720.css" />
+	<link rel="stylesheet" href="assets/css/style420.css" />
 	<!-- Animate CSS CDN -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-	<!-- Navbar -->
+<!-- Navbar -->
 	<nav>
 		<a href="#home">
-			<h1> i-Jun </h1>
-			<!-- <img src="assets/icons/logo512x512.png" alt="icon"/> -->
+			<!-- <h1> i-Jun </h1> -->
+			<img src="assets/icons/logo512x512.png" alt="icon" />
 		</a>
 		<ul class="navBar">
-			<li><a class="navBarLink" href="#about">About</a></li>
-			<li><a class="navBarLink" href="#skills">Skills</a></li>
-			<li><a class="navBarLink" href="#projects">Projects</a></li>
-			<li><a class="navBarLink" href="#contact">Contact</a></li>
+			<li><a class="navBarLink" href="#About"><ion-icon name="person-circle-outline" class="iconSmall"></ion-icon> About</a></li>
+			<li><a class="navBarLink" href="#Skill"><ion-icon name="stats-chart" class="iconSmall"></ion-icon> Skills</a></li>
+			<li><a class="navBarLink" href="#Project"><ion-icon name="ribbon" class="iconSmall"></ion-icon> Projects</a></li>
+			<li><a class="navBarLink" href="#Contact"><ion-icon name="mail-outline" class="iconSmall"></ion-icon> Contact</a></li>
 		</ul>
 		<div class="navBar">
-			<button class="menuBtn"><ion-icon class="bars" name="moon-outline"></ion-icon></button>
-			<button class="menuBtn menuBurger"><ion-icon class="bars" name="menu-outline"></ion-icon></button>
+			<button class="menuBtn"><ion-icon class="bars" name="contrast"></ion-icon></button>
+			<button class="menuBtn menuBurger"><ion-icon class="bars" name="menu"></ion-icon></button>
 		</div>
 	</nav>
+
+<!-- UnderConstruction Section -->
+	<section class="construction">		
+		<h1>
+			<ion-icon name="construct" class=""></ion-icon>
+			SITE UNDER CONSTRUCTION
+			<ion-icon name="construct" class=""></ion-icon>
+		</h1>
+		<br>
+		<p>... Many, if not all, buttons and links are currently not functional ...</p>
+		<p>... Apologies for the inconvenience ...</p>
+		<p><ion-icon name="construct" class="iconL"></ion-icon></p>
+		
+		
+	</section>
 	
-	<!-- About Section -->
-	<section class="aboutSection" id="about">
-		<img src="assets/img/placeholder600x600.jpg" alt="About me image" loading="About me image" class="aboutImg" />
+<!-- About Section -->
+	<section class="aboutMe" id="About">
+		<img src="assets/img/placeholder800x600.jpg" alt="About me image" loading="lazy" class="aboutImg" />
 		<div class="bio animate__animated animate__shakeX"> <!-- Animate text container -->
-			<h2 class="bioTitle">About Me</h2>
+			<h2 class="bioTitle"><ion-icon name="person-circle-outline" class="" loading="lazy"></ion-icon> About</h2>
 			<p class="bioText">
+				<b>Welcome Reader</b>, I'm a Dutch solo game developer. Interested in making fantasy games, adventure/rpg like games. 
+				I'm currently focused on 2D games in the GODOT Game Engine. 
+				English and Dutch language, but prefer English as the default language in projects.
+			</p><p class="bioText">
+				<b>On this page</b> you can read some <a href="#More">More about me,</a>
+				See my mayor <a href="#Skill">Skills and Coding Languages</a> qualifications,
+				See some of the <a href="#Projects">Games and Projects</a> I worked on,
+				And find information on how to <a href="#Contact">Contact me!</a>
+			</p>
+		</div>
+	</section>
+
+<!-- More About section -->
+	<section class="moreAboutMe" id="More">
+			<h2><ion-icon name="bonfire" class=""></ion-icon> More about me...</h2>
+			<p>
 				<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 				Graece fuisset definitionem sea et, ea nec vivendum senserit.
 				Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-			</p><p class="bioText">
+			</p><p>
 				<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
 				Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
 				Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
 				Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
 				Purto eleifend ad sea, velit tempor pri ne.
 				Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
-			</p><p class="bioText">
+			</p><p>
 				<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
 				At pri habemus splendide, mea ne case errem.
 				Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
 				Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
 			</p>
-			<button class="button">Read more ...</button>
+	</section>
+
+<!-- Skills section -->
+	<section class="skills" id="Skill">
+		<h2 class="skillHeader"><ion-icon name="stats-chart" class="" loading="lazy"></ion-icon> Skills</h2>
+		<div class="skillsWrapper">
+			<div class="skills0 animate__animated animate__pulse">
+				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
+				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
+				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
+			</div>
+			<div class="skills1 animate__animated animate__pulse">
+				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
+				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
+				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
+			</div>
+			<div class="skills2 animate__animated animate__pulse">
+				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
+				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
+				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
+			</div>
 		</div>
 	</section>
-<!-- More About Me section -->
-	<section class="aboutMoreSection">
-			<h2 class="bioTitle">More about me</h2>
-			<p class="bioTextMore">
-				<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
-				Graece fuisset definitionem sea et, ea nec vivendum senserit.
-				Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-			</p><p class="bioTextMore">
-				<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
-				Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
-				Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
-				Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
-				Purto eleifend ad sea, velit tempor pri ne.
-				Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
-			</p><p class="bioTextMore">
-				<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
-				At pri habemus splendide, mea ne case errem.
-				Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
-				Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
-			</p>
+
+<!-- Projects section -->
+	<section class="projects" id="Project">
+		<h2 class="projectsTitle"><ion-icon name="ribbon" class=""></ion-icon> Projects</h2>
+		<div class="projectsContainer">
+			<div class="projectContainer projectCard">
+				<img src="assets/img/placeholder1366x732.jpg" alt="Project Placeholder" loading="lazy" class="projectImg" />
+				<h3 class="projectTitle">Project Title</h3>
+				<p class="projectDetail">
+					<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
+					Graece fuisset definitionem sea et, ea nec vivendum senserit.
+					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+				</p>
+				<a href="#" target="_blank" class="projectLink">See Project</a>
+			</div>
+			<div class="projectContainer projectCard">
+				<img src="assets/img/placeholder1366x732.jpg" alt="Project Placeholder" loading="lazy" class="projectImg" />
+				<h3 class="projectTitle">Project Title</h3>
+				<p class="projectDetail">
+					<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
+					Graece fuisset definitionem sea et, ea nec vivendum senserit.
+					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+				</p>
+				<a href="#" target="_blank" class="projectLink">See Project</a>
+			</div>
+			<div class="projectContainer projectCard">
+				<img src="assets/img/placeholder1366x732.jpg" alt="Project Placeholder" loading="lazy" class="projectImg" />
+				<h3 class="projectTitle">Project Title</h3>
+				<p class="projectDetail">
+					<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
+					Graece fuisset definitionem sea et, ea nec vivendum senserit.
+					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+				</p>
+				<a href="#" target="_blank" class="projectLink">See Project</a>
+			</div>
 		</div>
 	</section>
-	<!-- Skills section -->
 
-	<!-- Projects section -->
-	  <!-- Spotlights section -->
-	  <!-- Previous Projects section -->
+<!-- Contact section -->
+	<section class="contactMe" id="Contact">
+		<h2><ion-icon name="mail-outline" class=""></ion-icon> Contact</h2>
+		<div class="contactFormContainer">
+			<div class="contactForm">
+				<form action="https://i-Jun.github.io" method="POST">
+					<div class="formControl">
+						<label for="name">Name</label>
+						<input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="inputField" required />
+					</div>
+					<div class="formControl">
+						<label for="email">Email</label>
+						<input type="email" id="email" name="sender-email" placeholder="Example@email.it" class="inputField" required />
+					</div>
+					<div class="formControl">
+						<label for="name">Message</label>
+						<textarea id="message" cols="60" rows="10" name="sender-message" placeholder="Enter Your Message or inquiry" class="inputField" required></textarea>
+					</div>
+					<input type="submit" value="Send Message" id="Submit" class="submitBtn" />
+				</form>
+			</div>
+		</div>
+	</section>
+<!-- Social accounts - Fixed to the right -->
+	<div class="socials">
+		<a hre="#" target="_blank"><ion-icon name="logo-github" class="socialIcon" loading="lazy" alt="Github social"></ion-icon></a>
+		<a hre="#" target="_blank"><ion-icon name="logo-linkedin" class="socialIcon" loading="lazy" alt="LinkedIn social"></ion-icon></a>
+		<a hre="#" target="_blank"><ion-icon name="logo-discord" class="socialIcon" loading="lazy" alt="Discord social"></ion-icon></a>
+		<a hre="#" target="_blank"><ion-icon name="logo-steam" class="socialIcon" loading="lazy" alt="Steam Account"></ion-icon></a>
+		<a hre="#" target="_blank"><ion-icon name="logo-youtube" class="socialIcon" loading="lazy" alt="Youtube Account"></ion-icon></a>
+	</div>
+<!-- Scroll to top -->
+	<i class="scroll" id="ScrollUp"><ion-icon name="caret-up-circle" class="upArrow" loading="lazy"></ion-icon></i>
 
-	<!-- Contact section -->
-
-	  <!-- Social accounts - Fixed to the right -->
-
-	<!-- Scroll to top -->
-
-	<!-- Footer section -->
+<!-- Footer section -->
 	<footer>
+		<p class="copy">&copy Copyright 2022</p>
+		<p class="copy">by <a href="i-Jun.github.io" target="_blank">i-Jun</a></p>
+		<p class="">Hosted with 
+			<a href="https://pages.github.com/" title="Github Pages" target="_blank">Github Pages
+			<ion-icon name="logo-github" class="iconSmall"></ion-icon></a>
+		</p>
+		<p class="">Credits to 
+			<a href="https://twitter.com/koladechris" target="_blank">Kolade Chris (Ksound)
+			<ion-icon name="logo-twitter" class="iconSmall"></ion-icon></a>
+		</p>
+		<!-- Website scripts -->
+		<script src="assets/js/script.js"></script>
+		<!-- Ion icons scripts -->
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</footer>
+	<!-- <div> -->
+	<div style="display:none">
 	<h1><a href="https://unpkg.com/browse/ionicons@5.5.2/dist/ionicons/svg/">Icon Preview</a></h1>
-	<div class="navBar">
+		<ion-icon name="home-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="contrast-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="warning-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="search-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="compass-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="navigate-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="open-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="download-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="images-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="library-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="folder-open-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="mail-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="person-circle-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="people-circle-outline" class="menuBtn"></ion-icon>
+		
+		<ion-icon name="close-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="checkbox-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="checkmark-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="caret-up-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="caret-down-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="caret-forward-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="caret-back-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="chevron-up-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="chevron-down-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="chevron-forward-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="chevron-back-outline" class="menuBtn"></ion-icon>
 		
 		<ion-icon name="volume-off-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="volume-low-outline" class="menuBtn"></ion-icon>
@@ -111,22 +239,42 @@
 		<ion-icon name="volume-high-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="play-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="pause-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="expand-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="exit-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="enter-outline" class="menuBtn"></ion-icon>
 		
 		<ion-icon name="trophy-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="diamond-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="construct-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="star-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="flash-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="flame-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="bonfire-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="ribbon-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="sparkles-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="game-controller-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="dice-outline" class="menuBtn"></ion-icon>
 		
 		<ion-icon name="school-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="musical-notes-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="rocket-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="stats-chart-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="speedometer-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="card-outline" class="menuBtn"></ion-icon>
 		
+		<ion-icon name="desktop-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="power-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="save-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="code-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="code-slash-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="terminal-outline" class="menuBtn"></ion-icon>
 		<ion-icon name="reader-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="document-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="hardware-chip-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="cloud-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="cloud-download-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="build-outline" class="menuBtn"></ion-icon>
+		<ion-icon name="bug-outline" class="menuBtn"></ion-icon>
 		
 		<ion-icon name="logo-youtube" class="menuBtn"></ion-icon>
 		<ion-icon name="logo-whatsapp" class="menuBtn"></ion-icon>
@@ -150,14 +298,6 @@
 		<ion-icon name="logo-playstation" class="menuBtn"></ion-icon>
 		<ion-icon name="logo-linkedin" class="menuBtn"></ion-icon>
 		<ion-icon name="logo-google" class="menuBtn"></ion-icon>
-
 	</div>
-	
-		<!-- Website scripts -->
-		<script src="assets/js/app.js"></script>
-		<!-- Ion icons scripts -->
-		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-	</footer>
 </body>
 </html>
