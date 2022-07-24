@@ -9,12 +9,14 @@
 	--bold-font: 700;
 	--bolder-font: 900;
 	/* Color Variables */
-	--bg-color: #1c1c1c;
+	--bg-color0: #1e2021;
+	--bg-color1: #1c1c1c;
 	--bg-color2: rgba(100,100,100,0.5);
 	--primary-color: #49df49;
 	--secondary-color: #4756df;
 	--primary-shadow: #95b08d;
 	--secondary-shadow: #8b8eaf;
+	--font-color0: #dedcd9;
 	/* Position Variables */
 	--bottom-margin: 0.5rem;
 	--bottom-margin-2: 1rem;
@@ -27,8 +29,8 @@ html {
 	scroll-behaviour: smooth;
 	
 	/* Default Darkmode Colors */
-	background-color: #1e2021;
-	color: #dedcd9;
+	background-color: var(--bg-color0);
+	color: var(--font-color0);
 }
 
 
@@ -39,43 +41,34 @@ html {
 		padding: 0;
 		box-sizing: border-box;
 	}
-	
 	ul {
 		list-style-type: none;
-	}
-	
+	}	
 	a {
 		text-decoration: none;
 		color: var(--primary-color);
 	}
 	a:hover {
 		color: var(--secondary-color);
-	}
-	
+	}	
 	body {
 		font-family: var(--font-family);
 	}
 	/* END CSS Reset */
 
-/* UnderConstruction Section */
-	.construction {
-		text-align: center;
-		font-size: 2rem;
-		padding: 5rem;
-	}
-	
-	.construction h1,
-	.construction iconL {
+/* Header Colors */
+	h1, h2, h3 {
 		color: var(--primary-color);
 	}
-/* END UnderConstruction Section */
-
-/* Icon Sizes */
+	/* END Header Colors */
+	
+/* Icons */
 	.icon {
 		width: 4rem;
-		height: 4rem;
+		h
+		eight: 4rem;
 	}
-	.iconL {
+	.iconLarge {
 		width: 8rem;
 		height: 8rem;
 	}
@@ -83,7 +76,87 @@ html {
 		width: 2rem;
 		height: 2rem;
 	}
+	.iconTiny {
+		width: 0.5rem;
+		height: 0.5rem;
+	}
 	/* END Icon Sizes */
+
+/* UnderConstruction Section */
+	.construction {
+		text-align: center;
+		font-size: 2rem;
+		padding: 5rem;
+	}
+	.construction iconL {
+		color: var(--primary-color);
+	}
+	/* END UnderConstruction Section */
+
+/* Landingspage Section */
+	.landing {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.9rem;
+		max-width: 1100px;
+		margin: 2rem auto;
+	}
+	.introTxt h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+		color: var(--primary-color);
+	}
+	.introTxt h2 {
+		margin-bottom: 0.5rem;
+		color: var(--secondary-color);
+	}
+	.landing p {
+		line-height: var(--line-height);
+	}
+	.btn {
+		margin-top: 1rem;
+		display: inline-block;
+		padding: 0.8rem 0.6rem;
+		border: none;
+		font-size: 1.4rem;
+		border-radius: 5px;
+		color: #fff;
+	}
+	.btnPrimary {
+		background-color: var(--primary-color);
+		margin-left: 1.5rem;
+	}
+	.btnPrimary:hover {
+		background-color: #095cf7;
+		color: #fff;
+	}
+	.btnSecondary {
+		background-color: var(--secondary-color);
+	}
+	.btnSecondary:hover {
+		background-color: #f1262d;
+		color: #fff;
+	}
+	iframe {
+		max-width: 30rem;
+		border-top: 3px groove var(--primary-color);
+		border-bottom: 3px groove var(--primary-color);
+		border-right: 1px solid var(--primary-shadow);
+		border-left: 1px solid var(--primary-shadow);
+		background-color: #000;
+	}
+	.shadow {
+		height: 5rem;
+		width: 30rem;
+		background-color: var(--bg-color2);
+		position: relative;
+		top: -2.5rem;
+		z-index: -1;
+		border-radius: 100%;
+	}
+	/* END Landingspage Section */
+	
 /* Navigation Bar - Sticky Ontop*/
 	nav {
 		position: sticky;
@@ -94,46 +167,38 @@ html {
 		align-items: center;
 		justify-content: space-between;
 		padding: 1.5rem 3.5rem;
-		background-color: var(--bg-color);
+		background-color: var(--bg-color1);
 		box-shadow: 0 3px 5px rgba(0,0,0, 0.1);
 	}
-
 	nav h1 {
 		color: var(--primary-color);
 		transition: var(--transition);
 	}
-	
 	nav h1:hover, 
 	nav .menuBtn:hover {
 		color: var(--secondary-color);
 	}
-	
 	nav ul, 
 	nav div {
 		display: flex;
 		gap: 1.9rem;
 	}
-	
 	nav a img {
 		max-width: 3rem;
 		max-height: 3rem;
 	}
-	
 	.navBar a {
 		color: var(--primary-color);
 		transition: var(--transition);
 		font-size: 1.25rem;
 	}
-	
 	.navBar a:hover {
 		color: var(--secondary-color);
 		border-bottom: 2px solid var(--secondary-color);
 	}
-	
 	.navBar ul li {
 		font-weight: var(--bold-font);
 	}
-
 	.menuBtn {
 		color: var(--primary-color);
 		font-size: 2rem;
@@ -141,10 +206,46 @@ html {
 		background-color: transparent;
 		cursor: pointer;
 	}
-
-	.menuBurger {
-		/* display: none; */
+	#BurgerBtn	{
+		display: none;
 	}
+	/* DarkMode Switcher Section */
+		/* NOT FUNCTIONAL */
+/* 		.checkBox {
+			opacity: 0;
+			position: absolute;
+		}
+		.label {
+			width: 50px;
+			height: 29px;
+			background-color: #111;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			border-radius: 30px;
+			padding: 6px;
+			position: relative;
+		}
+		.switcher {
+			background-attachment: #fff;
+			position: absolute;
+			top: 5px;
+			left: 2px;
+			height: 20px;
+			width:	20px;
+			border-radius: 50%;
+		}
+		.moon {
+			color: #ffa502;
+		}
+		.sun {
+			color: #ffff00;
+		}
+		.checkBox:checked + .label .switcher {
+			transform: translateX(24px);
+		} */
+		/*  END DarkMode Switcher Section */
+		
 	/* END Navigation Bar */
 	
 /* About Section */
@@ -156,23 +257,19 @@ html {
 		max-width: 68.75rem;
 		margin: auto;
 	}
-	
 	.aboutMe img {
-		height: 37.5rem;
-		width: 37.5rem;
+		height: 30rem;
+		width: 30rem;
 	}
-	
 	.bio {
 		width: 25rem;
 		padding: 0.625rem;
 		border-radius: 6px;
 		box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 	}
-	
 	.bio h2 {
 		margin-bottom: var(--bottom-margin);
 	}
-	
 	.bio p {
 		line-height: var(--line-height);
 		padding: 0.3rem 0;
@@ -180,17 +277,14 @@ html {
 	/* END About Section */
 
 /* More About Section */
-	
 	.moreAboutMe {
-		background-color: var(--bg-color);
+		background-color: var(--bg-color1);
 		padding: 1rem 6rem;
 	}
-	
 	.moreAboutMe h2 {
 		margin-bottom: var(--bottom-margin);
 		text-align: center;
 	}
-	
 	.moreAboutMe p {
 		line-height: var(--line-height);
 		padding: 0.4rem;
@@ -204,20 +298,16 @@ html {
 		text-align: center;
 		margin-top: 2.5rem;
 	}
-	
 	.skillHeader {
 		margin-bottom: 1rem;
 	}
-	
 	.skillsWrapper img {
 		padding: 1.25rem;
 	}
-	
 	.tile {
 		width: 11.875rem;
 		height: 11.25rem;
 	}
-	
 	.tileCard {
 		background-color: var(--bg-color2);
 		border-radius: 11px;
@@ -225,27 +315,43 @@ html {
 		padding: 20px;
 		margin: 10px;
 	}
-	
 	/* END Skill Section */
+
+/* Spotlight Section */
+	.gallery {
+		display: grid;
+		grid-template-colums: repeat(5, 1fr);
+	}
+	.gallery img,
+	.gallery a {
+		width: 100%;
+		height: 100%;
+	}
+	.gallery a:first-child {
+		grid-row: 1/3;
+		grid-column: 1/3;
+	}
+	.gallery a:nth-child(2) {
+		grid-column: 3/5;
+	}
+	/* END Spotlight Section */
+
 /* Projects Section */
 	.projects {
-		background-color: var(--bg-color);
+		background-color: var(--bg-color1);
 		padding: 32px 0;
 		margin-top: 2rem;
 	}
-	
 	.projectsTitle {
 		text-align: center;
 		margin-bottom: 1rem;
 	}
-	
 	.projectsContainer {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		
 	}
-	
 	.projectCard {
 		background-color: var(--bg-color2);
 		border-radius: 11px;
@@ -253,39 +359,32 @@ html {
 		padding: 20px;
 		margin: 10px;
 	}
-	
 	.projectContainer{
 		text-align: center;
 		width: 21.875rem;
 		padding: 1rem;
 	}
-	
 	.projectContainer p {
 		padding: 0.4rem;
 	}
-		
 	.projectImg {
 		width: 65%;
 		height: 60%;
 	}
-	
 	.projectTitle,
 	.projectDetail {
 		margin-bottom: var(--bottom-margin);
 	}
-	
 	/* END Projects Section */
 	
 /* Contact Section */
 	.contactMe {
 		margin-top: 2rem;
 	}
-	
 	.contactMe h2 {
 		text-align: center;
 		margin-bottom: var(--bottom-margin-2);
 	}
-	
 	.contactFormContainer {
 		max-width: 40.75rem;
 		margin: 0 auto;
@@ -293,18 +392,15 @@ html {
 		border-radius: 5px;
 		box-shadow: 0 3px 10px var(--secondary-shadow);
 	}
-	
 	.contactFormContainer label {
 		line-height: 2.7em;
 		font-weight: var(--bold-font);
 		color: var(--primary-color);
 	}
-	
 	.contactFormContainer textarea {
 		min-height: 6.25rem;
 		font-size: 14px;
 	}
-	
 	.contactFormContainer .inputField {
 		width: 100%;
 		padding: 10px 0;
@@ -313,12 +409,10 @@ html {
 		font-size: 0.875rem;
 		outline: none;
 	}
-	
 	.contactFormContainer .inputField::placeholder {
 		padding: 1rem;
 		color: var(--primary-color);
 	}
-	
 	.contactFormContainer .submitBtn {
 		width: 100%;
 		padding: 10px;
@@ -330,13 +424,11 @@ html {
 		font-weight: var(--bold-font);
 		transition: var(--transition);
 	}
-	
 	.contactFormContainer .submitBtn:hover {
 		background-color: var(--primary-color);
 		border: 2px solid var(--primary-color);
 		cursor: pointer;
 	}
-	
 	/* END Contact Section */
 	
 /* Social Bar */
@@ -347,7 +439,6 @@ html {
 		right: 1%;
 		bottom: 50%;
 	}
-	
 	.socialIcon {
 		width: 3rem;
 		height: 3rem;
@@ -356,12 +447,11 @@ html {
 
 /* Footer */
 	footer {
-		background-color: var(--bg-color);
+		background-color: var(--bg-color1);
 		padding: 1.25rem;
 		text-align: center;
 		margin: 2rem 0 0;
 	}
-	
 	/* END Footer */
 	
 /* Scroll Up Button */
@@ -371,15 +461,137 @@ html {
 		bottom: 3%;
 		cursor: pointer;
 	}
-	
 	.upArrow {
 		width: 3rem;
 		height: 3rem;
 		color: var(--primary-color);
 	}
-	
 	.upArrow:hover {
 		color: var(--secondary-color);
 	}
-	
 	/* END Scroll Up Button */
+
+/* For Screens of 720px and lower Laptop and Tablets */
+@media screen and (max-width: 720px) {
+	/* Navigationbar */
+		nav {
+			padding: 1.5rem 1rem;
+		}
+		nav ul {
+			position: fixed;
+			background-color: var(--bg-color1);
+			flex-direction: column;
+			top: 86px;
+			left: 10%;
+			width: 80%;
+			text-align: center;
+			transform: translateX(120%);
+			transition: transform 0.5s ease-in;
+		}
+		nav ul li {
+			margin: 8px;
+		}
+		nav ul.show {
+			transform: translateX(0);
+		}
+		#BurgerBtn {
+			display: block;
+		}
+		/* END Navigationbar */
+		
+	/* About Section */
+		.aboutMe {
+			margin-top: -4rem;
+			flex-direction: column;
+			gap: 0;
+		}
+		.aboutMe img {
+			height: 37.5rem;
+			width: 37.5rem;
+		}
+		.bio {
+			margin-top: 0rem;
+			width: 27.5rem;
+		}
+		/* END About Section */
+	
+	/* More About Section */
+		.moreAboutMe {
+			margin-top: 2rem;
+			padding: 1rem 6rem;
+		}
+		.moreAboutMe h2 {
+			text-align: center;
+		}
+		.moreAboutMe p {
+			text-align: justify;
+		}
+		/* END More About Section */
+		
+	/* Skill Section */
+		.tile {
+			width: 5.875rem;
+			height: 5.875rem;
+		}
+		/* END Skill Section */
+	
+	/* Projects Section */
+		.projectsContainer {
+			flex-direction: column;
+		}
+		.projectContainer {
+			width: 35rem;
+			min-height: 25rem;
+		}
+		/* END Projects Section */
+	
+	/* Contact Section */
+		.contactFormContainer {
+			max-width: 25rem;
+		}
+		/* END Contact Section */
+	}
+
+
+/* For Screens of 420px and lower 
+SmartPhones
+*/
+@media screen and (max-width: 420px) {
+	/* About Section */
+		.aboutMe img {
+			height: 23rem;
+			width: 23rem;
+		}
+		.bio {
+			width: 18.3rem;
+			margin-top: 1rem;
+		}
+		/* END About Section */
+		
+	/* Skill Section */
+		.tile {
+			width: 3rem;
+			height: 3rem;
+		}
+		/* END Skill Section */
+	
+	/* Projects Section */
+		.projectContainer {
+			width: 20rem;
+			min-height: 30rem;
+		}
+		/* END Projects Section */
+	
+	/* Contact Section */
+		.contactFormContainer {
+			max-width: 17.75rem;
+		}
+		/* END Contact Section */
+	/* Social Bar */
+		.socialIcon {
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+		/* END Social Bar */
+	}
+}
