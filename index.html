@@ -10,8 +10,11 @@
 	<!-- Favicons -->
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+	<!-- Website Initialize Script -->
+	<script src="assets/js/initScript.js"></script>
 	<!--CSS Styles -->
 	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/responStyle.css" />
 	<!-- Animate CSS CDN -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
@@ -19,9 +22,9 @@
 <body>
 <!-- Navbar -->
 	<nav>
-		<a href="#Home">
-			<!-- <h1> i-Jun </h1> -->
-			<img src="assets/icons/logo512x512.png" alt="icon" />
+		<a href="#">
+			<span class="navLogo"><img src="assets/icons/logo512x512.png" alt="icon" title="i-Jun Home" class="logo" /><!-- <h1> i-Jun </h1> --></span>
+			
 		</a>
 		<ul class="navBar">
 			<li><a class="navBarLink" href="#About"><ion-icon name="person-circle-outline" class="iconSmall"></ion-icon> About</a></li>
@@ -30,22 +33,20 @@
 			<li><a class="navBarLink" href="#Project"><ion-icon name="star" class="iconSmall"></ion-icon> Projects</a></li>
 			<li><a class="navBarLink" href="#Contact"><ion-icon name="chatbox" class="iconSmall"></ion-icon> Contact</a></li>
 		</ul>
-		<div class="navBar">
-			<!-- Darkmode Switch -->
-				<!-- NOT WORKING CORRECTLY -->
-			<!-- <div class="darkSwitch">
-				<input type="checkbox" class="checkBox" id="Checkbox" />
-				<label for="checkbox" class="label">
+		<div class="navBtns">
+		 <!-- Darkmode Switcher -->
+			<div class="themeSwitch">
+				<input type="checkbox" class="themeBtn" id="ThemeSwitchBtn" value="Switch" />
+				<label for="ThemeSwitchBtn" class="label">
 					<ion-icon name="sunny" class="sun"></ion-icon>
 					<ion-icon name="moon" class="moon"></ion-icon>
 					<div class="switcher"></div>
 				</label>
-			</div> -->
-			<button id="ContrastBtn" class="menuBtn"><ion-icon class="bars" name="contrast"></ion-icon></button>
+			</div>
+			<!-- <button id="ContrastBtn" class="menuBtn"><ion-icon class="bars" name="contrast"></ion-icon></button> -->
 			<button id="BurgerBtn" class="menuBtn menuBurger"><ion-icon class="bars" name="menu"></ion-icon></button>
 		</div>
 	</nav>
-
 <!-- UnderConstruction Section -->
 	<section class="construction">		
 		<h1>
@@ -60,32 +61,27 @@
 	</section>
 
 <!-- Landingspage Section -->
-	<section id="Home" class="landing">		
+	<section class="landing" id="Home">	
+<!-- <img src="assets/img/gd.svg" alt="About me image" loading="lazy" class="aboutImg" /> -->
+		<img src="assets/img/GD1.gif" alt="About me image" loading="lazy" class="aboutImg" />
+		
 		<div class="introTxt">
 			<h1> Welcome, </h1>
 			<h2> to my Portfolio. </h2>
 			<p>
-				i-Jun&apos; online Game &amper; Web Development Portfolio
+				i-Jun&apos; online Game &amp; Web Development Portfolio
 				<br />
 				Read More about me and my Projects.
 			</p>
 			<a class="btn btnPrimary" href="#">Read More</a>
 			<a class="btn btnSecondary" href="#">Subscribe</a>
 		</div>
-		<div class="iFrame">
-			<iframe width="560" height="315"
-			src="https://www.youtube.com/embed/ScMzIvxBSi4"
-			title="Placeholder Video" frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-			></iframe>
-			<div class="shadow"></div>
-		</div>
+		
 	</section>
 
 <!-- About Section -->
 	<section class="aboutMe" id="About">
-		<!-- <img src="assets/img/gd.svg" alt="About me image" loading="lazy" class="aboutImg" /> -->
-		<img src="assets/img/gd1.gif" alt="About me image" loading="lazy" class="aboutImg" />
+		
 		<div class="bio animate__animated animate__shakeX"> <!-- Animate text container -->
 			<h2 class="bioTitle"><ion-icon name="person-circle-outline" class="icon" loading="lazy"></ion-icon> About</h2>
 			<p class="bioText">
@@ -98,6 +94,11 @@
 				See some of the <a href="#Projects">Games and Projects</a> I worked on,
 				And find information on how to <a href="#Contact">Contact me!</a>
 			</p>
+		</div>
+		
+		<div class="iFrame">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Placeholder Video" frameborder="0" allow="encrypted-media;" ></iframe>
+			<div class="shadow"></div>
 		</div>
 	</section>
 
@@ -121,6 +122,31 @@
 				Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
 				Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
 			</p>
+	</section>
+
+<!-- Spotlight section -->
+<!-- NOT FUNCTIONAL - NEEDS FIX -->
+	<section class="spotlight" id="Spot">
+		<div class="gallery">
+			<a href="assets/img/placeholder800x600.jpg" class="big">
+				<img src="assets/img/placeholder800x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
+			</a>
+			<a href="assets/img/placeholder1366x732.jpg" class="big">
+				<img src="assets/img/placeholder1366x732.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
+			</a>
+			<a href="assets/img/placeholder600x600.jpg" class="big">
+				<img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
+			</a>
+			<a href="assets/img/placeholder600x600.jpg" class="big">
+				<img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
+			</a>
+			<!-- <a href="assets/img/placeholder600x600.jpg" class="big">
+				<img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
+			</a>
+			<a href="assets/img/placeholder600x600.jpg" class="big">
+				<img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
+			</a> -->
+		</div>
 	</section>
 
 <!-- Skills section -->
@@ -153,31 +179,6 @@
 			</div>
 		</div>
 	</section>
-
-<!-- Spotlight section -->
-	<!-- NOT FUNCTIONAL - NEEDS FIX -->
-<!-- 	<section class="spotlight" id="Spot">
-		<div class="gallery">
-			<a href="assets/img/placeholder800x600.jpg" class="big">
-				<img src="assets/img/placeholder800x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
-			</a>
-			<a href="assets/img/placeholder1366x732.jpg" class="big">
-				<img src="assets/img/placeholder1366x732.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
-			</a>
-			<a href="assets/img/placeholder600x600.jpg" class="big">
-				<img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
-			</a>
-			<a href="assets/img/placeholder600x600.jpg" class="big">
-				<img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
-			</a>
-			<!-- <a href="assets/img/placeholder600x600.jpg" class="big">
-				<img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
-			</a>
-			<a href="assets/img/placeholder600x600.jpg" class="big">
-				<img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
-			</a> -->
-		</div>
-	</section> -->
 
 <!-- Projects section -->
 	<section class="projects" id="Project">
@@ -239,6 +240,7 @@
 			</div>
 		</div>
 	</section>
+
 <!-- Social accounts - Fixed to the right -->
 	<div class="socials">
 		<a hre="#" target="_blank"><ion-icon name="logo-github" class="socialIcon" loading="lazy" alt="Github social"></ion-icon></a>
@@ -247,175 +249,56 @@
 		<a hre="#" target="_blank"><ion-icon name="logo-steam" class="socialIcon" loading="lazy" alt="Steam Account"></ion-icon></a>
 		<a hre="#" target="_blank"><ion-icon name="logo-youtube" class="socialIcon" loading="lazy" alt="Youtube Account"></ion-icon></a>
 	</div>
+
 <!-- Scroll to top -->
-	<i class="scroll" id="ScrollUp"><ion-icon name="caret-up-circle" class="upArrow" loading="lazy"></ion-icon></i>
+	<i class="scroll" id="ScrollUp">
+		<ion-icon name="caret-up-circle" class="upArrow" loading="lazy"></ion-icon>
+	</i>
 
 <!-- Footer section -->
 	<footer>
 		<p class="copy">&copy Copyright 2022</p>
 		<p class="copy">by <a href="i-Jun.github.io" target="_blank">i-Jun</a></p>
-		<p class="">Hosted with 
-			<a href="https://pages.github.com/" title="Github Pages" target="_blank">Github Pages
-			<ion-icon name="logo-github" class="iconSmall"></ion-icon></a>
-		</p>
-		<p class="">Credits to 
-			<a href="https://twitter.com/koladechris" title="Ksound Twitter" target="_blank">Kolade Chris (Ksound)
-			<ion-icon name="logo-twitter" class="iconSmall"></ion-icon></a>
-		</p>
-		<p class="">Bio image by <a href="https://storyset.com/technology" title="Storyset" target="_blank">Technology illustrations by Storyset</a></p>
-		<!-- Website scripts -->
+<!-- Credits and Mentions -->
+		<div class="credits">
+			<span class="credit">
+				<p>Hosted with </p>
+				<a href="https://pages.github.com/" title="Github Pages" target="_blank">
+					Github Pages <ion-icon name="logo-github" class="iconSmall"></ion-icon>
+				</a>
+			</span>
+			<span class="credit">
+				<p>Bio image by </p>
+				<a href="https://storyset.com/technology" title="Storyset" target="_blank">
+					Technology illustrations by Storyset
+				</a>
+			</span>
+			<p class="credit">Credits to </p>
+			<span>
+				<a href="https://www.freecodecamp.org/news/author/kolade/" title="FreeCodeCamp Kolade Chris"  target="_blank">
+					Kolade Chris
+				</a>
+				<a href="https://twitter.com/koladechris" title="Twitter @Ksound" target="_blank">
+					<ion-icon name="logo-twitter" class="iconSmall"></ion-icon>
+				</a>
+			</span>
+			<span>
+				<a href="https://codepen.io/ohansemmanuel" title="Codepen.io Ohans Emmanuel"  target="_blank">
+					Ohans Emmanuel
+				</a>
+				<a href="https://twitter.com/ohansemmanuel" title="Twitter @OhansEmmanuel" target="_blank">
+					<ion-icon name="logo-twitter" class="iconSmall"></ion-icon>
+				</a>
+			</span>
+		</div>
+	<!-- Website scripts -->
 		<script src="assets/js/script.js"></script>
-		<!-- Gallery Smooth Scroll Script -->
-			<!-- NOT FUNCTIONAL IN FIREFOX - NEEDS FIX -->
+	<!-- Gallery Smooth Scroll Script -->
+		<!-- NOT FUNCTIONAL IN FIREFOX - NEEDS FIX -->
 		<script> var lightbox = new SimpleLightbox(".gallery a");</script>
-		<!-- Ion icons scripts -->
+	<!-- Ion icons scripts -->
 		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	</footer>
-
-<!-- ION ICONS PREVIEW -->
-	<!-- <div style=""> -->
-	<div style="display:none">
-		<h1><a href="https://unpkg.com/browse/ionicons@5.5.2/dist/ionicons/svg/">Icon Preview</a></h1>
-		<div id="PageIcons">
-			<h2>Page Icons</h2>
-				<ion-icon name="home" class="icon"></ion-icon>
-				<ion-icon name="menu" class="icon"></ion-icon>
-				<ion-icon name="contrast" class="icon"></ion-icon>
-				<ion-icon name="person-circle-outline" class="icon"></ion-icon>
-				<ion-icon name="stats-chart" class="icon"></ion-icon>
-				<ion-icon name="star" class="icon"></ion-icon>
-				<ion-icon name="chatbox" class="icon"></ion-icon>
-				<ion-icon name="construct" class="icon"></ion-icon>
-				<ion-icon name="bonfire" class="icon"></ion-icon>
-				<ion-icon name="school" class="icon"></ion-icon>
-				<ion-icon name="musical-notes" class="icon"></ion-icon>
-			<br>
-		</div>
-		<div id="MainIcons">
-			<h2>Main Icons</h2>
-				<ion-icon name="warning" class="icon"></ion-icon>
-				<ion-icon name="search" class="icon"></ion-icon>
-				<ion-icon name="compass" class="icon"></ion-icon>
-				<ion-icon name="navigate" class="icon"></ion-icon>
-				<ion-icon name="mail" class="icon"></ion-icon>
-				<ion-icon name="people-circle-outline" class="icon"></ion-icon>
-			<br>
-		</div>
-		<div id="ArrowIcons">
-			<h2>Arrow Icons</h2>
-				<ion-icon name="caret-up" class="icon"></ion-icon>
-				<ion-icon name="caret-down" class="icon"></ion-icon>
-				<ion-icon name="caret-forward" class="icon"></ion-icon>
-				<ion-icon name="caret-back" class="icon"></ion-icon>
-				<ion-icon name="chevron-up" class="icon"></ion-icon>
-				<ion-icon name="chevron-down" class="icon"></ion-icon>
-				<ion-icon name="chevron-forward" class="icon"></ion-icon>
-				<ion-icon name="chevron-back" class="icon"></ion-icon>
-			<br>
-		</div>
-		<div id="SocialIcons">
-			<h2>Social Icons</h2>
-				<ion-icon name="logo-github" class="icon"></ion-icon>
-				<ion-icon name="logo-steam" class="icon"></ion-icon>
-				<ion-icon name="logo-discord" class="icon"></ion-icon>
-				<ion-icon name="logo-youtube" class="icon"></ion-icon>
-				<ion-icon name="logo-twitch" class="icon"></ion-icon>
-				<ion-icon name="logo-whatsapp" class="icon"></ion-icon>
-				<ion-icon name="logo-reddit" class="icon"></ion-icon>
-				<ion-icon name="logo-stackoverflow" class="icon"></ion-icon>
-				<ion-icon name="logo-soundcloud" class="icon"></ion-icon>
-				<ion-icon name="logo-react" class="icon"></ion-icon>
-				<ion-icon name="logo-linkedin" class="icon"></ion-icon>
-				<ion-icon name="logo-google" class="icon"></ion-icon>
-			<br>
-		</div>
-		<div id="PlatformIcons">
-			<h2>Platform Icons</h2>
-				<ion-icon name="desktop" class="icon"></ion-icon>
-				<ion-icon name="tablet-landscape" class="icon"></ion-icon>
-				<ion-icon name="phone-landscape" class="icon"></ion-icon>
-				<ion-icon name="logo-windows" class="icon"></ion-icon>
-				<ion-icon name="logo-android" class="icon"></ion-icon>
-				<ion-icon name="logo-apple" class="icon"></ion-icon>
-				<ion-icon name="logo-xbox" class="icon"></ion-icon>
-				<ion-icon name="logo-playstation" class="icon"></ion-icon>
-				<ion-icon name="logo-javascript" class="icon"></ion-icon>
-				<ion-icon name="logo-html5" class="icon"></ion-icon>
-				<ion-icon name="logo-css3" class="icon"></ion-icon>
-			<br>
-		</div>
-		<div id="ProjectIcons">
-			<h2>Project Icons</h2>
-				<ion-icon name="library" class="icon"></ion-icon>
-				<ion-icon name="folder" class="icon"></ion-icon>
-				<ion-icon name="code" class="icon"></ion-icon>
-				<ion-icon name="code-slash" class="icon"></ion-icon>
-				<ion-icon name="build" class="icon"></ion-icon>
-				<ion-icon name="bug" class="icon"></ion-icon>
-				<ion-icon name="terminal" class="icon"></ion-icon>
-				<ion-icon name="document" class="icon"></ion-icon>
-				<ion-icon name="reader" class="icon"></ion-icon>
-				<ion-icon name="images" class="icon"></ion-icon>
-				<ion-icon name="close" class="icon"></ion-icon>
-				<ion-icon name="checkmark" class="icon"></ion-icon>
-				<ion-icon name="checkbox-outline" class="icon"></ion-icon>
-				<ion-icon name="square-outline" class="icon"></ion-icon>
-				<ion-icon name="cloud" class="icon"></ion-icon>
-				<ion-icon name="cloud-download" class="icon"></ion-icon>
-				<ion-icon name="archive" class="icon"></ion-icon>
-				<ion-icon name="open-outline" class="icon"></ion-icon>
-				<ion-icon name="download-outline" class="icon"></ion-icon>
-				<ion-icon name="enter-outline" class="icon"></ion-icon>
-				<ion-icon name="exit-outline" class="icon"></ion-icon>
-			<br>
-		</div>
-		<div id="GameIcons">
-			<h2>Game Icons</h2>
-				<ion-icon name="game-controller" class="icon"></ion-icon>
-				<ion-icon name="dice" class="icon"></ion-icon>
-				<ion-icon name="power" class="icon"></ion-icon>
-				<ion-icon name="save" class="icon"></ion-icon>
-				<ion-icon name="caret-up-circle" class="icon"></ion-icon>
-				<ion-icon name="ellipse" class="icon"></ion-icon>
-				<ion-icon name="body" class="icon"></ion-icon>
-				<ion-icon name="stop-circle" class="icon"></ion-icon>
-				<ion-icon name="close-circle" class="icon"></ion-icon>
-			<br>
-		</div>	
-		<div id="PlayerIcons">
-			<h2>Player Icons</h2>
-				<ion-icon name="expand-outline" class="icon"></ion-icon>
-				<ion-icon name="contract-outline" class="icon"></ion-icon>
-				<ion-icon name="volume-off-outline" class="icon"></ion-icon>
-				<ion-icon name="volume-low-outline" class="icon"></ion-icon>
-				<ion-icon name="volume-medium-outline" class="icon"></ion-icon>
-				<ion-icon name="volume-high-outline" class="icon"></ion-icon>
-				<ion-icon name="volume-mute-outline" class="icon"></ion-icon>
-				<ion-icon name="play-outline" class="icon"></ion-icon>
-				<ion-icon name="pause-outline" class="icon"></ion-icon>
-				<ion-icon name="stop-outline" class="icon"></ion-icon>
-				<ion-icon name="options-outline" class="icon"></ion-icon>
-			<br>
-		</div>
-		<div id="MiscIcons">
-			<h2>Misc. Icons</h2>
-				<ion-icon name="trophy" class="icon"></ion-icon>
-				<ion-icon name="bulb" class="icon"></ion-icon>
-				<ion-icon name="diamond" class="icon"></ion-icon>
-				<ion-icon name="flash" class="icon"></ion-icon>
-				<ion-icon name="flame" class="icon"></ion-icon>
-				<ion-icon name="ribbon" class="icon"></ion-icon>
-				<ion-icon name="sparkles" class="icon"></ion-icon>
-				<ion-icon name="rocket" class="icon"></ion-icon>
-				<ion-icon name="speedometer" class="icon"></ion-icon>
-				<ion-icon name="card" class="icon"></ion-icon>
-				<ion-icon name="hardware-chip" class="icon"></ion-icon>
-				<ion-icon name="heart-circle" class="icon"></ion-icon>
-				<ion-icon name="heart-dislike-circle" class="icon"></ion-icon>
-			<br>
-		</div>
-	</div>
-<!-- END ION ICONS PREVIEW -->
 </body>
 </html>

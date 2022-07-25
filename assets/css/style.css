@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
 /* Variables */
-:root{
+:root {
 	/* Font Variables */
 	--font-family: "Roboto", sans-serif;
 	--normal-font: 400;
@@ -11,12 +11,13 @@
 	/* Color Variables */
 	--bg-color0: #1e2021;
 	--bg-color1: #1c1c1c;
-	--bg-color2: rgba(100,100,100,0.5);
+	--bg-element0: rgba(100,100,100,0.75);
 	--primary-color: #49df49;
 	--secondary-color: #4756df;
 	--primary-shadow: #95b08d;
 	--secondary-shadow: #8b8eaf;
 	--font-color0: #dedcd9;
+	--font-color1: #fff;
 	/* Position Variables */
 	--bottom-margin: 0.5rem;
 	--bottom-margin-2: 1rem;
@@ -28,7 +29,7 @@ html {
 	/* Smooth scrolling */
 	scroll-behaviour: smooth;
 	
-	/* Default Darkmode Colors */
+	/* Dafault Dark */
 	background-color: var(--bg-color0);
 	color: var(--font-color0);
 }
@@ -82,81 +83,6 @@ html {
 	}
 	/* END Icon Sizes */
 
-/* UnderConstruction Section */
-	.construction {
-		text-align: center;
-		font-size: 2rem;
-		padding: 5rem;
-	}
-	.construction iconL {
-		color: var(--primary-color);
-	}
-	/* END UnderConstruction Section */
-
-/* Landingspage Section */
-	.landing {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 1.9rem;
-		max-width: 1100px;
-		margin: 2rem auto;
-	}
-	.introTxt h1 {
-		font-size: 3rem;
-		margin-bottom: 1rem;
-		color: var(--primary-color);
-	}
-	.introTxt h2 {
-		margin-bottom: 0.5rem;
-		color: var(--secondary-color);
-	}
-	.landing p {
-		line-height: var(--line-height);
-	}
-	.btn {
-		margin-top: 1rem;
-		display: inline-block;
-		padding: 0.8rem 0.6rem;
-		border: none;
-		font-size: 1.4rem;
-		border-radius: 5px;
-		color: #fff;
-	}
-	.btnPrimary {
-		background-color: var(--primary-color);
-		margin-left: 1.5rem;
-	}
-	.btnPrimary:hover {
-		background-color: #095cf7;
-		color: #fff;
-	}
-	.btnSecondary {
-		background-color: var(--secondary-color);
-	}
-	.btnSecondary:hover {
-		background-color: #f1262d;
-		color: #fff;
-	}
-	iframe {
-		max-width: 30rem;
-		border-top: 3px groove var(--primary-color);
-		border-bottom: 3px groove var(--primary-color);
-		border-right: 1px solid var(--primary-shadow);
-		border-left: 1px solid var(--primary-shadow);
-		background-color: #000;
-	}
-	.shadow {
-		height: 5rem;
-		width: 30rem;
-		background-color: var(--bg-color2);
-		position: relative;
-		top: -2.5rem;
-		z-index: -1;
-		border-radius: 100%;
-	}
-	/* END Landingspage Section */
-	
 /* Navigation Bar - Sticky Ontop*/
 	nav {
 		position: sticky;
@@ -167,14 +93,14 @@ html {
 		align-items: center;
 		justify-content: space-between;
 		padding: 1.5rem 3.5rem;
-		background-color: var(--bg-color1);
+		background-color: var(--bg-element0);
 		box-shadow: 0 3px 5px rgba(0,0,0, 0.1);
 	}
-	nav h1 {
+	.navLogo {
 		color: var(--primary-color);
 		transition: var(--transition);
 	}
-	nav h1:hover, 
+	.navLogo:hover, 
 	nav .menuBtn:hover {
 		color: var(--secondary-color);
 	}
@@ -208,10 +134,10 @@ html {
 	}
 	#BurgerBtn	{
 		display: none;
-	}
+	}	
+	
 	/* DarkMode Switcher Section */
-		/* NOT FUNCTIONAL */
-/* 		.checkBox {
+		.themeBtn {
 			opacity: 0;
 			position: absolute;
 		}
@@ -227,7 +153,7 @@ html {
 			position: relative;
 		}
 		.switcher {
-			background-attachment: #fff;
+			background-color: #aaa;
 			position: absolute;
 			top: 5px;
 			left: 2px;
@@ -241,25 +167,89 @@ html {
 		.sun {
 			color: #ffff00;
 		}
-		.checkBox:checked + .label .switcher {
+		.themeBtn:checked + .label .switcher {
 			transform: translateX(24px);
-		} */
-		/*  END DarkMode Switcher Section */
-		
+		}
+		 /* END DarkMode Switcher Section */
 	/* END Navigation Bar */
+
+/* UnderConstruction Section */
+.construction {
+	text-align: center;
+	font-size: 2rem;
+	padding: 5rem;
+}
+.construction iconL {
+	color: var(--primary-color);
+}
+/* END UnderConstruction Section */
+
+
+/* Landingspage Section */
+	.landing {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		/* justify-content: space-between; */
+		/* gap: 1.9rem; */
+		/* max-width: 1100px; */
+		padding: 1rem 6rem;
+		margin: 2rem auto;
+	}
+	.landing img {
+		height: 37.5rem;
+		width: 37.5rem;
+	}
+	
+	/*Rightside*/
+	.introTxt h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+		color: var(--primary-color);
+	}
+	.introTxt h2 {
+		margin-bottom: 0.5rem;
+		color: var(--secondary-color);
+	}
+	.landing p {
+		line-height: var(--line-height);
+	}
+	.btn {
+		margin-top: 1rem;
+		display: inline-block;
+		padding: 0.8rem 0.6rem;
+		border: none;
+		font-size: 1.4rem;
+		border-radius: 5px;
+		color: #fff;
+	}
+	.btnPrimary {
+		background-color: var(--primary-color);
+		margin-left: 1.5rem;
+	}
+	.btnPrimary:hover {
+		background-color: #095cf7;
+		color: #fff;
+	}
+	.btnSecondary {
+		background-color: #f1262d;
+	}
+	.btnSecondary:hover {
+		background-color: var(--secondary-color);
+		color: #fff;
+	}
+
+	/* END Landingspage Section */
 	
 /* About Section */
 	.aboutMe {
+		background-color: var(--bg-color1);
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		gap: 2.5rem;
 		max-width: 68.75rem;
 		margin: auto;
-	}
-	.aboutMe img {
-		height: 30rem;
-		width: 30rem;
 	}
 	.bio {
 		width: 25rem;
@@ -273,6 +263,25 @@ html {
 	.bio p {
 		line-height: var(--line-height);
 		padding: 0.3rem 0;
+	}
+	
+	/*Rightside*/	
+	iframe {
+		max-width: 30rem;
+		border-top: 3px groove var(--primary-color);
+		border-bottom: 3px groove var(--primary-color);
+		border-right: 1px solid var(--primary-shadow);
+		border-left: 1px solid var(--primary-shadow);
+		background-color: #000;
+	}
+	.shadow {
+		height: 5rem;
+		width: 30rem;
+		background-color: var(--bg-element0);
+		position: relative;
+		top: -2.5rem;
+		z-index: -1;
+		border-radius: 100%;
 	}
 	/* END About Section */
 
@@ -309,7 +318,7 @@ html {
 		height: 11.25rem;
 	}
 	.tileCard {
-		background-color: var(--bg-color2);
+		background-color: var(--bg-element0);
 		border-radius: 11px;
 		box-shadow: 0 3px 10px var(--secondary-shadow);
 		padding: 20px;
@@ -353,7 +362,7 @@ html {
 		
 	}
 	.projectCard {
-		background-color: var(--bg-color2);
+		background-color: var(--bg-element0);
 		border-radius: 11px;
 		box-shadow: 0 3px 10px var(--primary-shadow);
 		padding: 20px;
@@ -417,7 +426,7 @@ html {
 		width: 100%;
 		padding: 10px;
 		margin: 10px 0;
-		background-color: var(--bg-color2);
+		background-color: var(--bg-element0);
 		border: 2px solid var(--primary-color);
 		border-radius: 5px;
 		font-size: 1rem;
@@ -470,128 +479,3 @@ html {
 		color: var(--secondary-color);
 	}
 	/* END Scroll Up Button */
-
-/* For Screens of 720px and lower Laptop and Tablets */
-@media screen and (max-width: 720px) {
-	/* Navigationbar */
-		nav {
-			padding: 1.5rem 1rem;
-		}
-		nav ul {
-			position: fixed;
-			background-color: var(--bg-color1);
-			flex-direction: column;
-			top: 86px;
-			left: 10%;
-			width: 80%;
-			text-align: center;
-			transform: translateX(120%);
-			transition: transform 0.5s ease-in;
-		}
-		nav ul li {
-			margin: 8px;
-		}
-		nav ul.show {
-			transform: translateX(0);
-		}
-		#BurgerBtn {
-			display: block;
-		}
-		/* END Navigationbar */
-		
-	/* About Section */
-		.aboutMe {
-			margin-top: -4rem;
-			flex-direction: column;
-			gap: 0;
-		}
-		.aboutMe img {
-			height: 37.5rem;
-			width: 37.5rem;
-		}
-		.bio {
-			margin-top: 0rem;
-			width: 27.5rem;
-		}
-		/* END About Section */
-	
-	/* More About Section */
-		.moreAboutMe {
-			margin-top: 2rem;
-			padding: 1rem 6rem;
-		}
-		.moreAboutMe h2 {
-			text-align: center;
-		}
-		.moreAboutMe p {
-			text-align: justify;
-		}
-		/* END More About Section */
-		
-	/* Skill Section */
-		.tile {
-			width: 5.875rem;
-			height: 5.875rem;
-		}
-		/* END Skill Section */
-	
-	/* Projects Section */
-		.projectsContainer {
-			flex-direction: column;
-		}
-		.projectContainer {
-			width: 35rem;
-			min-height: 25rem;
-		}
-		/* END Projects Section */
-	
-	/* Contact Section */
-		.contactFormContainer {
-			max-width: 25rem;
-		}
-		/* END Contact Section */
-	}
-
-
-/* For Screens of 420px and lower 
-SmartPhones
-*/
-@media screen and (max-width: 420px) {
-	/* About Section */
-		.aboutMe img {
-			height: 23rem;
-			width: 23rem;
-		}
-		.bio {
-			width: 18.3rem;
-			margin-top: 1rem;
-		}
-		/* END About Section */
-		
-	/* Skill Section */
-		.tile {
-			width: 3rem;
-			height: 3rem;
-		}
-		/* END Skill Section */
-	
-	/* Projects Section */
-		.projectContainer {
-			width: 20rem;
-			min-height: 30rem;
-		}
-		/* END Projects Section */
-	
-	/* Contact Section */
-		.contactFormContainer {
-			max-width: 17.75rem;
-		}
-		/* END Contact Section */
-	/* Social Bar */
-		.socialIcon {
-			width: 2.5rem;
-			height: 2.5rem;
-		}
-		/* END Social Bar */
-	}
-}

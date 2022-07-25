@@ -1,0 +1,167 @@
+/* Responsive Style for the Website */
+/* For Screens of 720px and lower Laptop and Tablets */
+@media screen and (max-width: 720px) {
+/* Navigationbar */
+	nav {
+		padding: 1.5rem 1rem;
+	}
+	.logo {
+		width: 50%;
+		height: 50%;
+	}
+		 {}
+	.navBar {
+		position: fixed;
+		background-color: var(--bg-element0);
+		/* background-color: var(--bg-color1); */
+		flex-direction: column;
+		top: 86px;
+		left: 10%;
+		width: 80%;
+		text-align: center;
+		transform: translateX(120%);
+		transition: transform 0.5s ease-in;
+	}
+	.navBar li {
+		margin: 8px;
+	}
+	.navBar.show {
+		transform: translateX(0);
+	}
+	#BurgerBtn {
+		display: block;
+	}
+	/* END Navigationbar */
+
+/* Landing Page Section */
+	.landing {
+		flex-direction: column;
+		max-width: 500px;
+		margin-top: 0rem;
+	}
+	.landing img {
+		height: 20rem;
+		width: 20rem;
+	}
+	.introText h1 {
+		font-size: 2.3rem;
+	}
+	.btn {
+		padding: 0.5rem;
+		font-size: 1.2rem;
+	}
+	/* END Landing Page Section */
+
+/* About Section */
+	.aboutMe {
+		/* margin-top: -4rem; */
+		flex-direction: column;
+		gap: 0;
+	}
+	.bio {
+	
+		width: 27.5rem;
+	}
+	iframe {
+		max-width: 26rem;
+	}
+	.shadow {
+		height: 2.5rem;
+		width: 30rem;
+		top: -1.5rem;
+	}
+	/* END About Section */
+
+/* More About Section */
+	.moreAboutMe {
+		margin-top: 2rem;
+		padding: 1rem 6rem;
+		
+	}
+	.moreAboutMe h2 {
+		text-align: center;
+	}
+	.moreAboutMe p {
+		text-align: justify;
+	}
+	/* END More About Section */
+	
+/* Skill Section */
+	.tile {
+		width: 5.875rem;
+		height: 5.875rem;
+	}
+	/* END Skill Section */
+
+/* Projects Section */
+	.projectsContainer {
+		flex-direction: column;
+	}
+	.projectContainer {
+		width: 35rem;
+		min-height: 25rem;
+	}
+	/* END Projects Section */
+
+/* Contact Section */
+	.contactFormContainer {
+		max-width: 25rem;
+	}
+	/* END Contact Section */
+}
+
+
+/* For Screens of 420px and lower SmartPhones */
+@media screen and (max-width: 420px) {
+/* Landing Page Section */
+	.landing {
+		max-width: 330px;
+	}
+	.landing img {
+		height: 23rem;
+		width: 23rem;
+	}
+	.introText h1 {
+		font-size: 2rem;
+	}
+	/* END Landing Page Section */
+	
+/* About Section */
+	.bio {
+		width: 18.3rem;
+		margin-top: 1rem;
+	}
+	iframe {
+		max-width: 330px;
+	}
+	.shadow {
+		
+	}
+	/* END About Section */
+	
+/* Skill Section */
+	.tile {
+		width: 3rem;
+		height: 3rem;
+	}
+	/* END Skill Section */
+
+/* Projects Section */
+	.projectContainer {
+		width: 20rem;
+		min-height: 30rem;
+	}
+	/* END Projects Section */
+
+/* Contact Section */
+	.contactFormContainer {
+		max-width: 17.75rem;
+	}
+	/* END Contact Section */
+/* Social Bar */
+	.socialIcon {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+	/* END Social Bar */
+}

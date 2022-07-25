@@ -1,0 +1,73 @@
+/* Work in Progress Style
+Use to find and update my current progress */
+/* DarkMode Switcher Section */
+.themeBtn {
+	opacity: 0;
+	position: absolute;
+}
+.label {
+	width: 50px;
+	height: 29px;
+	background-color: #111;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 30px;
+	padding: 6px;
+	position: relative;
+}
+.switcher {
+	background-color: #aaa;
+	position: absolute;
+	top: 5px;
+	left: 2px;
+	height: 20px;
+	width:	20px;
+	border-radius: 50%;
+}
+.moon {
+	color: #ffa502;
+}
+.sun {
+	color: #ffff00;
+}
+.themeBtn:checked + .label .switcher {
+	transform: translateX(24px);
+}
+ /* END DarkMode Switcher Section *//*
+ For CSS ClassList Solution See: "ThemeColorChange" Section for the Text- and BG Color Switch i.e. Theme Colors
+ For JS Variables Solution See: "ThemeVarToggle" in WIPscript.js */
+
+/* ThemeColorChange Section */
+	body.dark {
+		background-color: #1e272e;
+	}
+
+	body.dark .landing {
+		background-color: #fff;
+	}
+
+	body.dark p {
+		color: #fff;
+	}
+
+	body.dark h3 {
+		color: #fff;
+	}
+
+	body.dark nav {
+		background-color: #1e272e;
+		box-shadow: 2px 3px 2px #111010;
+	}
+
+	body.dark ul {
+		background-color: #1e272e;
+	}
+
+	body.dark footer {
+		color: #fff;
+		border-top: 1px solid #111010;
+		box-shadow: 0px -2px 3px #111010;
+	}
+
+/* END ThemeColorChange Section */
