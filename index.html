@@ -15,8 +15,6 @@
 	<!--CSS Styles -->
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<link rel="stylesheet" href="assets/css/responStyle.css" />
-	<!-- Animate CSS CDN -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -73,16 +71,15 @@
 				<br />
 				Read More about me and my Projects.
 			</p>
-			<a class="btn btnPrimary" href="#">Read More</a>
-			<a class="btn btnSecondary" href="#">Subscribe</a>
+			
+			
 		</div>
 		
 	</section>
 
 <!-- About Section -->
 	<section class="aboutMe" id="About">
-		
-		<div class="bio animate__animated animate__shakeX"> <!-- Animate text container -->
+		<div class="bio ">
 			<h2 class="bioTitle"><ion-icon name="person-circle-outline" class="icon" loading="lazy"></ion-icon> About</h2>
 			<p class="bioText">
 				<b>Welcome Reader</b>, I'm a Dutch solo game developer. Interested in making fantasy games, adventure/rpg like games. 
@@ -94,11 +91,20 @@
 				See some of the <a href="#Projects">Games and Projects</a> I worked on,
 				And find information on how to <a href="#Contact">Contact me!</a>
 			</p>
+			<!-- Position "ReadMore Button" in the Bottom-Left of Block(?) -->
+			<!-- <div class="btnWrapper btnLeft"> -->
+				<!-- <a class="btn btnPrimary" href="#More">Read More</a> -->
+			<!-- </div> -->
 		</div>
-		
 		<div class="iFrame">
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Placeholder Video" frameborder="0" allow="encrypted-media;" ></iframe>
-			<div class="shadow"></div>
+			<!-- <div class="shadow"></div> -->
+			<!-- Position "Subscribe Button" over the Bottom-Right of Video -->
+			<!-- 
+			<div class="btnWrapper btnRight">
+				<a class="btn btnSecondary" href="#">Subscribe</a>
+			</div>
+			-->
 		</div>
 	</section>
 
@@ -125,8 +131,8 @@
 	</section>
 
 <!-- Spotlight section -->
-<!-- NOT FUNCTIONAL - NEEDS FIX -->
 	<section class="spotlight" id="Spot">
+	<h2><ion-icon name="diamond" class="iconSmall"></ion-icon> Spotlight</h2>
 		<div class="gallery">
 			<a href="assets/img/placeholder800x600.jpg" class="big">
 				<img src="assets/img/placeholder800x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
@@ -140,12 +146,12 @@
 			<a href="assets/img/placeholder600x600.jpg" class="big">
 				<img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
 			</a>
-			<!-- <a href="assets/img/placeholder600x600.jpg" class="big">
+			<a href="assets/img/placeholder600x600.jpg" class="big">
 				<img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
 			</a>
 			<a href="assets/img/placeholder600x600.jpg" class="big">
 				<img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
-			</a> -->
+			</a>
 		</div>
 	</section>
 
@@ -153,7 +159,7 @@
 	<section class="skills" id="Skill">
 		<h2 class="skillHeader"><ion-icon name="stats-chart" class="icon" loading="lazy"></ion-icon> Skills</h2>
 		<div class="skillsWrapper">
-			<div class="skills0 animate__animated animate__pulse">
+			<div class="skills0">
 				<!-- <img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" /> -->
 				<ion-icon name="caret-up-circle" class="tile tileCard"></ion-icon>
 				<!-- <img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" /> -->
@@ -161,7 +167,7 @@
 				<!-- <img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" /> -->
 				<ion-icon name="ellipse" class="tile tileCard"></ion-icon>
 			</div>
-			<div class="skills1 animate__animated animate__pulse">
+			<div class="skills1">
 				<!-- <img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" /> -->
 				<ion-icon name="caret-back" class="tile tileCard"></ion-icon>
 				<!-- <img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" /> -->
@@ -169,7 +175,7 @@
 				<!-- <img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" /> -->
 				<ion-icon name="caret-forward" class="tile tileCard"></ion-icon>
 			</div>
-			<div class="skills2 animate__animated animate__pulse">
+			<div class="skills2">
 				<!-- <img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" /> -->
 				<ion-icon name="stop-circle" class="tile tileCard"></ion-icon>
 				<!-- <img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" /> -->
@@ -293,9 +299,6 @@
 		</div>
 	<!-- Website scripts -->
 		<script src="assets/js/script.js"></script>
-	<!-- Gallery Smooth Scroll Script -->
-		<!-- NOT FUNCTIONAL IN FIREFOX - NEEDS FIX -->
-		<script> var lightbox = new SimpleLightbox(".gallery a");</script>
 	<!-- Ion icons scripts -->
 		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

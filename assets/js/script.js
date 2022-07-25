@@ -54,3 +54,7 @@ const scrollUp = document.querySelector("#ScrollUp");
 			top: 0, left: 0, behaviour: 'smooth',
 		});
 	});
+	
+// Gallery Lightbox Function
+// Does not function
+// var lightBox = new SimpleLightbox (".gallery a");

@@ -25,16 +25,6 @@
 	--transition: 0.3s;
 }
 
-html {
-	/* Smooth scrolling */
-	scroll-behaviour: smooth;
-	
-	/* Dafault Dark */
-	background-color: var(--bg-color0);
-	color: var(--font-color0);
-}
-
-
 /* CSS Reset */
 	/* remove default Margin, Padding, Text-Decor for AnchorTags and List-Style-Type for Lists */
 	* {
@@ -57,6 +47,15 @@ html {
 	}
 	/* END CSS Reset */
 
+
+/* Main Page Style */
+html {
+	/* Smooth scrolling */
+	scroll-behaviour: smooth;
+	/* Dafault Dark */
+	background-color: var(--bg-color0);
+	color: var(--font-color0);
+}
 /* Header Colors */
 	h1, h2, h3 {
 		color: var(--primary-color);
@@ -82,6 +81,34 @@ html {
 		height: 0.5rem;
 	}
 	/* END Icon Sizes */
+
+/* Buttons Style */
+	.btn {
+		margin-top: 1rem;
+		display: inline-block;
+		padding: 0.8rem 0.6rem;
+		border: none;
+		font-size: 1.4rem;
+		border-radius: 5px;
+		color: #fff;
+	}
+	.btnPrimary {
+		background-color: var(--primary-color);
+		margin-left: 1.5rem;
+	}
+	.btnPrimary:hover {
+		background-color: #095cf7;
+		color: #fff;
+	}
+	.btnSecondary {
+		background-color: #f1262d;
+		margin-left: 1.5rem;
+	}
+	.btnSecondary:hover {
+		background-color: var(--secondary-color);
+		color: #fff;
+	}
+	/* END Buttons Style */
 
 /* Navigation Bar - Sticky Ontop*/
 	nav {
@@ -132,10 +159,9 @@ html {
 		background-color: transparent;
 		cursor: pointer;
 	}
-	#BurgerBtn	{
+	#BurgerBtn {
 		display: none;
 	}	
-	
 	/* DarkMode Switcher Section */
 		.themeBtn {
 			opacity: 0;
@@ -184,15 +210,12 @@ html {
 }
 /* END UnderConstruction Section */
 
-
 /* Landingspage Section */
 	.landing {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		/* justify-content: space-between; */
-		/* gap: 1.9rem; */
-		/* max-width: 1100px; */
+		gap: 2rem;
 		padding: 1rem 6rem;
 		margin: 2rem auto;
 	}
@@ -200,7 +223,6 @@ html {
 		height: 37.5rem;
 		width: 37.5rem;
 	}
-	
 	/*Rightside*/
 	.introTxt h1 {
 		font-size: 3rem;
@@ -214,31 +236,6 @@ html {
 	.landing p {
 		line-height: var(--line-height);
 	}
-	.btn {
-		margin-top: 1rem;
-		display: inline-block;
-		padding: 0.8rem 0.6rem;
-		border: none;
-		font-size: 1.4rem;
-		border-radius: 5px;
-		color: #fff;
-	}
-	.btnPrimary {
-		background-color: var(--primary-color);
-		margin-left: 1.5rem;
-	}
-	.btnPrimary:hover {
-		background-color: #095cf7;
-		color: #fff;
-	}
-	.btnSecondary {
-		background-color: #f1262d;
-	}
-	.btnSecondary:hover {
-		background-color: var(--secondary-color);
-		color: #fff;
-	}
-
 	/* END Landingspage Section */
 	
 /* About Section */
@@ -248,12 +245,17 @@ html {
 		align-items: center;
 		justify-content: center;
 		gap: 2.5rem;
-		max-width: 68.75rem;
 		margin: auto;
+		padding: 1rem;
+	}
+	.bio,
+	.iFrame	{
+		width: 41.275rem;
+		min-height: 24rem;
+		padding: 0.625rem;
 	}
 	.bio {
-		width: 25rem;
-		padding: 0.625rem;
+		background-color:  var(--bg-element0);
 		border-radius: 6px;
 		box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 	}
@@ -264,10 +266,8 @@ html {
 		line-height: var(--line-height);
 		padding: 0.3rem 0;
 	}
-	
-	/*Rightside*/	
+	/*Rightside*/
 	iframe {
-		max-width: 30rem;
 		border-top: 3px groove var(--primary-color);
 		border-bottom: 3px groove var(--primary-color);
 		border-right: 1px solid var(--primary-shadow);
@@ -279,16 +279,19 @@ html {
 		width: 30rem;
 		background-color: var(--bg-element0);
 		position: relative;
-		top: -2.5rem;
+		top: -0rem;
 		z-index: -1;
 		border-radius: 100%;
 	}
+	/* For Button Style See "Buttons Style" on top of this Stylesheet */
 	/* END About Section */
 
 /* More About Section */
 	.moreAboutMe {
-		background-color: var(--bg-color1);
+		/* background-color: var(--bg-color1); */
 		padding: 1rem 6rem;
+		max-width: 90rem;
+		margin: auto;
 	}
 	.moreAboutMe h2 {
 		margin-bottom: var(--bottom-margin);
@@ -327,9 +330,18 @@ html {
 	/* END Skill Section */
 
 /* Spotlight Section */
+	.spotlight {
+		padding: 1rem 5rem;
+		background-color: var(--bg-color1);
+	}
+	.spotlight h2 {
+		margin-bottom: var(--bottom-margin);
+		text-align: center;
+	}
 	.gallery {
 		display: grid;
-		grid-template-colums: repeat(5, 1fr);
+		grid-template-columns: repeat(5, 1fr);
+		gap: 0.25rem;
 	}
 	.gallery img,
 	.gallery a {
