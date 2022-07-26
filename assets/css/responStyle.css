@@ -1,9 +1,13 @@
 /* Responsive Style for the Website */
+/* For Screens of 810px and lower Ipad and Tablets */
+@media screen and (max-width: 810px) {
+	
+}
 /* For Screens of 720px and lower Laptop and Tablets */
 @media screen and (max-width: 720px) {
 /* Navigationbar */
 	nav {
-		padding: 1.5rem 1rem;
+		padding: 1rem;
 	}
 	.logo {
 		width: 50%;
@@ -14,11 +18,11 @@
 		background-color: var(--bg-element0);
 		/* background-color: var(--bg-color1); */
 		flex-direction: column;
-		top: 86px;
+		top: 62px;
 		left: 10%;
 		width: 80%;
 		text-align: center;
-		transform: translateX(120%);
+		transform: translateY(-120%);
 		transition: transform 0.5s ease-in;
 	}
 	.navBar li {
@@ -26,6 +30,9 @@
 	}
 	.navBar.show {
 		transform: translateX(0);
+	}
+	.themeSwitch {
+		margin-right: 2rem;
 	}
 	#BurgerBtn {
 		display: block;
@@ -53,22 +60,21 @@
 
 /* About Section */
 	.aboutMe {
-		/* margin-top: -4rem; */
 		flex-direction: column;
 		gap: 0;
 	}
-	.bio {
-	
+	.bio,
+	.iFrameContainer {
 		width: 27.5rem;
 	}
 	iframe {
-		max-width: 26rem;
+		/* max-width: 80%; */
 	}
-	.shadow {
+	/* .shadow {
 		height: 2.5rem;
 		width: 30rem;
 		top: -1.5rem;
-	}
+	} */
 	/* END About Section */
 
 /* More About Section */
@@ -84,6 +90,12 @@
 		text-align: justify;
 	}
 	/* END More About Section */
+
+/* Spotlight Section */
+	.spotlight {
+			padding: 1rem 4rem;
+	}
+	/* END Spotlight Section */
 	
 /* Skill Section */
 	.tile {
@@ -98,7 +110,10 @@
 	}
 	.projectContainer {
 		width: 35rem;
-		min-height: 25rem;
+		min-height: 20rem;
+	}
+	.projectDetail {
+		display: none;
 	}
 	/* END Projects Section */
 
@@ -130,13 +145,22 @@
 		width: 18.3rem;
 		margin-top: 1rem;
 	}
-	iframe {
+	.iFrameContainer {
 		max-width: 330px;
 	}
-	.shadow {
-		
+	iframe {
+		max-width: 100%;
 	}
+/* 	.shadow {
+		
+	} */
 	/* END About Section */
+	
+	/* Spotlight Section */
+	.spotlight {
+			padding: 1rem 3rem;
+	}
+	/* END Spotlight Section */
 	
 /* Skill Section */
 	.tile {
@@ -147,8 +171,12 @@
 
 /* Projects Section */
 	.projectContainer {
-		width: 20rem;
-		min-height: 30rem;
+		width: 23rem;
+		/* min-height: 30rem; */
+	}
+	.projectImg {
+		/* width: 10px; */
+		/* height: 10px; */
 	}
 	/* END Projects Section */
 

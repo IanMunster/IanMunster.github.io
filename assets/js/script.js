@@ -31,7 +31,7 @@ function SwitchThemeUpdate(e) {
 	// Navigation HamburgerMenu Selections
 	const burger = document.querySelector("#BurgerBtn"),
 		navLink = document.querySelectorAll(".navBarLink"),
-		ul = document.querySelector("nav ul"),
+		ul = document.querySelector(".navBar"),
 		nav = document.querySelector("nav");
 
 	// Open Menu on Click

@@ -8,8 +8,8 @@
 	<meta name="author" content="https://github.com/i-Jun">
 	<meta name="description" content="i-Jun' Game and Web development portfolio.">
 	<!-- Favicons -->
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/logo512x512.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/logo512x512.png" />
 	<!-- Website Initialize Script -->
 	<script src="assets/js/initScript.js"></script>
 	<!--CSS Styles -->
@@ -21,8 +21,7 @@
 <!-- Navbar -->
 	<nav>
 		<a href="#">
-			<span class="navLogo"><img src="assets/icons/logo512x512.png" alt="icon" title="i-Jun Home" class="logo" /><!-- <h1> i-Jun </h1> --></span>
-			
+			<span class="navLogo"><img src="assets/icons/logo512x512.png" alt="icon" title="i-Jun Home" class="logo" /><!-- <h1> i-Jun </h1> --></span>	
 		</a>
 		<ul class="navBar">
 			<li><a class="navBarLink" href="#About"><ion-icon name="person-circle-outline" class="iconSmall"></ion-icon> About</a></li>
@@ -59,10 +58,11 @@
 	</section>
 
 <!-- Landingspage Section -->
+<!-- https://www.w3schools.com/howto/howto_css_loader.asp -->
+<!-- https://www.w3schools.com/howto/howto_css_parallax.asp -->
 	<section class="landing" id="Home">	
 <!-- <img src="assets/img/gd.svg" alt="About me image" loading="lazy" class="aboutImg" /> -->
 		<img src="assets/img/GD1.gif" alt="About me image" loading="lazy" class="aboutImg" />
-		
 		<div class="introTxt">
 			<h1> Welcome, </h1>
 			<h2> to my Portfolio. </h2>
@@ -71,16 +71,18 @@
 				<br />
 				Read More about me and my Projects.
 			</p>
-			
-			
 		</div>
-		
+
 	</section>
 
 <!-- About Section -->
+<!-- https://www.w3schools.com/howto/howto_js_read_more.asp -->
 	<section class="aboutMe" id="About">
 		<div class="bio ">
-			<h2 class="bioTitle"><ion-icon name="person-circle-outline" class="icon" loading="lazy"></ion-icon> About</h2>
+			<h2 class="bioTitle">
+				<ion-icon name="person-circle-outline" title="About" class="icon" loading="lazy"></ion-icon>
+				About
+			</h2>
 			<p class="bioText">
 				<b>Welcome Reader</b>, I'm a Dutch solo game developer. Interested in making fantasy games, adventure/rpg like games. 
 				I'm currently focused on 2D games in the GODOT Game Engine. 
@@ -96,8 +98,8 @@
 				<!-- <a class="btn btnPrimary" href="#More">Read More</a> -->
 			<!-- </div> -->
 		</div>
-		<div class="iFrame">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Placeholder Video" frameborder="0" allow="encrypted-media;" ></iframe>
+		<div class="iFrameContainer">
+			<iframe class="responsiveIframe" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Placeholder Video" frameborder="0" allow="encrypted-media;" ></iframe>
 			<!-- <div class="shadow"></div> -->
 			<!-- Position "Subscribe Button" over the Bottom-Right of Video -->
 			<!-- 
@@ -109,8 +111,12 @@
 	</section>
 
 <!-- More About section -->
+<!-- https://www.w3schools.com/howto/howto_js_portfolio_filter.asp -->
 	<section class="moreAboutMe" id="More">
-			<h2><ion-icon name="bonfire" class="icon" loading="lazy"></ion-icon> More about me...</h2>
+			<h2>
+				<ion-icon name="bonfire" title="More about me" class="icon" loading="lazy"></ion-icon>
+				More about me
+				</h2>
 			<p>
 				<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 				Graece fuisset definitionem sea et, ea nec vivendum senserit.
@@ -131,8 +137,13 @@
 	</section>
 
 <!-- Spotlight section -->
+<!-- https://www.w3schools.com/howto/howto_js_lightbox.asp -->
+<!-- https://www.w3schools.com/howto/howto_css_image_text_blocks.asp -->
 	<section class="spotlight" id="Spot">
-	<h2><ion-icon name="diamond" class="iconSmall"></ion-icon> Spotlight</h2>
+	<h2 class="spotlightHeader">
+		<ion-icon name="diamond" title="Spotlight" class="iconSmall" loading="lazy"></ion-icon>
+		 Spotlight
+	</h2>
 		<div class="gallery">
 			<a href="assets/img/placeholder800x600.jpg" class="big">
 				<img src="assets/img/placeholder800x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
@@ -156,8 +167,13 @@
 	</section>
 
 <!-- Skills section -->
+<!-- https://www.w3schools.com/howto/howto_css_skill_bar.asp -->
 	<section class="skills" id="Skill">
-		<h2 class="skillHeader"><ion-icon name="stats-chart" class="icon" loading="lazy"></ion-icon> Skills</h2>
+		<h2 class="skillHeader">
+			<ion-icon name="stats-chart" class="icon" loading="lazy">
+			</ion-icon>
+			Skills
+		</h2>
 		<div class="skillsWrapper">
 			<div class="skills0">
 				<!-- <img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" /> -->
@@ -187,6 +203,8 @@
 	</section>
 
 <!-- Projects section -->
+<!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+<!-- https://www.w3schools.com/howto/howto_css_overlay.asp -->
 	<section class="projects" id="Project">
 		<h2 class="projectsTitle"><ion-icon name="star"  class="icon" loading="lazy"></ion-icon> Projects</h2>
 		<div class="projectsContainer">
@@ -198,7 +216,7 @@
 					Graece fuisset definitionem sea et, ea nec vivendum senserit.
 					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 				</p>
-				<a href="#" target="_blank" class="projectLink">See Project</a>
+				<a href="#" target="_blank" class="projectLink btn btnPrimary">See Project</a>
 			</div>
 			<div class="projectContainer projectCard">
 				<img src="assets/img/placeholder1366x732.jpg" alt="Project Placeholder" loading="lazy" class="projectImg" />
@@ -208,7 +226,7 @@
 					Graece fuisset definitionem sea et, ea nec vivendum senserit.
 					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 				</p>
-				<a href="#" target="_blank" class="projectLink">See Project</a>
+				<a href="#" target="_blank" class="projectLink btn btnPrimary">See Project</a>
 			</div>
 			<div class="projectContainer projectCard">
 				<img src="assets/img/placeholder1366x732.jpg" alt="Project Placeholder" loading="lazy" class="projectImg" />
@@ -218,7 +236,7 @@
 					Graece fuisset definitionem sea et, ea nec vivendum senserit.
 					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 				</p>
-				<a href="#" target="_blank" class="projectLink">See Project</a>
+				<a href="#" target="_blank" class="projectLink btn btnPrimary">See Project</a>
 			</div>
 		</div>
 	</section>
@@ -262,6 +280,7 @@
 	</i>
 
 <!-- Footer section -->
+<!-- https://www.w3schools.com/howto/howto_css_breadcrumbs.asp -->
 	<footer>
 		<p class="copy">&copy Copyright 2022</p>
 		<p class="copy">by <a href="i-Jun.github.io" target="_blank">i-Jun</a></p>
