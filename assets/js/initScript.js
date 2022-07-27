@@ -1,5 +1,25 @@
 /* INITIALIZE PAGE
 NEEDS TO BE LOADED AT PAGE LOAD */
+
+// Page-Loading: Loader Overlay Functions
+var loadTimer;
+// Overlay
+function OverlayOn() {
+	document.getElementById("Overlay").style.display = 'block';
+}
+function OverlayOff() {
+	document.getElementById("Overlay").style.display = 'none';
+}
+// Loader
+function PageLoader() {
+	loadTimer = setTimeout (ShowPage, 3000);
+}
+// Show Page
+function ShowPage() {
+	document.getElementById("Loader").style.display = 'none';
+	OverlayOff();
+}
+
 // Uncheck all Checkboxes by Default. (Use for: Theme Switcher, )
 var inputs = document.getElementsByTagName('input');
 
@@ -9,3 +29,4 @@ for (var i=0; i<inputs.length; i++)  {
   }
 }
 /* END OF INITIALIZE */
+
