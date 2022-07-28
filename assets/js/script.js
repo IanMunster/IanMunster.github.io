@@ -1,7 +1,6 @@
 /* ThemeVarToggle Section - Toggles Dark and Light Mode */
 const root = document.querySelector (':root'),
 	themeBtn = document.querySelector ("#ThemeSwitchBtn");
-
 themeBtn.addEventListener('click', SwitchThemeUpdate);
 
 function SwitchThemeUpdate(e) {
@@ -46,19 +45,25 @@ navLink.forEach((link) =>
 );
 /* END Hamburger Menu Functionality for Small Screens */
 
-
-// Read More Button Function
+/* Read More Button Function */
 const readMore = document.querySelector("#ReadMoreBtn"),
 	moreAbout = document.querySelector("#More");
 readMore.addEventListener('click', () => {
 	moreAbout.classList.toggle("show");
-})
-
-// Scroll to Top Function
-const scrollUp = document.querySelector("#ScrollUp");
-	scrollUp.addEventListener('click', () => {
-		window.scrollTo({
-			top: 0, left: 0, behaviour: 'smooth',
-		});
+	moreAbout.scrollIntoView({
+		behaviour: 'smooth'
 	});
+})
+/* END Read More Button Function */
+
+/*  */
+
+/* Scroll to Top Function */
+const scrollUp = document.querySelector("#ScrollUp");
+scrollUp.addEventListener('click', () => {
+	window.scrollTo({
+		top: 0, left: 0, behaviour: 'smooth',
+	});
+});
 	
+/* END Scroll to Top Function */

@@ -1,6 +1,11 @@
 /* INITIALIZE PAGE
 NEEDS TO BE LOADED AT PAGE LOAD */
 
+// Game Dev SVG Animation Delay
+document.addEventListener('DOMContentLoaded', function () {
+	window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);
+})
+
 // Page-Loading: Loader Overlay Functions
 var loadTimer;
 // Overlay
@@ -12,7 +17,7 @@ function OverlayOff() {
 }
 // Loader
 function PageLoader() {
-	loadTimer = setTimeout (ShowPage, 3000);
+	loadTimer = setTimeout (ShowPage, 10);
 }
 // Show Page
 function ShowPage() {

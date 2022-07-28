@@ -63,13 +63,16 @@ html {
 	/* END Header Colors */
 	
 /* Icons */
+	#PageInit {
+		display: none;
+	}
 	.ionicon {
 		fill: var(--primary-color);
 	}
 	/* Need to fix the Navbar Hover*/
 	.ionicon:hover {
-		fill: var(--secondary-color);
-		cursor: pointer;
+		/* fill: var(--secondary-color); */
+		/* cursor: pointer; */
 	}
 	.iconNav {
 		width: 3rem;
@@ -163,6 +166,7 @@ html {
 	}
 	.navBar a:hover {
 		color: var(--secondary-color);
+		fill: var(--secondary-color);
 		border-bottom: 2px solid var(--secondary-color);
 	}
 	.navBar li {
@@ -204,10 +208,10 @@ html {
 			border-radius: 50%;
 			border: 2px solid black;
 		}
-		.moon {
+		.iconMoon {
 			fill: #ffa502;
 		}
-		.sunny {
+		.iconSunny {
 			fill: #ffff00;
 		}
 		.themeBtn:checked + .label .switcher {
@@ -319,7 +323,7 @@ html {
 		border-radius: 6px;
 		box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 	}
-	.bio h2 {
+	.bioHeader {
 		margin-bottom: var(--bottom-margin);
 	}
 	.bio p {
@@ -389,7 +393,7 @@ html {
 	.moreAboutMe.show {
 		display: block;
 	}
-	.moreAboutMe h2 {
+	.moreAboutMeHeader {
 		margin-bottom: var(--bottom-margin);
 		text-align: center;
 	}
@@ -463,7 +467,7 @@ html {
 		/* padding: 32px 0; */
 		margin-top: 2rem;
 	}
-	.projectsTitle {
+	.projectsHeader {
 		text-align: center;
 		margin-bottom: 1rem;
 	}
@@ -491,7 +495,7 @@ html {
 		width: 80%;
 		height: 80%;
 	}
-	.projectTitle,
+	.projectHeader,
 	.projectDetail {
 		margin-bottom: var(--bottom-margin);
 	}
