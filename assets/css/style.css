@@ -110,7 +110,7 @@ html {
 	}
 	.btnPrimary {
 		background-color: var(--primary-color);
-		margin-left: 1.5rem;
+		color: var(--font-color1);
 	}
 	.btnPrimary:hover {
 		background-color: #095cf7;
@@ -118,7 +118,7 @@ html {
 	}
 	.btnSecondary {
 		background-color: #f1262d;
-		margin-left: 1.5rem;
+		color: var(--font-color1);
 	}
 	.btnSecondary:hover {
 		background-color: var(--secondary-color);
@@ -231,7 +231,6 @@ html {
 		text-align: center;
 		cursor: pointer;
 	}
-	
 	#Loader {
 		position: absolute;
 		left: 50%;
@@ -251,7 +250,6 @@ html {
 		0% { -webkit-transform: rotate(0deg); }
 		100% { -webkit-transform: rotate(360deg); }
 	}
-
 	@keyframes spin {
 		0% { transform: rotate(0deg); }
 		100% { transform: rotate(360deg); }
@@ -278,7 +276,6 @@ html {
 		from { bottom:-100px; opacity:0 } 
 		to { bottom:0px; opacity:1 }
 	}
-
 	@keyframes animatebottom { 
 		from{ bottom:-100px; opacity:0 } 
 		to{ bottom:0; opacity:1 }
@@ -329,6 +326,9 @@ html {
 		line-height: var(--line-height);
 		padding: 0.3rem 0;
 	}
+	.bio .btnWrapper {
+		text-align: center;
+	}
 	/*Rightside*/
 	.iFrameContainer {
 		width: 41.275rem;
@@ -376,11 +376,18 @@ html {
 	/* END About Section */
 
 /* More About Section */
+	#More {
+		
+	}
 	.moreAboutMe {
 		/* background-color: var(--bg-color1); */
 		padding: 1rem 6rem;
 		max-width: 90rem;
 		margin: auto;
+		display: none;
+	}
+	.moreAboutMe.show {
+		display: block;
 	}
 	.moreAboutMe h2 {
 		margin-bottom: var(--bottom-margin);

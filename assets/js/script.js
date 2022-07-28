@@ -26,26 +26,33 @@ function SwitchThemeUpdate(e) {
 }
 /* END ThemeVarToggle Section - Toggles Dark and Light Mode */
 
-
 /* Hamburger Menu Functionality for Small Screens */
-	// Navigation HamburgerMenu Selections
-	const burger = document.querySelector("#BurgerBtn"),
-		navLink = document.querySelectorAll(".navBarLink"),
-		ul = document.querySelector(".navBar"),
-		nav = document.querySelector("nav");
+// Navigation HamburgerMenu Selections
+const burger = document.querySelector("#BurgerBtn"),
+	navLink = document.querySelectorAll(".navBarLink"),
+	ul = document.querySelector(".navBar"),
+	nav = document.querySelector("nav");
 
-	// Open Menu on Click
-	burger.addEventListener('click', () => {
-		ul.classList.toggle("show");
-	});
+// Open Menu on Click
+burger.addEventListener('click', () => {
+	ul.classList.toggle("show");
+});
 
-	// Close Menu on Click
-	navLink.forEach((link) => 
-		link.addEventListener('click', () => {
-			ul.classList.remove("show");
-		})
-	);
-	/* END Hamburger Menu Functionality for Small Screens */
+// Close Menu on Click
+navLink.forEach((link) => 
+	link.addEventListener('click', () => {
+		ul.classList.remove("show");
+	})
+);
+/* END Hamburger Menu Functionality for Small Screens */
+
+
+// Read More Button Function
+const readMore = document.querySelector("#ReadMoreBtn"),
+	moreAbout = document.querySelector("#More");
+readMore.addEventListener('click', () => {
+	moreAbout.classList.toggle("show");
+})
 
 // Scroll to Top Function
 const scrollUp = document.querySelector("#ScrollUp");
@@ -55,6 +62,3 @@ const scrollUp = document.querySelector("#ScrollUp");
 		});
 	});
 	
-// Gallery Lightbox Function
-// Does not function
-// var lightBox = new SimpleLightbox (".gallery a");

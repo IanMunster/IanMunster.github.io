@@ -1,0 +1,100 @@
+svg#freepik_stories-video-game-developer:not(.animated) .animable {
+	opacity: 0;
+}
+svg#freepik_stories-video-game-developer.animated #freepik--life-bar--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
+	animation-delay: 0s;
+}
+svg#freepik_stories-video-game-developer.animated #freepik--Controls--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideLeft;
+	animation-delay: 0s;
+}
+svg#freepik_stories-video-game-developer.animated #freepik--Text--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideDown,6s Infinite  linear heartbeat;
+	animation-delay: 0s,1s;
+}
+svg#freepik_stories-video-game-developer.animated #freepik--code-window--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) zoomIn;
+	animation-delay: 0s;
+}
+svg#freepik_stories-video-game-developer.animated #freepik--character-window--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) zoomIn;
+	animation-delay: 0.25s;
+	opacity: 0;
+}
+svg#freepik_stories-video-game-developer.animated #freepik--window--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) zoomIn;
+	animation-delay: 0.5s;
+	opacity: 0;
+}
+svg#freepik_stories-video-game-developer.animated #freepik--window--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) zoomIn;
+	animation-delay: 0.75s;
+	opacity: 0;
+}
+svg#freepik_stories-video-game-developer.animated #freepik--Windows--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) zoomIn,6s Infinite  linear floating;
+	animation-delay: 0s,1s;
+}
+svg#freepik_stories-video-game-developer.animated #freepik--speech-bubble--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideDown,6s Infinite  linear heartbeat;
+	animation-delay: 0s,1s;
+}
+@keyframes slideLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-30px);
+	} 100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes slideDown { 
+	0% {
+		opacity: 0;
+		transform: translateY(-30px);
+	} 100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes heartbeat { 
+	0% {
+		transform: scale(1);
+	} 10% {
+		transform: scale(1.1);
+	} 30% {
+		transform: scale(1);
+	} 40% {
+		transform: scale(1);
+	} 50% {
+		transform: scale(1.1);
+	} 60% {
+		transform: scale(1);
+	} 100% {
+		transform: scale(1);
+	}
+}
+@keyframes zoomIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.5);
+	} 100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@keyframes floating {
+	0% {
+		opacity: 1;
+		transform: translateY(0px);
+	} 50% {
+		transform: translateY(-10px);
+	} 100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+.animator-hidden { 
+	display: none; 
+}
