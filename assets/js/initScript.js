@@ -17,7 +17,7 @@ function OverlayOff() {
 }
 // Loader
 function PageLoader() {
-	loadTimer = setTimeout (ShowPage, 10);
+	// loadTimer = setTimeout (ShowPage, 10);
 }
 // Show Page
 function ShowPage() {

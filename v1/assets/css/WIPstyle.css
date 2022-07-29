@@ -71,3 +71,7 @@ Use to find and update my current progress */
 	}
 
 /* END ThemeColorChange Section */
+.iconLarge {
+	width: 4rem;
+	height: 4rem;
+}

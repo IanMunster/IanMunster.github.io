@@ -36,12 +36,8 @@
 		list-style-type: none;
 	}	
 	a {
-		text-decoration: none;
-		color: var(--primary-color);
+		text-decoration: none;	
 	}
-	a:hover {
-		color: var(--secondary-color);
-	}	
 	body {
 		font-family: var(--font-family);
 	}
@@ -49,6 +45,11 @@
 
 
 /* Main Page Style */
+	/* Center Content on Page */
+body {
+	max-width: 100%;
+	margin: auto;
+}
 html {
 	/* Smooth scrolling */
 	scroll-behaviour: smooth;
@@ -60,28 +61,29 @@ html {
 	h1, h2, h3 {
 		color: var(--primary-color);
 	}
+	a, i {
+		color: var(--primary-color);
+		fill: var(--primary-color);
+	}
+	a:hover, i:hover {
+		color: var(--secondary-color);
+		fill: var(--secondary-color);
+	}
 	/* END Header Colors */
 	
 /* Icons */
 	#PageInit {
 		display: none;
 	}
-	.ionicon {
-		fill: var(--primary-color);
-	}
-	/* Need to fix the Navbar Hover*/
-	.ionicon:hover {
-		/* fill: var(--secondary-color); */
-		/* cursor: pointer; */
-	}
 	.iconNav {
 		width: 3rem;
 		height: 3rem;
+		/* Fill Color in a {} */
 	}
-	/* Need to fix the NO Hover*/
 	.iconHead {
 		width: 5rem;
 		height: 5rem;
+		fill: var(--primary-color);
 	}
 	.iconSocial {
 		width: 3.5rem;
@@ -94,6 +96,16 @@ html {
 	.iconFooter {
 		width: 1rem;
 		height: 1rem;
+	}
+	/* These icons need to be a bit Larger then the other Footer Icons */
+	.credit .iconW3,
+	.credit .iconStorySet {
+		width: 2.2rem;
+		height: 2.2rem;
+		fill: var(--primary-color);
+	}
+	.credit .iconW3 {
+		width: 3rem;
 	}
 	/* Fallback PNG if No SVG Supported Browser */
 	.icon .no-svg {
@@ -121,7 +133,7 @@ html {
 	}
 	.btnSecondary {
 		background-color: #f1262d;
-		color: var(--font-color1);
+		color: var(--font-color0);
 	}
 	.btnSecondary:hover {
 		background-color: var(--secondary-color);
@@ -210,9 +222,11 @@ html {
 		}
 		.iconMoon {
 			fill: #ffa502;
+			color: #ffa502;
 		}
 		.iconSunny {
 			fill: #ffff00;
+			color: #ffff00;
 		}
 		.themeBtn:checked + .label .switcher {
 			transform: translateX(24px);
@@ -223,7 +237,7 @@ html {
 /* Loading Overlay Section */
 	#Overlay {
 		position: fixed;
-		/* display: none; */
+		display: none;
 		width: 100%;
 		height: 100%;
 		top: 0;
@@ -317,9 +331,7 @@ html {
 		width: 41.275rem;
 		min-height: 24rem;
 		padding: 0.625rem;
-	}
-	.bio {
-		background-color:  var(--bg-element0);
+		background-color: var(--bg-element0);
 		border-radius: 6px;
 		box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 	}
@@ -330,11 +342,19 @@ html {
 		line-height: var(--line-height);
 		padding: 0.3rem 0;
 	}
-	.bio .btnWrapper {
+	#About .btnWrapper {
 		text-align: center;
 	}
 	/*Rightside*/
-	.iFrameContainer {
+	.iframeHeader {
+		display: flex;
+		gap: 5rem;
+		/* text-align: right; */
+		/* border: 1px solid black; */
+		/* background-color: var(--bg-element0); */
+		/* border-radius: 5px; */
+	}
+	.iframeContainer {
 		width: 41.275rem;
 		min-height: 24rem;
 		padding: 0.625rem;
@@ -505,7 +525,7 @@ html {
 	.contactMe {
 		margin-top: 2rem;
 	}
-	.contactMe h2 {
+	.contactHeader {
 		text-align: center;
 		margin-bottom: var(--bottom-margin-2);
 	}
@@ -588,9 +608,9 @@ html {
 	.upArrow {
 		width: 3rem;
 		height: 3rem;
-		color: var(--primary-color);
+		fill: var(--primary-color);
 	}
 	.upArrow:hover {
-		color: var(--secondary-color);
+		fill: var(--secondary-color);
 	}
 	/* END Scroll Up Button */
