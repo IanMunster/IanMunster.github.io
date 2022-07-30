@@ -1,8 +1,14 @@
 /* ThemeVarToggle Section - Toggles Dark and Light Mode */
+
 const root = document.querySelector (':root'),
 	themeBtn = document.querySelector ("#ThemeSwitchBtn");
 themeBtn.addEventListener('click', SwitchThemeUpdate);
 
+/** SwitchThemeUpdate:
+ * Updates the CSS variable value to Switch Themes.
+ * @param  {event} e [Click event on Switch Btns]
+ * @return {null}    [Does not return a value (?)]
+ */
 function SwitchThemeUpdate(e) {
 /* 	console.log ("themeBtn.checked: "+ themeBtn.checked ) */
 	if (themeBtn.checked == true) {
@@ -45,16 +51,20 @@ navLink.forEach((link) =>
 );
 /* END Hamburger Menu Functionality for Small Screens */
 
-/* Read More Button Function */
-const readMore = document.querySelector("#ReadMoreBtn"),
-	moreAbout = document.querySelector("#More");
-readMore.addEventListener('click', () => {
-	moreAbout.classList.toggle("show");
-	moreAbout.scrollIntoView({
+/* Show More Buttons Function */
+// V1. Queries single btn ID
+/* const showBtn = document.querySelector("#ShowBtn"),
+	showContent = document.querySelector("#ShowContent");
+showBtn.addEventListener('click', () => {
+	showContent.classList.toggle("show");
+	showContent.scrollIntoView({
 		behaviour: 'smooth'
 	});
-})
-/* END Read More Button Function */
+}) */
+const showMore = document.querySelectorAll (".showMore");
+
+
+/* END Show More Buttons Function */
 
 /* Read More Filter Function */
 FilterSelection("allFilter")
@@ -109,6 +119,12 @@ for (var i = 0; i < filterBtns.length; i++) {
 /* END Read More Filter Function */
 
 /* Scroll to Top Function */
+/**
+ * [someFunction description]
+ * @param  {[type]} arg1 [description]
+ * @param  {[type]} arg2 [description]
+ * @return {[type]}      [description]
+ */
 const scrollUp = document.querySelector("#ScrollUp");
 scrollUp.addEventListener('click', () => {
 	window.scrollTo({
@@ -117,3 +133,12 @@ scrollUp.addEventListener('click', () => {
 });
 	
 /* END Scroll to Top Function */
+
+
+/* Example Description */
+/**
+ * [someFunction description]
+ * @param  {[type]} arg1 [description]
+ * @param  {[type]} arg2 [description]
+ * @return {[type]}      [description]
+ */

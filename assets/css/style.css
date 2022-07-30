@@ -19,6 +19,8 @@
 	--font-color0: #dedcd9;
 	--font-color1: #333;
 	/* Position Variables */
+	--navBar-height: 5rem;
+	--top-margin: 2.5rem;
 	--bottom-margin: 0.5rem;
 	--bottom-margin-2: 1rem;
 	--line-height: 1.7rem;
@@ -52,7 +54,7 @@ body {
 }
 html {
 	/* Smooth scrolling */
-	scroll-behaviour: smooth;
+	scroll-behavior: smooth;
 	/* Dafault Dark */
 	background-color: var(--bg-color0);
 	color: var(--font-color0);
@@ -145,6 +147,30 @@ html {
 		background-color: var(--secondary-color);
 		color: var(--font-color0);
 	}
+	/* Show More Content */
+		#ShowContent {
+			display: none;
+		}
+		#ShowContent.show {
+			display: block;
+		}
+		/* END Show More Content */	
+	/* Scroll Up Button */
+		.scroll {
+			position: fixed;
+			right: 0.5%;
+			bottom: 3%;
+			cursor: pointer;
+		}
+		.upArrow {
+			width: 3rem;
+			height: 3rem;
+			fill: var(--primary-color);
+		}
+		.upArrow:hover {
+			fill: var(--secondary-color);
+		}
+		/* END Scroll Up Button */
 	/* END Buttons Style */
 
 /* Navigation Bar - Sticky Ontop*/
@@ -238,6 +264,18 @@ html {
 			transform: translateX(24px);
 		}
 		 /* END DarkMode Switcher Section */
+		 /* Navigate to Section Top-Margin */
+		 #Home,
+		 #About,
+		 #More,
+		 #Skill,
+		 #Spot,
+		 #Project,
+		 #Contact {
+			 scroll-margin-top: var(--navBar-height);
+			 /* border: 2px solid red; */
+		 }
+		 /* END Navigate to Section Top-Margin */
 	/* END Navigation Bar */
 
 /* Loading Overlay Section */
@@ -308,7 +346,6 @@ html {
 		height: 37.5rem;
 		width: 37.5rem;
 	}
-	/*Rightside*/
 	.introTxt h1 {
 		font-size: 3rem;
 		margin-bottom: 1rem;
@@ -332,6 +369,7 @@ html {
 		gap: 2.5rem;
 		margin: auto;
 		padding: 1rem;
+		margin-top: var(--top-margin);
 	}
 	.bio {
 		width: 41.275rem;
@@ -344,14 +382,13 @@ html {
 	.bioHeader {
 		margin-bottom: var(--bottom-margin);
 	}
+	.aboutMe .btnWrapper {
+		text-align: center;
+	}
 	.bio p {
 		line-height: var(--line-height);
 		padding: 0.3rem 0;
 	}
-	#About .btnWrapper {
-		text-align: center;
-	}
-	/*Rightside*/
 	.iframeHeader {
 		display: flex;
 		gap: 5rem;
@@ -406,18 +443,11 @@ html {
 	/* END About Section */
 
 /* More About Section */
-	#More {
-		
-	}
 	.moreAboutMe {
-		/* background-color: var(--bg-color1); */
 		padding: 1rem 6rem;
-		max-width: 90rem;
+		/* max-width: 90rem; */
 		margin: auto;
-		display: none;
-	}
-	.moreAboutMe.show {
-		display: block;
+		margin-top: var(--top-margin);
 	}
 	.moreAboutMeHeader {
 		margin-bottom: var(--bottom-margin);
@@ -455,10 +485,11 @@ html {
 
 /* Skill Section */
 	.skills {
-		max-width: 68.75rem;
+		padding: 1rem 5rem;
+		/* max-width: 68.75rem; */
 		margin: auto;
 		text-align: center;
-		margin-top: 2.5rem;
+		margin-top: var(--top-margin);
 	}
 	.skillHeader {
 		margin-bottom: var(--bottom-margin);
@@ -482,10 +513,10 @@ html {
 /* Spotlight Section */
 	.spotlight {
 		padding: 1rem 5rem;
-		max-width: 68.75rem;
+		/* max-width: 68.75rem; */
 		margin: auto;
 		text-align: center;
-		margin-top: 2.5rem;
+		margin-top: var(--top-margin);
 		background-color: var(--bg-color1);
 	}
 	.spotlightHeader {
@@ -514,8 +545,8 @@ html {
 /* Projects Section */
 	.projects {
 		background-color: var(--bg-color1);
-		/* padding: 32px 0; */
-		margin-top: 2rem;
+		padding: 32px 0;
+		margin-top: var(--top-margin);
 	}
 	.projectsHeader {
 		text-align: center;
@@ -553,7 +584,7 @@ html {
 	
 /* Contact Section */
 	.contactMe {
-		margin-top: 2rem;
+		margin-top: var(--top-margin);
 	}
 	.contactHeader {
 		text-align: center;
@@ -627,20 +658,3 @@ html {
 		margin: 2rem 0 0;
 	}
 	/* END Footer */
-	
-/* Scroll Up Button */
-	.scroll {
-		position: fixed;
-		right: 0.5%;
-		bottom: 3%;
-		cursor: pointer;
-	}
-	.upArrow {
-		width: 3rem;
-		height: 3rem;
-		fill: var(--primary-color);
-	}
-	.upArrow:hover {
-		fill: var(--secondary-color);
-	}
-	/* END Scroll Up Button */

@@ -152,8 +152,8 @@
 					<span class="switcher"></span>
 				</label>
 			</div>
-			<button id="BurgerBtn" class="menuBtn menuBurger">
-				<svg class="bars" name="Menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-Menu"></use></svg>
+			<button id="BurgerBtn" class="menuBtn menuBurger" name="Menu">
+				<svg class="bars"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-Menu"></use></svg>
 			</button>
 		</div>
 	</nav>
@@ -216,11 +216,14 @@
 				<b>Welcome Reader</b>,<br /> I'm a Dutch solo game developer. Interested in making fantasy games, adventure/rpg like games. 
 				I'm currently focused on 2D games in the GODOT Game Engine. 
 				English and Dutch language, but prefer English as the default language in projects.
-			</p><p class="bioText">
-				...
+			</p>
+			<p class="bioText animateBottom">
+				<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
+					Graece fuisset definitionem sea et, ea nec vivendum senserit.
+					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 			</p>
 			<div class="btnWrapper">
-				<button class="btn btnPrimary" id="ReadMoreBtn">Read More</button>
+				<button class="btn btnPrimary">Read More</button>
 			</div>
 		</div>
 		<div class="iframeContainer">
@@ -238,7 +241,7 @@
 
 <!-- More About section -->
 <!-- https://www.w3schools.com/howto/howto_js_portfolio_filter.asp -->
-	<section class="moreAboutMe animateBottom" id="More">
+	<section class="moreAboutMe" id="More">
 		<div class="titleWrapper moreAboutMeHeader" title="Read More">
 			<!-- <h2 class="">More about me</h2> -->
 		</div>
@@ -621,6 +624,7 @@
 	</section>
 
 <!-- Contact section -->
+	<!-- TO DO: Place the Social Side Bar inside this Element when Contact Section is focused -->
 	<section class="contactMe" id="Contact">
 		<div class="titleWrapper contactHeader" title="Contact">
 			<svg class="iconHead"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-Chatbox"></use></svg>
@@ -678,35 +682,57 @@
 <!-- Credits and Mentions -->
 		<div class="credits">
 			<div class="credit">
-				<p>Hosted with 
-					<a href="https://pages.github.com/" title="Github Pages" target="_blank">Github Pages 
-					<svg class="iconFooter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Logo-Github"></use></svg></a>
-				</p>
+				<p>Hosted with </p>
+				<a href="https://pages.github.com/" title="Github Pages" target="_blank">
+					Github Pages 
+					<svg class="iconFooter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Logo-Github"></use></svg>
+				</a>
 			</div>
 			<div class="credit">
-				<p>Validated by 
-					<a href="https://www.w3.org/" title="World Wide Web Consortium" target="_blank">World Wide Web Consortium
-					<svg class="iconFooter iconW3"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Logo-W3"></use></svg></a>
-				</p>
+				<p>Validated by </p>
+				<a href="https://www.w3.org/" title="World Wide Web Consortium" target="_blank">
+					World Wide Web Consortium
+					<svg class="iconFooter iconW3"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Logo-W3"></use></svg>
+				</a>
+				<p>HTML Validated </p>
+				<a href="https://validator.w3.org" title="W3c HTML Validator" target="_blank">
+					<svg class="iconFooter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Logo-HTML5"></use></svg>
+				</a>
+				<p>CSS Validated </p>
+				<a href="https://jigsaw.w3.org/css-validator/" title="W3c CSS Validator" target="_blank">
+					<svg class="iconFooter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Logo-CSS3"></use></svg>
+				</a>
+				<!-- <p>JS Validated </p> -->
+				<!-- <a href="https://www.w3.org/" title="World Wide Web Consortium" target="_blank"> -->
+					<!-- <svg class="iconFooter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Logo-JS"></use></svg> -->
+				<!-- </a> -->
+				
 			</div>
 			<div class="credit">
-				<p>Bio image by 
-					<a href="https://storyset.com/technology" title="Storyset" target="_blank">Technology illustrations by Storyset</a>
+				<p>Bio image by </p>
+				<a href="https://storyset.com/technology" title="Storyset" target="_blank">
+					Technology illustrations by Storyset
 					<svg class="iconFooter iconStorySet"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Logo-StorySet"></use></svg>
-				</p>
+				</a>
 			</div>
 			<br />	<br />
 			<div class="credit">
-				<p>Credits to 
-					<a href="https://www.freecodecamp.org/news/author/kolade/" title="FreeCodeCamp Kolade Chris" target="_blank">Kolade Chris</a>
-					<a href="https://twitter.com/koladechris" title="Twitter @Ksound" target="_blank"><svg class="iconFooter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Logo-Twitter"></use></svg></a>
-				</p>
+				<p>Credits to </p>
+				<a href="https://www.freecodecamp.org/news/author/kolade/" title="FreeCodeCamp Kolade Chris" target="_blank">
+					Kolade Chris
+				</a>
+				<a href="https://twitter.com/koladechris" title="Twitter @Ksound" target="_blank">
+					<svg class="iconFooter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Logo-Twitter"></use></svg>
+				</a>
 			</div>
 			<div class="credit">
-				<p>Credits to 
-					<a href="https://codepen.io/ohansemmanuel" title="Codepen.io Ohans Emmanuel" target="_blank">Ohans Emmanuel</a>
-					<a href="https://twitter.com/ohansemmanuel" title="Twitter @OhansEmmanuel" target="_blank"><svg class="iconFooter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Logo-Twitter"></use></svg></a>
-				</p>
+				<!-- <p>Credits to </p>  -->
+				<a href="https://codepen.io/ohansemmanuel" title="Codepen.io Ohans Emmanuel" target="_blank">
+					Ohans Emmanuel
+				</a>
+				<a href="https://twitter.com/ohansemmanuel" title="Twitter @OhansEmmanuel" target="_blank">
+					<svg class="iconFooter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Logo-Twitter"></use></svg>
+				</a>
 			</div>
 		</div>
 	<!-- Website scripts -->
