@@ -217,26 +217,39 @@
 				I'm currently focused on 2D games in the GODOT Game Engine. 
 				English and Dutch language, but prefer English as the default language in projects.
 			</p>
-			<p class="bioText animateBottom">
+			<p id="ShowContent" class="bioText animateBottom">
 				<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 					Graece fuisset definitionem sea et, ea nec vivendum senserit.
 					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+				<br />	
+				<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
+					Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
+					Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
+					Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
+					Purto eleifend ad sea, velit tempor pri ne.
+					Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
+				<br />
+				<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
+					At pri habemus splendide, mea ne case errem.
+					Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
+					Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
 			</p>
 			<div class="btnWrapper">
-				<button class="btn btnPrimary">Read More</button>
+				<button id="ShowBtn" class="btn btnPrimary">Read More</button>
 			</div>
 		</div>
-		<div class="iframeContainer">
-			<div class="titleWrapper iframeHeader" title="Youtube">
-				<svg class="iconHead"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Logo-Youtube"></use></svg>
+		<!-- VIDEO FRAME, NOT NEEDED ATM -->
+		<!-- <div class="iframeContainer"> -->
+			<!-- <div class="titleWrapper iframeHeader" title="Youtube"> -->
+				<!-- <svg class="iconHead"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Logo-Youtube"></use></svg> -->
 				<!-- <h2>Video</h2> -->
-				<div class="btnWrapper">
-					<a class="btn btnSecondary" href="https://www.youtube.com/channel/UCtEe9b2K5g5hzTLdSRNp6iA?sub_confirmation=1" target="_blank">Subscribe</a>
-				</div>
-			</div>
-			<iframe class="responsiveIframe" src="https://www.youtube.com/embed/7KlDx64B4PQ?feature=share" title="Placeholder Video" allow="encrypted-media;" ></iframe>
+				<!-- <div class="btnWrapper"> -->
+					<!-- <a class="btn btnSecondary" href="https://www.youtube.com/channel/UCtEe9b2K5g5hzTLdSRNp6iA?sub_confirmation=1" target="_blank">Subscribe</a> -->
+				<!-- </div> -->
+			<!-- </div> -->
+			<!-- <iframe class="responsiveIframe" src="https://www.youtube.com/embed/7KlDx64B4PQ?feature=share" title="Placeholder Video" allow="encrypted-media;" ></iframe> -->
 			<!-- <div class="shadow"></div> -->
-		</div>
+		<!-- </div> -->
 	</section>
 
 <!-- More About section -->
@@ -246,10 +259,8 @@
 			<!-- <h2 class="">More about me</h2> -->
 		</div>
 		<div id="FilterBtns" class="btnWrapper">
-			<button class="btn btnFilter btnPrimary active" onclick="FilterSelection('allFilter')">
-				Show All
-			</button>
-			<button class="btn btnFilter btnPrimary" onclick="FilterSelection('aboutProjects')">
+			
+			<button class="btn btnFilter btnPrimary active" onclick="FilterSelection('aboutProjects')">
 				<!-- <svg class="iconHead"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-Library"></use></svg> -->
 				About my Projects
 			</button>
@@ -260,6 +271,9 @@
 			<button class="btn btnFilter btnPrimary" onclick="FilterSelection('aboutHobby')">
 				<!-- <svg class="iconHead"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-Heart"></use></svg> -->
 				About my Hobbies
+			</button>
+			<button class="btn btnFilter btnPrimary" onclick="FilterSelection('allFilter')">
+				Show All
 			</button>
 		</div>
 		<div class="gridRow">
@@ -272,19 +286,25 @@
 					<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 					Graece fuisset definitionem sea et, ea nec vivendum senserit.
 					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-					</p><p>
-					<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
-					Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
-					Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
-					Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
-					Purto eleifend ad sea, velit tempor pri ne.
-					Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
-					</p><p>
-					<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
-					At pri habemus splendide, mea ne case errem.
-					Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
-					Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
 					</p>
+					<div class="moreText showContent animateBottom">
+						<p>
+						<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
+						Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
+						Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
+						Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
+						Purto eleifend ad sea, velit tempor pri ne.
+						Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
+						</p><p>
+						<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
+						At pri habemus splendide, mea ne case errem.
+						Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
+						Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
+						</p>
+					</div>
+					<div class="btnWrapper">
+						<button class="btn showBtn btnPrimary">Read More</button>
+					</div>
 				</div>
 			</div>
 			<div class="gridColumn aboutProjects">
@@ -295,19 +315,25 @@
 					<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 					Graece fuisset definitionem sea et, ea nec vivendum senserit.
 					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-					</p><p>
-					<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
-					Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
-					Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
-					Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
-					Purto eleifend ad sea, velit tempor pri ne.
-					Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
-					</p><p>
-					<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
-					At pri habemus splendide, mea ne case errem.
-					Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
-					Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
 					</p>
+					<div class="moreText showContent animateBottom">
+						<p>
+						<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
+						Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
+						Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
+						Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
+						Purto eleifend ad sea, velit tempor pri ne.
+						Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
+						</p><p>
+						<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
+						At pri habemus splendide, mea ne case errem.
+						Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
+						Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
+						</p>
+					</div>
+					<div class="btnWrapper">
+						<button class="btn showBtn btnPrimary">Read More</button>
+					</div>
 				</div>
 			</div>
 			<div class="gridColumn aboutProjects">
@@ -318,19 +344,25 @@
 					<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 					Graece fuisset definitionem sea et, ea nec vivendum senserit.
 					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-					</p><p>
-					<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
-					Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
-					Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
-					Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
-					Purto eleifend ad sea, velit tempor pri ne.
-					Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
-					</p><p>
-					<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
-					At pri habemus splendide, mea ne case errem.
-					Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
-					Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
 					</p>
+					<div class="moreText showContent animateBottom">
+						<p>
+						<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
+						Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
+						Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
+						Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
+						Purto eleifend ad sea, velit tempor pri ne.
+						Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
+						</p><p>
+						<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
+						At pri habemus splendide, mea ne case errem.
+						Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
+						Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
+						</p>
+					</div>
+					<div class="btnWrapper">
+						<button class="btn showBtn btnPrimary">Read More</button>
+					</div>
 				</div>
 			</div>
 		<!-- ABOUT: Qualifications -->
@@ -342,19 +374,25 @@
 					<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 					Graece fuisset definitionem sea et, ea nec vivendum senserit.
 					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-					</p><p>
-					<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
-					Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
-					Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
-					Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
-					Purto eleifend ad sea, velit tempor pri ne.
-					Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
-					</p><p>
-					<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
-					At pri habemus splendide, mea ne case errem.
-					Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
-					Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
 					</p>
+					<div class="moreText showContent animateBottom">
+						<p>
+						<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
+						Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
+						Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
+						Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
+						Purto eleifend ad sea, velit tempor pri ne.
+						Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
+						</p><p>
+						<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
+						At pri habemus splendide, mea ne case errem.
+						Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
+						Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
+						</p>
+					</div>
+					<div class="btnWrapper">
+						<button class="btn showBtn btnPrimary">Read More</button>
+					</div>
 				</div>
 			</div>
 			<div class="gridColumn aboutQualification">
@@ -365,19 +403,25 @@
 					<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 					Graece fuisset definitionem sea et, ea nec vivendum senserit.
 					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-					</p><p>
-					<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
-					Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
-					Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
-					Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
-					Purto eleifend ad sea, velit tempor pri ne.
-					Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
-					</p><p>
-					<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
-					At pri habemus splendide, mea ne case errem.
-					Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
-					Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
 					</p>
+					<div class="moreText showContent animateBottom">
+						<p>
+						<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
+						Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
+						Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
+						Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
+						Purto eleifend ad sea, velit tempor pri ne.
+						Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
+						</p><p>
+						<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
+						At pri habemus splendide, mea ne case errem.
+						Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
+						Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
+						</p>
+					</div>
+					<div class="btnWrapper">
+						<button class="btn showBtn btnPrimary">Read More</button>
+					</div>
 				</div>
 			</div>
 			<div class="gridColumn aboutQualification">
@@ -388,19 +432,25 @@
 					<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 					Graece fuisset definitionem sea et, ea nec vivendum senserit.
 					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-					</p><p>
-					<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
-					Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
-					Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
-					Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
-					Purto eleifend ad sea, velit tempor pri ne.
-					Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
-					</p><p>
-					<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
-					At pri habemus splendide, mea ne case errem.
-					Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
-					Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
 					</p>
+					<div class="moreText showContent animateBottom">
+						<p>
+						<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
+						Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
+						Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
+						Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
+						Purto eleifend ad sea, velit tempor pri ne.
+						Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
+						</p><p>
+						<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
+						At pri habemus splendide, mea ne case errem.
+						Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
+						Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
+						</p>
+					</div>
+					<div class="btnWrapper">
+						<button class="btn showBtn btnPrimary">Read More</button>
+					</div>
 				</div>
 			</div>
 		<!-- ABOUT: Hobbies -->
@@ -412,19 +462,25 @@
 					<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 					Graece fuisset definitionem sea et, ea nec vivendum senserit.
 					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-					</p><p>
-					<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
-					Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
-					Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
-					Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
-					Purto eleifend ad sea, velit tempor pri ne.
-					Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
-					</p><p>
-					<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
-					At pri habemus splendide, mea ne case errem.
-					Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
-					Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
 					</p>
+					<div class="moreText showContent animateBottom">
+						<p>
+						<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
+						Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
+						Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
+						Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
+						Purto eleifend ad sea, velit tempor pri ne.
+						Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
+						</p><p>
+						<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
+						At pri habemus splendide, mea ne case errem.
+						Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
+						Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
+						</p>
+					</div>
+					<div class="btnWrapper">
+						<button class="btn showBtn btnPrimary">Read More</button>
+					</div>
 				</div>
 			</div>
 			<div class="gridColumn aboutHobby">
@@ -435,19 +491,25 @@
 					<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 					Graece fuisset definitionem sea et, ea nec vivendum senserit.
 					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-					</p><p>
-					<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
-					Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
-					Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
-					Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
-					Purto eleifend ad sea, velit tempor pri ne.
-					Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
-					</p><p>
-					<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
-					At pri habemus splendide, mea ne case errem.
-					Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
-					Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
 					</p>
+					<div class="moreText showContent animateBottom">
+						<p>
+						<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
+						Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
+						Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
+						Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
+						Purto eleifend ad sea, velit tempor pri ne.
+						Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
+						</p><p>
+						<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
+						At pri habemus splendide, mea ne case errem.
+						Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
+						Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
+						</p>
+					</div>
+					<div class="btnWrapper">
+						<button class="btn showBtn btnPrimary">Read More</button>
+					</div>
 				</div>
 			</div>
 			<div class="gridColumn aboutHobby">
@@ -458,19 +520,25 @@
 					<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 					Graece fuisset definitionem sea et, ea nec vivendum senserit.
 					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-					</p><p>
-					<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
-					Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
-					Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
-					Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
-					Purto eleifend ad sea, velit tempor pri ne.
-					Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
-					</p><p>
-					<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
-					At pri habemus splendide, mea ne case errem.
-					Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
-					Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
 					</p>
+					<div class="moreText showContent animateBottom">
+						<p>
+						<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
+						Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
+						Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
+						Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
+						Purto eleifend ad sea, velit tempor pri ne.
+						Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
+						</p><p>
+						<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
+						At pri habemus splendide, mea ne case errem.
+						Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
+						Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
+						</p>
+					</div>
+					<div class="btnWrapper">
+						<button class="btn showBtn btnPrimary">Read More</button>
+					</div>
 				</div>
 			</div>
 			<div class="gridColumn aboutHobby">
@@ -481,19 +549,25 @@
 					<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 					Graece fuisset definitionem sea et, ea nec vivendum senserit.
 					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-					</p><p>
-					<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
-					Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
-					Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
-					Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
-					Purto eleifend ad sea, velit tempor pri ne.
-					Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
-					</p><p>
-					<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
-					At pri habemus splendide, mea ne case errem.
-					Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
-					Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
 					</p>
+					<div class="moreText showContent animateBottom">
+						<p>
+						<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
+						Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
+						Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
+						Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
+						Purto eleifend ad sea, velit tempor pri ne.
+						Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
+						</p><p>
+						<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
+						At pri habemus splendide, mea ne case errem.
+						Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
+						Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
+						</p>
+					</div>
+					<div class="btnWrapper">
+						<button class="btn showBtn btnPrimary">Read More</button>
+					</div>
 				</div>
 			</div>
 			<div class="gridColumn aboutHobby">
@@ -504,19 +578,25 @@
 					<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 					Graece fuisset definitionem sea et, ea nec vivendum senserit.
 					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-					</p><p>
-					<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
-					Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
-					Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
-					Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
-					Purto eleifend ad sea, velit tempor pri ne.
-					Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
-					</p><p>
-					<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
-					At pri habemus splendide, mea ne case errem.
-					Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
-					Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
 					</p>
+					<div class="moreText showContent animateBottom">
+						<p>
+						<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
+						Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
+						Cum an posse consequuntur, his alia petentium ex, no est sonet tollit graeco.
+						Pri te aeterno signiferumque, an mea rebum luptatum honestatis, nec antiopam cotidieque interpretaris te.
+						Purto eleifend ad sea, velit tempor pri ne.
+						Eam ludus fastidii ei, sit inani impetus menandri ei, expetenda theophrastus vituperatoribus ne eam.
+						</p><p>
+						<b>Lucilius</b> invenire pri cu, ad sed omnes utamur.
+						At pri habemus splendide, mea ne case errem.
+						Ullum delenit adolescens at vis, eu duo argumentum reprehendunt, per enim maiestatis in.
+						Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
+						</p>
+					</div>
+					<div class="btnWrapper">
+						<button class="btn showBtn btnPrimary">Read More</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -560,26 +640,57 @@
 			<svg class="iconHead"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-Diamond"></use></svg>
 			<h2 class="">Spotlight</h2>
 		</div>
-		<div class="gallery">
-			<a href="assets/img/placeholder800x600.jpg" class="big">
-				<img src="assets/img/placeholder800x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
-			</a>
-			<a href="assets/img/placeholder1366x732.jpg" class="big">
-				<img src="assets/img/placeholder1366x732.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
-			</a>
-			<a href="assets/img/placeholder600x600.jpg" class="big">
-				<img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
-			</a>
-			<a href="assets/img/placeholder600x600.jpg" class="big">
-				<img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
-			</a>
-			<a href="assets/img/placeholder600x600.jpg" class="big">
-				<img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
-			</a>
-			<a href="assets/img/placeholder600x600.jpg" class="big">
-				<img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" />
-			</a>
-		</div>
+		<!-- <div class="galleryGrid"> -->
+			<!-- Main Page Gallery Imgs -->
+			<!-- <div class="galleryRow"> -->
+				<!-- <div class="galleryColumn hoverShadow" onclick="openModal();currentSlide(1)"> -->
+					<!-- <img src="assets/img/placeholder800x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/> -->
+					<!-- <div class="galleryText"> -->
+						<!-- <h4>Title</h4> -->
+						<!-- <p>Description...</p> -->
+					<!-- </div> -->
+				<!-- </div> -->
+				<!-- <div class="showColumn hoverShadow" onclick="openModal();currentSlide(1)"> -->
+					<!-- <img src="assets/img/placeholder1366x732.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/> -->
+					<!-- <div class="galleryText"> -->
+						<!-- <h4>Title</h4> -->
+						<!-- <p>Description...</p> -->
+					<!-- </div> -->
+				<!-- </div> -->
+				<!-- <div class="showColumn hoverShadow" onclick="openModal();currentSlide(1)"> -->
+					<!-- <img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/> -->
+					<!-- <div class="galleryText"> -->
+						<!-- <h4>Title</h4> -->
+						<!-- <p>Description...</p> -->
+					<!-- </div> -->
+				<!-- </div> -->
+				<!-- <div class="showColumn hoverShadow" onclick="openModal();currentSlide(1)"> -->
+					<!-- <img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/> -->
+					<!-- <div class="galleryText"> -->
+						<!-- <h4>Title</h4> -->
+						<!-- <p>Description...</p> -->
+					<!-- </div> -->
+				<!-- </div> -->
+				<!-- <div class="showColumn hoverShadow" onclick="openModal();currentSlide(1)"> -->
+					<!-- <img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/> -->
+					<!-- <div class="galleryText"> -->
+						<!-- <h4>Title</h4> -->
+						<!-- <p>Description...</p> -->
+					<!-- </div> -->
+				<!-- </div> -->
+				<!-- <div class="showColumn hoverShadow" onclick="openModal();currentSlide(1)"> -->
+					<!-- <img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/> -->
+					<!-- <div class="galleryText"> -->
+						<!-- <h4>Title</h4> -->
+						<!-- <p>Description...</p> -->
+					<!-- </div> -->
+				<!-- </div> -->
+			<!-- </div> -->
+		<!-- </div> -->
+		<!-- The Lightbox/Modal -->
+		<!-- <div id="Lightbox" class="galleryModal"> -->
+			
+		<!-- </div> -->
 	</section>
 
 <!-- Projects section -->

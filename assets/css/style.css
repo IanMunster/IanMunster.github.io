@@ -148,10 +148,12 @@ html {
 		color: var(--font-color0);
 	}
 	/* Show More Content */
-		#ShowContent {
+		#ShowContent,
+		.showContent {
 			display: none;
 		}
-		#ShowContent.show {
+		#ShowContent.show,
+		.showContent.show {
 			display: block;
 		}
 		/* END Show More Content */	
@@ -265,13 +267,7 @@ html {
 		}
 		 /* END DarkMode Switcher Section */
 		 /* Navigate to Section Top-Margin */
-		 #Home,
-		 #About,
-		 #More,
-		 #Skill,
-		 #Spot,
-		 #Project,
-		 #Contact {
+		 #Home, #About, #More, #Skill, #Spot, #Project, #Contact {
 			 scroll-margin-top: var(--navBar-height);
 			 /* border: 2px solid red; */
 		 }
@@ -477,6 +473,9 @@ html {
 		background-color: var(--bg-color0);
 		padding: 10px;
 	}
+	.gridContent .btnWrapper {
+		/* text-align: center; */
+	}
 	.moreAboutMe p {
 		line-height: var(--line-height);
 		padding: 0.4rem;
@@ -523,22 +522,33 @@ html {
 		margin-bottom: var(--bottom-margin);
 		text-align: center;
 	}
-	.gallery {
+	.galleryGrid {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
 		gap: 0.25rem;
 	}
-	.gallery img,
-	.gallery a {
-		width: 100%;
-		height: 100%;
-	}
-	.gallery a:first-child {
+	.galleryRow:first-child {
 		grid-row: 1/3;
 		grid-column: 1/3;
 	}
-	.gallery a:nth-child(2) {
+	.galleryRow:nth-child(2) {
 		grid-column: 3/5;
+	}
+	.galleryColumn {
+		position: relative;
+	}
+	.spotlightImg {
+		width: 100%;
+		height: 100%;
+	}
+	.galleryText {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		text-align: left;
+		background-color: var(--bg-element0);
+		color: var(--font-color0);
+		padding: 0px 10px;
 	}
 	/* END Spotlight Section */
 

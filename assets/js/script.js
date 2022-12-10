@@ -53,21 +53,21 @@ navLink.forEach((link) =>
 
 /* Show More Buttons Function */
 // V1. Queries single btn ID
-/* const showBtn = document.querySelector("#ShowBtn"),
+const showBtn = document.querySelector("#ShowBtn"),
 	showContent = document.querySelector("#ShowContent");
 showBtn.addEventListener('click', () => {
 	showContent.classList.toggle("show");
-	showContent.scrollIntoView({
-		behaviour: 'smooth'
-	});
-}) */
-const showMore = document.querySelectorAll (".showMore");
-
+	// showContent.scrollIntoView({
+		// behaviour: 'smooth'
+	// });
+})
+// const showMore = document.querySelectorAll (".showMore");
+//.showBtn
 
 /* END Show More Buttons Function */
 
 /* Read More Filter Function */
-FilterSelection("allFilter")
+FilterSelection("aboutProjects")
 function FilterSelection(filterName) {
 	var columnElements, columnCount;
 	columnElements = document.getElementsByClassName("gridColumn");
