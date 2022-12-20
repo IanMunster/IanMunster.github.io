@@ -55,7 +55,7 @@ body {
 html {
 	/* Smooth scrolling */
 	scroll-behavior: smooth;
-	/* Dafault Dark */
+	/* Default Dark */
 	background-color: var(--bg-color0);
 	color: var(--font-color0);
 }
@@ -489,6 +489,7 @@ html {
 		margin: auto;
 		text-align: center;
 		margin-top: var(--top-margin);
+		background-color: var(--bg-color1);
 	}
 	.skillHeader {
 		margin-bottom: var(--bottom-margin);
@@ -512,44 +513,125 @@ html {
 /* Spotlight Section */
 	.spotlight {
 		padding: 1rem 5rem;
-		/* max-width: 68.75rem; */
 		margin: auto;
-		text-align: center;
 		margin-top: var(--top-margin);
-		background-color: var(--bg-color1);
+		background-color: var(--bg-color0);
 	}
 	.spotlightHeader {
 		margin-bottom: var(--bottom-margin);
 		text-align: center;
 	}
-	.galleryGrid {
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		gap: 0.25rem;
+	/* Spotlight Gallery Section */
+	.galleryRow > .galleryColumn {
+		padding: 0 8px;
 	}
-	.galleryRow:first-child {
-		grid-row: 1/3;
-		grid-column: 1/3;
+	.galleryRow:after {
+		content: "";
+		display: table;
+		clear: both;
 	}
-	.galleryRow:nth-child(2) {
-		grid-column: 3/5;
-	}
-	.galleryColumn {
-		position: relative;
+	.galleryColumn,
+	.modalColumn {
+		float: left;
+		width: 16.667%;
 	}
 	.spotlightImg {
 		width: 100%;
-		height: 100%;
 	}
-	.galleryText {
+	.spotlightImg.hoverShadow {
+		transition: 0.3s;
+	}
+	.hoverShadow:hover {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2), 0 6px 20px 0 rgba(0,0,0, 0.19);
+	}
+		/* END Spotlight Gallery Section */
+
+	/* Modal Section */
+	.galleryModal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 100px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: #000;
+	}
+	.modalContent {
+		position: relative;
+		background-color: var(--bg-color1);
+		margin: auto;
+		padding: 0;
+		width: 90%;
+		max-width: 1200px;
+	}
+	.btnClose {
+		color: var(--primary-color);
 		position: absolute;
 		top: 10px;
-		left: 10px;
-		text-align: left;
-		background-color: var(--bg-element0);
-		color: var(--font-color0);
-		padding: 0px 10px;
+		right: 25px;
+		font-size: 3em;
+		font-weight: var(--bold-font);
 	}
+	.btnClose:hover,
+	.btnClose:focus {
+		color: var(--secondary-color);
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.modalSlides {
+		display: none;
+		text-align: center;
+	}
+	.modalSlides img {
+		max-width: 100%;
+	}
+	.slidesNumber {
+		color: var(--font-color0);
+		font-size: 1.2em;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
+	}
+	.btnPrev,
+	.btnNext {
+		color: var(--primary-color);
+		font-weight: var(--bold-font);
+		font-size: 2em;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		padding: 16px;
+		margin-top: -50px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		-webkit-user-select: none;
+	}
+	.btnNext {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+	.btnPrev:hover,
+	.btnNext:hover {
+		background-color: var(--bg-color0);
+	}
+	.modalCaptionContainer {
+		text-align: center;
+		background-color: #000;
+		padding: 2px 16px;
+		color: var(--font-color0);
+	}
+	img.modalThumb {
+		opacity: 0.6;
+	}
+	.activeSlide,
+	.modalThumb:hover {
+		opacity: 1;
+	}
+		/* END Modal Section */
 	/* END Spotlight Section */
 
 /* Projects Section */

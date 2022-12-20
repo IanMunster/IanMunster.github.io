@@ -177,7 +177,8 @@
 <!-- Landingspage Section -->
 <!-- https://www.w3schools.com/howto/howto_css_parallax.asp -->
 	<section class="landing " id="Home">	
-		<img src="assets/img/GD2.svg" alt="About me image" class="aboutImg animated" id="MainImg" />
+		<img src="assets/img/GD2.svg" alt="About me image" class="aboutImg animated" id="MainImg" title="Technology illustrations by Storyset" />
+			
 		<div class="introTxt">
 			<h1>Welcome</h1>
 			<h2>   to my Portfolio. </h2>
@@ -259,7 +260,6 @@
 			<!-- <h2 class="">More about me</h2> -->
 		</div>
 		<div id="FilterBtns" class="btnWrapper">
-			
 			<button class="btn btnFilter btnPrimary active" onclick="FilterSelection('aboutProjects')">
 				<!-- <svg class="iconHead"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-Library"></use></svg> -->
 				About my Projects
@@ -640,57 +640,95 @@
 			<svg class="iconHead"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-Diamond"></use></svg>
 			<h2 class="">Spotlight</h2>
 		</div>
-		<!-- <div class="galleryGrid"> -->
-			<!-- Main Page Gallery Imgs -->
-			<!-- <div class="galleryRow"> -->
-				<!-- <div class="galleryColumn hoverShadow" onclick="openModal();currentSlide(1)"> -->
-					<!-- <img src="assets/img/placeholder800x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/> -->
-					<!-- <div class="galleryText"> -->
-						<!-- <h4>Title</h4> -->
-						<!-- <p>Description...</p> -->
-					<!-- </div> -->
-				<!-- </div> -->
-				<!-- <div class="showColumn hoverShadow" onclick="openModal();currentSlide(1)"> -->
-					<!-- <img src="assets/img/placeholder1366x732.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/> -->
-					<!-- <div class="galleryText"> -->
-						<!-- <h4>Title</h4> -->
-						<!-- <p>Description...</p> -->
-					<!-- </div> -->
-				<!-- </div> -->
-				<!-- <div class="showColumn hoverShadow" onclick="openModal();currentSlide(1)"> -->
-					<!-- <img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/> -->
-					<!-- <div class="galleryText"> -->
-						<!-- <h4>Title</h4> -->
-						<!-- <p>Description...</p> -->
-					<!-- </div> -->
-				<!-- </div> -->
-				<!-- <div class="showColumn hoverShadow" onclick="openModal();currentSlide(1)"> -->
-					<!-- <img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/> -->
-					<!-- <div class="galleryText"> -->
-						<!-- <h4>Title</h4> -->
-						<!-- <p>Description...</p> -->
-					<!-- </div> -->
-				<!-- </div> -->
-				<!-- <div class="showColumn hoverShadow" onclick="openModal();currentSlide(1)"> -->
-					<!-- <img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/> -->
-					<!-- <div class="galleryText"> -->
-						<!-- <h4>Title</h4> -->
-						<!-- <p>Description...</p> -->
-					<!-- </div> -->
-				<!-- </div> -->
-				<!-- <div class="showColumn hoverShadow" onclick="openModal();currentSlide(1)"> -->
-					<!-- <img src="assets/img/placeholder600x600.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/> -->
-					<!-- <div class="galleryText"> -->
-						<!-- <h4>Title</h4> -->
-						<!-- <p>Description...</p> -->
-					<!-- </div> -->
-				<!-- </div> -->
-			<!-- </div> -->
-		<!-- </div> -->
+		<div class="galleryGrid">
+			<!-- Spotlight Gallery Section -->
+			<div class="galleryRow">
+				<div class="galleryColumn hoverShadow" onclick="openModal();currentSlide(1)">
+					<img src="assets/img/placeholder100x100.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/>
+				</div>
+				<div class="galleryColumn hoverShadow" onclick="openModal();currentSlide(2)">
+					<img src="assets/img/placeholder100x100.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/>
+				</div>
+				<div class="galleryColumn hoverShadow" onclick="openModal();currentSlide(3)">
+					<img src="assets/img/placeholder100x100.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/>
+				</div>
+				<div class="galleryColumn hoverShadow" onclick="openModal();currentSlide(4)">
+					<img src="assets/img/placeholder100x100.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/>
+				</div>
+				<div class="galleryColumn hoverShadow" onclick="openModal();currentSlide(5)">
+					<img src="assets/img/placeholder100x100.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/>
+				</div>
+				<div class="galleryColumn hoverShadow" onclick="openModal();currentSlide(6)">
+					<img src="assets/img/placeholder100x100.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/>
+				</div>
+			</div>
+		</div>
 		<!-- The Lightbox/Modal -->
-		<!-- <div id="Lightbox" class="galleryModal"> -->
-			
-		<!-- </div> -->
+		<div id="GalleryModal" class="galleryModal">
+			<!-- Modal Close Button -->
+			<span class="btnClose btnCursor" onclick="closeModal()">&times;</span>
+			<div class="modalContent">
+				<!-- Modal Image Slides -->
+				<div class="modalSlides">
+					<div class="slidesNumber">1 / 6</div>
+					<img src="assets/img/placeholder600x600.jpg" class="slideImg" />
+				</div>
+				
+				<div class="modalSlides">
+					<div class="slidesNumber">2 / 6</div>
+					<img src="assets/img/placeholder600x600.jpg" class="slideImg" />
+				</div>
+				
+				<div class="modalSlides">
+					<div class="slidesNumber">3 / 6</div>
+					<img src="assets/img/placeholder800x600.jpg" class="slideImg" />
+				</div>
+				
+				<div class="modalSlides">
+					<div class="slidesNumber">4 / 6</div>
+					<img src="assets/img/placeholder800x600.jpg" class="slideImg" />
+				</div>
+				
+				<div class="modalSlides">
+					<div class="slidesNumber">5 / 6</div>
+					<img src="assets/img/placeholder1366x732.jpg" class="slideImg" />
+				</div>
+				
+				<div class="modalSlides">
+					<div class="slidesNumber">6 / 6</div>
+					<img src="assets/img/placeholder1366x732.jpg" class="slideImg" />
+				</div>
+
+				<!-- Modal Next/Previous Buttons -->
+				<a class="btnPrev" onclick="changeSlides(-1)">&#10094;</a>
+				<a class="btnNext" onclick="changeSlides(1)">&#10095;</a>
+
+				<!-- Modal Caption Title and Text-->
+				<div class="modalCaptionContainer">
+					<p id="ModalCaption">...</p>
+				</div>
+
+				<!-- Modal Tumbnail Image Controls -->
+				<div class="modalColumn" onclick="currentSlide(1)">
+					<img src="assets/img/placeholder100x100.jpg" alt="<b>Gallery</b> Placeholder Slide 1" title="Gallery Placeholder Title" class="modalThumb"/>
+				</div>
+				<div class="modalColumn" onclick="currentSlide(2)">
+					<img src="assets/img/placeholder100x100.jpg" alt="<b>Gallery</b> Placeholder Slide 2" title="Gallery Placeholder Title" class="modalThumb"/>
+				</div>
+				<div class="modalColumn" onclick="currentSlide(3)">
+					<img src="assets/img/placeholder100x100.jpg" alt="<b>Gallery</b> Placeholder Slide 3" title="Gallery Placeholder Title" class="modalThumb"/>
+				</div>
+				<div class="modalColumn" onclick="currentSlide(4)">
+					<img src="assets/img/placeholder100x100.jpg" alt="<b>Gallery</b> Placeholder Slide 4" title="Gallery Placeholder Title" class="modalThumb"/>
+				</div>
+				<div class="modalColumn" onclick="currentSlide(5)">
+					<img src="assets/img/placeholder100x100.jpg" alt="<b>Gallery</b> Placeholder Slide 5" title="Gallery Placeholder Title" class="modalThumb"/>
+				</div>
+				<div class="modalColumn" onclick="currentSlide(6)">
+					<img src="assets/img/placeholder100x100.jpg" alt="<b>Gallery</b> Placeholder Slide 6" title="Gallery Placeholder Title" class="modalThumb"/>
+				</div>
+			</div>
+		</div>
 	</section>
 
 <!-- Projects section -->
