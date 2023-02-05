@@ -700,15 +700,16 @@ html {
 	}
 	.contactFormContainer .inputField {
 		width: 100%;
-		padding: 10px 0;
+		padding: 10px .5rem;
 		border-radius: 5px;
 		border: 2px outset var(--primary-color);
 		font-size: 0.875rem;
 		outline: none;
+		background-color: var(--bg-color1);
+		color: var(--font-color0);
 	}
 	.contactFormContainer .inputField::placeholder {
 		padding: 1rem;
-		color: var(--primary-color);
 	}
 	.contactFormContainer .submitBtn {
 		width: 100%;
