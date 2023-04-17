@@ -13,8 +13,8 @@
 	<!-- Website Initialize Script -->
 	<script src="assets/js/initScript.js"></script>
 	<!--CSS Styles -->
+	<link rel="stylesheet" href="assets/css/mainStyle.css" />
 	<link rel="stylesheet" href="assets/css/animStyle.css" />
-	<link rel="stylesheet" href="assets/css/style.css" />
 	<link rel="stylesheet" href="assets/css/responStyle.css" />
 </head>
 
@@ -65,7 +65,9 @@
 			</li>
 		</ul>
 		<div class="navBtns">
-		 <!-- Darkmode Switcher -->
+		 <!-- Language Switch -->
+
+		 <!-- Darkmode Switch -->
 			<div class="themeSwitch">
 				<input type="checkbox" class="themeBtn" id="ThemeSwitchBtn" value="Switch" />
 				<label for="ThemeSwitchBtn" class="label">
@@ -512,28 +514,74 @@
 <!-- Skills section -->
 <!-- https://www.w3schools.com/howto/howto_css_skill_bar.asp -->
 	<section class="skills" id="Skill">
-		<div class="titleWrapper skillHeader" title="Skills">
+		<div class="titleWrapper skillsHeader" title="Skills">
 			<svg class="iconHead"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-StatsChart"></use></svg>
 			<h2 class="">Skills</h2>
 		</div>
 		
 		<div class="skillsWrapper">
-			<div class="skills0">
-				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
-				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
-				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
-
+			<p>Web Development Front-End Skills</p>
+			<div class="skillsRow">
+				<div class="tile tileCard">
+					<p>HTML</p>
+					<div class="skillContainer">
+						<div class="skill html">80%</div>
+					</div>
+				</div>
+				<div class="tile tileCard">
+					<p>CSS</p>
+					<div class="skillContainer">
+						<div class="skill css">60%</div>
+					</div>
+				</div>
+				<div class="tile tileCard">
+					<p>JavaScript</p>
+					<div class="skillContainer">
+						<div class="skill js">40%</div>
+					</div>
+				</div>
 			</div>
-			<div class="skills1">
-				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
-				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
-				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
-
+			<p>Game Development Skills</p>
+			<div class="skillsRow">
+				<div class="tile tileCard">
+					<p>C#</p>
+					<div class="skillContainer">
+						<div class="skill csharp">0%</div>
+					</div>
+				</div>
+				<div class="tile tileCard">
+					<p>?</p>
+					<div class="skillContainer">
+						<div class="skill">0%</div>
+					</div>
+				</div>
+				<div class="tile tileCard">
+					<p>?</p>
+					<div class="skillContainer">
+						<div class="skill">0%</div>
+					</div>
+				</div>
 			</div>
-			<div class="skills2">
-				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
-				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
-				<img src="assets/img/placeholder600x600.jpg" alt="Skills Placeholder" loading="lazy" class="tile tileCard" />
+			<p>Web Development Back-End Skills</p>
+			<div class="skillsRow">
+				<div class="tile tileCard">
+					<p>PHP</p>
+					<div class="skillContainer">
+						<div class="skill php">30%</div>
+					</div>
+				</div>
+				<div class="tile tileCard">
+					<p>SQL</p>
+					<div class="skillContainer">
+						<div class="skill sql">20%</div>
+					</div>
+				</div>
+				<div class="tile tileCard">
+					<p>Python</p>
+					<div class="skillContainer">
+						<div class="skill python">10%</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -549,30 +597,31 @@
 		<div class="galleryGrid">
 			<!-- Spotlight Gallery Section -->
 			<div class="galleryRow">
-				<div class="galleryColumn hoverShadow" onclick="openModal();currentSlide(1)">
+				<div class="galleryColumn hoverShadow" onclick="openModal('GalleryModal');currentSlide(1)">
 					<img src="assets/img/placeholder100x100.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/>
 				</div>
-				<div class="galleryColumn hoverShadow" onclick="openModal();currentSlide(2)">
+				<div class="galleryColumn hoverShadow" onclick="openModal('GalleryModal');currentSlide(2)">
 					<img src="assets/img/placeholder100x100.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/>
 				</div>
-				<div class="galleryColumn hoverShadow" onclick="openModal();currentSlide(3)">
+				<div class="galleryColumn hoverShadow" onclick="openModal('GalleryModal');currentSlide(3)">
 					<img src="assets/img/placeholder100x100.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/>
 				</div>
-				<div class="galleryColumn hoverShadow" onclick="openModal();currentSlide(4)">
+				<div class="galleryColumn hoverShadow" onclick="openModal('GalleryModal');currentSlide(4)">
 					<img src="assets/img/placeholder100x100.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/>
 				</div>
-				<div class="galleryColumn hoverShadow" onclick="openModal();currentSlide(5)">
+				<div class="galleryColumn hoverShadow" onclick="openModal('GalleryModal');currentSlide(5)">
 					<img src="assets/img/placeholder100x100.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/>
 				</div>
-				<div class="galleryColumn hoverShadow" onclick="openModal();currentSlide(6)">
+				<div class="galleryColumn hoverShadow" onclick="openModal('GalleryModal');currentSlide(6)">
 					<img src="assets/img/placeholder100x100.jpg" alt="Gallery Placeholder" title="Gallery Placeholder Title" class="spotlightImg"/>
 				</div>
 			</div>
 		</div>
+		<p class="" style="text-align: center";>Click image to Enlarge</p>
 		<!-- The Lightbox/Modal -->
 		<div id="GalleryModal" class="galleryModal">
 			<!-- Modal Close Button -->
-			<span class="btnClose btnCursor" onclick="closeModal()">&times;</span>
+			<span class="btnClose btnCursor" onclick="closeModal('GalleryModal')">&times;</span>
 			<div class="modalContent">
 				<!-- Modal Image Slides -->
 				<div class="modalSlides">
@@ -653,7 +702,7 @@
 					Graece fuisset definitionem sea et, ea nec vivendum senserit.
 					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 				</p>
-				<a href="#" target="_blank" class="projectLink btn btnPrimary">See Project</a>
+				<a href="projects/project1.htm" target="_blank" class="projectLink btn btnPrimary">See Project</a>
 			</div>
 			<div class="projectContainer projectCard">
 				<img src="assets/img/placeholder1366x732.jpg" alt="Project Placeholder" loading="lazy" class="projectImg" />
@@ -663,7 +712,7 @@
 					Graece fuisset definitionem sea et, ea nec vivendum senserit.
 					Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 				</p>
-				<a href="#" target="_blank" class="projectLink btn btnPrimary">See Project</a>
+				<a href="projects/project2.htm" target="_blank" class="projectLink btn btnPrimary">See Project</a>
 			</div>
 			<div class="projectContainer projectCard">
 				<img src="assets/img/placeholder1366x732.jpg" alt="Project Placeholder" loading="lazy" class="projectImg" />
@@ -727,7 +776,7 @@
 
 <!-- Scroll to top -->
 	<i class="scroll" id="ScrollUp"  title="Scroll Up">
-		<svg class="iconTop"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Chevron-Up-Circle"></use></svg>
+		<svg class="iconTop"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Arrow-Up-Circle0"></use></svg>
 	</i>
 
 <!-- Footer section -->

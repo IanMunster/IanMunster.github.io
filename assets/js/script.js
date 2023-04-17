@@ -118,12 +118,12 @@ for (var i = 0; i < filterBtns.length; i++) {
 
 /* Modal Lightbox Functions */
 // Open the Modal
-function openModal() {
-	document.getElementById("GalleryModal").style.display = "block";
+function openModal(modalID) {
+	document.getElementById(modalID).style.display = "block";
 }
 //Close the Modal
-function closeModal() {
-	document.getElementById("GalleryModal").style.display = "none";
+function closeModal(modalID) {
+	document.getElementById(modalID).style.display = "none";
 }
 
 // Slides
