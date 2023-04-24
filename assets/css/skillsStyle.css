@@ -1,26 +1,29 @@
 /* Skill Section */
 .skills {
     padding: 1rem 5rem;
-    /* max-width: 68.75rem; */
+    max-width: 68.75rem;
     margin: auto;
     text-align: center;
     margin-top: var(--top-margin);
     background-color: var(--bg-color1);
 }
-
-.skillHeader {
+.skillsHeader {
     margin-bottom: var(--bottom-margin);
 }
-
-.skillsWrapper img {
+.skillsWrapper {
     padding: 1.25rem;
+}
+
+.skillsRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .tile {
     width: 11.875rem;
     height: 11.25rem;
 }
-
 .tileCard {
     background-color: var(--bg-element0);
     border-radius: 11px;
@@ -29,6 +32,49 @@
     margin: 10px;
 }
 
+.skillContainer {
+    width: 100%;
+    background-color: var(--bg-color0);
+    border-radius: 10px;
+}
+
+.skill {
+    text-align: right;
+    padding: 10px 0px;
+    color: var(--font-color0);
+    width: 0%;
+    background-color: var(--bg-color1);
+    border-radius: 10px;
+}
+
+.html {
+    width: 80%;
+    background-color: #04aa6d;
+}
+.css {
+    width: 60%;
+    background-color: #2196F3;
+}
+.js {
+    width: 40%;
+    background-color: #f44336;
+}
+.csharp {
+    width: 0%;
+    background-color: #f4a836;
+}
+.php {
+    width: 30%; 
+    background-color: #808080;
+}
+.sql {
+    width: 20%; 
+    background-color: #635d5d;
+}
+.python {
+    width: 10%; 
+    background-color: #a7a6a6;
+}
 
 /* Responsive Style for the Website */
 /* For Screens of 960px and lower Half-screen and Ipad*/
