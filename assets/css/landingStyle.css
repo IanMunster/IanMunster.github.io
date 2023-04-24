@@ -1,0 +1,114 @@
+/* Landingspage Section */
+.animateBottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+}
+
+.landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 6rem;
+    margin: 2rem auto;
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+.landing img {
+    /* height: 37.5rem;
+width: 37.5rem; */
+    width: 30%;
+}
+
+.introTxt h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.introTxt h2 {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.landing p {
+    line-height: var(--line-height);
+}
+
+/* Responsive Style */
+/* For Screens of 960px and lower Half-screen and Ipad*/
+@media screen and (max-width: 960px) {}
+
+/* For Screens of 720px and lower Laptop and Tablets */
+@media screen and (max-width: 720px) {
+
+    /* Landing Page Section */
+    .landing {
+        flex-direction: column;
+        max-width: 500px;
+        margin-top: 0rem;
+    }
+
+    .landing img {
+        /* height: 20rem;
+width: 20rem; */
+    }
+
+    .introText h1 {
+        font-size: 2.3rem;
+    }
+
+    .btn {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    /* END Landing Page Section */
+}
+
+/* For Screens of 420px and lower SmartPhones */
+@media screen and (max-width: 420px) {
+
+    /* Landing Page Section */
+    .landing {
+        max-width: 330px;
+    }
+
+    .landing img {
+        /* height: 23rem;
+width: 23rem; */
+    }
+
+    .introText h1 {
+        font-size: 2rem;
+    }
+
+    /* END Landing Page Section */
+
+}

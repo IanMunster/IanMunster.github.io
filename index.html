@@ -12,15 +12,15 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/logo512x512.png" />
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/logo512x512.png" />
 	<!-- Website Initialize Script -->
+	<script src="script.js"></script>
 	<script src="assets/js/initScript.js"></script>
-	<!--CSS Styles -->
-	<link rel="stylesheet" href="assets/css/Style.css" />
-	<link rel="stylesheet" href="assets/css/animStyle.css" />
-	<link rel="stylesheet" href="assets/css/responStyle.css" />
+	<!--CSS Style -->
+	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 	<!-- NAVIGATION BAR -->
+	<link rel="stylesheet" href="assets/css/navStyle.css" />
 	<nav id="NavBar">
 		<a href="#">
 			<span class="navLogo"><img src="assets/icons/logo512x512.png" alt="Home icon" title="Home"
@@ -63,7 +63,7 @@
 		<div class="navBtns">
 			<!-- Language Switch -->
 
-			<!-- Darkmode Switch -->
+			<!-- Theme Color Switch -->
 			<div class="themeSwitch">
 				<input type="checkbox" class="themeBtn" id="ThemeSwitchBtn" value="Switch" />
 				<label for="ThemeSwitchBtn" class="label">
@@ -83,6 +83,7 @@
 			</button>
 		</div>
 	</nav>
+	<script src="assets/js/navScript.js"></script>
 
 	<!-- SIDEBAR -->
 	<section id="Sidebar">
@@ -121,9 +122,12 @@
 		</i>
 
 	</section>
+	<script src="assets/js/scrollToTopScript.js"></script>
 
-	<!-- LANDING Section -->
+	<!-- LANDING SECTION -->
 	<!-- https://www.w3schools.com/howto/howto_css_parallax.asp -->
+	<link rel="stylesheet" href="assets/css/landingStyle.css" />
+	<link rel="stylesheet" href="assets/css/landingAnimStyle.css" />
 	<section class="landing " id="Home">
 		<img src="assets/img/GD2.svg" alt="About me image" class="aboutImg animated" id="MainImg"
 			title="Technology illustrations by Storyset" />
@@ -162,6 +166,7 @@
 
 	<!-- ABOUT SECTION -->
 	<!-- https://www.w3schools.com/howto/howto_js_read_more.asp -->
+	<link rel="stylesheet" href="assets/css/aboutStyle.css" />
 	<section class="aboutMe" id="About">
 		<div class="bio animateBottom">
 			<div class="titleWrapper bioHeader" title="About">
@@ -176,7 +181,7 @@
 				I'm currently focused on 2D games in the <i>Game Makers Studios 2</i> &amp; <i>GODOT</i> Game Engine.
 				English and Dutch language, but prefer English as the default language in projects.
 			</p>
-			<p id="ShowContent" class="bioText animateBottom">
+			<p id="ShowBio" class="bioText animateBottom hide">
 				<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 				Graece fuisset definitionem sea et, ea nec vivendum senserit.
 				Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
@@ -195,25 +200,32 @@
 				Ei ubique tempor per, appetere gubergren ex eam, pri ut idque solet mucius.
 			</p>
 			<div class="btnWrapper">
-				<button id="ShowBtn" class="btn btnPrimary">Read More</button>
+				<button id="ShowBtn" class="btn btnPrimary" onclick="ShowMore('#ShowBio')">Read More</button>
 			</div>
 		</div>
 		<!-- VIDEO FRAME, NOT NEEDED ATM -->
-		<!-- <div class="iframeContainer"> -->
-		<!-- <div class="titleWrapper iframeHeader" title="Youtube"> -->
-		<!-- <svg class="iconHead"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Logo-Youtube"></use></svg> -->
-		<!-- <h2>Video</h2> -->
-		<!-- <div class="btnWrapper"> -->
-		<!-- <a class="btn btnSecondary" href="https://www.youtube.com/channel/UCtEe9b2K5g5hzTLdSRNp6iA?sub_confirmation=1" target="_blank">Subscribe</a> -->
-		<!-- </div> -->
-		<!-- </div> -->
-		<!-- <iframe class="responsiveIframe" src="https://www.youtube.com/embed/7KlDx64B4PQ?feature=share" title="Placeholder Video" allow="encrypted-media;" ></iframe> -->
-		<!-- <div class="shadow"></div> -->
-		<!-- </div> -->
+		<!--<div class="iframeContainer">
+			<div class="titleWrapper iframeHeader" title="Youtube">
+				<svg class="iconHead">
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Logo-Youtube"></use>
+				</svg>
+				<h2>Video</h2>
+				<div class="btnWrapper">
+					<a class="btn btnSecondary"
+						href="https://www.youtube.com/channel/UCtEe9b2K5g5hzTLdSRNp6iA?sub_confirmation=1"
+						target="_blank">Subscribe</a>
+				</div>
+			</div>
+			<iframe class="responsiveIframe" src="https://www.youtube.com/embed/7KlDx64B4PQ?feature=share"
+				title="Placeholder Video" allow="encrypted-media;"></iframe>
+			<div class="shadow"></div>
+		</div>-->
 	</section>
+	<script src="assets/js/readMoreScript.js"></script>
 
 	<!-- More About section -->
 	<!-- https://www.w3schools.com/howto/howto_js_portfolio_filter.asp -->
+	<link rel="stylesheet" href="assets/css/moreAboutStyle.css" />
 	<section class="moreAboutMe" id="More">
 		<div class="titleWrapper moreAboutMeHeader" title="Read More">
 			<!-- <h2 class="">More about me</h2> -->
@@ -242,13 +254,13 @@
 					<svg class="iconHead">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-Library"></use>
 					</svg>
-					<h4 class="">Current Project</h4>
+					<h4 class="gridContentTitle">Current Project</h4>
 					<p>
 						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 						Graece fuisset definitionem sea et, ea nec vivendum senserit.
 						Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 					</p>
-					<div class="moreText showContent animateBottom">
+					<div class="moreText animateBottom hide" id="CurrentProjectMore">
 						<p>
 							<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
 							Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
@@ -267,7 +279,7 @@
 						</p>
 					</div>
 					<div class="btnWrapper">
-						<button class="btn showBtn btnPrimary">Read More</button>
+						<button class="btn showBtn btnPrimary" onclick="ShowMore('#CurrentProjectMore')">Read More</button>
 					</div>
 				</div>
 			</div>
@@ -276,13 +288,13 @@
 					<svg class="iconHead">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-Sparkles"></use> &#9734;
 					</svg>
-					<h4 class="">My Dream Project</h4>
+					<h4 class="gridContentTitle">My Dream Project</h4>
 					<p>
 						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 						Graece fuisset definitionem sea et, ea nec vivendum senserit.
 						Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 					</p>
-					<div class="moreText showContent animateBottom">
+					<div class="moreText animateBottom hide" id="DreamProjectMore">
 						<p>
 							<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
 							Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
@@ -301,7 +313,7 @@
 						</p>
 					</div>
 					<div class="btnWrapper">
-						<button class="btn showBtn btnPrimary">Read More</button>
+						<button class="btn showBtn btnPrimary" onclick="ShowMore('#DreamProjectMore')">Read More</button>
 					</div>
 				</div>
 			</div>
@@ -310,13 +322,13 @@
 					<svg class="iconHead">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-Folder"></use>
 					</svg>
-					<h4 class="">My Project Repositories</h4>
+					<h4 class="gridContentTitle">My Project Repositories</h4>
 					<p>
 						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 						Graece fuisset definitionem sea et, ea nec vivendum senserit.
 						Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 					</p>
-					<div class="moreText showContent animateBottom">
+					<div class="moreText animateBottom hide" id="RepositProjectMore">
 						<p>
 							<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
 							Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
@@ -335,7 +347,7 @@
 						</p>
 					</div>
 					<div class="btnWrapper">
-						<button class="btn showBtn btnPrimary">Read More</button>
+						<button class="btn showBtn btnPrimary" onclick="ShowMore('#RepositProjectMore')">Read More</button>
 					</div>
 				</div>
 			</div>
@@ -345,13 +357,13 @@
 					<svg class="iconHead">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-Bulb"></use>
 					</svg>
-					<h4>Mayor Qualifications</h4>
+					<h4 class="gridContentTitle">Mayor Qualifications</h4>
 					<p>
 						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 						Graece fuisset definitionem sea et, ea nec vivendum senserit.
 						Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 					</p>
-					<div class="moreText showContent animateBottom">
+					<div class="moreText animateBottom hide" id="MayorQualMore">
 						<p>
 							<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
 							Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
@@ -370,7 +382,7 @@
 						</p>
 					</div>
 					<div class="btnWrapper">
-						<button class="btn showBtn btnPrimary">Read More</button>
+						<button class="btn showBtn btnPrimary" onclick="ShowMore('#MayorQualMore')">Read More</button>
 					</div>
 				</div>
 			</div>
@@ -379,13 +391,13 @@
 					<svg class="iconHead">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-School"></use>
 					</svg>
-					<h4>Study: Web &amp; Game Development</h4>
+					<h4 class="gridContentTitle">Study: Game &amp; Web Development</h4>
 					<p>
 						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 						Graece fuisset definitionem sea et, ea nec vivendum senserit.
 						Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 					</p>
-					<div class="moreText showContent animateBottom">
+					<div class="moreText animateBottom hide" id="StudyGWDMore">
 						<p>
 							<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
 							Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
@@ -404,7 +416,7 @@
 						</p>
 					</div>
 					<div class="btnWrapper">
-						<button class="btn showBtn btnPrimary">Read More</button>
+						<button class="btn showBtn btnPrimary" onclick="ShowMore('#StudyGWDMore')">Read More</button>
 					</div>
 				</div>
 			</div>
@@ -413,13 +425,13 @@
 					<svg class="iconHead">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-School"></use>
 					</svg>
-					<h4>Study: Social Cultural Work &amp; Event Organizer</h4>
+					<h4 class="gridContentTitle">Study: Social Cultural Work &amp; Event Organizer</h4>
 					<p>
 						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 						Graece fuisset definitionem sea et, ea nec vivendum senserit.
 						Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 					</p>
-					<div class="moreText showContent animateBottom">
+					<div class="moreText animateBottom hide" id="StudySCWMore">
 						<p>
 							<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
 							Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
@@ -438,7 +450,7 @@
 						</p>
 					</div>
 					<div class="btnWrapper">
-						<button class="btn showBtn btnPrimary">Read More</button>
+						<button class="btn showBtn btnPrimary" onclick="ShowMore('#StudySCWMore')">Read More</button>
 					</div>
 				</div>
 			</div>
@@ -448,13 +460,13 @@
 					<svg class="iconHead">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-Heart"></use> &#9829;
 					</svg>
-					<h4>My Hobbies</h4>
+					<h4 class="gridContentTitle">My Hobbies</h4>
 					<p>
 						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 						Graece fuisset definitionem sea et, ea nec vivendum senserit.
 						Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 					</p>
-					<div class="moreText showContent animateBottom">
+					<div class="moreText animateBottom hide" id="HobbyMore">
 						<p>
 							<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
 							Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
@@ -473,7 +485,7 @@
 						</p>
 					</div>
 					<div class="btnWrapper">
-						<button class="btn showBtn btnPrimary">Read More</button>
+						<button class="btn showBtn btnPrimary" onclick="ShowMore('#HobbyMore')">Read More</button>
 					</div>
 				</div>
 			</div>
@@ -482,13 +494,13 @@
 					<svg class="iconHead">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-Controller"></use>
 					</svg>
-					<h4>Gaming</h4>
+					<h4 class="gridContentTitle">Gaming</h4>
 					<p>
 						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 						Graece fuisset definitionem sea et, ea nec vivendum senserit.
 						Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 					</p>
-					<div class="moreText showContent animateBottom">
+					<div class="moreText animateBottom hide" id="GamingMore">
 						<p>
 							<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
 							Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
@@ -507,7 +519,7 @@
 						</p>
 					</div>
 					<div class="btnWrapper">
-						<button class="btn showBtn btnPrimary">Read More</button>
+						<button class="btn showBtn btnPrimary" onclick="ShowMore('#GamingMore')">Read More</button>
 					</div>
 				</div>
 			</div>
@@ -516,13 +528,13 @@
 					<svg class="iconHead">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-Construct"></use> &#9874;
 					</svg>
-					<h4>Modding</h4>
+					<h4 class="gridContentTitle">Modding</h4>
 					<p>
 						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 						Graece fuisset definitionem sea et, ea nec vivendum senserit.
 						Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 					</p>
-					<div class="moreText showContent animateBottom">
+					<div class="moreText animateBottom hide" id="ModdingMore">
 						<p>
 							<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
 							Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
@@ -541,7 +553,7 @@
 						</p>
 					</div>
 					<div class="btnWrapper">
-						<button class="btn showBtn btnPrimary">Read More</button>
+						<button class="btn showBtn btnPrimary" onclick="ShowMore('#ModdingMore')">Read More</button>
 					</div>
 				</div>
 			</div>
@@ -550,13 +562,13 @@
 					<svg class="iconHead">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-Dice"></use> &#9860;
 					</svg>
-					<h4>Tabletop Games</h4>
+					<h4 class="gridContentTitle">Tabletop Games</h4>
 					<p>
 						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 						Graece fuisset definitionem sea et, ea nec vivendum senserit.
 						Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 					</p>
-					<div class="moreText showContent animateBottom">
+					<div class="moreText animateBottom hide" id="TableTopMore">
 						<p>
 							<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
 							Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
@@ -575,7 +587,7 @@
 						</p>
 					</div>
 					<div class="btnWrapper">
-						<button class="btn showBtn btnPrimary">Read More</button>
+						<button class="btn showBtn btnPrimary" onclick="ShowMore('#TableTopMore')">Read More</button>
 					</div>
 				</div>
 			</div>
@@ -584,13 +596,13 @@
 					<svg class="iconHead">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Icon-Bonfire"></use>
 					</svg>
-					<h4>Live Action &amp; RP Games</h4>
+					<h4 class="gridContentTitle">Live Action &amp; RP Games</h4>
 					<p>
 						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
 						Graece fuisset definitionem sea et, ea nec vivendum senserit.
 						Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 					</p>
-					<div class="moreText showContent animateBottom">
+					<div class="moreText animateBottom hide" id="LiveActionMore">
 						<p>
 							<b>Cibo</b> nominati sadipscing ius ea. Mea hinc percipit no.
 							Antiopam disputationi ei cum, nec omnis vivendo temporibus an.
@@ -609,16 +621,17 @@
 						</p>
 					</div>
 					<div class="btnWrapper">
-						<button class="btn showBtn btnPrimary">Read More</button>
+						<button class="btn showBtn btnPrimary" onclick="ShowMore('#LiveActionMore')">Read More</button>
 					</div>
 				</div>
 			</div>
 		</div>
-
 	</section>
+	<script src="assets/js/filterScript.js"></script>
 
 	<!-- Skills section -->
 	<!-- https://www.w3schools.com/howto/howto_css_skill_bar.asp -->
+	<link rel="stylesheet" href="assets/css/skillsStyle.css" />
 	<section class="skills" id="Skill">
 		<div class="titleWrapper skillsHeader" title="Skills">
 			<svg class="iconHead">
@@ -697,6 +710,7 @@
 	<!-- Spotlight section -->
 	<!-- https://www.w3schools.com/howto/howto_js_lightbox.asp -->
 	<!-- https://www.w3schools.com/howto/howto_css_image_text_blocks.asp -->
+	<link rel="stylesheet" href="assets/css/spotlightStyle.css" />
 	<section class="spotlight" id="Spot">
 		<div class="titleWrapper spotlightHeader" title="Spotlight">
 			<svg class="iconHead">
@@ -810,6 +824,7 @@
 
 	<!-- Projects section -->
 	<!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+	<link rel="stylesheet" href="assets/css/projectStyle.css" />
 	<section class="projects" id="Project">
 		<div class="titleWrapper projectsHeader" title="Projects">
 			<svg class="iconHead">
@@ -853,9 +868,11 @@
 			</div>
 		</div>
 	</section>
+	<script src="assets/js/modalLightboxScript.js"></script>
 
 	<!-- Contact section -->
 	<!-- TO DO: Place the Social Side Bar inside this Element when Contact Section is focused -->
+	<link rel="stylesheet" href="assets/css/contactStyle.css" />
 	<section class="contactMe" id="Contact">
 		<div class="titleWrapper contactHeader" title="Contact">
 			<svg class="iconHead">
@@ -964,9 +981,6 @@
 			</div>
 		</div>
 	</footer>
-
-<!-- Website scripts, load After PageLoad -->
-	<script src="assets/js/script.js"></script>
 </body>
 
 <!-- Page Initialize -->
@@ -1230,6 +1244,7 @@
 			</svg>
 		</div>
 	</section>
+	<script src="assets/js/loaderScript.js"></script>
 
 
 

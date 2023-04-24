@@ -1,0 +1,51 @@
+/* Skill Section */
+.skills {
+    padding: 1rem 5rem;
+    /* max-width: 68.75rem; */
+    margin: auto;
+    text-align: center;
+    margin-top: var(--top-margin);
+    background-color: var(--bg-color1);
+}
+
+.skillHeader {
+    margin-bottom: var(--bottom-margin);
+}
+
+.skillsWrapper img {
+    padding: 1.25rem;
+}
+
+.tile {
+    width: 11.875rem;
+    height: 11.25rem;
+}
+
+.tileCard {
+    background-color: var(--bg-element0);
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+}
+
+
+/* Responsive Style for the Website */
+/* For Screens of 960px and lower Half-screen and Ipad*/
+@media screen and (max-width: 960px) {}
+
+/* For Screens of 720px and lower Laptop and Tablets */
+@media screen and (max-width: 720px) {
+    .tile {
+        width: 5.875rem;
+        height: 5.875rem;
+    }
+}
+
+/* For Screens of 420px and lower SmartPhones */
+@media screen and (max-width: 420px) {
+    .tile {
+        width: 3rem;
+        height: 3rem;
+    }
+}

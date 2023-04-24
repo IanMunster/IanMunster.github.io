@@ -1,0 +1,75 @@
+/* More About Section */
+.moreAboutMe {
+    padding: 1rem 6rem;
+    /* max-width: 90rem; */
+    margin: auto;
+    margin-top: var(--top-margin);
+}
+
+.moreAboutMeHeader {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+}
+
+.gridRow {
+    margin: 8px -16px;
+}
+
+.gridRow,
+.gridRow>.gridColumn {
+    padding: 8px;
+}
+
+.gridColumn {
+    float: left;
+    width: 33.33%;
+    display: none;
+}
+
+.gridColumn.show {
+    display: block;
+}
+
+.gridRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.gridContent {
+    background-color: var(--bg-color0);
+    padding: 10px;
+}
+
+.gridContent .btnWrapper {
+    /* text-align: center; */
+}
+
+.moreAboutMe p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+}
+
+
+/* Responsive Style for the Website */
+/* For Screens of 960px and lower Half-screen and Ipad*/
+@media screen and (max-width: 960px) {}
+
+/* For Screens of 720px and lower Laptop and Tablets */
+@media screen and (max-width: 720px) {
+    .moreAboutMe {
+        margin-top: 2rem;
+        padding: 1rem 6rem;
+    }
+
+    .moreAboutMeHeader {
+        text-align: center;
+    }
+
+    .moreAboutMe p {
+        text-align: justify;
+    }
+}
+
+/* For Screens of 420px and lower SmartPhones */
+@media screen and (max-width: 420px) {}

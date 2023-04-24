@@ -1,0 +1,146 @@
+/* About Section */
+.aboutMe {
+    background-color: var(--bg-color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin: auto;
+    padding: 1rem;
+    margin-top: var(--top-margin);
+}
+
+.bio {
+    width: 41.275rem;
+    min-height: 24rem;
+    padding: 0.625rem;
+    background-color: var(--bg-element0);
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.bioHeader {
+    margin-bottom: var(--bottom-margin);
+}
+
+.aboutMe .btnWrapper {
+    text-align: center;
+}
+
+.bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+}
+
+.iframeHeader {
+    display: flex;
+    gap: 5rem;
+    
+    /* text-align: right; */
+    /* border: 1px solid black; */
+    /* background-color: var(--bg-element0); */
+    /* border-radius: 5px; */
+}
+
+.iframeContainer {
+    width: 41.275rem;
+    min-height: 24rem;
+    padding: 0.625rem;
+
+    /* position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; */
+
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    /* padding-top: 75%; */
+    /* 4:3 Aspect Ratio */
+    /* padding-top: 100%;*/
+    /* 1:1 Aspect Ratio */
+}
+
+.responsiveIframe {
+    width: 560px;
+    height: 315px;
+
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%; */
+}
+
+iframe {
+    border-top: 3px groove var(--primary-color);
+    border-bottom: 3px groove var(--primary-color);
+    border-right: 1px solid var(--primary-shadow);
+    border-left: 1px solid var(--primary-shadow);
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+/* .shadow {
+    height: 5rem;
+    width: 30rem;
+    background-color: var(--bg-element0);
+    position: relative;
+    top: -0rem;
+    z-index: -1;
+    border-radius: 100%;
+} */
+/* For Button Style See "Buttons Style" on Main Stylesheet */
+
+
+/* Responsive Style for the Website */
+/* For Screens of 960px and lower Half-screen and Ipad*/
+@media screen and (max-width: 960px) {
+    iframe {
+        max-width: 100%;
+    }
+}
+
+/* For Screens of 720px and lower Laptop and Tablets */
+@media screen and (max-width: 720px) {
+    .aboutMe {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .bio,
+    .iframeContainer {
+        width: 27.5rem;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+
+    /* .shadow {
+        height: 2.5rem;
+        width: 30rem;
+        top: -1.5rem;
+    } */
+
+}
+
+/* For Screens of 420px and lower SmartPhones */
+@media screen and (max-width: 420px) {
+    .bio {
+        width: 18.3rem;
+        margin-top: 1rem;
+    }
+
+    .iFrameContainer {
+        max-width: 330px;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+
+    /* 	.shadow {} */
+
+}

@@ -1,0 +1,81 @@
+/* Contact Section */
+.contactMe {
+    margin-top: var(--top-margin);
+}
+
+.contactHeader {
+    text-align: center;
+    margin-bottom: var(--bottom-margin-2);
+}
+
+.contactFormContainer {
+    max-width: 40.75rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+
+.contactFormContainer label {
+    line-height: 2.7em;
+    font-weight: var(--bold-font);
+    color: var(--primary-color);
+}
+
+.contactFormContainer textarea {
+    min-height: 6.25rem;
+    font-size: 14px;
+}
+
+.contactFormContainer .inputField {
+    width: 100%;
+    padding: 10px .5rem;
+    border-radius: 5px;
+    border: 2px outset var(--primary-color);
+    font-size: 0.875rem;
+    outline: none;
+    background-color: var(--bg-color1);
+    color: var(--font-color0);
+}
+
+.contactFormContainer .inputField::placeholder {
+    padding: 1rem;
+}
+
+.contactFormContainer .submitBtn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--bg-element0);
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+}
+
+.contactFormContainer .submitBtn:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+
+/* Responsive Style for the Website */
+/* For Screens of 960px and lower Half-screen and Ipad*/
+@media screen and (max-width: 960px) {}
+
+/* For Screens of 720px and lower Laptop and Tablets */
+@media screen and (max-width: 720px) {
+    .contactFormContainer {
+        max-width: 25rem;
+    }
+
+}
+
+/* For Screens of 420px and lower SmartPhones */
+@media screen and (max-width: 420px) {
+    .contactFormContainer {
+        max-width: 17.75rem;
+    }
+
+}

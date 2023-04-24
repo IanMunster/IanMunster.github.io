@@ -1,0 +1,255 @@
+/* Import Google Roboto Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+:root {
+	/* Font Variables */
+	--font-family: "Roboto", sans-serif;
+	--normal-font: 400;
+	--bold-font: 700;
+	--bolder-font: 900;
+	/* Color Variables */
+	--bg-color0: #1e2021;
+	--bg-color1: #1c1c1c;
+	--bg-element0: rgba(100, 100, 100, 0.75);
+	--primary-color: #49df49;
+	--secondary-color: #4756df;
+	--primary-shadow: #95b08d;
+	--secondary-shadow: #8b8eaf;
+	--font-color0: #dedcd9;
+	--font-color1: #333;
+	--btn-color0: #095cf7;
+	--btn-color1: #f1262d;
+	/* Position Variables */
+	--navBar-height: 5rem;
+	--top-margin: 2.5rem;
+	--bottom-margin: 0.5rem;
+	--bottom-margin-2: 1rem;
+	--line-height: 1.7rem;
+	--transition: 0.3s;
+}
+
+/* CSS Reset */
+/* remove default Margin, Padding, Text-Decor for AnchorTags and List-Style-Type for Lists */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: var(--font-family);
+}
+
+/* END CSS Reset */
+
+
+/* Main Page Style */
+/* Center Content on Page */
+body {
+	max-width: 100%;
+	margin: auto;
+}
+
+html {
+	/* Smooth scrolling */
+	scroll-behavior: smooth;
+	/* Default Dark */
+	background-color: var(--bg-color0);
+	color: var(--font-color0);
+}
+
+/* Header Colors */
+h1,
+h2,
+h3 {
+	color: var(--primary-color);
+}
+
+a,
+i {
+	color: var(--primary-color);
+	fill: var(--primary-color);
+}
+
+a:hover,
+i:hover {
+	color: var(--secondary-color);
+	fill: var(--secondary-color);
+}
+
+
+/* Icons */
+.iconNav {
+	width: 3rem;
+	height: 3rem;
+	/* Fill Color in a {} */
+}
+
+.iconHead {
+	width: 5rem;
+	height: 5rem;
+	fill: var(--primary-color);
+}
+
+.iconSocial {
+	width: 3.5rem;
+	height: 3.5rem;
+}
+
+.iconTop {
+	width: 4rem;
+	height: 4rem;
+}
+
+.iconFooter {
+	width: 1rem;
+	height: 1rem;
+}
+
+/* These icons need to be a bit Larger then the other Footer Icons */
+.credit .iconW3,
+.credit .iconStorySet {
+	width: 2.2rem;
+	height: 2.2rem;
+	fill: var(--primary-color);
+}
+
+.credit .iconW3 {
+	width: 3rem;
+}
+
+/* Fallback PNG if No SVG Supported Browser */
+.icon .no-svg {}
+
+
+/* Buttons Style */
+.btn {
+	margin-top: 1rem;
+	display: inline-block;
+	padding: 0.8rem 0.6rem;
+	font-weight: var(--bold-font);
+	/* color: var(--font-color1); */
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+}
+
+.btn.active {
+	background-color: var(--btn-color1);
+	color: var(--font-color0);
+}
+
+.btnPrimary {
+	background-color: var(--primary-color);
+	color: var(--font-color1);
+}
+
+.btnPrimary:hover {
+	background-color: var(--btn-color0);
+	color: var(--font-color0);
+}
+
+.btnSecondary {
+	background-color: var(--btn-color1);
+	color: var(--font-color0);
+}
+
+.btnSecondary:hover {
+	background-color: var(--secondary-color);
+	color: var(--font-color0);
+}
+
+/* Show More Content */
+.hide,
+#Hide {
+	display: none;
+}
+
+#Show,
+.show {
+	display: block;
+}
+
+
+/*SIDEBAR RIGHT */
+/* Social Bar */
+.socials {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	right: 1%;
+	bottom: 50%;
+}
+
+.socialIcon {
+	width: 3rem;
+	height: 3rem;
+}
+
+/* END Social Bar */
+
+/* Scroll Up Button */
+.scroll {
+	position: fixed;
+	right: 0.5%;
+	bottom: 3%;
+	cursor: pointer;
+}
+
+.upArrow {
+	width: 3rem;
+	height: 3rem;
+	fill: var(--primary-color);
+}
+
+.upArrow:hover {
+	fill: var(--secondary-color);
+}
+
+/* END Scroll Up Button */
+/*END SIDEBAR RIGHT */
+
+/* Footer */
+footer {
+	background-color: var(--bg-color1);
+	padding: 1.25rem;
+	text-align: center;
+	margin: 2rem 0 0;
+}
+
+/* END Footer */
+
+/* Responsive Style for the Website */
+/* For Screens of 960px and lower Half-screen and Ipad*/
+@media screen and (max-width: 960px) {}
+
+/* For Screens of 720px and lower Laptop and Tablets */
+@media screen and (max-width: 720px) {}
+
+/* For Screens of 420px and lower SmartPhones */
+@media screen and (max-width: 420px) {
+
+	/* Social Bar */
+	.socialIcon {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+
+	/* END Social Bar */
+}
+
+
+/*PAGE INIT*/
+#PageInit {
+	display: none;
+}

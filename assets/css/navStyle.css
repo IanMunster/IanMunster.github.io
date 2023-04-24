@@ -1,0 +1,164 @@
+/* NAVIGATIONBAR */
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navLogo {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.navLogo:hover,
+nav .menuBtn:hover {
+    color: var(--secondary-color);
+}
+
+nav ul,
+nav div {
+    display: flex;
+    gap: 1.9rem;
+}
+
+nav a img {
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+.navBar a {
+    color: var(--primary-color);
+    transition: var(--transition);
+    font-size: 1.25rem;
+}
+
+.navBar a:hover {
+    color: var(--secondary-color);
+    fill: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.navBar li {
+    font-weight: var(--bold-font);
+}
+
+.menuBtn {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#BurgerBtn {
+    display: none;
+}
+
+/* DarkMode Switcher Section */
+.themeBtn {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    width: 50px;
+    height: 29px;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 6px;
+    position: relative;
+}
+
+.switcher {
+    background-color: #aaa;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.iconMoon {
+    fill: #ffa502;
+    color: #ffa502;
+}
+
+.iconSunny {
+    fill: #ffff00;
+    color: #ffff00;
+}
+
+.themeBtn:checked+.label .switcher {
+    transform: translateX(24px);
+}
+
+/* Navigate to Section Top-Margin */
+#Home, #About, #More, #Skill,
+#Spot, #Project, #Contact {
+    scroll-margin-top: var(--navBar-height);
+    /* border: 2px solid red; */
+}
+
+
+/* Responsive Style for the Website */
+/* For Screens of 960px and lower Half-screen and Ipad*/
+@media screen and (max-width: 960px) {
+    nav {
+        padding: 0.75rem;
+    }
+}
+
+/* For Screens of 720px and lower Laptop and Tablets */
+@media screen and (max-width: 720px) {
+    nav {
+        padding: 1rem;
+    }
+
+    .logo {
+        width: 50%;
+        height: 50%;
+    }
+
+    .navBar {
+        position: fixed;
+        background-color: var(--bg-color1);
+        flex-direction: column;
+        top: 62px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateY(-120%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .navBar li {
+        margin: 8px;
+    }
+
+    .navBar.show {
+        transform: translateX(0);
+    }
+
+    .themeSwitch {
+        margin-right: 2rem;
+    }
+
+    #BurgerBtn {
+        display: block;
+    }
+}
+
+/* For Screens of 420px and lower SmartPhones */
+@media screen and (max-width: 420px) {}
