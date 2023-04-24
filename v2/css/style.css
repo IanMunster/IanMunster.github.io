@@ -1,0 +1,82 @@
+/* MAIN */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap"); /* Import Google Roboto Font */
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;              /* Remove page Marging i.e Fullscreen Page */
+    box-sizing: border-box; /* Ensure proper sizing */
+}
+
+/* HEADER */
+header {
+    padding: 80px;          /* Add Padding in Header */
+    text-align: center;     /* Align Text in Center */
+    background: black;      /* Green Header Background */
+    color: white;           /* White Font */
+}
+header h1 {
+    font-size: 40px;
+}
+
+/* NAVIGATION */
+nav {
+    overflow: hidden;
+    background-color: grey;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a.right {
+    float: right;
+}
+
+nav a:hover {
+    background-color: gainsboro;
+    color: black;
+}
+/* PROJECT */
+/* Slideshow */
+.mySlides {
+    width: 100%;
+    display: none;
+}
+
+/* ABOUT */
+/* Column Container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* Sidebar Left Column */
+.side {
+    flex: 20%; /* Set widhth of Sidebar */
+    background-color: gray;
+    padding: 20px;
+}
+
+/* Main Right Column */
+.main {
+    flex: 80%; 
+    background-color: white;
+    padding: 20px;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+}

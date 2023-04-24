@@ -1,0 +1,19 @@
+/* Tablets */
+@media screen and (max-width: 720px) {
+    /* NAVIGATION */
+    nav a {
+        float: none;
+        width: 100%;
+    }
+
+    /* ABOUT */
+    /* Row */
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Smartphones */
+@media screen and (max-width: 420px) {
+    
+}
