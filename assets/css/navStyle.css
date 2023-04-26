@@ -108,7 +108,6 @@ nav a img {
 #Home, #About, #More, #Skill,
 #Spot, #Project, #Contact {
     scroll-margin-top: var(--navBar-height);
-    /* border: 2px solid red; */
 }
 
 

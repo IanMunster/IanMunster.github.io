@@ -181,44 +181,6 @@ i:hover {
 }
 
 
-/*SIDEBAR RIGHT */
-/* Social Bar */
-.socials {
-	display: flex;
-	flex-direction: column;
-	position: fixed;
-	right: 1%;
-	bottom: 50%;
-}
-
-.socialIcon {
-	width: 3rem;
-	height: 3rem;
-}
-
-/* END Social Bar */
-
-/* Scroll Up Button */
-.scroll {
-	position: fixed;
-	right: 0.5%;
-	bottom: 3%;
-	cursor: pointer;
-}
-
-.upArrow {
-	width: 3rem;
-	height: 3rem;
-	fill: var(--primary-color);
-}
-
-.upArrow:hover {
-	fill: var(--secondary-color);
-}
-
-/* END Scroll Up Button */
-/*END SIDEBAR RIGHT */
-
 /* Footer */
 footer {
 	background-color: var(--bg-color1);
@@ -229,6 +191,12 @@ footer {
 
 /* END Footer */
 
+/*PAGE INIT*/
+#PageInit {
+	display: none;
+}
+
+
 /* Responsive Style for the Website */
 /* For Screens of 960px and lower Half-screen and Ipad*/
 @media screen and (max-width: 960px) {}
@@ -237,19 +205,4 @@ footer {
 @media screen and (max-width: 720px) {}
 
 /* For Screens of 420px and lower SmartPhones */
-@media screen and (max-width: 420px) {
-
-	/* Social Bar */
-	.socialIcon {
-		width: 2.5rem;
-		height: 2.5rem;
-	}
-
-	/* END Social Bar */
-}
-
-
-/*PAGE INIT*/
-#PageInit {
-	display: none;
-}
+@media screen and (max-width: 420px) {}

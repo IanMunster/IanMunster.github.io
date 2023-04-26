@@ -1,0 +1,56 @@
+/*SIDEBAR RIGHT */
+/* Social Bar */
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+    padding-top: 1rem;
+}
+
+.iconSocial {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+
+/* Scroll Up Button */
+.scroll {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+.upArrow {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--primary-color);
+}
+
+.upArrow:hover {
+    fill: var(--secondary-color);
+}
+
+/* Responsive Style for the Website */
+/* For Screens of 960px and lower Half-screen and Ipad*/
+@media screen and (max-width: 960px) {
+    .socials {
+        bottom: 25%;
+    }
+}
+
+/* For Screens of 720px and lower Laptop and Tablets */
+@media screen and (max-width: 720px) {
+
+}
+
+/* For Screens of 420px and lower SmartPhones */
+@media screen and (max-width: 420px) {
+
+    /* Social Bar */
+    .iconSocial {
+
+    }
+}
