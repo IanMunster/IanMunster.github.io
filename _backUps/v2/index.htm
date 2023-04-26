@@ -4,92 +4,176 @@
 <!-- https://www.w3schools.com/howto/howto_make_a_website.asp -->
 <!-- https://www.w3schools.com/howto/tryw3css_templates_portfolio.htm -->
 <!-- https://www.w3schools.com/howto/howto_css_center_website.asp -->
- <head>
-  <title>Portfolio</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style></style>
-
+<head>
+	<title>Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style></style>
 	<!--CSS Styles -->
 	<link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/styleResponsive.css" />
- </head>
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
 <!-- BODY -->
- <body>
-  <!-- HEADER -->
-  <header><h1>Portfolio</h1><p>Welcome</p></header>
-  <!-- NAVIGATION -->
-  <!-- https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
-  <!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
-  <!-- https://www.w3schools.com/howto/howto_js_scroll_indicator.asp -->
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Project</a>
-    <a href="#">About</a>
-    <a href="#">Experience</a>
-    <a href="#">Contact</a>
-    <a href="#" class="right">MENU</a>
-  </nav>
+<body>
+	<!-- HEADER -->
+	<link rel="stylesheet" href="css/headerStyle.css" />
+	<header>
+		
+		<!-- https://www.w3schools.com/howto/howto_css_hero_image.asp -->
+		<section class="header">
+			<section class="header-text">
+				<h1>Portfolio</h1>
+				<p>Welcome</p>
+			</section>
+		<!-- SlideShow -->
+			<section class="header-carousel">
+			<!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+			<img class="mySlides" src="img/img_5terre_wide.jpg">
+			<img class="mySlides" src="img/img_lights_wide.jpg">
+			<img class="mySlides" src="img/img_mountains_wide.jpg">
+			<img class="mySlides" src="img/img_nature_wide.jpg">
+			<img class="mySlides" src="img/img_snow_wide.jpg">
+			<img class="mySlides" src="img/img_woods_wide.jpg">
+			<script src="js/carouselScript.js"></script>
+			</section>
+			<!-- <section class="header-fade"></section> -->
+		</section>
+	</header>
 
-  <!-- Project -->
-  <!-- https://www.w3schools.com/howto/howto_css_hero_image.asp -->
-  <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
-  <!-- https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
-  <!-- https://www.w3schools.com/howto/howto_js_active_element.asp -->
-  <!-- SlideShow -->
-  <section>
-    <img class="mySlides" src="img/img_5terre_wide.jpg">
-    <img class="mySlides" src="img/img_lights_wide.jpg">
-    <img class="mySlides" src="img/img_mountains_wide.jpg">
-    <img class="mySlides" src="img/img_nature_wide.jpg">
-    <img class="mySlides" src="img/img_snow_wide.jpg">
-    <img class="mySlides" src="img/img_woods_wide.jpg">
-  </section>
+	<!-- NAVIGATION -->
+	<!-- https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
+	<!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+	<!-- https://www.w3schools.com/howto/howto_js_scroll_indicator.asp -->
+	<!-- https://www.w3schools.com/howto/howto_js_active_element.asp -->
+	<!-- https://www.w3schools.com/howto/howto_css_pagination.asp -->
+	<nav>
+	<link rel="stylesheet" href="css/navStyle.css" />
+		<a href="#">Home</a>
+		<a href="#">Project</a>
+		<a href="#">About</a>
+		<a href="#">Experience</a>
+		<a href="#">Contact</a>
+		<a href="#" class="right">MENU</a>
+	</nav>
+	
+<!-- About -->
+<link rel="stylesheet" href="css/aboutStyle.css" />
+	<section class="row">
+	<!-- Profile Card -->
+	<link rel="stylesheet" href="css/profileStyle.css" />
+	<!-- https://www.w3schools.com/howto/howto_css_profile_card.asp -->
+		<article class="side profile-card">
+			<img class="profile-picture" src="img/small/img_woods.jpg" alt="Me" />
+			<h2 class="profile-name">My Name</h2>
+			<p class="profile-title">Game &amp; Web Developer</p>
+			<p>...</p>
+			<a class="profile-link" href="#"><i class="fa fa-github"></i></a>
+			<a class="profile-link" href="#"><i class="fa fa-steam"></i></a>
+			<a class="profile-link" href="#"><i class="fa fa-youtube"></i></a>
+			<a class="profile-link" href="#"><i class="fa fa-google"></i></a>
+			<p><button class="profile-button">Contact</button></p>
+		</article>
+	
+	<!-- Projects -->
+	<link rel="stylesheet" href="css/projectStyle.css" />
+	<!-- https://www.w3schools.com/howto/howto_js_portfolio_filter.asp -->
+	<!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
+	<!-- https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
+		<article class="main">
+			<h2 class="projects-title">Projects</h2>
+			<p class="projects-buttons">project Buttons placeholder</p>
+			<div class="projects-row">
+				<!-- PROJECT 1 -->
+				<div class="projects-column">
+					<div class="project-content">
+						<img class="project-img" src="img/small/img_lights.jpg" alt="Project IMG" />
+						<h3 class="project-title">Project</h3>
+						<p class="project-description">
+							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+						</p>
+					</div>
+				</div>
+				<!-- PROJECT 2 -->
+				<div class="projects-column">
+					<div class="project-content">
+						<img class="project-img" src="img/small/img_lights.jpg" alt="Project IMG" />
+						<h3 class="project-title">Project</h3>
+						<p class="project-description">
+							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+						</p>
+					</div>
+				</div>
+				<!-- PROJECT 3 -->
+				<div class="projects-column">
+					<div class="project-content">
+						<img class="project-img" src="img/small/img_lights.jpg" alt="Project IMG" />
+						<h3 class="project-title">Project</h3>
+						<p class="project-description">
+							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+						</p>
+					</div>
+				</div>
+				<!-- PROJECT 4 -->
+				<div class="projects-column">
+					<div class="project-content">
+						<img class="project-img" src="img/small/img_lights.jpg" alt="Project IMG" />
+						<h3 class="project-title">Project</h3>
+						<p class="project-description">
+							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="projects-row">
+				<!-- PROJECT 5 -->
+				<div class="projects-column">
+					<div class="project-content">
+						<img class="project-img" src="img/small/img_lights.jpg" alt="Project IMG" />
+						<h3 class="project-title">Project</h3>
+						<p class="project-description">
+							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+						</p>
+					</div>
+				</div>
+				<!-- PROJECT 6 -->
+				<div class="projects-column">
+					<div class="project-content">
+						<img class="project-img" src="img/small/img_lights.jpg" alt="Project IMG" />
+						<h3 class="project-title">Project</h3>
+						<p class="project-description">
+							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+						</p>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+	
+	<!-- Experience -->
+	<!-- https://www.w3schools.com/howto/howto_js_accordion.asp -->
+	<!-- https://www.w3schools.com/howto/howto_css_skill_bar.asp -->
+	<link rel="stylesheet" href="css/experienceStyle.css" />
+	<section class="center">
+		<h2 class="">CENTER</h2>
+		<p class=""><b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
+		Graece fuisset definitionem sea et, ea nec vivendum senserit.
+		Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.</p>
+	</section>
 
-  <!-- About -->
-  <!-- https://www.w3schools.com/howto/howto_css_profile_card.asp -->
-  <!-- https://www.w3schools.com/howto/howto_js_accordion.asp -->
-  <!-- https://www.w3schools.com/howto/howto_css_skill_bar.asp -->
-  <section class="center">
-    <h2 class="">About Me</h2>
-    <p class=""><b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
-      Graece fuisset definitionem sea et, ea nec vivendum senserit.
-      Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.</p>
-  </section>
+<!-- Contact -->
+	<!-- https://www.w3schools.com/howto/howto_css_responsive_form.asp -->
+	<link rel="stylesheet" href="css/contactStyle.css" />
 
-  <section class="row">
-    <article class="side">
-      <h2>SIDE COLUMN</h2>
-      <p><b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
-        Graece fuisset definitionem sea et, ea nec vivendum senserit.
-        Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.</p>
-    </article>
-    <article class="main">
-      <h2>MAIN COLUMN</h2>
-      <p><b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
-        Graece fuisset definitionem sea et, ea nec vivendum senserit.
-        Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.</p>
-    </article>
-  </section>
-
-
-
-  <!-- Experience -->
-  <!-- https://www.w3schools.com/howto/howto_js_portfolio_filter.asp -->
-  <!-- https://www.w3schools.com/howto/howto_css_pagination.asp -->
-  <!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
-
-  <!-- Contact -->
-  <!-- https://www.w3schools.com/howto/howto_css_responsive_form.asp -->
-
-  <!-- Footer -->
-  <!-- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
-  <!-- https://www.w3schools.com/howto/howto_css_fixed_footer.asp -->
-  <!-- https://www.w3schools.com/howto/howto_css_breadcrumbs.asp -->
-  <footer>
-    <h3>footer</h3>
-    <script src="js/script.js"></script>
-  </footer>
- </body>
+<!-- Footer -->
+	<!-- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+	<!-- https://www.w3schools.com/howto/howto_css_fixed_footer.asp -->
+	<!-- https://www.w3schools.com/howto/howto_css_breadcrumbs.asp -->
+	<link rel="stylesheet" href="css/footerStyle.css" />
+	<footer>
+		<h3>footer</h3>
+		<!-- <script src="js/script.js"></script> -->
+	</footer>
+</body>
 </html>

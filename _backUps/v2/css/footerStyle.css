@@ -1,0 +1,16 @@
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+}
+
+/* Tablets */
+@media screen and (max-width: 720px) {
+	
+}
+
+/* Smartphones */
+@media screen and (max-width: 420px) {
+    
+}

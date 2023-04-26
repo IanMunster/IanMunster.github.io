@@ -1,0 +1,50 @@
+.projects-title {
+	font-size: 50px;
+	word-break: break-all;
+}
+
+.projects-buttons {
+	border: 1px solid red;
+}
+
+.projects-row {
+	margin: 8px -16px;
+}
+
+/* Padding Between Each Column */
+.projects-row,
+.projects-row > .projects-column {
+	padding: 8px;
+}
+
+/* Four Equal Columns */
+.projects-column {
+	float: left;
+	width: 25%;
+}
+
+/* Singular Project */
+.project-content {
+	
+}
+
+.project-img {
+	width: 100%;
+}
+
+.project-title {
+	
+}
+
+.project-description {
+	
+}
+
+/* Tablets */
+@media screen and (max-width: 720px) {
+}
+
+/* Smartphones */
+@media screen and (max-width: 420px) {
+    
+}

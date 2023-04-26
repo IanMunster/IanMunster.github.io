@@ -7,76 +7,15 @@
     box-sizing: border-box; /* Ensure proper sizing */
 }
 
-/* HEADER */
-header {
-    padding: 80px;          /* Add Padding in Header */
-    text-align: center;     /* Align Text in Center */
-    background: black;      /* Green Header Background */
-    color: white;           /* White Font */
-}
-header h1 {
-    font-size: 40px;
+body, html {
+	height: 100%;
 }
 
-/* NAVIGATION */
-nav {
-    overflow: hidden;
-    background-color: grey;
+/* Tablets */
+@media screen and (max-width: 720px) {
 }
 
-nav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-nav a.right {
-    float: right;
-}
-
-nav a:hover {
-    background-color: gainsboro;
-    color: black;
-}
-/* PROJECT */
-/* Slideshow */
-.mySlides {
-    width: 100%;
-    display: none;
-}
-
-/* ABOUT */
-/* Column Container */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.center {
-    text-align: center;
-}
-
-
-/* Sidebar Left Column */
-.side {
-    flex: 20%; /* Set widhth of Sidebar */
-    background-color: gray;
-    padding: 20px;
-}
-
-/* Main Right Column */
-.main {
-    flex: 80%; 
-    background-color: white;
-    padding: 20px;
-}
-
-/* FOOTER */
-footer {
-    padding: 20px;
-    text-align: center;
-    background-color: black;
+/* Smartphones */
+@media screen and (max-width: 420px) {
+    
 }

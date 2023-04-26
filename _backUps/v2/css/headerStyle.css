@@ -1,0 +1,42 @@
+/* HEADER */
+header {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.header-text {
+	text-align: center; 
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate (-50%, -50%);
+	text-shadow: 2px 2px black;
+	color: white;
+    font-size: 40px;
+}
+
+.header-carousel {
+	height: 50%;
+}
+
+.header-fade {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/img_5terre_wide.jpg");
+}
+
+/* Slideshow */
+.mySlides {
+    width: 100%;
+    display: none;
+}
+
+/* Tablets */
+@media screen and (max-width: 720px) {
+
+}
+
+/* Smartphones */
+@media screen and (max-width: 420px) {
+    
+}

@@ -1,0 +1,58 @@
+.profile-card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: auto;
+	text-align: center;
+}
+
+.profile-picture {
+	background-color: black;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.profile-name {
+	font-size: 25px;
+}
+
+.profile-title {
+	color: white;
+	font-size: 18px;
+}
+
+.profile-link {
+	text-decoration: none;
+	font-size: 22px;
+	color: black;
+	margin: 2px;
+}
+
+.profile-button {
+	border: none;
+	border-radius: 10px;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	width: 100%;
+	
+	cursor: pointer;
+	background-color: black;
+	
+	color: white;
+	text-align: center;
+	font-size: 18px;
+}
+
+.profile-link:hover,
+.profile-button:hover {
+	opacity: 0.5;
+}
+
+
+/* Tablets */
+@media screen and (max-width: 720px) {
+}
+
+/* Smartphones */
+@media screen and (max-width: 420px) {
+    
+}
