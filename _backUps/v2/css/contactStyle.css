@@ -1,0 +1,67 @@
+/* Contact Form */
+#Contact {
+    padding: 20px;
+}
+.contactForm {
+    border-radius: 5px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after Columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type=text], input[type=email], input[type=submit], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0px;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Tablets */
+@media screen and (max-width: 720px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/* Smartphones */
+@media screen and (max-width: 420px) {
+    
+}

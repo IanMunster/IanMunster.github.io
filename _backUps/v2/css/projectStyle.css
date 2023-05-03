@@ -1,10 +1,9 @@
-.projects-title {
-	font-size: 50px;
-	word-break: break-all;
+.projects {
+	background-color: gray;
 }
 
-.projects-buttons {
-	border: 1px solid red;
+.projects-title {
+	word-break: break-all;
 }
 
 .projects-row {
@@ -13,38 +12,72 @@
 
 /* Padding Between Each Column */
 .projects-row,
-.projects-row > .projects-column {
+.projects-row > .column {
 	padding: 8px;
 }
 
-/* Four Equal Columns */
-.projects-column {
+/* Three Equal Columns */
+.column {
 	float: left;
-	width: 25%;
+	width: 33.33%;
+	display: none;	/* Hide Columns */
+}
+
+/* Clear floats after */
+.projects-row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Show Filtered Projects */
+.show {
+	display: block;
+}
+
+/* Filter Buttons */
+#btnContainer {}
+
+.btn {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: white;
+	cursor: pointer;
+}
+.btn:hover {
+	background-color: gray;
+}
+
+.active {
+	background-color: #666;
+	color: white;
 }
 
 /* Singular Project */
-.project-content {
-	
-}
+.project-content {}
 
 .project-img {
 	width: 100%;
+	border: 1px solid black;
 }
 
-.project-title {
-	
-}
+.project-title {}
 
-.project-description {
-	
-}
+.project-description {}
 
 /* Tablets */
 @media screen and (max-width: 720px) {
+	/* Two Equal Columns */
+	.column {
+		width: 50%;
+	}
 }
 
 /* Smartphones */
 @media screen and (max-width: 420px) {
-    
+    /* One Column */
+	.column {
+		width: 100%;
+	}
 }

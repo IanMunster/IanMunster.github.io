@@ -2,12 +2,16 @@
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	margin: auto;
 	text-align: center;
+	background-color: gray;
+	width: 250px;
+	padding: 5px;
 }
 
 .profile-picture {
 	background-color: black;
-	width: 100%;
+	width: 200px;
 	border-radius: 10px;
+	padding-top: 10px;
 }
 
 .profile-name {
@@ -32,7 +36,7 @@
 	outline: 0;
 	display: inline-block;
 	padding: 8px;
-	width: 100%;
+	width: 80%;
 	
 	cursor: pointer;
 	background-color: black;
@@ -50,6 +54,7 @@
 
 /* Tablets */
 @media screen and (max-width: 720px) {
+	.profile-card { width: 100%; }
 }
 
 /* Smartphones */

@@ -11,8 +11,39 @@ body, html {
 	height: 100%;
 }
 
+.split {
+
+}
+
+/* Sidebar Right Column */
+.right {
+    /* float: right;
+    width: 24%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 45px; */
+}
+
+/* Primary Left Column */
+.left {
+    /* width: 75%; */
+}
+
+/* Full width Column */
+.center {
+    /* padding: 20px; */
+}
+
+h2 {
+    /* background-color: black; */
+}
+h3 {
+    /* background-color: gray; */
+}
+
 /* Tablets */
 @media screen and (max-width: 720px) {
+
 }
 
 /* Smartphones */

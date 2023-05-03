@@ -1,10 +1,10 @@
 /* NAVIGATION */
-nav {
+.topNav {
     overflow: hidden;
     background-color: grey;
 }
 
-nav a {
+.topNav a {
     float: left;
     display: block;
     color: white;
@@ -13,20 +13,71 @@ nav a {
     text-decoration: none;
 }
 
-nav a.right {
-    float: right;
-}
-
-nav a:hover {
+.topNav a:hover {
     background-color: gainsboro;
     color: black;
 }
 
+.topNav a:active, .topNav a.active  {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.scrollProgress {
+    z-index: 1;
+    width: 100%;
+    height: 8px;
+    background: gray;
+}
+
+.scrollBar {
+    width: 0%;
+    height: 8px;
+    background: #04AA6D;
+}
+
+/* Hide HamburgerMenu button on Default */
+.topNav a.menu {
+    display: none;
+}
+
+/* Sticky Navigation on Scroll */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Top Padding to Prevent Sudden Quick Movement (position:fixed and top:0 */
+.sticky + main {
+    padding-top: 60px;
+}
+
 /* Tablets */
 @media screen and (max-width: 720px) {
-    nav a {
+    /* Hide all Menu Links, except first */
+    .topNav a:not(:first-child) {
+        display: none;
+    }
+
+    .topNav a.menu {
+        float: right;
+        display: block;
+    }
+
+    .topNav.responsive {
+    }
+
+    .topNav.responsive a.menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topNav.responsive a {
         float: none;
-        width: 100%;
+        display: block;
+        text-align: left;
     }
 }
 

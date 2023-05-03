@@ -1,0 +1,41 @@
+/* Experience */
+#Experience {
+    background: gray;
+}
+
+.skills {
+    display: flex;
+}
+
+.skill {
+    width: 25%;
+    padding: 5px;
+}
+.progressBar {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.progressFill {
+    text-align: right;
+    padding: 0 10px;
+    color: white;
+}
+
+.html { width: 90%; background-color: #04AA6D;}
+.css { width: 80%; background-color: #2196f3;}
+.js { width: 65%; background-color: #f44336;}
+.php { width: 60%; background-color: #808080;}
+.csharp { width: 50%; background-color: #037c50;}
+.skill0 { width: 40%; background-color: #0a6fc2;}
+.skill1 { width: 30%; background-color: #da190b;}
+
+/* Tablets */
+@media screen and (max-width: 720px) {
+    
+}
+
+/* Smartphones */
+@media screen and (max-width: 420px) {
+    
+}

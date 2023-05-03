@@ -18,27 +18,27 @@
 <!-- BODY -->
 <body>
 	<!-- HEADER -->
+	<!-- https://www.w3schools.com/howto/howto_css_hero_image.asp -->
+	<!-- https://www.w3schools.com/howto/howto_css_cutout_text.asp -->
+	<!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+	<!-- https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
 	<link rel="stylesheet" href="css/headerStyle.css" />
 	<header>
-		
-		<!-- https://www.w3schools.com/howto/howto_css_hero_image.asp -->
 		<section class="header">
-			<section class="header-text">
+			<div class="header-text">
 				<h1>Portfolio</h1>
 				<p>Welcome</p>
-			</section>
+			</div>
 		<!-- SlideShow -->
-			<section class="header-carousel">
-			<!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
-			<img class="mySlides" src="img/img_5terre_wide.jpg">
-			<img class="mySlides" src="img/img_lights_wide.jpg">
-			<img class="mySlides" src="img/img_mountains_wide.jpg">
-			<img class="mySlides" src="img/img_nature_wide.jpg">
-			<img class="mySlides" src="img/img_snow_wide.jpg">
-			<img class="mySlides" src="img/img_woods_wide.jpg">
-			<script src="js/carouselScript.js"></script>
-			</section>
-			<!-- <section class="header-fade"></section> -->
+			<div class="header-carousel">
+				<img class="mySlides" src="img/img_5terre_wide.jpg">
+				<img class="mySlides" src="img/img_lights_wide.jpg">
+				<img class="mySlides" src="img/img_mountains_wide.jpg">
+				<img class="mySlides" src="img/img_nature_wide.jpg">
+				<img class="mySlides" src="img/img_snow_wide.jpg">
+				<img class="mySlides" src="img/img_woods_wide.jpg">
+				<script src="js/carouselScript.js"></script>
+			</div>
 		</section>
 	</header>
 
@@ -48,123 +48,205 @@
 	<!-- https://www.w3schools.com/howto/howto_js_scroll_indicator.asp -->
 	<!-- https://www.w3schools.com/howto/howto_js_active_element.asp -->
 	<!-- https://www.w3schools.com/howto/howto_css_pagination.asp -->
-	<nav>
 	<link rel="stylesheet" href="css/navStyle.css" />
-		<a href="#">Home</a>
-		<a href="#">Project</a>
-		<a href="#">About</a>
-		<a href="#">Experience</a>
-		<a href="#">Contact</a>
-		<a href="#" class="right">MENU</a>
+	<nav class="topNav" id="TopNav">
+		<div>
+			<a href="#" class="active"><i class="fa fa-home"></i> Home</a>
+			<a href="#Project"><i class="fa fa-star"></i> Project</a>
+			<a href="#About"><i class="fa fa-user"></i> About</a>
+			<a href="#Experience"><i class="fa fa-tasks"></i> Experience</a>
+			<a href="#Contact"><i class="fa fa-envelope"></i> Contact</a>
+			<a href="javascript:void(0);" class="menu" onclick="MenuClick()"><i class="fa fa-bars"></i></a>
+		</div>
+		<div class="scrollProgress"><div class="scrollBar" id="ScrollBar"></div></div>
 	</nav>
 	
-<!-- About -->
-<link rel="stylesheet" href="css/aboutStyle.css" />
-	<section class="row">
-	<!-- Profile Card -->
-	<link rel="stylesheet" href="css/profileStyle.css" />
-	<!-- https://www.w3schools.com/howto/howto_css_profile_card.asp -->
-		<article class="side profile-card">
-			<img class="profile-picture" src="img/small/img_woods.jpg" alt="Me" />
-			<h2 class="profile-name">My Name</h2>
-			<p class="profile-title">Game &amp; Web Developer</p>
-			<p>...</p>
-			<a class="profile-link" href="#"><i class="fa fa-github"></i></a>
-			<a class="profile-link" href="#"><i class="fa fa-steam"></i></a>
-			<a class="profile-link" href="#"><i class="fa fa-youtube"></i></a>
-			<a class="profile-link" href="#"><i class="fa fa-google"></i></a>
-			<p><button class="profile-button">Contact</button></p>
-		</article>
-	
-	<!-- Projects -->
-	<link rel="stylesheet" href="css/projectStyle.css" />
-	<!-- https://www.w3schools.com/howto/howto_js_portfolio_filter.asp -->
-	<!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
-	<!-- https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
-		<article class="main">
-			<h2 class="projects-title">Projects</h2>
-			<p class="projects-buttons">project Buttons placeholder</p>
-			<div class="projects-row">
-				<!-- PROJECT 1 -->
-				<div class="projects-column">
-					<div class="project-content">
-						<img class="project-img" src="img/small/img_lights.jpg" alt="Project IMG" />
-						<h3 class="project-title">Project</h3>
-						<p class="project-description">
-							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-						</p>
-					</div>
-				</div>
-				<!-- PROJECT 2 -->
-				<div class="projects-column">
-					<div class="project-content">
-						<img class="project-img" src="img/small/img_lights.jpg" alt="Project IMG" />
-						<h3 class="project-title">Project</h3>
-						<p class="project-description">
-							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-						</p>
-					</div>
-				</div>
-				<!-- PROJECT 3 -->
-				<div class="projects-column">
-					<div class="project-content">
-						<img class="project-img" src="img/small/img_lights.jpg" alt="Project IMG" />
-						<h3 class="project-title">Project</h3>
-						<p class="project-description">
-							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-						</p>
-					</div>
-				</div>
-				<!-- PROJECT 4 -->
-				<div class="projects-column">
-					<div class="project-content">
-						<img class="project-img" src="img/small/img_lights.jpg" alt="Project IMG" />
-						<h3 class="project-title">Project</h3>
-						<p class="project-description">
-							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="projects-row">
-				<!-- PROJECT 5 -->
-				<div class="projects-column">
-					<div class="project-content">
-						<img class="project-img" src="img/small/img_lights.jpg" alt="Project IMG" />
-						<h3 class="project-title">Project</h3>
-						<p class="project-description">
-							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-						</p>
-					</div>
-				</div>
-				<!-- PROJECT 6 -->
-				<div class="projects-column">
-					<div class="project-content">
-						<img class="project-img" src="img/small/img_lights.jpg" alt="Project IMG" />
-						<h3 class="project-title">Project</h3>
-						<p class="project-description">
-							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-						</p>
-					</div>
-				</div>
+	<script src="js/navMenuButtonScript.js"></script>
+	<script src="js/navScrollProgress.js"></script>
+	<script src="js/navScrollStickyScript.js"></script>
+
+<main class="content">
+	<section class="split" id="">
+		<!-- Profile Card -->
+		<!-- https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp -->
+		<!-- https://www.w3schools.com/howto/howto_css_profile_card.asp -->
+		<link rel="stylesheet" href="css/profileStyle.css" />
+		<article class=" right profile">
+			<div class=" profile-card">
+				<img class="profile-picture" src="img/small/img_woods.jpg" alt="Me" />
+				<h2 class="profile-name">My Name</h2>
+				<p class="profile-title">Game &amp; Web Developer</p>
+				<p>...</p>
+				<a class="profile-link" href="#"><i class="fa fa-github"></i></a>
+				<a class="profile-link" href="#"><i class="fa fa-steam"></i></a>
+				<a class="profile-link" href="#"><i class="fa fa-youtube"></i></a>
+				<a class="profile-link" href="#"><i class="fa fa-google"></i></a>
+				<p><button class="profile-button">Contact</button></p>
 			</div>
 		</article>
+
+		<!-- Projects -->
+		<!-- https://www.w3schools.com/howto/howto_js_portfolio_filter.asp -->
+		<link rel="stylesheet" href="css/projectStyle.css" />
+		<article class=" left projects" id="Project">
+			<h2 class="">Projects</h2>
+			<div id="FilterBtnContainer">
+				<button class="btn active" onclick="FilterSelection('all')">Show All</button>
+				<button class="btn" onclick="FilterSelection('games')">Games</button>
+				<button class="btn" onclick="FilterSelection('web')">Websites</button>
+				<button class="btn" onclick="FilterSelection('misc')">Miscellaneous</button>
+			</div>
+			<div class="projects-row">
+			<!-- PROJECT 1 -->
+			<div class="column games">
+				<div class="project-content">
+					<img class="project-img" src="img/small/img_lights.jpg" alt="Project IMG" />
+					<h3 class="project-title">Game 1</h3>
+					<p class="project-description">
+						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+					</p>
+				</div>
+			</div>
+			<!-- PROJECT 2 -->
+			<div class="column games">
+				<div class="project-content">
+					<img class="project-img" src="img/small/img_mountains.jpg" alt="Project IMG" />
+					<h3 class="project-title">Game 2</h3>
+					<p class="project-description">
+						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+					</p>
+				</div>
+			</div>
+			<!-- PROJECT 3 -->
+			<div class="column web">
+				<div class="project-content">
+					<img class="project-img" src="img/small/img_nature.jpg" alt="Project IMG" />
+					<h3 class="project-title">Website 1</h3>
+					<p class="project-description">
+						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+					</p>
+				</div>
+			</div>
+			<!-- PROJECT 4 -->
+			<div class="column web">
+				<div class="project-content">
+					<img class="project-img" src="img/small/img_snow.jpg" alt="Project IMG" />
+					<h3 class="project-title">Website 2</h3>
+					<p class="project-description">
+						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+					</p>
+				</div>
+			</div>
+			<!-- PROJECT 5 -->
+			<div class="column misc">
+				<div class="project-content">
+					<img class="project-img" src="img/small/img_woods.jpg" alt="Project IMG" />
+					<h3 class="project-title">Misc 1</h3>
+					<p class="project-description">
+						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+					</p>
+				</div>
+			</div>
+			<!-- PROJECT 6 -->
+			<div class="column misc">
+				<div class="project-content">
+					<img class="project-img" src="img/small/img_5terre.jpg" alt="Project IMG" />
+					<h3 class="project-title">Misc 2</h3>
+					<p class="project-description">
+						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+					</p>
+				</div>
+			</div>
+			</div>
+		</article>
+		<script src="js/filterSelectionScript.js"></script>
+		<script src="js/activeButtonScript.js"></script>
+
+
+		
+		<!-- About -->
+		<!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
+		<link rel="stylesheet" href="css/aboutStyle.css" />
+		<article class=" left about" id="About">
+			<h2>About Me</h2>
+			<p><b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.</p>
+			<h3>Etc </h3>
+			<p><b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.</p>
+		</article>
+
 	</section>
+	
 	
 	<!-- Experience -->
 	<!-- https://www.w3schools.com/howto/howto_js_accordion.asp -->
 	<!-- https://www.w3schools.com/howto/howto_css_skill_bar.asp -->
 	<link rel="stylesheet" href="css/experienceStyle.css" />
 	<section class="center">
-		<h2 class="">CENTER</h2>
-		<p class=""><b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
-		Graece fuisset definitionem sea et, ea nec vivendum senserit.
-		Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.</p>
+		<article id="Experience">
+			<h2 class="">Experience</h2>
+			<p class=""><b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
+			Graece fuisset definitionem sea et, ea nec vivendum senserit.
+			Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.</p>
+			<div class="skills">
+				<div class="skill">
+				<p>HTML</p>
+				<div class="progressBar"><div class="progressFill html">0%</div></div>
+				</div>
+				<div class="skill">
+				<p>CSS</p>
+				<div class="progressBar"><div class="progressFill css">0%</div></div>
+				</div>
+				<div class="skill">
+				<p>JavaScript</p>
+				<div class="progressBar"><div class="progressFill js">0%</div></div>
+				</div>
+				<div class="skill">
+				<p>PHP</p>
+				<div class="progressBar"><div class="progressFill php">0%</div></div>
+				</div>
+				<div class="skill">
+				<p>C#</p>
+				<div class="progressBar"><div class="progressFill csharp">0%</div></div>
+				</div>
+				<div class="skill">
+				<p>Skill0</p>
+				<div class="progressBar"><div class="progressFill skill0">0%</div></div>
+				</div>
+				<div class="skill">
+				<p>Skill1</p>
+				<div class="progressBar"><div class="progressFill skill1">0%</div></div>
+				</div>
+			</div>
+		</article>
 	</section>
 
 <!-- Contact -->
 	<!-- https://www.w3schools.com/howto/howto_css_responsive_form.asp -->
 	<link rel="stylesheet" href="css/contactStyle.css" />
+	<section id="Contact">
+		<h2 class="">Contact</h2>
+		<div class="contactForm">
+			<form action="form_page.php">
+				<div class="row">
+					<div class="col-25"><label for="name">Name:</label></div>
+					<div class="col-75"><input type="text" id="name" name="name" placeholder="Enter your Name.." /></div>
+				</div>
+				<div class="row">
+					<div class="col-25"><label for="email">Email:</label></div>
+					<div class="col-75"><input type="email" id="email" name="email" placeholder="YourEmail@Message.Me" /></div>
+				</div>
+				<div class="row">
+					<div class="col-25"><label for="message">Message:</label></div>
+					<div class="col-75"><textarea id="message" name="message" placeholder="Enter your Message, Question or Inquiry.."></textarea></div>
+				</div>
+				<div class="row">
+					<input type="submit" value="Send Message">
+				</div>
+			</form>
+		</div>
+	</section>
+	
+</main>
 
 <!-- Footer -->
 	<!-- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
@@ -172,8 +254,16 @@
 	<!-- https://www.w3schools.com/howto/howto_css_breadcrumbs.asp -->
 	<link rel="stylesheet" href="css/footerStyle.css" />
 	<footer>
-		<h3>footer</h3>
-		<!-- <script src="js/script.js"></script> -->
+		<h3>Footer</h3>
+		<p>Made by I Munster</p>
+		<div>
+			<p>W3 Validated</p><i class="fa fa-w3"></i>
+		</div>
+<script>window.onscroll = function() {
+		ScrollProgress();
+		StickyScroll();
+		};
+</script>
 	</footer>
 </body>
 </html>
