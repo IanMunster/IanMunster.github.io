@@ -9,36 +9,52 @@
 
 body, html {
 	height: 100%;
+    background-color: black;
 }
 
-.split {
+/* Full width Columns */
+.center {
+    /* padding: 0px 20px; */
+    background: gainsboro;
+    border: 1px solid blue;
+}
 
+/* Split width Colums */
+.split {
+    display: flex;
+    /* padding: 0px 10px; */
+    background: gray;
+    border: 1px solid red;
 }
 
 /* Sidebar Right Column */
-.right {
-    /* float: right;
-    width: 24%;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 45px; */
+.splitRight {
+    border: 1px solid orange;
 }
 
 /* Primary Left Column */
-.left {
-    /* width: 75%; */
+.splitLeft {
+    border: 1px solid green;
 }
 
-/* Full width Column */
-.center {
-    /* padding: 20px; */
-}
+
 
 h2 {
+    /* margin: 25px 0px; */
+    padding: 20px 5px;
+    border: 1px solid green;
     /* background-color: black; */
 }
+
 h3 {
+    padding: 10px 5px;
+    border: 1px solid blue;
     /* background-color: gray; */
+}
+
+.paragraph {
+    /* border: 1px solid orange;
+    padding: 0px 5px 10px 5px; */
 }
 
 /* Tablets */

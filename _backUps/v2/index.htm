@@ -1,55 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- HEAD -->
+<head>
 <!-- https://www.w3schools.com/howto/howto_make_a_website.asp -->
 <!-- https://www.w3schools.com/howto/tryw3css_templates_portfolio.htm -->
 <!-- https://www.w3schools.com/howto/howto_css_center_website.asp -->
-<head>
 	<title>Portfolio</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style></style>
 	<!--CSS Styles -->
 	<link rel="stylesheet" href="css/style.css" />
-	<!-- Add icon library -->
+	<!-- Icon Library -->
+	<!-- https://fontawesome.com/v4/icons/-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <!-- BODY -->
 <body>
 	<!-- HEADER -->
+	<header>
 	<!-- https://www.w3schools.com/howto/howto_css_hero_image.asp -->
 	<!-- https://www.w3schools.com/howto/howto_css_cutout_text.asp -->
 	<!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
 	<!-- https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
 	<link rel="stylesheet" href="css/headerStyle.css" />
-	<header>
-		<section class="header">
+		<section class="header-image">
 			<div class="header-text">
 				<h1>Portfolio</h1>
 				<p>Welcome</p>
 			</div>
 		<!-- SlideShow -->
 			<div class="header-carousel">
-				<img class="mySlides" src="img/img_5terre_wide.jpg">
-				<img class="mySlides" src="img/img_lights_wide.jpg">
-				<img class="mySlides" src="img/img_mountains_wide.jpg">
-				<img class="mySlides" src="img/img_nature_wide.jpg">
-				<img class="mySlides" src="img/img_snow_wide.jpg">
-				<img class="mySlides" src="img/img_woods_wide.jpg">
+				<img class="mySlides" src="img/Banner1_1920x600.jpg">
+				<img class="mySlides" src="img/Banner2_1920x600.jpg">
+				<img class="mySlides" src="img/Banner3_1920x600.jpg">
 				<script src="js/carouselScript.js"></script>
 			</div>
 		</section>
 	</header>
 
 	<!-- NAVIGATION -->
+	<nav class="topNav" id="TopNav">
 	<!-- https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
 	<!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
 	<!-- https://www.w3schools.com/howto/howto_js_scroll_indicator.asp -->
 	<!-- https://www.w3schools.com/howto/howto_js_active_element.asp -->
 	<!-- https://www.w3schools.com/howto/howto_css_pagination.asp -->
 	<link rel="stylesheet" href="css/navStyle.css" />
-	<nav class="topNav" id="TopNav">
 		<div>
 			<a href="#" class="active"><i class="fa fa-home"></i> Home</a>
 			<a href="#Project"><i class="fa fa-star"></i> Project</a>
@@ -59,211 +57,271 @@
 			<a href="javascript:void(0);" class="menu" onclick="MenuClick()"><i class="fa fa-bars"></i></a>
 		</div>
 		<div class="scrollProgress"><div class="scrollBar" id="ScrollBar"></div></div>
+		<script src="js/navMenuButtonScript.js"></script>
+		<script src="js/navScrollProgress.js"></script>
+		<script src="js/navScrollStickyScript.js"></script>
 	</nav>
-	
-	<script src="js/navMenuButtonScript.js"></script>
-	<script src="js/navScrollProgress.js"></script>
-	<script src="js/navScrollStickyScript.js"></script>
 
-<main class="content">
-	<section class="split" id="">
-		<!-- Profile Card -->
-		<!-- https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp -->
-		<!-- https://www.w3schools.com/howto/howto_css_profile_card.asp -->
-		<link rel="stylesheet" href="css/profileStyle.css" />
-		<article class=" right profile">
-			<div class=" profile-card">
-				<img class="profile-picture" src="img/small/img_woods.jpg" alt="Me" />
-				<h2 class="profile-name">My Name</h2>
-				<p class="profile-title">Game &amp; Web Developer</p>
-				<p>...</p>
-				<a class="profile-link" href="#"><i class="fa fa-github"></i></a>
-				<a class="profile-link" href="#"><i class="fa fa-steam"></i></a>
-				<a class="profile-link" href="#"><i class="fa fa-youtube"></i></a>
-				<a class="profile-link" href="#"><i class="fa fa-google"></i></a>
-				<p><button class="profile-button">Contact</button></p>
-			</div>
-		</article>
+	<main class="content">
+	<!-- Projects -->
+		<section id="Project" class="center projects">
+		<!-- Projects Filter -->
+			<!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
+			<!-- https://www.w3schools.com/howto/howto_js_portfolio_filter.asp -->
+			<link rel="stylesheet" href="css/projectStyle.css" />
+			<article class="projectsContainer">
+				<h2 class=""><i class="fa fa-star"></i> Projects</h2>
+				<div id="FilterBtnContainer">
+					<button class="btn active" onclick="FilterSelection('all')">Show All</button>
+					<button class="btn" onclick="FilterSelection('games')">Games</button>
+					<button class="btn" onclick="FilterSelection('web')">Websites</button>
+					<button class="btn" onclick="FilterSelection('misc')">Miscellaneous</button>
+				</div>
+				<div class="filter-row">
+				<!-- PROJECT 1 -->
+				<div class="filter-column games">
+					<div class="project-content">
+						<img class="project-img" src="img/small/img_lights.jpg" alt="Project IMG" />
+						<h3 class="project-title">Game 1</h3>
+						<p class="project-description">
+							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+						</p>
+					</div>
+				</div>
+				<!-- PROJECT 2 -->
+				<div class="filter-column games">
+					<div class="project-content">
+						<img class="project-img" src="img/small/img_mountains.jpg" alt="Project IMG" />
+						<h3 class="project-title">Game 2</h3>
+						<p class="project-description">
+							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+						</p>
+					</div>
+				</div>
+				<!-- PROJECT 3 -->
+				<div class="filter-column web">
+					<div class="project-content">
+						<img class="project-img" src="img/small/img_nature.jpg" alt="Project IMG" />
+						<h3 class="project-title">Website 1</h3>
+						<p class="project-description">
+							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+						</p>
+					</div>
+				</div>
+				<!-- PROJECT 4 -->
+				<div class="filter-column web">
+					<div class="project-content">
+						<img class="project-img" src="img/small/img_snow.jpg" alt="Project IMG" />
+						<h3 class="project-title">Website 2</h3>
+						<p class="project-description">
+							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+						</p>
+					</div>
+				</div>
+				<!-- PROJECT 5 -->
+				<div class="filter-column misc">
+					<div class="project-content">
+						<img class="project-img" src="img/small/img_woods.jpg" alt="Project IMG" />
+						<h3 class="project-title">Misc 1</h3>
+						<p class="project-description">
+							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+						</p>
+					</div>
+				</div>
+				<!-- PROJECT 6 -->
+				<div class="filter-column misc">
+					<div class="project-content">
+						<img class="project-img" src="img/small/img_5terre.jpg" alt="Project IMG" />
+						<h3 class="project-title">Misc 2</h3>
+						<p class="project-description">
+							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+						</p>
+					</div>
+				</div>
+				</div>
+			</article>
+			<script src="js/filterSelectionScript.js"></script>
+			<script src="js/activeButtonScript.js"></script>
+		</section>
 
-		<!-- Projects -->
-		<!-- https://www.w3schools.com/howto/howto_js_portfolio_filter.asp -->
-		<link rel="stylesheet" href="css/projectStyle.css" />
-		<article class=" left projects" id="Project">
-			<h2 class="">Projects</h2>
-			<div id="FilterBtnContainer">
-				<button class="btn active" onclick="FilterSelection('all')">Show All</button>
-				<button class="btn" onclick="FilterSelection('games')">Games</button>
-				<button class="btn" onclick="FilterSelection('web')">Websites</button>
-				<button class="btn" onclick="FilterSelection('misc')">Miscellaneous</button>
-			</div>
-			<div class="projects-row">
-			<!-- PROJECT 1 -->
-			<div class="column games">
-				<div class="project-content">
-					<img class="project-img" src="img/small/img_lights.jpg" alt="Project IMG" />
-					<h3 class="project-title">Game 1</h3>
-					<p class="project-description">
-						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-					</p>
+		<!--  About -->
+		<section id="About" class="split">
+			<link rel="stylesheet" href="css/aboutStyle.css" />
+			<!-- Profile Card -->
+			<!-- https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp -->
+			<!-- https://www.w3schools.com/howto/howto_css_profile_card.asp -->
+			<link rel="stylesheet" href="css/profileStyle.css" />
+			<article class="profile splitRight">
+				<div class=" profile-card">
+					<img class="profile-picture" src="img/small/img_woods.jpg" alt="Me" />
+					<h2 class="profile-name">My Name</h2>
+					<p class="profile-title">Game &amp; Web Developer</p>
+					<p>...</p>
+					<a class="profile-link" href="#"><i class="fa fa-github"></i></a>
+					<a class="profile-link" href="#"><i class="fa fa-steam"></i></a>
+					<a class="profile-link" href="#"><i class="fa fa-opera"></i></a>
+					<a class="profile-link" href="#"><i class="fa fa-youtube"></i></a>
+					<a class="profile-link" href="#"><i class="fa fa-google"></i></a>
+					<p><button class="profile-button">Contact</button></p>
 				</div>
-			</div>
-			<!-- PROJECT 2 -->
-			<div class="column games">
-				<div class="project-content">
-					<img class="project-img" src="img/small/img_mountains.jpg" alt="Project IMG" />
-					<h3 class="project-title">Game 2</h3>
-					<p class="project-description">
-						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-					</p>
-				</div>
-			</div>
-			<!-- PROJECT 3 -->
-			<div class="column web">
-				<div class="project-content">
-					<img class="project-img" src="img/small/img_nature.jpg" alt="Project IMG" />
-					<h3 class="project-title">Website 1</h3>
-					<p class="project-description">
-						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-					</p>
-				</div>
-			</div>
-			<!-- PROJECT 4 -->
-			<div class="column web">
-				<div class="project-content">
-					<img class="project-img" src="img/small/img_snow.jpg" alt="Project IMG" />
-					<h3 class="project-title">Website 2</h3>
-					<p class="project-description">
-						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-					</p>
-				</div>
-			</div>
-			<!-- PROJECT 5 -->
-			<div class="column misc">
-				<div class="project-content">
-					<img class="project-img" src="img/small/img_woods.jpg" alt="Project IMG" />
-					<h3 class="project-title">Misc 1</h3>
-					<p class="project-description">
-						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-					</p>
-				</div>
-			</div>
-			<!-- PROJECT 6 -->
-			<div class="column misc">
-				<div class="project-content">
-					<img class="project-img" src="img/small/img_5terre.jpg" alt="Project IMG" />
-					<h3 class="project-title">Misc 2</h3>
-					<p class="project-description">
-						<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
-					</p>
-				</div>
-			</div>
-			</div>
-		</article>
-		<script src="js/filterSelectionScript.js"></script>
-		<script src="js/activeButtonScript.js"></script>
+			</article>
 
+			<!-- Read About -->
+			<link rel="stylesheet" href="css/readAboutStyle.css" />
+			<article class="readAbout splitLeft">
+				<h2><i class="fa fa-user"></i> About Me</h2>
+				<div class="paragraph">
+					<p><b>Lorem</b> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p><b>Sed</b> ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+					<p><b>Neque</b> porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?.</p>
+					<p><b>Quis</b> autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+				</div>
+				
+				<!-- Accordions -->
+				<div>
+					<link rel="stylesheet" href="css/accordionStyle.css" />
+				<!-- Accordion 1-->
+					<button class="accordion">Section1</button>
+					<div class="panel">
+						<div class="paragraph">
+							<p><b>Lorem</b> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p><b>Sed</b> ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+							<p><b>Neque</b> porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?.</p>
+							<p><b>Quis</b> autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+						</div>
+					</div>
+				<!-- Accordion 2-->
+					<button class="accordion">Section2</button>
+					<div class="panel">
+						<div class="paragraph">
+							<p><b>Lorem</b> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p><b>Sed</b> ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+							<p><b>Neque</b> porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?.</p>
+							<p><b>Quis</b> autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+						</div>
+					</div>
+					<!-- <script src="js/accordionScript.js"></script> -->
+				</div>
+			</article>
 
+		</section>
 		
-		<!-- About -->
-		<!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
-		<link rel="stylesheet" href="css/aboutStyle.css" />
-		<article class=" left about" id="About">
-			<h2>About Me</h2>
-			<p><b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.</p>
-			<h3>Etc </h3>
-			<p><b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.</p>
-		</article>
+		<!-- Experience -->
+		<section id="Experience" class="center">
+		<!-- https://www.w3schools.com/howto/howto_js_accordion.asp -->
+		<!-- https://www.w3schools.com/howto/howto_css_skill_bar.asp -->
+		<link rel="stylesheet" href="css/experienceStyle.css" />
+			<article>
+				<div>
+					<h2 class=""><i class="fa fa-tasks"></i> Experience</h2>
+					<div class="paragraph">
+						<p><b>Lorem</b> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p><b>Sed</b> ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+						<p><b>Neque</b> porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?.</p>
+						<p><b>Quis</b> autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+					</div>
+				</div>
+				
+				<div class="skills">
+					<div class="skill">
+					<p class="skillName">HTML</p>
+					<div class="progressBar"><div class="progressFill html">0%</div></div>
+					</div>
+					<div class="skill">
+					<p class="skillName">CSS</p>
+					<div class="progressBar"><div class="progressFill css">0%</div></div>
+					</div>
+					<div class="skill">
+					<p class="skillName">JavaScript</p>
+					<div class="progressBar"><div class="progressFill js">0%</div></div>
+					</div>
+					<div class="skill">
+					<p class="skillName">PHP</p>
+					<div class="progressBar"><div class="progressFill php">0%</div></div>
+					</div>
+					<div class="skill">
+					<p class="skillName">C#</p>
+					<div class="progressBar"><div class="progressFill csharp">0%</div></div>
+					</div>
+					<div class="skill">
+					<p class="skillName">Skill0</p>
+					<div class="progressBar"><div class="progressFill skill0">0%</div></div>
+					</div>
+					<div class="skill">
+					<p class="skillName">Skill1</p>
+					<div class="progressBar"><div class="progressFill skill1">0%</div></div>
+					</div>
+				</div>
+			</article>
 
-	</section>
-	
-	
-	<!-- Experience -->
-	<!-- https://www.w3schools.com/howto/howto_js_accordion.asp -->
-	<!-- https://www.w3schools.com/howto/howto_css_skill_bar.asp -->
-	<link rel="stylesheet" href="css/experienceStyle.css" />
-	<section class="center">
-		<article id="Experience">
-			<h2 class="">Experience</h2>
-			<p class=""><b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
-			Graece fuisset definitionem sea et, ea nec vivendum senserit.
-			Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.</p>
-			<div class="skills">
-				<div class="skill">
-				<p>HTML</p>
-				<div class="progressBar"><div class="progressFill html">0%</div></div>
+		<!-- Accordions -->
+			<article>
+				<link rel="stylesheet" href="css/accordionStyle.css" />
+			<!-- Accordion 1-->
+				<button class="accordion">Section1</button>
+				<div class="panel">
+					<div class="paragraph">
+						<p><b>Lorem</b> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p><b>Sed</b> ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+						<p><b>Neque</b> porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?.</p>
+						<p><b>Quis</b> autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+					</div>
 				</div>
-				<div class="skill">
-				<p>CSS</p>
-				<div class="progressBar"><div class="progressFill css">0%</div></div>
+			<!-- Accordion 2 -->
+				<button class="accordion">Section2</button>
+				<div class="panel">
+					<div class="paragraph">
+						<p><b>Lorem</b> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p><b>Sed</b> ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+						<p><b>Neque</b> porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?.</p>
+						<p><b>Quis</b> autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+					</div>
 				</div>
-				<div class="skill">
-				<p>JavaScript</p>
-				<div class="progressBar"><div class="progressFill js">0%</div></div>
-				</div>
-				<div class="skill">
-				<p>PHP</p>
-				<div class="progressBar"><div class="progressFill php">0%</div></div>
-				</div>
-				<div class="skill">
-				<p>C#</p>
-				<div class="progressBar"><div class="progressFill csharp">0%</div></div>
-				</div>
-				<div class="skill">
-				<p>Skill0</p>
-				<div class="progressBar"><div class="progressFill skill0">0%</div></div>
-				</div>
-				<div class="skill">
-				<p>Skill1</p>
-				<div class="progressBar"><div class="progressFill skill1">0%</div></div>
-				</div>
+				<script src="js/accordionScript.js"></script>
+			</article>
+		</section>
+
+		<!-- Contact -->
+		<section id="Contact" class="center">
+			<!-- https://www.w3schools.com/howto/howto_css_responsive_form.asp -->
+			<link rel="stylesheet" href="css/contactStyle.css" />
+			<h2 class=""><i class="fa fa-envelope"></i> Contact</h2>
+			<div class="contactForm">
+				<form action="form_page.php">
+					<div class="form-row">
+						<div class="form-col25"><label for="name">Name:</label></div>
+						<div class="form-col75"><input type="text" id="name" name="name" placeholder="Enter your Name.." /></div>
+					</div>
+					<div class="form-row">
+						<div class="form-col25"><label for="email">Email:</label></div>
+						<div class="form-col75"><input type="email" id="email" name="email" placeholder="YourEmail@Message.Me" /></div>
+					</div>
+					<div class="form-row">
+						<div class="form-col25"><label for="message">Message:</label></div>
+						<div class="form-col75"><textarea id="message" name="message" placeholder="Enter your Message, Question or Inquiry.."></textarea></div>
+					</div>
+					<div class="form-row">
+						<input type="submit" value="Send Message">
+					</div>
+				</form>
 			</div>
-		</article>
-	</section>
+		</section>
+		
+	</main>
 
-<!-- Contact -->
-	<!-- https://www.w3schools.com/howto/howto_css_responsive_form.asp -->
-	<link rel="stylesheet" href="css/contactStyle.css" />
-	<section id="Contact">
-		<h2 class="">Contact</h2>
-		<div class="contactForm">
-			<form action="form_page.php">
-				<div class="row">
-					<div class="col-25"><label for="name">Name:</label></div>
-					<div class="col-75"><input type="text" id="name" name="name" placeholder="Enter your Name.." /></div>
-				</div>
-				<div class="row">
-					<div class="col-25"><label for="email">Email:</label></div>
-					<div class="col-75"><input type="email" id="email" name="email" placeholder="YourEmail@Message.Me" /></div>
-				</div>
-				<div class="row">
-					<div class="col-25"><label for="message">Message:</label></div>
-					<div class="col-75"><textarea id="message" name="message" placeholder="Enter your Message, Question or Inquiry.."></textarea></div>
-				</div>
-				<div class="row">
-					<input type="submit" value="Send Message">
-				</div>
-			</form>
-		</div>
-	</section>
-	
-</main>
-
-<!-- Footer -->
+	<!-- Footer -->
+	<footer>
 	<!-- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
 	<!-- https://www.w3schools.com/howto/howto_css_fixed_footer.asp -->
 	<!-- https://www.w3schools.com/howto/howto_css_breadcrumbs.asp -->
 	<link rel="stylesheet" href="css/footerStyle.css" />
-	<footer>
 		<h3>Footer</h3>
 		<p>Made by I Munster</p>
 		<div>
 			<p>W3 Validated</p><i class="fa fa-w3"></i>
 		</div>
-<script>window.onscroll = function() {
-		ScrollProgress();
-		StickyScroll();
-		};
-</script>
+		<!-- Script -->
+		<script> window.onscroll = function() { ScrollProgress(); StickyScroll(); }; </script>
 	</footer>
 </body>
 </html>

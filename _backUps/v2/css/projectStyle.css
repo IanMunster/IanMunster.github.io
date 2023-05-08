@@ -1,65 +1,75 @@
-.projects {
-	background-color: gray;
-}
+.projects {}
 
 .projects-title {
 	word-break: break-all;
 }
 
-.projects-row {
-	margin: 8px -16px;
+.filter-row {
 }
 
-/* Padding Between Each Column */
-.projects-row,
-.projects-row > .column {
+/* Padding between Colums */
+.filter-row,
+.filter-row > .filter-column {
 	padding: 8px;
+	background-color: #666;
 }
 
 /* Three Equal Columns */
-.column {
+.filter-column {
 	float: left;
-	width: 33.33%;
 	display: none;	/* Hide Columns */
+	width: 33.33%;
+
+	/* border: 1px solid purple; */
+
 }
 
 /* Clear floats after */
-.projects-row:after {
+.filter-row:after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
 /* Show Filtered Projects */
-.show {
+.filter-column.show {
 	display: block;
 }
 
 /* Filter Buttons */
 #btnContainer {}
 
-.btn {
+#FilterBtnContainer .btn {
 	border: none;
+	border-radius: 25px 25px 0px 0px;
 	outline: none;
 	padding: 12px 16px;
-	background-color: white;
+	background: white;
 	cursor: pointer;
 }
-.btn:hover {
-	background-color: gray;
+#FilterBtnContainer .btn:hover {
+	background: gray;
 }
 
-.active {
-	background-color: #666;
+/* Added by Script: "../js/filterSelectionScript.js" */
+#FilterBtnContainer .active,
+#FilterBtnContainer .btn:active {
+	background: #666;
 	color: white;
 }
 
 /* Singular Project */
-.project-content {}
+.project-content {
+	padding: 10px;
+	background: white;
+	border: 1px solid red;
+	border-radius: 5%;
+}
 
 .project-img {
 	width: 100%;
 	border: 1px solid black;
+	border-radius: 5%;
 }
 
 .project-title {}
@@ -69,7 +79,7 @@
 /* Tablets */
 @media screen and (max-width: 720px) {
 	/* Two Equal Columns */
-	.column {
+	.filter-column {
 		width: 50%;
 	}
 }
@@ -77,7 +87,7 @@
 /* Smartphones */
 @media screen and (max-width: 420px) {
     /* One Column */
-	.column {
+	.filter-column {
 		width: 100%;
 	}
 }

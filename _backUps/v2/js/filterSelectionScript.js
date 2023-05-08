@@ -5,7 +5,7 @@ FilterSelection ('all')
 // Filter Selection Function
 function FilterSelection(filterName) {
     var columnElements, columnCount;
-    columnElements = document.getElementsByClassName("column");
+    columnElements = document.getElementsByClassName("filter-column");
     //default all filter
     if (filterName == "all") {
         filterName = "";

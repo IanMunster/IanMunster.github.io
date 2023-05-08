@@ -1,34 +1,51 @@
 /* Experience */
 #Experience {
-    background: gray;
+    padding: 10px;
 }
 
 .skills {
     display: flex;
+    padding: 10px;
+    
+    border: 1px solid green;
 }
 
 .skill {
     width: 25%;
-    padding: 5px;
+    padding: 15px;
+    
+    background: gray;
+    border: 1px solid black;
+    border-radius: 1em;
 }
+
+.skillName{
+    text-align: center;
+    font-weight: bold;
+}
+
 .progressBar {
     width: 100%;
-    background-color: #ddd;
+    background: #ddd;
+    border: 2px solid black;
+    border-radius: 25px;
 }
 
 .progressFill {
-    text-align: right;
     padding: 0 10px;
+    border-radius: 25px;
+    text-align: right;
+    text-shadow: 1px 1px black;
     color: white;
 }
 
-.html { width: 90%; background-color: #04AA6D;}
-.css { width: 80%; background-color: #2196f3;}
-.js { width: 65%; background-color: #f44336;}
-.php { width: 60%; background-color: #808080;}
-.csharp { width: 50%; background-color: #037c50;}
-.skill0 { width: 40%; background-color: #0a6fc2;}
-.skill1 { width: 30%; background-color: #da190b;}
+.html { width: 90%; background: #04AA6D;}
+.css { width: 80%; background: #2196f3;}
+.js { width: 65%; background: #f44336;}
+.php { width: 60%; background: #808080;}
+.csharp { width: 50%; background: #037c50;}
+.skill0 { width: 40%; background: #0a6fc2;}
+.skill1 { width: 30%; background: #da190b;}
 
 /* Tablets */
 @media screen and (max-width: 720px) {

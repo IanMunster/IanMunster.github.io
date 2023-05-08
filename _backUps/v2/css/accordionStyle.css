@@ -1,0 +1,56 @@
+/* Accordion */
+
+/* Accordion <button> Style */
+.accordion {
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    /* color: #444; */
+    border: 1px solid black;
+    outline: none;
+    background: gainsboro;
+    transition: 0.4s;
+    -moz-transition: 0.4s;
+}
+
+/* Active Accordion. Added by Script: "../js/accordionScript.js" */
+.accordion.active,
+.accordion:hover {
+    background: gray;
+}
+
+/* Accordion Panel. Hidden by max-height (!Only hide when small screen?) */
+.panel {
+    padding: 0 18px;
+    background: white;
+    overflow: hidden;
+
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    -moz-transition: max-height 0.2s ease-out;
+    /* display: none; */
+}
+
+/* Accordion Icon*/
+.accordion:after {
+    content: '\02795';    /* +sign */
+    font-size: 15px;
+    float: right;
+    margin-left: 5px;
+}
+.accordion.active:after {
+    content: '\02796';    /* -sign */
+}
+
+/* Tablets */
+@media screen and (max-width: 720px) {
+    
+}
+
+/* Smartphones */
+@media screen and (max-width: 420px) {
+    
+}

@@ -1,27 +1,28 @@
 /* Contact Form */
 #Contact {
-    padding: 20px;
-}
-.contactForm {
-    border-radius: 5px;
-    background-color: #ddd;
-    padding: 20px;
+    padding: 10px;
 }
 
-.col-25 {
+.contactForm {
+    border-radius: 5px;
+}
+
+.form-col25 {
     float: left;
     width: 25%;
     margin-top: 6px;
+
+    text-align: right;
 }
 
-.col-75 {
+.form-col75 {
     float: left;
     width: 75%;
     margin-top: 6px;
 }
 
 /* Clear floats after Columns */
-.row:after {
+.form-row:after {
     content: "";
     display: table;
     clear: both;
@@ -55,7 +56,11 @@ input[type=submit] {
 
 /* Tablets */
 @media screen and (max-width: 720px) {
-    .col-25, .col-75, input[type=submit] {
+    .form-col25 {
+        text-align: left;
+    }
+
+    .form-col25, .form-col75, input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
