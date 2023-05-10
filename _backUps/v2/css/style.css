@@ -10,13 +10,18 @@
 body, html {
 	height: 100%;
     background-color: black;
+    /* color: white; */
+}
+
+.content {
+    /* padding: 40px; */
 }
 
 /* Full width Columns */
 .center {
     /* padding: 0px 20px; */
     background: gainsboro;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 /* Split width Colums */
@@ -24,17 +29,17 @@ body, html {
     display: flex;
     /* padding: 0px 10px; */
     background: gray;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* Sidebar Right Column */
 .splitRight {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
 }
 
 /* Primary Left Column */
 .splitLeft {
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 
@@ -42,13 +47,15 @@ body, html {
 h2 {
     /* margin: 25px 0px; */
     padding: 20px 5px;
-    border: 1px solid green;
+    color: green;
+    /* border: 1px solid green; */
     /* background-color: black; */
 }
 
 h3 {
     padding: 10px 5px;
-    border: 1px solid blue;
+    color: blue;
+    /* border: 1px solid blue; */
     /* background-color: gray; */
 }
 

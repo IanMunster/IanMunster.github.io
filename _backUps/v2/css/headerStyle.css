@@ -1,28 +1,22 @@
 /* HEADER */
-header {}
-
-.header-image {
-	/* background-image: url("../img/Banner3_1920x600.jpg"); */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-
-	/* height: 50%; */
+header {
+	/* max-width: 1920px;
+	height: 18em;
+	max-height: 600px; */
 }
 
+.header-image,
 .header-carousel {
+	background-image: url("../img/banner/Banner3_1920x600.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-	
-	height: 50%;
     width: 100%;
 }
 
 /* Slideshow */
-.mySlides {
+.carouselSlides {
     display: none;
 	width: 100%;
 }

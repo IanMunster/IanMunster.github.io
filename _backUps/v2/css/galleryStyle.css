@@ -1,0 +1,96 @@
+/* Slideshow Gallery */
+
+.galleryContainer {
+    position: relative; /* Relative needed for Buttons Position*/
+}
+
+.gallerySlides {
+    display: none;
+    /* border: 1px solid red; */
+}
+
+.gallerySlideNumber {
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    color: gainsboro;
+    font-size: 12px;}
+
+.galleryImg {
+    width: 100%;
+}
+
+.prevBtn,
+.nextBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
+    border: 1px solid white;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.nextBtn {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.galleryCaptionContainer {
+    text-align: center;
+    background: gray;
+    padding: 2px 16px;
+    color: white;
+}
+
+.galleryCaption {}
+
+/* .gallerySlides,
+.gallery-row { 
+    max-width: 50%;
+    margin: auto;
+} */
+
+.gallery-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.gallery-column {
+    float: left;
+    width: 25%; /* 4 columns */
+}
+
+.thumbs {
+    width: 100%;
+    opacity: 0.6;
+}
+
+.thumbs:hover {
+    cursor: pointer;
+}
+
+.thumbActive,
+.thumbs:hover {
+    opacity: 1;
+}
+
+/* Tablets */
+@media screen and (max-width: 720px) {}
+
+/* Smartphones */
+@media screen and (max-width: 420px) {}

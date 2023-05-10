@@ -4,9 +4,6 @@
 	word-break: break-all;
 }
 
-.filter-row {
-}
-
 /* Padding between Colums */
 .filter-row,
 .filter-row > .filter-column {
@@ -14,14 +11,16 @@
 	background-color: #666;
 }
 
+.filter-row {
+	padding: 20px;
+}
+
 /* Three Equal Columns */
 .filter-column {
 	float: left;
 	display: none;	/* Hide Columns */
 	width: 33.33%;
-
 	/* border: 1px solid purple; */
-
 }
 
 /* Clear floats after */
@@ -62,8 +61,14 @@
 .project-content {
 	padding: 10px;
 	background: white;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	border-radius: 5%;
+
+	cursor: pointer;
+}
+
+.project-content:hover {
+	background: gainsboro;
 }
 
 .project-img {

@@ -14,6 +14,7 @@
 	<!-- Icon Library -->
 	<!-- https://fontawesome.com/v4/icons/-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 </head>
 
 <!-- BODY -->
@@ -32,9 +33,9 @@
 			</div>
 		<!-- SlideShow -->
 			<div class="header-carousel">
-				<img class="mySlides" src="img/Banner1_1920x600.jpg">
-				<img class="mySlides" src="img/Banner2_1920x600.jpg">
-				<img class="mySlides" src="img/Banner3_1920x600.jpg">
+				<img class="carouselSlides" src="img/banner/Banner1_1920x600.jpg">
+				<img class="carouselSlides" src="img/banner/Banner2_1920x600.jpg">
+				<img class="carouselSlides" src="img/banner/Banner3_1920x600.jpg">
 				<script src="js/carouselScript.js"></script>
 			</div>
 		</section>
@@ -64,12 +65,17 @@
 
 	<main class="content">
 	<!-- Projects -->
-		<section id="Project" class="center projects">
+		<section id="Project" class="center">
 		<!-- Projects Filter -->
-			<!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
 			<!-- https://www.w3schools.com/howto/howto_js_portfolio_filter.asp -->
+			<!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
+			<!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+			<!-- https://www.w3schools.com/howto/howto_js_lightbox.asp -->
+
 			<link rel="stylesheet" href="css/projectStyle.css" />
-			<article class="projectsContainer">
+			<link rel="stylesheet" href="css/lightBoxStyle.css" />
+			<link rel="stylesheet" href="css/galleryStyle.css" />
+			<article class="projects">
 				<h2 class=""><i class="fa fa-star"></i> Projects</h2>
 				<div id="FilterBtnContainer">
 					<button class="btn active" onclick="FilterSelection('all')">Show All</button>
@@ -80,19 +86,133 @@
 				<div class="filter-row">
 				<!-- PROJECT 1 -->
 				<div class="filter-column games">
-					<div class="project-content">
-						<img class="project-img" src="img/small/img_lights.jpg" alt="Project IMG" />
+					<!-- PROJECT CONTENT -->
+					<div class="project-content" onclick="OpenLightBox(0);CurrentSlide(0);">
+						<img class="project-img" src="img/small/img0_1280x720.jpg" alt="Project IMG" />
 						<h3 class="project-title">Game 1</h3>
 						<p class="project-description">
 							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 						</p>
 					</div>
+					<!-- LIGHTBOX -->
+					<div id="" class="lightBox">
+						<!-- LIGHTBOX CONTENT -->
+						<div class="lightBoxContent">
+							<span class="closeBtn" onclick="CloseLightBox(0)">&times;</span>
+							<h3 class="project-title">Game 1</h3>
+							
+							<!-- GALLERY -->
+							<div class="galleryContainer">
+								<!-- Main Images -->
+								<div class="gallerySlides">
+									<div class="gallerySlideNumber">1 / 4</div>
+									<img class="galleryImg" src="img/big/img0_1920x1080.jpg" alt="Project IMG" />
+								</div>
+								<div class="gallerySlides">
+									<div class="gallerySlideNumber">2 / 4</div>
+									<img class="galleryImg" src="img/big/img1_1920x1080.jpg" alt="Project IMG" />
+								</div>
+								<div class="gallerySlides">
+									<div class="gallerySlideNumber">3 / 4</div>
+									<img class="galleryImg" src="img/big/img2_1920x1080.jpg" alt="Project IMG" />
+								</div>
+								<div class="gallerySlides">
+									<div class="gallerySlideNumber">4 / 4</div>
+									<img class="galleryImg" src="img/big/img3_1920x1080.jpg" alt="Project IMG" />
+								</div>
+								<!-- Buttons -->
+								<a class="prevBtn" onclick="ChangeSlide(-1)">&#10094;</a>
+								<a class="nextBtn" onclick="ChangeSlide(1)">&#10095;</a>
+								<!-- Caption -->
+								<div class="galleryCaptionContainer">
+									<p class="galleryCaption" id="CAPTION">...</p>
+								</div>
+								<!-- Thumbnails -->
+								<div class="gallery-row">
+									<div class="gallery-column">
+										<img class="thumbs" src="img/thumb/thumb0_640x360.jpg" onclick="CurrentSlide(0)" alt="Project Thumb0">
+									</div>
+									<div class="gallery-column">
+										<img class="thumbs" src="img/thumb/thumb1_640x360.jpg" onclick="CurrentSlide(1)" alt="Project Thumb1">
+									</div>
+									<div class="gallery-column">
+										<img class="thumbs" src="img/thumb/thumb2_640x360.jpg" onclick="CurrentSlide(2)" alt="Project Thumb2">
+									</div>
+									<div class="gallery-column">
+										<img class="thumbs" src="img/thumb/thumb3_640x360.jpg" onclick="CurrentSlide(3)" alt="Project Thumb3">
+									</div>
+								</div>
+							</div>
+							
+							<p class="project-description">
+								<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+							</p>
+						</div>
+					</div>
+					
 				</div>
 				<!-- PROJECT 2 -->
 				<div class="filter-column games">
-					<div class="project-content">
-						<img class="project-img" src="img/small/img_mountains.jpg" alt="Project IMG" />
+					<!-- PROJECT CONTENT -->
+					<div class="project-content" onclick="OpenLightBox(1);CurrentSlide(0);">
+						<img class="project-img" src="img/small/img1_1280x720.jpg" alt="Project IMG" />
 						<h3 class="project-title">Game 2</h3>
+						<!-- LIGHTBOX -->
+						<div id="" class="lightBox">
+						<!-- LIGHTBOX CONTENT -->
+						<div class="lightBoxContent">
+							<span class="closeBtn" onclick="CloseLightBox(1)">&times;</span>
+							<h3 class="project-title">Game 2</h3>
+							
+							<!-- GALLERY -->
+							<div class="galleryContainer">
+								<!-- Main Images -->
+								<div class="gallerySlides">
+									<div class="gallerySlideNumber">1 / 4</div>
+									<img class="galleryImg" src="img/big/img0_1920x1080.jpg" alt="Project IMG" />
+								</div>
+								<div class="gallerySlides">
+									<div class="gallerySlideNumber">2 / 4</div>
+									<img class="galleryImg" src="img/big/img1_1920x1080.jpg" alt="Project IMG" />
+								</div>
+								<div class="gallerySlides">
+									<div class="gallerySlideNumber">3 / 4</div>
+									<img class="galleryImg" src="img/big/img2_1920x1080.jpg" alt="Project IMG" />
+								</div>
+								<div class="gallerySlides">
+									<div class="gallerySlideNumber">4 / 4</div>
+									<img class="galleryImg" src="img/big/img3_1920x1080.jpg" alt="Project IMG" />
+								</div>
+								<!-- Buttons -->
+								<a class="prevBtn" onclick="ChangeSlide(-1)">&#10094;</a>
+								<a class="nextBtn" onclick="ChangeSlide(1)">&#10095;</a>
+								<!-- Caption -->
+								<div class="galleryCaptionContainer">
+									<p class="galleryCaption" id="CAPTION">...</p>
+								</div>
+								<!-- Thumbnails -->
+								<div class="gallery-row">
+									<div class="gallery-column">
+										<img class="thumbs" src="img/thumb/thumb0_640x360.jpg" onclick="CurrentSlide(0)" alt="Project Thumb0">
+									</div>
+									<div class="gallery-column">
+										<img class="thumbs" src="img/thumb/thumb1_640x360.jpg" onclick="CurrentSlide(1)" alt="Project Thumb1">
+									</div>
+									<div class="gallery-column">
+										<img class="thumbs" src="img/thumb/thumb2_640x360.jpg" onclick="CurrentSlide(2)" alt="Project Thumb2">
+									</div>
+									<div class="gallery-column">
+										<img class="thumbs" src="img/thumb/thumb3_640x360.jpg" onclick="CurrentSlide(3)" alt="Project Thumb3">
+									</div>
+								</div>
+							</div>
+							
+							<p class="project-description">
+								<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
+							</p>
+						</div>
+						</div>
+					
 						<p class="project-description">
 							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
 						</p>
@@ -101,7 +221,7 @@
 				<!-- PROJECT 3 -->
 				<div class="filter-column web">
 					<div class="project-content">
-						<img class="project-img" src="img/small/img_nature.jpg" alt="Project IMG" />
+						<img class="project-img" src="img/small/img2_1280x720.jpg" alt="Project IMG" />
 						<h3 class="project-title">Website 1</h3>
 						<p class="project-description">
 							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
@@ -111,7 +231,7 @@
 				<!-- PROJECT 4 -->
 				<div class="filter-column web">
 					<div class="project-content">
-						<img class="project-img" src="img/small/img_snow.jpg" alt="Project IMG" />
+						<img class="project-img" src="img/small/img3_1280x720.jpg" alt="Project IMG" />
 						<h3 class="project-title">Website 2</h3>
 						<p class="project-description">
 							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
@@ -121,7 +241,7 @@
 				<!-- PROJECT 5 -->
 				<div class="filter-column misc">
 					<div class="project-content">
-						<img class="project-img" src="img/small/img_woods.jpg" alt="Project IMG" />
+						<img class="project-img" src="img/small/img0_1280x720.jpg" alt="Project IMG" />
 						<h3 class="project-title">Misc 1</h3>
 						<p class="project-description">
 							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
@@ -131,7 +251,7 @@
 				<!-- PROJECT 6 -->
 				<div class="filter-column misc">
 					<div class="project-content">
-						<img class="project-img" src="img/small/img_5terre.jpg" alt="Project IMG" />
+						<img class="project-img" src="img/small/img1_1280x720.jpg" alt="Project IMG" />
 						<h3 class="project-title">Misc 2</h3>
 						<p class="project-description">
 							<b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus, posse adipiscing quo ei.
@@ -141,7 +261,8 @@
 				</div>
 			</article>
 			<script src="js/filterSelectionScript.js"></script>
-			<script src="js/activeButtonScript.js"></script>
+			<script src="js/lightBoxScript.js"></script>
+			<script src="js/galleryScript.js"></script>
 		</section>
 
 		<!--  About -->
@@ -153,7 +274,7 @@
 			<link rel="stylesheet" href="css/profileStyle.css" />
 			<article class="profile splitRight">
 				<div class=" profile-card">
-					<img class="profile-picture" src="img/small/img_woods.jpg" alt="Me" />
+					<img class="profile-picture" src="img/profile_500x500.jpg" alt="Me" />
 					<h2 class="profile-name">My Name</h2>
 					<p class="profile-title">Game &amp; Web Developer</p>
 					<p>...</p>
@@ -321,7 +442,12 @@
 			<p>W3 Validated</p><i class="fa fa-w3"></i>
 		</div>
 		<!-- Script -->
-		<script> window.onscroll = function() { ScrollProgress(); StickyScroll(); }; </script>
+		<script>
+			// Scroll Script
+			window.onscroll = function() { ScrollProgress(); StickyScroll(); };
+		</script>
+		<!-- Scripts -->
+	<script src="js/activeButtonScript.js"></script> <!-- Used by Navigation, Portfolio Filter, ReadMore Accordions -->
 	</footer>
 </body>
 </html>

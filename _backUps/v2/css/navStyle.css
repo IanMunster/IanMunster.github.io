@@ -2,6 +2,7 @@
 .topNav {
     overflow: hidden;
     background-color: grey;
+    z-index: 1;
 }
 
 .topNav a {

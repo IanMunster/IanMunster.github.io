@@ -12,7 +12,7 @@ var slideIndex = 0
 Carousel();
 function Carousel() {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
+    var slides = document.getElementsByClassName("carouselSlides");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
