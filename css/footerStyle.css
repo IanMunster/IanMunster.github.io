@@ -10,12 +10,12 @@ footer {
     background-color: black;
 }
 
+
+/* Laptops */
+@media screen and (max-width: 960px) {}
+
 /* Tablets */
-@media screen and (max-width: 720px) {
-	
-}
+@media screen and (max-width: 720px) {}
 
 /* Smartphones */
-@media screen and (max-width: 420px) {
-    
-}
+@media screen and (max-width: 420px) {}

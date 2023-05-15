@@ -1,0 +1,142 @@
+/* MAIN */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap"); /* Import Google Roboto Font */
+
+/* Variables */
+:root {
+	/* Font Variables */
+	--font-family: "Roboto", sans-serif;
+	--normal-font: 400;
+	--bold-font: 700;
+	--bolder-font: 900;
+	/* Color Variables */
+	--bg-color0: #1e2021;
+	--bg-color1: #1c1c1c;
+	--bg-element0: rgba(100, 100, 100, 0.75);
+    --bg-element1: rgba(50, 50, 50, 0.75);
+	--bg-shadow0: rgba(0,0,0,0.25);
+	--bg-shadow1: rgba(0,0,0,0.1);
+	--primary-color: #49df49;
+	--secondary-color: #4756df;
+	--primary-shadow: #95b08d;
+	--secondary-shadow: #8b8eaf;
+	--font-color0: #dedcd9;
+	--font-color1: #333;
+	--btn-color0: #095cf7;
+	--btn-color1: #f1262d;
+	/* Position Variables */
+	--navBar-height: 5rem;
+	--top-margin: 2.5rem;
+	--bottom-margin: 0.5rem;
+	--bottom-margin-2: 1rem;
+	--line-height: 1.7rem;
+	/* Size Variables */
+	--size-xs: 0.5em;
+	--size-s: 1em;
+	--size-m: 1.25em;
+	--size-l: 2em;
+	--size-xl: 2.5em;
+	/* Misc Variables */
+	--transition: 0.3s;
+}
+
+* {
+    margin: 0;              /* Remove page Marging i.e Fullscreen Page */
+    padding: 0;
+    box-sizing: border-box; /* Ensure proper sizing */
+}
+
+html {
+    scroll-behavior: smooth;
+	height: 100%;
+    background-color: var(--bg-color0);
+    color: var(--font-color0);
+}
+
+body {
+    max-width: 100%;
+    margin: auto;
+    font-family: var(--font-family);
+}
+
+.content {}
+
+/* Full width Columns */
+.center {
+    /* background: gainsboro; */
+}
+
+/* Split width Colums */
+.split {
+    display: flex;
+    /* background: gray; */
+}
+
+/* Sidebar Right Column */
+.splitRight {}
+
+/* Primary Left Column */
+.splitLeft {}
+
+/* Headers */
+h1, h2, h3 {
+    color: var(--primary-color);
+	font-size: var(--size-xl);
+}
+h2 {
+	font-size: var(--size-l);
+}
+h3 {
+	font-size: var(--size-m);
+}
+
+/* Text paragraphs */
+.paragraph {}
+
+/* Remove default style */
+ul {
+	list-style-type: none
+}
+
+a { 
+	text-decoration: none;
+}
+
+/* Links and Icons */
+a, i {
+    color: var(--primary-color);
+    fill: var(--primary-color);
+}
+
+
+a:hover, li:hover, ul:hover {
+	color: var(--secondary-color);
+    fill: var(--secondary-color);
+}
+/*  i:hover {
+    color: var(--secondary-color);
+    fill: var(--secondary-color);
+} */
+
+/* Show and Hide Classes used by JS */
+.showBlock {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+/* Active Class used by JS */
+.active {
+	background-color: var(--bg-shadow0);
+    color: var(--btn-color0);
+}
+
+/* Laptops */
+@media screen and (max-width: 960px) {}
+
+/* Tablets */
+@media screen and (max-width: 720px) {}
+
+/* Smartphones */
+@media screen and (max-width: 420px) {}

@@ -1,12 +1,10 @@
 /* HEADER */
-header {
-	/* max-width: 1920px;
-	height: 18em;
-	max-height: 600px; */
-}
+header {}
+
+/* .header-carousel {} */
 
 .header-image,
-.header-carousel {
+.carouselSlides {
 	background-image: url("../img/banner/Banner3_1920x600.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -15,10 +13,9 @@ header {
     width: 100%;
 }
 
-/* Slideshow */
+/* Slideshow hide by Default */
 .carouselSlides {
     display: none;
-	width: 100%;
 }
 
 .header-text {
@@ -33,20 +30,20 @@ header {
 	padding: 25px;
 
 	text-align: center; 
-	color: white;
-    font-size: 40px;
-	text-shadow: 2px 2px black;
+	color: var(--font-color0);
+    font-size: var(--size-xl);
+	text-shadow: 1px 1px var(--primary-shadow);
 
-	border: 1px solid white;
-	background: rgba(0, 0, 0, 0.25);
+	border: 1px solid var(--primary-shadow);
+	background: var(--bg-shadow0);
 }
+
+
+/* Laptops */
+@media screen and (max-width: 960px) {}
 
 /* Tablets */
-@media screen and (max-width: 720px) {
-
-}
+@media screen and (max-width: 720px) {}
 
 /* Smartphones */
-@media screen and (max-width: 420px) {
-    
-}
+@media screen and (max-width: 420px) {}

@@ -1,13 +1,30 @@
-# TO DO Read ME
-
-- [ ] Sticky Navigation, Scroll Y-pos; only sticky when scrolled passed the header.
-- [ ] Sticky Navigation, Scroll Y-margin; Fix jumping upwards of next Element
-- [ ] Sticky Navigation, Scroll-To; Smooth Scroll
-- [ ] Sticky Navigation, Scroll-To; Correct Scroll to Top of Element
-
-- [ ] Accordions; Open when Y-Screen LARGE, collapse when Y-Screen Small
-
-- [ ] Lightboxes; Open & Close Correct #lightbox
-- [ ] Galleries; Show #lightbox #gallery
-
-- [ ] Profile; Fix Picture Frame
+## Sitemap Scetch
+- Home
+- About
+  - Introduction Text
+  - About Video
+- Read More
+  - About Projects
+    - Current Projects
+    - Dream Project
+    - Repositories
+  - About Qualifications
+    - Mayor Qualifications
+    - Study: Web &amp; Game Development
+    - Study: Social Cultural Worker &amp; Event Organizer
+  - About Hobbies
+    - Gaming
+    - Modding
+    - Tabletop
+    - Live Action
+- Skills
+  - Game Dev Languages
+  - Web Dev Languages
+  - Other Skills
+- Spotlight
+- Projects
+  - Project #1
+  - Project #2
+  - Project #3
+- Contact
+- Footer / Credits

@@ -1,0 +1,11 @@
+.readAbout {
+}
+
+/* Laptops */
+@media screen and (max-width: 960px) {}
+
+/* Tablets */
+@media screen and (max-width: 720px) {}
+
+/* Smartphones */
+@media screen and (max-width: 420px) {}

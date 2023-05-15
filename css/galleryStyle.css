@@ -89,6 +89,10 @@
     opacity: 1;
 }
 
+
+/* Laptops */
+@media screen and (max-width: 960px) {}
+
 /* Tablets */
 @media screen and (max-width: 720px) {}
 

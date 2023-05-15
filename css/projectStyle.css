@@ -1,18 +1,24 @@
-.projects {}
+.projects {
+	padding: 32px 0;
+	margin-top: var(--top-margin);
+}
 
 .projects-title {
 	word-break: break-all;
+	margin-bottom: var(--size-m);
+	text-align: center;
 }
 
 /* Padding between Colums */
 .filter-row,
 .filter-row > .filter-column {
 	padding: 8px;
-	background-color: #666;
 }
 
 .filter-row {
 	padding: 20px;
+	/* margin: 10px; */
+	background: var(--bg-element0);
 }
 
 /* Three Equal Columns */
@@ -43,32 +49,34 @@
 	border-radius: 25px 25px 0px 0px;
 	outline: none;
 	padding: 12px 16px;
-	background: white;
+	background: var(--bg-element1);
+	color: var(--font-color0);
 	cursor: pointer;
 }
 #FilterBtnContainer .btn:hover {
-	background: gray;
+	background: var(--bg-element0);
 }
 
 /* Added by Script: "../js/filterSelectionScript.js" */
 #FilterBtnContainer .active,
 #FilterBtnContainer .btn:active {
-	background: #666;
-	color: white;
+	background: var(--bg-element0);
+	color: var(--primary-color);
 }
 
 /* Singular Project */
 .project-content {
 	padding: 10px;
-	background: white;
-	/* border: 1px solid red; */
+	background: var(--bg-shadow0);
+	border: 1px solid var(--bg-shadow0);
 	border-radius: 5%;
 
 	cursor: pointer;
 }
 
 .project-content:hover {
-	background: gainsboro;
+	background: var(--bg-shadow1);
+	border: 1px solid var(--primary-color);
 }
 
 .project-img {
@@ -81,18 +89,21 @@
 
 .project-description {}
 
+/* Laptops */
+@media screen and (max-width: 960px) {}
+
 /* Tablets */
 @media screen and (max-width: 720px) {
-	/* Two Equal Columns */
-	.filter-column {
-		width: 50%;
-	}
+		/* Two Equal Columns */
+		.filter-column {
+			width: 50%;
+		}
 }
 
 /* Smartphones */
 @media screen and (max-width: 420px) {
-    /* One Column */
-	.filter-column {
-		width: 100%;
-	}
+	    /* One Column */
+		.filter-column {
+			width: 100%;
+		}
 }

@@ -47,12 +47,12 @@
 .skill0 { width: 40%; background: #0a6fc2;}
 .skill1 { width: 30%; background: #da190b;}
 
+
+/* Laptops */
+@media screen and (max-width: 960px) {}
+
 /* Tablets */
-@media screen and (max-width: 720px) {
-    
-}
+@media screen and (max-width: 720px) {}
 
 /* Smartphones */
-@media screen and (max-width: 420px) {
-    
-}
+@media screen and (max-width: 420px) {}

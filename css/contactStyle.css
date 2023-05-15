@@ -54,6 +54,9 @@ input[type=submit] {
     cursor: pointer;
 }
 
+/* Laptops */
+@media screen and (max-width: 960px) {}
+
 /* Tablets */
 @media screen and (max-width: 720px) {
     .form-col25 {
@@ -67,6 +70,4 @@ input[type=submit] {
 }
 
 /* Smartphones */
-@media screen and (max-width: 420px) {
-    
-}
+@media screen and (max-width: 420px) {}

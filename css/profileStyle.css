@@ -2,7 +2,7 @@
 	width: 250px;
 	padding: 5px;
 	margin: auto;
-	background: #666;
+	/* background: #666; */
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	text-align: center;
 }
@@ -11,7 +11,7 @@
 	background-color: black;
 	width: 200px;
 	border-radius: 10px;
-	padding-top: 10px;
+	/* padding-top: 10px; */
 }
 
 .profile-name {
@@ -19,7 +19,7 @@
 }
 
 .profile-title {
-	color: white;
+	/* color: white; */
 	font-size: 18px;
 }
 
@@ -51,6 +51,8 @@
 	opacity: 0.5;
 }
 
+/* Laptops */
+@media screen and (max-width: 960px) {}
 
 /* Tablets */
 @media screen and (max-width: 720px) {
@@ -58,6 +60,4 @@
 }
 
 /* Smartphones */
-@media screen and (max-width: 420px) {
-    
-}
+@media screen and (max-width: 420px) {}
