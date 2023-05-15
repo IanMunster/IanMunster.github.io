@@ -1,0 +1,78 @@
+/* Buttons Style */
+.btn {
+	display: inline-block;
+	font-weight: var(--bold-font);
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.bigBtn {
+	margin-top: 1rem;
+    padding: 0.8rem 0.6rem;
+}
+
+.btn.active {
+	background-color: var(--btn-color1);
+	color: var(--font-color0);
+}
+
+.closeBtn {
+    color: var(--primary-color);
+    float: right;
+    font-size: 28px;
+    border: 1px solid red;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+    color: var(--font-color0);
+}
+
+.prevBtn, .nextBtn {
+    position: absolute;
+    top: 40%;
+    width: auto;
+    /* padding: 16px; */
+    /* margin-top: -50px; */
+/* 
+    color: white;
+    font-weight: bold; */
+    font-size: 20px;
+
+    /* border: 1px solid white; */
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.nextBtn {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prevBtn:hover, .nextBtn:hover {
+    background: var(--bg-element1);
+}
+
+
+.btnPrimary {
+	background-color: var(--primary-color);
+	color: var(--font-color1);
+}
+
+.btnPrimary:hover {
+	background-color: var(--btn-color0);
+	color: var(--font-color0);
+}
+
+.btnSecondary {
+	background-color: var(--btn-color1);
+	color: var(--font-color0);
+}
+
+.btnSecondary:hover {
+	background-color: var(--secondary-color);
+	color: var(--font-color0);
+}

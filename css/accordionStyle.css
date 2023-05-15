@@ -1,48 +1,53 @@
 /* Accordion */
-
-/* Accordion <button> Style */
 .accordion {
-    cursor: pointer;
     padding: 20px;
     width: 100%;
     text-align: left;
     font-size: 15px;
-    font-weight: bold;
-    /* color: #444; */
+    font-weight: var(--bold-font);
+    color: var(--primary-color);
     border: 1px solid black;
     outline: none;
-    background: gainsboro;
+    background: var(--bg-element0);
     transition: 0.4s;
     -moz-transition: 0.4s;
 }
 
-/* Active Accordion. Added by Script: "../js/accordionScript.js" */
-.accordion.active,
-.accordion:hover {
-    background: gray;
-}
-
-/* Accordion Panel. Hidden by max-height (!Only hide when small screen?) */
+/* Accordion Panel. Hidden by max-height */
 .panel {
     padding: 0 18px;
-    background: white;
+    background: var(--bg-color0);
     overflow: hidden;
-
-    max-height: 0;
     transition: max-height 0.2s ease-out;
     -moz-transition: max-height 0.2s ease-out;
-    /* display: none; */
 }
 
-/* Accordion Icon*/
-.accordion:after {
-    content: '\02795';    /* +sign */
-    font-size: 15px;
-    float: right;
-    margin-left: 5px;
-}
-.accordion.active:after {
-    content: '\02796';    /* -sign */
+
+/* Small Screens have Closed Accordions */
+@media screen and (max-height: 720px) {
+    .accordion {
+        cursor: pointer;
+    }
+    /* Active Accordion. Added by Script: "../js/accordionScript.js" */
+    .accordion.active, .accordion:hover {
+        background: var(--bg-element0);
+        color: var(--secondary-color);
+    }
+    /* Panel Hidden by max-height */
+    .panel {
+        max-height: 0;
+    }
+
+    /* Accordion Icon*/
+    .accordion:after {
+        content: '\02795';    /* +sign */
+        font-size: 15px;
+        float: right;
+        margin-left: 5px;
+    }
+    .accordion.active:after {
+        content: '\02796';    /* -sign */
+    }
 }
 
 

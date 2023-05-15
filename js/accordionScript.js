@@ -7,7 +7,6 @@ for (i = 0; i < Accordion.length; i++) {
     Accordion[i].addEventListener("click", function() {
         // Toggle Active Class (CSS)
         this.classList.toggle("active");
-
         //  Find Accordion Panel
         var panel = this.nextElementSibling;
 

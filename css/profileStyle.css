@@ -56,7 +56,6 @@
 
 /* Tablets */
 @media screen and (max-width: 720px) {
-	.profile-card { width: 100%; }
 }
 
 /* Smartphones */

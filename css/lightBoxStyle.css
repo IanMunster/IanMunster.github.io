@@ -9,30 +9,16 @@
     height: 100%;
     /* overflow: auto; Enable Scroll */
     background: black; /* Fallback on No-Opacity */
-    background: rgba(0, 0, 0, 0.3);
+    background: var(--bg-shadow0);
 }
 
 .lightBoxContent {
-    background-color: gainsboro;
+    background-color: var(--bg-color1);
     margin: 46.5px auto;
     padding: 20px;
-    /* border: 1px solid white; */
     width: 50%; /* LightBox Width */
 }
 
-.closeBtn {
-    color: gray;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.closeBtn:hover,
-.closeBtn:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 /* Laptops */
 @media screen and (max-width: 960px) {}

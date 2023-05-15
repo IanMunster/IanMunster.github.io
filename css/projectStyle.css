@@ -1,3 +1,5 @@
+#Projects {}
+
 .projects {
 	padding: 32px 0;
 	margin-top: var(--top-margin);
@@ -17,7 +19,6 @@
 
 .filter-row {
 	padding: 20px;
-	/* margin: 10px; */
 	background: var(--bg-element0);
 }
 
@@ -26,7 +27,7 @@
 	float: left;
 	display: none;	/* Hide Columns */
 	width: 33.33%;
-	/* border: 1px solid purple; */
+	height: 50%;
 }
 
 /* Clear floats after */
@@ -65,16 +66,15 @@
 }
 
 /* Singular Project */
-.project-content {
+.project {
 	padding: 10px;
 	background: var(--bg-shadow0);
 	border: 1px solid var(--bg-shadow0);
 	border-radius: 5%;
-
 	cursor: pointer;
 }
 
-.project-content:hover {
+.project:hover {
 	background: var(--bg-shadow1);
 	border: 1px solid var(--primary-color);
 }
@@ -87,7 +87,9 @@
 
 .project-title {}
 
-.project-description {}
+.project-description {
+	padding: 5px;
+}
 
 /* Laptops */
 @media screen and (max-width: 960px) {}

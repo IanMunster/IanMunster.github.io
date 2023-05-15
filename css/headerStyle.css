@@ -38,6 +38,12 @@ header {}
 	background: var(--bg-shadow0);
 }
 
+.options {
+	position: absolute;
+	z-index: 1;
+	top: 8px;
+	right: 16px;
+}
 
 /* Laptops */
 @media screen and (max-width: 960px) {}

@@ -1,19 +1,28 @@
 # [IanMunster.github.io](https://IanMunster.github.io/)
 My Github Pages, to navigate current and previous projects repositories
 
-## TO DO Read ME
+## DOING:
+- [ ] Projects; Lightboxes and Galleries
 
+## TO DO:
+### Navigation:
 - [x] Sticky Navigation, Scroll Y-pos; only sticky when scrolled passed the header.
-- [ ] Sticky Navigation, Scroll Y-margin; Fix jumping upwards of next Element
-- [ ] Sticky Navigation, Scroll-To; Smooth Scroll
+- [x] Sticky Navigation, Scroll Y-margin; Fix jumping upwards of next Element
+- [x] Sticky Navigation, Scroll-To; Smooth Scroll
 - [ ] Sticky Navigation, Scroll-To; Correct Scroll to Top of Element
 
-- [ ] Accordions; Open when Y-Screen LARGE, collapse when Y-Screen Small
-
+### Projects:
 - [ ] Lightboxes; Open & Close Correct #lightbox
 - [ ] Galleries; Show #lightbox #gallery
 
-- [ ] Profile; Fix Picture Frame
+### About:
+- [x] Profile; Fix Picture Frame
+
+### Experience:
+
+### Multiple:
+- [x] Accordions; Open when Y-Screen LARGE, collapse when Y-Screen Small
+
 
 ## Sitemap Scetch
 - Header/Home (IMG Carousel Header)
