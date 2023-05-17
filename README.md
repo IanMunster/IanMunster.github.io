@@ -10,6 +10,7 @@ My Github Pages, to navigate current and previous projects repositories
 - [x] Sticky Navigation, Scroll Y-margin; Fix jumping upwards of next Element
 - [x] Sticky Navigation, Scroll-To; Smooth Scroll
 - [ ] Sticky Navigation, Scroll-To; Correct Scroll to Top of Element
+- [ ] Nav Bar width on Small Screens
 
 ### Projects:
 - [ ] Lightboxes; Open & Close Correct #lightbox
@@ -45,8 +46,8 @@ My Github Pages, to navigate current and previous projects repositories
       - Study: Web &amp; Game Development
       - Study: Social Cultural Worker &amp; Event Organizer
     - Hobbies
-        - Gaming & Modding
-        - Tabletop & Live Action Roleplay
+        - Gaming &amp; Modding
+        - Tabletop &amp; Live Action Roleplay
         - Music
 - Experience
     - Qualifications

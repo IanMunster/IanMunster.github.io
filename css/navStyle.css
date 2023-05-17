@@ -1,9 +1,7 @@
 /* NAVIGATION */
-nav {
+nav {}
 
-}
-
-.navBar {
+#NavBar {
     /* overflow: hidden; */
     z-index: 1;
 
@@ -17,7 +15,7 @@ nav {
     box-shadow: 0 3px 5px var(--bg-shadow1);
 }
 
-.navLogo {}
+#NavLogo {}
 
 nav ul {
     display: flex;
@@ -32,11 +30,8 @@ nav a {
     font-size: var(--size-m);
 }
 
-nav a:hover {
+nav a:hover, nav i:hover {
     border-bottom: 2px solid var(--secondry-color);
-}
-
-nav i {
 }
 
 /* Hide HamburgerMenu button on Default */
@@ -80,7 +75,7 @@ nav a.menu {
 /* Tablets */
 @media screen and (max-width: 720px) {
         /* Hide all Menu Links, except first */
-        nav a:not(:first-child) {
+        nav li:not(:first-child) {
             display: none;
         }
     
@@ -89,17 +84,20 @@ nav a.menu {
             display: block;
         }
     
-        nav.responsive {}
+        .responsive {}
     
-        nav.responsive a.menu {
-            position: absolute;
-            right: 0;
-            top: 0;
+        #NavBar.responsive a.menu {
+            /* Underneath the List */
         }
-    
-        nav.responsive a {
-            float: none;
+
+        #NavBar.responsive ul {
+            flex-direction: column;
+            width: 100%;
+        }
+        
+        #NavBar.responsive li {
             display: block;
+            float: none;
             text-align: left;
         }
 }

@@ -10,7 +10,7 @@
 // }
 
 function MenuClick () {
-    var nav = document.getElementById("TopNav");
+    var nav = document.getElementById("NavBar");
     if (!nav.classList.contains("responsive") ) {
         nav.classList.add("responsive");
     } else {
