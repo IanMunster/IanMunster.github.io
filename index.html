@@ -173,7 +173,7 @@
 				<!-- LIGHTBOX CONTENT -->
 				<div id="LightBoxContent" class="lightBoxContent">
 					<span id="CloseBtn" class="btn closeBtn">&times;</span>
-					<h2 id="Project-Title" class="project-title">TITLE</h2>
+					<h2 id="Lightbox-Title" class="lightbox-title">...</h2>
 					
 					<!-- GALLERY -->
 					<div class="galleryContainer">
@@ -199,32 +199,32 @@
 						<a id="NextBtn" class="btn nextBtn">&#10095;</a>
 						<!-- Caption -->
 						<div class="galleryCaptionContainer">
-							<p class="galleryCaption" id="CAPTION">CAPTION</p>
+							<p id="Gallery-Caption" class="">...</p>
 						</div>
 						<!-- Thumbnails -->
 						<div class="gallery-row">
 							<div class="gallery-column">
-								<img class="thumbs" src="img/thumb/thumb0_640x360.jpg" onclick="CurrentSlide(0)" alt="Project Thumb0">
+								<img class="galleryThumbs" src="img/thumb/thumb0_640x360.jpg" onclick="CurrentSlide(0)" alt="Project Thumb0">
 							</div>
 							<div class="gallery-column">
-								<img class="thumbs" src="img/thumb/thumb1_640x360.jpg" onclick="CurrentSlide(1)" alt="Project Thumb1">
+								<img class="galleryThumbs" src="img/thumb/thumb1_640x360.jpg" onclick="CurrentSlide(1)" alt="Project Thumb1">
 							</div>
 							<div class="gallery-column">
-								<img class="thumbs" src="img/thumb/thumb2_640x360.jpg" onclick="CurrentSlide(2)" alt="Project Thumb2">
+								<img class="galleryThumbs" src="img/thumb/thumb2_640x360.jpg" onclick="CurrentSlide(2)" alt="Project Thumb2">
 							</div>
 							<div class="gallery-column">
-								<img class="thumbs" src="img/thumb/thumb3_640x360.jpg" onclick="CurrentSlide(3)" alt="Project Thumb3">
+								<img class="galleryThumbs" src="img/thumb/thumb3_640x360.jpg" onclick="CurrentSlide(3)" alt="Project Thumb3">
 							</div>
 						</div>
 					</div>
 					
-					<p class="project-description">
+					<p id="Lightbox-Description" class="">
 						<b> Lorem</b> ipsum dolor sit amet, melius fastidii an per. 
 						Graece fuisset definitionem sea et, ea nec vivendum senserit. 
 						Noster numquam accumsan eos cu. 
 						Ad mea ridens audiam delectus, posse adipiscing quo ei.
 					</p>
-					<p class="project-links">
+					<p id="LightBox-Links" class="">
 						<ul>
 							<li><a><i class="fa fa-cloud-download"></i> Download File</a></li>
 							<li><a><i class="fa fa-trello"></i> Trello Board</a></li>
@@ -321,34 +321,66 @@
 				</div>
 				
 				<div class="skills">
-					<div class="skill">
-					<p class="skillName">HTML</p>
-					<div class="progressBar"><div class="progressFill html">90%</div></div>
+					<div class="skill-row">
+						<div class="skill-column">
+							<div class="skill">
+								<p class="skillName">HTML</p>
+								<div class="progressBar"><div class="progressFill html">90%</div></div>
+							</div>
+						</div>
+						<div class="skill-column">
+							<div class="skill">
+								<p class="skillName">CSS</p>
+								<div class="progressBar"><div class="progressFill css">80%</div></div>
+							</div>
+						</div>
+						<div class="skill-column">
+							<div class="skill">
+								<p class="skillName">JavaScript</p>
+								<div class="progressBar"><div class="progressFill js">65%</div></div>
+							</div>
+						</div>
 					</div>
-					<div class="skill">
-					<p class="skillName">CSS</p>
-					<div class="progressBar"><div class="progressFill css">80%</div></div>
+					<div class="skill-row">
+						<div class="skill-column">
+							<div class="skill">
+								<p class="skillName">PHP</p>
+								<div class="progressBar"><div class="progressFill php">60%</div></div>
+							</div>
+						</div>
+						<div class="skill-column">
+							<div class="skill">
+								<p class="skillName">SQL</p>
+								<div class="progressBar"><div class="progressFill sql">40%</div></div>
+							</div>
+						</div>
+						<div class="skill-column">
+							<div class="skill">
+								<p class="skillName">Skill0</p>
+								<div class="progressBar"><div class="progressFill skill0">30%</div></div>
+							</div>
+						</div>
 					</div>
-					<div class="skill">
-					<p class="skillName">JavaScript</p>
-					<div class="progressBar"><div class="progressFill js">65%</div></div>
-					</div>
-					<div class="skill">
-					<p class="skillName">PHP</p>
-					<div class="progressBar"><div class="progressFill php">60%</div></div>
-					</div>
-					<div class="skill">
-					<p class="skillName">C#</p>
-					<div class="progressBar"><div class="progressFill csharp">50%</div></div>
-					</div>
-					<div class="skill">
-					<p class="skillName">Skill0</p>
-					<div class="progressBar"><div class="progressFill skill0">40%</div></div>
-					</div>
-					<div class="skill">
-					<p class="skillName">Skill1</p>
-					<div class="progressBar"><div class="progressFill skill1">30%</div></div>
-					</div>
+					<div class="skill-row">
+						<div class="skill-column">
+							<div class="skill">
+								<p class="skillName">C#</p>
+								<div class="progressBar"><div class="progressFill csharp">50%</div></div>
+							</div>
+						</div>
+						<div class="skill-column">
+							<div class="skill">
+								<p class="skillName">Skill1</p>
+								<div class="progressBar"><div class="progressFill skill1">30%</div></div>
+							</div>
+						</div>
+						<div class="skill-column">
+							<div class="skill">
+								<p class="skillName">Skill2</p>
+								<div class="progressBar"><div class="progressFill skill2">30%</div></div>
+							</div>
+						</div>
+					</div>	
 				</div>
 			</article>
 

@@ -1,4 +1,4 @@
-/*
+/* https://w3schools.invisionzone.com/topic/62696-multiple-lightbox-on-one-page/
 Click on: a Project-Preview =>
     Open a Lightbox over Page.
     Lightbox shows Project Title, Gallery, Description and Links
@@ -14,46 +14,37 @@ Click on: a Project-Preview =>
 Click on: Close Btn / Outside of currently opened Lightbox =>
     Close Currently Opened Lightbox
 */
+// Project Preview
+var preview = document.getElementsByClassName("project");
+// Number of Project Previews
+let previewIndex;
+// LightBox Element
+var LightBox = document.getElementById("LightBox");
+// Lightbox Close Button
+var CloseBtn = document.getElementById("CloseBtn").addEventListener('click', CloseLightBox);
+// Title of Project Lightbox
+var Title = document.getElementById("Lightbox-Title");
+// Description of Project Lightbox
+var Descr = document.getElementById("Lightbox-Description");
+
+// Gallery Slides
+var galleryImgs = document.getElementsByClassName("galleryImg");
+// Gallery Slide-Thumbs
+var galleryThumbs = document.getElementsByClassName("galleryThumbs");
+// Gallery Slide-Numbers (Current Slide #/ Total Slides #)
+var gallerySlidesNum  = document.getElementsByClassName("gallerySlideNumber");
 
 
-/*Project ## {
-    Project Title = "..."
-    Project Gallery: [
-        SLIDE1 [ Image0 (src=""), Thumb0 (src="" alt="")],
-        SLIDE2 [ Image0 (src=""), Thumb0 (src="" alt="")],
-    ]
-    Project Description = "..."
-    Project Links: [ Download (href=""), Trello (href=""), Github (href="")
-    ]
-}*/
 
-
-// Lightbox-Close BTN: onclick="CloseLightBox()"
-// Gallery-Prev BTN: onclick="ChangeSlide(-1)"
-// Gallery-Next BTN: onclick="ChangeSlide(1)"
-
-
-// https://w3schools.invisionzone.com/topic/62696-multiple-lightbox-on-one-page/
-
+// Project Information and Images
 const projectContent = {
     title: "TITLE",
     description: "DESCRIPTION",
     download: "href=''",
     trello: "href=''",
     github: "href=''",
-    images: [image0="image0", image1="image1", image2="image2"]
+    images: [image0="image0_1920x1080.jpg", image1="image1_1920x1080.jpg", image2="image2_1920x1080.jpg"]
 };
-
-var preview = document.getElementsByClassName("project");
-let previewIndex;
-
-var lightBox = document.getElementById("LightBox");
-
-// var closeBtn = document;
-// var Prev = document;
-// var Next = document;
-
-let imgIndex = 0;
 
 // Find all Project Previews
 for (previewIndex = 0; previewIndex < preview.length; previewIndex++) {
@@ -65,69 +56,21 @@ for (previewIndex = 0; previewIndex < preview.length; previewIndex++) {
 /// LIGHTBOX
 // Open Lightbox
 function OpenLightBox(e) {
+    // Debug
     console.log("Open Lightbox");
-    //
-    lightBox.style.display = "block";
-    //
-    Title = document.getElementById("Project-Title")
-    // Title.innerHTML = preview.alt;
-    //
-    console.log("Image Index: "+imgIndex);
-    ShowSlide(imgIndex);
+    // Display Title of Project
+    Title.innerHTML = projectContent.title;
+    // Display Description of Project
+    Descr.innerHTML = projectContent.description;
+    // Display the Project Lightbox Element
+    LightBox.style.display = "block";
 
-    //
-    closeBtn = document.getElementById("CloseBtn").addEventListener('click', CloseLightBox);
-    //
-    //Prev = document.getElementById("PrevBtn").addEventListener('click', ChangeSlide());
-    //
-    //Next = document.getElementById("NextBtn").addEventListener('click', ChangeSlide());
 }
 
 // Close Lightbox
 function CloseLightBox() {
+    // Debug
     console.log("Close Lightbox");
-    //
-    lightBox.style.display = "none";
-}
-
-
-/// GALLERY
-//
-function CurrentSlide(slide) {
-    console.log ("Current Slide: "+slide);
-    // 
-    ShowSlide(imgIndex = slide);
-}
-
-//
-function ChangeSlide(slide) {
-    console.log("Change Slide: "+slide);
-    //
-    ShowSlide(imgIndex += slide);
-}
-
-function ShowSlide (slide) {
-    var i,
-    slides = document.getElementsByClassName("gallerySlides"),
-    thumbs = document.getElementsByClassName("thumbs"),
-    captionText = document.getElementById("CAPTION");
-
-    if (slide > slides.length-1) {
-        imgIndex = 0
-    }
-    if (slide < 0) {
-        imgIndex = slides.length-1
-    }
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    for (i = 0; i < thumbs.length; i++) {
-        thumbs[i].className = thumbs[i].className.replace(" thumbActive","");   
-    }
-    
-    slides[imgIndex].style.display = "block";
-    thumbs[imgIndex].className += " thumbActive";
-    captionText.innerHTML = thumbs[imgIndex].alt;
+    // Hide the Project Lightbox Element
+    LightBox.style.display = "none";
 }

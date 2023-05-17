@@ -19,6 +19,7 @@ My Github Pages, to navigate current and previous projects repositories
 - [x] Profile; Fix Picture Frame
 
 ### Experience:
+- [ ] Skill-progress; Responsive on Small Screen
 
 ### Multiple:
 - [x] Accordions; Open when Y-Screen LARGE, collapse when Y-Screen Small

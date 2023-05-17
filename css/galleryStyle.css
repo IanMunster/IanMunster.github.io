@@ -46,17 +46,17 @@
     width: 25%; /* 4 columns */
 }
 
-.thumbs {
+.galleryThumbs {
     width: 100%;
     opacity: 0.6;
 }
 
-.thumbs:hover {
+.galleryThumbs:hover {
     cursor: pointer;
 }
 
 .thumbActive,
-.thumbs:hover {
+.galleryThumbs:hover {
     opacity: 1;
 }
 

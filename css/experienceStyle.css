@@ -4,17 +4,31 @@
 }
 
 .skills {
-    display: flex;
+    /* display: flex; */
     padding: 10px;
-    
-    /* border: 1px solid green; */
+}
+
+.skill-row, .skill-row > .skill-column {
+    padding: 10px;
+}
+
+.skill-row {
+    padding: 15px;
+    width: 33.33%;
+    float: left;
+}
+
+.skill-column {}
+
+.skill-column:after {
+    content: "";
+	display: table;
+	clear: both;
 }
 
 .skill {
-    width: 25%;
-    padding: 15px;
-    
-    background: gray;
+    padding: 5px;
+    background: var(--bg-element0);
     border: 1px solid black;
     border-radius: 1em;
 }
@@ -36,23 +50,32 @@
     border-radius: 25px;
     text-align: right;
     text-shadow: 1px 1px black;
-    color: white;
+    color: var(--font-color0);
 }
 
 .html { width: 90%; background: #04AA6D;}
 .css { width: 80%; background: #2196f3;}
 .js { width: 65%; background: #f44336;}
-.php { width: 60%; background: #808080;}
-.csharp { width: 50%; background: #037c50;}
-.skill0 { width: 40%; background: #0a6fc2;}
-.skill1 { width: 30%; background: #da190b;}
 
+.php { width: 60%; background:#037c50;}
+.sql { width: 60%; background: #0a6fc2;}
+.skill0 { width: 40%; background: #da190b; }
+
+.csharp { width: 50%; background: #04AA6D;}
+.skill1 { width: 30%; background: #0a6fc2;}
+.skill2 { width: 30%; background: #da190b;}
 
 /* Laptops */
 @media screen and (max-width: 960px) {}
 
 /* Tablets */
-@media screen and (max-width: 720px) {}
+@media screen and (max-width: 720px) {
+    .skill-column {}
+    .skill-row {}
+}
 
 /* Smartphones */
-@media screen and (max-width: 420px) {}
+@media screen and (max-width: 420px) {
+    .skill-column {}
+    .skill-row {}
+}
