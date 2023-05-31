@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Complex Image Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/buttonStyle.css">
+    <!-- <style></style>
+    <script src="script.js" defer></script> -->
+</head>
+
+
+<body>
+    <!-- Projects -->
+    <section id="Projects" class="center">
+        <!-- Projects Filter -->
+        <!-- https://www.w3schools.com/howto/howto_js_portfolio_filter.asp -->
+        <!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
+        <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+        <!-- https://www.w3schools.com/howto/howto_js_lightbox.asp -->
+
+        <link rel="stylesheet" href="../css/projectStyle.css" />
+        <link rel="stylesheet" href="../css/lightBoxStyle.css" />
+        <link rel="stylesheet" href="../css/galleryStyle.css" />
+        <article class="projects">
+            <h2 class="projects-title"><i class="fa fa-star"></i> Projects</h2>
+            <div id="FilterBtnContainer">
+                <button class="btn active" onclick="FilterSelection('all')"><i class="fa fa-star"></i> All</button>
+                <button class="btn" onclick="FilterSelection('games')"><i class="fa fa-gamepad"></i> Games</button>
+                <button class="btn" onclick="FilterSelection('web')"><i class="fa fa-globe"></i> Websites</button>
+                <button class="btn" onclick="FilterSelection('misc')"><i class="fa fa-ellipsis-h"></i>
+                    Miscellaneous</button>
+            </div>
+            <div class="filter-row">
+                <!-- PROJECT 1 -->
+                <div class="filter-column games">
+                    <!-- PROJECT CONTENT -->
+                    <div class="project" alt="Title0">
+                        <img class="project-img" src="../img/small/img0_1280x720.jpg" alt="Project IMG" />
+                        <h3 class="project-title">Game 1</h3>
+                        <p class="project-description">
+                            <b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
+                            Graece fuisset definitionem sea et, ea nec vivendum senserit.
+                            <br>Noster numquam accumsan eos cu.
+                            Ad mea ridens audiam delectus, posse adipiscing quo ei.
+                        </p>
+                    </div>
+                </div>
+                <!-- PROJECT 2 -->
+                <div class="filter-column games">
+                    <!-- PROJECT CONTENT -->
+                    <div class="project">
+                        <img class="project-img" src="../img/small/img0_1280x720.jpg" alt="Project IMG" />
+                        <h3 class="project-title">Game 2</h3>
+                        <p class="project-description">
+                            <b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
+                            Graece fuisset definitionem sea et, ea nec vivendum senserit.
+                            <br>Noster numquam accumsan eos cu.
+                            Ad mea ridens audiam delectus, posse adipiscing quo ei.
+                        </p>
+                    </div>
+                </div>
+                <!-- PROJECT 3 -->
+                <!-- <div class="filter-column web">
+                    <div class="project">
+                        <img class="project-img" src="../img/small/img2_1280x720.jpg" alt="Project IMG" />
+                        <h3 class="project-title">Website 1</h3>
+                        <p class="project-description">
+                            <b>Lorem</b> ipsum dolor sit amet, melius fastidii an per.
+                            Graece fuisset definitionem sea et, ea nec vivendum senserit.
+                            <br>Noster numquam accumsan eos cu.
+                            Ad mea ridens audiam delectus, posse adipiscing quo ei.
+                        </p>
+                    </div>
+                </div> -->
+                <!-- PROJECT 4 -->
+                <!-- <div class="filter-column web">
+                    <div class="project">
+                        <img class="project-img" src="../img/small/img3_1280x720.jpg" alt="Project IMG" />
+                        <h3 class="project-title">Website 2</h3>
+                        <p class="project-description">
+                            <b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea
+                            et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus,
+                            posse adipiscing quo ei.
+                        </p>
+                    </div>
+                </div> -->
+                <!-- PROJECT 5 -->
+                <!-- <div class="filter-column misc">
+                    <div class="project">
+                        <img class="project-img" src="../img/small/img0_1280x720.jpg" alt="Project IMG" />
+                        <h3 class="project-title">Misc 1</h3>
+                        <p class="project-description">
+                            <b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea
+                            et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus,
+                            posse adipiscing quo ei.
+                        </p>
+                    </div>
+                </div> -->
+                <!-- PROJECT 6 -->
+                <!-- <div class="filter-column misc">
+                    <div class="project">
+                        <img class="project-img" src="../img/small/img1_1280x720.jpg" alt="Project IMG" />
+                        <h3 class="project-title">Misc 2</h3>
+                        <p class="project-description">
+                            <b>Lorem</b> ipsum dolor sit amet, melius fastidii an per. Graece fuisset definitionem sea
+                            et, ea nec vivendum senserit. Noster numquam accumsan eos cu. Ad mea ridens audiam delectus,
+                            posse adipiscing quo ei.
+                        </p>
+                    </div>
+                </div> -->
+            </div>
+        </article>
+
+
+        <!-- Lightbox -->
+        <article id="Lightbox">
+            <!--Lightbox Close-Button-->
+            <div id="Lightbox-BtnCloseContainer">
+                <span id="Lightbox-BtnClose" class="closeBtn btn">&times;</span>
+            </div>
+            <!-- Main Image Section -->
+            <section id="Lightbox-Content" class="">
+                <h2 id="Lightbox-Title">Lightbox_Title</h2>
+                <div id="Lightbox-SlideNumber">#/#</div>
+                <!-- Main IMG -->
+                <figure>
+                    <img class="Lightbox-MainImg" id="Lightbox-MainImg">
+                </figure>
+                <!-- Main IMG Navigation -->
+                <div>
+                    <a id="Lightbox-PrevBtn" class="btn">&#10094;</a>
+                    <a id="Lightbox-NextBtn" class="btn">&#10095;</a>
+                </div>
+                <!-- Image Caption -->
+                <div id="Lightbox-CaptionContainer">
+                    <p id="Lightbox-Caption">Lightbox_Caption</p>
+                </div>
+            </section>
+            <!-- Thumb Gallery Section -->
+            <section>
+                <div id="Lightbox-ThumbsContainer">
+                    <figure>
+                        <img class="Lightbox-Thumb" src="">
+                    </figure>
+                </div>
+            </section>
+            <!-- Project Description Section -->
+            <section>
+                <div id="Lightbox-DescriptionContainer">
+                    <p id="Lightbox-Description">Lightbox_Description</p>
+                </div>
+                <div id="LightBox-Links" class="">
+                    <ul>
+                        <li><a><i class="fa fa-cloud-download"></i> Download File</a></li>
+                        <li><a><i class="fa fa-trello"></i> Trello Board</a></li>
+                        <li><a><i class="fa fa-github"></i> Github Repository</a></li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+
+        <script src="../js/filterSelectionScript.js"></script>
+        <script src="../js/previewLightboxScript.js"></script>
+    </section>
+
+</body>
+
+</html>

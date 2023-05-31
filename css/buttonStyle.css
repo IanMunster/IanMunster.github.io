@@ -23,7 +23,6 @@
     color: var(--primary-color);
     float: right;
     font-size: 28px;
-    border: 1px solid red;
 }
 
 .closeBtn:hover, .closeBtn:focus {

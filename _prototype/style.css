@@ -1,0 +1,123 @@
+/* Main Style */
+:root {
+	--bg-color0: #333;
+	--element-color0: rgb(0, 0, 0);
+	--element-color1: rgba(0, 0, 0, 0.5);
+	--shadow-color0: rgba(0, 0, 0, 0.25);
+	--text-color0: #fff;
+
+}
+
+*, html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: var(--text-color0);
+	background: var(--bg-color0);
+}
+
+header {
+	background: var(--element-color1);
+	box-sizing: border-box;
+	height: 3.8em;
+}
+
+nav {
+	padding: 0.8em;
+	width: 100%;
+}
+nav a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.5em;
+	padding: 0 0 0 5px;
+}
+nav a:hover {
+	color: #333;
+} 
+
+article {
+	margin: 1em;
+}
+
+footer {
+	/* display: block; */
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.5em;
+	background: var(--element-color1);
+	text-align: center;
+	border-radius: 0.5em 0.5em 0 0;
+}
+
+/* Laptops */
+@media screen and (max-width: 960px) {}
+
+/* Tablets */
+@media screen and (max-width: 720px) {}
+
+
+:root {
+    --bg-color0: #333;
+	--element-color0: rgba(0, 0, 0, 0.5);
+    --shadow-color0: rgba(0, 0, 0, 0.25);
+    --shadow-color1: rgba(100, 100, 100, 0.25);
+    --text-color0: #fff;
+    --text-font0: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+*, html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--text-font0);
+	color: var(--text-color0);
+	background: var(--bg-color0);
+}
+
+header, footer {
+    padding: 2rem;
+    background: var(--element-color0);
+}
+nav {
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    background: var(--element-color0);
+}
+nav ul, nav li, nav a {
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+}
+nav a {
+    padding: 0 0.5rem;
+    text-align: center;
+	color: white;
+    border-radius: 25px;
+}
+nav a:hover {
+	color: #333;
+    background: var(--text-color0);
+} 
+
+main, aside {
+    margin: 2rem;
+}
+section {}
+article {}
+form {}
+
+/* Laptops */
+@media screen and (max-width: 960px) {}
+
+/* Tablets */
+@media screen and (max-width: 720px) {}
+
+/* Smartphones */
+@media screen and (max-width: 420px) {}
